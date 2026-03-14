@@ -1,81 +1,95 @@
 "use client";
 
-import { useEffect, useState } from "react"
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
-import Link from 'next/link'
+import { useEffect, useState } from "react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import Link from "next/link";
 
 const faqItems = [
   {
-    id: 'item-1',
-    question: '¿Que es RALQ y como funciona?',
-    answer: 'RALQ es una plataforma educativa que utiliza realidad aumentada y modelos 3D interactivos para transformar el aprendizaje de quimica.',
+    id: "item-1",
+    question: "¿Qué es RALQ y cómo funciona?",
+    answer:
+      "RALQ es una plataforma educativa que utiliza realidad aumentada y modelos 3D interactivos para transformar el aprendizaje de química mediante experiencias visuales e interactivas.",
   },
   {
-    id: 'item-2',
-    question: '¿Necesito algun dispositivo especial para usar RALQ?',
-    answer: 'No, solo necesitas un smartphone o tablet con camara.',
+    id: "item-2",
+    question: "¿Necesito algún dispositivo especial para usar RALQ?",
+    answer:
+      "No. Solo necesitas un smartphone, tablet o computadora con acceso a internet y una cámara para poder visualizar las experiencias en realidad aumentada.",
   },
   {
-    id: 'item-3',
-    question: '¿Es gratuito usar la plataforma?',
-    answer: 'RALQ ofrece acceso gratuito a funciones basicas.',
+    id: "item-3",
+    question: "¿Es gratuito usar la plataforma?",
+    answer:
+      "RALQ ofrece acceso gratuito a varias funciones educativas. Algunas herramientas avanzadas o contenidos adicionales pueden requerir acceso ampliado en el futuro.",
   },
   {
-    id: 'item-4',
-    question: '¿Puedo usar RALQ sin conexion a internet?',
-    answer: 'Si, una vez descargados los modelos 3D puedes explorarlos sin conexion.',
+    id: "item-4",
+    question: "¿Puedo usar RALQ sin conexión a internet?",
+    answer:
+      "No. Actualmente se requiere conexión a internet para acceder a los modelos 3D y a las funciones de la plataforma.",
   },
   {
-    id: 'item-5',
-    question: '¿RALQ es adecuado para todos los niveles educativos?',
-    answer: 'Si, esta disenado para secundaria hasta universidad.',
+    id: "item-5",
+    question: "¿RALQ es adecuado para todos los niveles educativos?",
+    answer:
+      "Sí. La plataforma está diseñada para estudiantes desde nivel primaria hasta universidad, así como para docentes que buscan herramientas interactivas para enseñar química.",
   },
-]
+  {
+    id: "item-6",
+    question: "¿Qué tipo de contenido puedo explorar en RALQ?",
+    answer:
+      "Puedes explorar instrumentos de laboratorio, modelos moleculares, estructuras químicas y experiencias educativas en realidad aumentada diseñadas para facilitar la comprensión de conceptos científicos.",
+  },
+];
 
 export default function FAQs() {
-
-  const [mounted, setMounted] = useState(false)
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true)
-  }, [])
+    setMounted(true);
+  }, []);
 
-  if (!mounted) return null
+  if (!mounted) return null;
 
   return (
-    <section className="bg-background @container py-30">
-      <div className="mx-auto max-w-8xl px-12">
+    <section className="bg-background @container py-20">
+      <div className="mx-auto max-w-8xl px-15">
         <div className="@xl:flex-row @xl:items-start @xl:gap-15 flex flex-col gap-8">
 
           {/* LADO IZQUIERDO */}
           <div className="py-7 @xl:sticky @xl:top-24 @xl:w-75 shrink-0">
 
-            <h2 className="font-semibold text-5xl font-medium">
+            <h2 className="text-preg-ttl font-semibold text-5xl font-medium">
               Preguntas Frecuentes
             </h2>
 
-            <p className="text-muted-foreground @xl:block mt-2 hidden text-base">
-              ¿Necesitas mas ayuda?{" "}
-              <Link href="#" className="text-primary font-medium hover:underline">
-                Contactanos
+            <p className="text-preg-desc @xl:block mt-2 hidden text-base">
+              ¿Necesitas más ayuda?{" "}
+              <Link
+                href="/contacto"
+                className="text-preg-link font-medium hover:underline"
+              >
+                Contáctanos
               </Link>
             </p>
-
           </div>
 
           {/* LADO DERECHO */}
           <div className="flex-1">
-
             <Accordion type="single" collapsible>
-
               {faqItems.map((item) => (
                 <AccordionItem
                   key={item.id}
                   value={item.id}
                   className="border-dashed"
                 >
-
-                  <AccordionTrigger className="cursor-pointer py-8 text-base font-medium hover:no-underline">
+                  <AccordionTrigger className="text-preg-preg cursor-pointer py-8 text-base font-medium hover:no-underline">
                     {item.question}
                   </AccordionTrigger>
 
@@ -84,23 +98,13 @@ export default function FAQs() {
                       {item.answer}
                     </p>
                   </AccordionContent>
-
                 </AccordionItem>
               ))}
-
             </Accordion>
 
-            <p className="text-muted-foreground @xl:hidden mt-6 text-base">
-              ¿Necesitas mas ayuda?{" "}
-              <Link href="#" className="text-primary font-medium hover:underline">
-                Contactanos
-              </Link>
-            </p>
-
           </div>
-
         </div>
       </div>
     </section>
-  )
+  );
 }

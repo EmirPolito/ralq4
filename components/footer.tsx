@@ -2,13 +2,12 @@
 import Link from "next/link";
 import { Logo } from "@/components/logo";
 
-
 export default function Footer() {
   return (
-    <footer className="py-20 px-4 md:px-6 z-50 bg-background border-t border-border">
+    <footer className="py-20 px-4 md:px-10 z-50 bg-background border-t border-border">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between">
-          <div className="mb-8 md:mb-11">
+          <div className="mb-8 md:mb-13">
             <Link href="/" className="mr-4 flex items-center gap-2 lg:mr-6">
               {/* <div className="h-6 w-6 bg-neutral-100 border-neutral-300 border dark:bg-white rounded-md flex items-center justify-center p-1">
               </div> */}
@@ -29,16 +28,19 @@ export default function Footer() {
               </span>
             </Link>
 
-            <h1 className="dark:text-gray-300 mt-2">
-              Hecho por{" "}
-              <span className="dark:text-[#039ee4] gap-2">
-                <Link className="underline" href="https://x.com/arihantCodes">
+            <h1 className="text-footer-txt mt-2 px-1">
+              Desarrollado por{" "}
+              <span className="text-footer-link gap-2">
+                <Link
+                  className="hover:underline"
+                  href="https://x.com/arihantCodes"
+                >
                   @emirpolito
                 </Link>
                 <span>{"  "}</span>
                 <Link
                   href="https://linkedin.com/in/itzamanjain"
-                  className="underline"
+                  className="hover:underline"
                 >
                   @irvingstbn
                 </Link>
@@ -46,44 +48,49 @@ export default function Footer() {
 
                 <Link
                   href="https://linkedin.com/in/itzamanjain"
-                  className="underline"
+                  className="hover:underline"
                 >
                   @cristiandnl
                 </Link>
               </span>
             </h1>
 
-            <p className="text-sm dark:text-gray-400 mt-5">
+            <p className="text-footer-derechos text-sm mt-2">
               © {new Date().getFullYear()} RALQ. Todos los derechos reservados.
             </p>
-
-
-
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div>
-              <h3 className="font-semibold mb-4">Paginas</h3>
+              <h3 className="text-footer-ttl font-semibold mb-4">Paginas</h3>
               <ul className="space-y-2">
                 <li>
                   <Link
-                    href="/docs"
-                    className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white"
+                    href="/nosotros"
+                    className="text-footer-pag hover:text-footer-pag-hov"
                   >
                     Nosotros
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/blocks"
-                    className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white"
+                    href="/contacto"
+                    className="text-footer-pag hover:text-footer-pag-hov"
                   >
                     Contacto
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/colors"
-                    className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white"
+                    href="/ayuda"
+                    className="text-footer-pag hover:text-footer-pag-hov"
+                  >
+                    Ayuda
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/blog"
+                    className="text-footer-pag hover:text-footer-pag-hov"
                   >
                     Blog
                   </Link>
@@ -91,15 +98,13 @@ export default function Footer() {
               </ul>
             </div>
 
-
-
             <div>
-              <h3 className="font-semibold mb-4">Redes</h3>
+              <h3 className="text-footer-ttl font-semibold mb-4">Paginas</h3>
               <ul className="space-y-2">
                 <li>
                   <Link
                     href="https://www.facebook.com/profile.php?id=61563746413453"
-                    className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white"
+                    className="text-footer-pag hover:text-footer-pag-hov"
                   >
                     Facebook
                   </Link>
@@ -107,7 +112,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="https://www.instagram.com/ralq.utsv?igsh=Z256dmRoOXY3ZDg2"
-                    className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white"
+                    className="text-footer-pag hover:text-footer-pag-hov"
                   >
                     Instagram
                   </Link>
@@ -115,7 +120,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="https://x.com/arihantcodes"
-                    className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white"
+                    className="text-footer-pag hover:text-footer-pag-hov"
                   >
                     Linkedln
                   </Link>
@@ -123,12 +128,12 @@ export default function Footer() {
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold mb-4">Legal</h3>
+              <h3 className="text-footer-ttl font-semibold mb-4">Paginas</h3>
               <ul className="space-y-2">
                 <li>
                   <Link
                     href="/privacy-policy"
-                    className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white"
+                    className="text-footer-pag hover:text-footer-pag-hov"
                   >
                     Politica de privacidad
                   </Link>
@@ -136,7 +141,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/tos"
-                    className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white"
+                    className="text-footer-pag hover:text-footer-pag-hov"
                   >
                     Terminos y servicios
                   </Link>
@@ -145,11 +150,17 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className=" w-full flex mt-5 items-center justify-center">
-          <h1 className="text-center text-3xl md:text-5xl lg:text-[15rem] font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-700 to-neutral-900 select-none">
-            RALQ
-          </h1>
-        </div>
+        <div className="w-full flex mt-10 items-center justify-center">
+  <h1
+    className="bg-clip-text text-center text-3xl md:text-5xl lg:text-[14rem] font-bold tracking-widest text-transparent bg-gradient-to-b from-footer-ralq to-footer-ralq select-none"
+    style={{
+      WebkitMaskImage: "linear-gradient(to bottom, black 70%, transparent)",
+      maskImage: "linear-gradient(to bottom, black 70%, transparent)",
+    }}
+  >
+    RALQ
+  </h1>
+</div>
       </div>
     </footer>
   );

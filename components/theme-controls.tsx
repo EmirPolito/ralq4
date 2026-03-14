@@ -21,7 +21,7 @@ const colorOptions = [
   { name: "Rojo", value: "red", color: "#ef4444" },
   { name: "Naranja", value: "orange", color: "#f97316" },
   { name: "Rosa", value: "pink", color: "#ec4899" },
-  { name: "Cian", value: "cyan", color: "#06b6d4" },
+  { name: "Verde", value: "green", color: "#15cb24" },
 ]
 
 // Custom event to communicate reduced motion state to other components

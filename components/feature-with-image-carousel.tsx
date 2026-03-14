@@ -48,23 +48,23 @@ function useReducedMotion() {
 const carouselImages = [
   {
     src: "/img/sections/tabla.png",
-    alt: "Producto destacado 1",
+    alt: "Interfaz educativa de exploración científica",
   },
   {
     src: "/img/sections/tabla.png",
-    alt: "Producto destacado 2",
+    alt: "Exploración visual de instrumentos de laboratorio",
   },
   {
     src: "/img/sections/tabla.png",
-    alt: "Producto destacado 3",
+    alt: "Visualización interactiva de contenido científico",
   },
   {
     src: "/img/sections/tabla.png",
-    alt: "Producto destacado 4",
+    alt: "Interfaz digital para aprendizaje de química",
   },
   {
     src: "/img/sections/tabla.png",
-    alt: "Producto destacado 5",
+    alt: "Exploración educativa de recursos de laboratorio",
   },
 ];
 
@@ -107,47 +107,51 @@ function Feature() {
   );
 
   // Fondo según tema
-  const bgColor = resolvedTheme === "light" ? "#dff4e5" : "var(--background)"; // verde claro en modo claro
+  const bgColor = resolvedTheme === "light" ? "#dff4e5" : "var(--background)";
 
   return (
-    <div className="w-full py-20 lg:py-30 bg-[#434e4e] dark:bg-background">
-      {" "}
-      <div className="container mx-auto px-5">
+    <div className="w-full py-20 lg:py-30">
+      <div className="container mx-auto px-13">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 min-h-[400px]">
-          {/* TEXTO */}
-          <div className="flex gap-4 flex-col items-start">
+          {/* Texto */}
+          <div className="flex gap-3.5 flex-col items-start">
             <div>
-              <Badge className="bg-primary text-primary-foreground hover:bg-primary/90">
-                ¡En la palma de tus manos!
+              <Badge className="bg-carrusel2-mini-bg text-carrusel2-mini-txt rounded-2xl px-2 py-1">
+                Plataforma educativa interactiva
               </Badge>
             </div>
-            <div className="flex gap-3 flex-col">
-              <h2 className="text-xl md:text-3xl lg:text-6xl tracking-tighter lg:max-w-xl font-semibold text-left text-white">
-                Sumergete en la Realidad Aumentada
+
+            <div className="flex gap-6 flex-col">
+              <h2 className="text-carrusel2-ttl text-xl md:text-3xl lg:text-6xl tracking-tighter lg:max-w-xl font-semibold text-left">
+                Sumérgete en la Realidad Aumentada
               </h2>
-              <p className="text-lg max-w-xl lg:max-w-sm leading-relaxed tracking-tight text-white text-left">
-                Prepárate para vivir la mejor experiencia con instrumentaria
-                renderizada, visualizada con RA (Realidad Aumentada) con tu
-                propio smartphone.
+
+              <p className="text-carrusel2-desc lg:max-w-xl text-lg max-w-xl leading-relaxed tracking-tight text-left">
+                RALQ reúne instrumentos, materiales y recursos de laboratorio
+                dentro de un entorno digital diseñado para facilitar la
+                comprensión de la química mediante exploración visual e
+                interacción directa con los modelos.
               </p>
             </div>
 
-            {/* BOTÓN DEBAJO DE LA DESCRIPCIÓN */}
-            {/* <Button
+            {/* Botón opcional */}
+            {/* 
+            <Button
               asChild
               size="sm"
               className="h-10 rounded-full px-4 text-sm bg-[#60806b] hover:bg-[#85b18f] text-white mt-4"
             >
               <Link href="#link" className="flex items-center gap-1">
-                <span>Comenzar a Construir</span>
+                <span>Explorar la plataforma</span>
                 <ChevronRight className="h-4 w-4" />
               </Link>
-            </Button> */}
+            </Button> 
+            */}
           </div>
 
-          {/* CARRUSEL */}
+          {/* Carrusel */}
           <div
-            className="w-full max-w-full px-1"
+            className="w-full max-w-full px-5"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
@@ -157,12 +161,12 @@ function Feature() {
                 loop: true,
                 dragFree: false,
               }}
-              className="cursor-grab active:cursor-grabbing"
+              className="cursor-pointer active:cursor-grabbing"
             >
               <CarouselContent>
                 {carouselImages.map((image, index) => (
                   <CarouselItem key={index}>
-                    <div className="flex rounded-xl aspect-video  items-center justify-center overflow-hidden">
+                    <div className="flex rounded-xl aspect-video items-center justify-center overflow-hidden">
                       <Image
                         src={image.src}
                         alt={image.alt}
@@ -175,8 +179,9 @@ function Feature() {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="cursor-pointer -left-20 border-primary/30 text-primary hover:bg-primary/10" />
-              <CarouselNext className="cursor-pointer right-1 border-primary/30 text-primary hover:bg-primary/10" />
+
+              <CarouselPrevious className="bg-carrusel2-sig cursor-pointer -left-20 border-carrusel2-sig/10" />
+              <CarouselNext className="bg-carrusel2-sig cursor-pointer right-0 border-carrusel2-sig/10" />
             </Carousel>
           </div>
         </div>

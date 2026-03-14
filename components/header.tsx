@@ -103,21 +103,18 @@ export const HeroHeader = () => {
                   size="sm"
                   className="cursor-pointer rounded-full px-5 py-5
                   bg-header-login-bg
-                  text-header-login-txt">
+                  text-header-login-txt
+                  hover:bg-header-login-bg">
                   Iniciar sesión
                 </Button>
                 {/* <div className="text-white">o</div> */}
-
                 <Button
-                  asChild
+                  
                   size="sm"
-                  className="
-                  bg-header-regis-bg 
-                  text-header-regis-txt
-                  rounded-full 
-                  px-5.5
-                  py-5"
-                >
+                  className="cursor-pointer rounded-full px-5 py-5
+                  bg-header-login-bg
+                  text-header-login-txt 
+                  hover:bg-header-regis-bg">
                   <Link href="#">
                     <span>Registrarse</span>
                   </Link>

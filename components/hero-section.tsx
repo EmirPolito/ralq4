@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+
 import { HeroHeader } from "./header";
 import { InfiniteSlider } from "@/components/motion-primitives/infinite-slider";
 import { ProgressiveBlur } from "@/components/motion-primitives/progressive-blur";
@@ -12,7 +13,6 @@ import { ChevronRight } from "lucide-react";
 import { Feature } from "@/components/feature-with-image-carousel";
 import SectionWithMockup from "@/components/section-with-mockup";
 import FAQs from "@/components/preguntas-frec";
-import StackingCardsDemo from "@/components/scroll-comp";
 import Footer from "@/components/footer";
 import WobbleCardSection from "@/components/wobble-card-section";
 import PinCardsSection from "@/components/pin-cards-section";
@@ -20,11 +20,11 @@ import { useReducedMotion } from "@/components/theme-controls";
 
 const circleItems = [
   { image: "/img/carrusel/carrusel1.png", title: "Microscopio" },
-  { image: "/img/carrusel/carrusel2.png", title: "Reloj" },
-  { image: "/img/carrusel/carrusel4.png", title: "Microscopio" },
-  { image: "/img/carrusel/carrusel5.png", title: "Reloj" },
-  { image: "/img/carrusel/carrusel6.png", title: "Microscopio" },
-  { image: "/img/carrusel/carrusel7.png", title: "Reloj" },
+  { image: "/img/carrusel/carrusel2.png", title: "Tubos de ensayo" },
+  { image: "/img/carrusel/carrusel4.png", title: "Matraz" },
+  { image: "/img/carrusel/carrusel5.png", title: "Recipientes" },
+  { image: "/img/carrusel/carrusel6.png", title: "Matraz redondo" },
+  { image: "/img/carrusel/carrusel7.png", title: "Moleculas" },
 ];
 
 export default function HeroSection() {
@@ -43,25 +43,26 @@ export default function HeroSection() {
 
   return (
     <>
+      {/* header */}
       <HeroHeader />
-
       <main className="overflow-x-hidden">
         {/* HERO */}
         <section>
           <div>
-            <div className="aspect-2/3 relative z-10 flex flex-col justify-end px-6 lg:aspect-video">
-              <div className="mx-auto w-full max-w-8xl pb-6 lg:px-35 lg:pb-92">
+            <div className="aspect-2/3 relative z-10 flex flex-col justify-end px-5 lg:aspect-video">
+              <div className="mx-auto w-full max-w-8xl pb-7 lg:px-35 lg:pb-75">
                 <ScrollAnimation direction="up" delay={0.2}>
-                  <div className="max-w-8xl relative mx-auto pt-28 md:pt-32 pb-20 md:pb-10 px-5 w-full left-0 top-0">
+                  <div className="max-w-8xl relative mx-auto pt-28md:pt-32 pb-20 md:pb-10 px-5 w-full left-0 top-0">
                     <h1 className="text-hero-ttl text-xl md:text-7xl font-bold">
-                      Aprende desde
+                      Instrumentos al
                       <br />
-                      cualquier dispositivo
+                      alcance de tus manos
                     </h1>
 
                     <p className="text-hero-desc max-w-2xl text-base md:text-lg mt-6 dark:text-neutral-200">
-                      Visualiza instrumentos y moléculas 3D en Realidad
-                      Aumentada
+                      Nuestra plataforma permite a los estudiantes aprender
+                      sobre instrumentos de laboratorio de quimica mediante
+                      modelos 3D en Realidad Aumentada.
                     </p>
 
                     <div className="mt-8 flex items-center gap-2">
@@ -81,42 +82,42 @@ export default function HeroSection() {
               </div>
             </div>
 
-            {/* VIDEO BACKGROUND */}
-            <div className="absolute inset-0 overflow-hidden rounded-3xl bg-hero-bg">
+            {/* ADN */}
+            <div className="absolute inset-0 overflow-hidden rounded-3xl lg:rounded-[3rem] border border-black/10 dark:border-white/5 bg-white dark:bg-black">
               <video
                 ref={videoRef}
                 autoPlay
                 loop
                 muted
                 playsInline
-                className="absolute inset-0 w-full h-full object-cover -scale-x-100 opacity-90"
+                className="
+                absolute inset-0 w-full h-full object-cover -scale-x-100
+                invert contrast-120 brightness-90
+                dark:invert-0 dark:brightness-110"
                 src="https://videos.pexels.com/video-files/35968183/15249566_1920_1080_30fps.mp4"
               />
             </div>
           </div>
         </section>
 
-        {/* CARRUSEL */}
-
-        <section className="bg-background py-2">
-          <div className="group relative m-auto max-w-8xl px-10 -mt-30">
+        {/* Carrusel */}
+        <section className="bg-background py-3">
+          <div className="group relative m-auto max-w-8xl px-5 -mt-32">
             <div className="flex flex-col items-center md:flex-row">
-              <div className="md:max-w-52 md:border-r md:border-[#9cc2a9]/30 md:pr-10 shrink-0">
-                <p className="text-carrusel-ttl text-start text-sm md:text-left">
+              <div className="md:max-w-52 md:border-r md:border-[#9cc2a9]/30 md:px-5 md:pr-10 shrink-10">
+                <p className="text-carrusel-ttl text-start text-base md:text-lg font-semibold tracking-wide md:text-left">
                   Hora de aprender
                 </p>
               </div>
 
-              <div className="relative py-6 md:w-[calc(100%-10rem)]">
+              <div className="relative py-13 md:w-[calc(100%-5rem)]">
                 <InfiniteSlider speedOnHover={20} speed={40} gap={56}>
                   {circleItems.map((item, index) => (
                     <div
                       key={index}
                       className="flex flex-col items-center gap-3"
                     >
-                      {/* CIRCULO */}
-
-                      <div className="h-50 w-50 rounded-full bg-carrusel-bg flex items-center justify-center overflow-hidden p-2 shadow-lg border-2">
+                      <div className="bg-carrusel2-bg h-55 w-55 rounded-full flex items-center justify-center overflow-hidden p-2 shadow-lg border-2">
                         <Image
                           src={item.image}
                           alt={item.title}
@@ -125,28 +126,19 @@ export default function HeroSection() {
                           className="h-full w-full object-cover rounded-full"
                         />
                       </div>
-
                       <span className="text-sm text-carrusel-desc font-medium">
                         {item.title}
                       </span>
                     </div>
                   ))}
                 </InfiniteSlider>
-
-                {/* GRADIENTES */}
-
-                <div className="bg-linear-to-r from-background absolute inset-y-0 left-0 w-20"></div>
-
-                <div className="bg-linear-to-l from-background absolute inset-y-0 right-0 w-20"></div>
-
-                {/* BLUR */}
-
+                <div className="bg-linear-to-r from-background absolute inset-y-0 left-0 w-1"></div>
+                <div className="bg-linear-to-l from-background absolute inset-y-0 right-0 w-1"></div>
                 <ProgressiveBlur
                   className="pointer-events-none absolute left-0 top-0 h-full w-20"
                   direction="left"
                   blurIntensity={1}
                 />
-
                 <ProgressiveBlur
                   className="pointer-events-none absolute right-0 top-0 h-full w-20"
                   direction="right"
@@ -157,31 +149,34 @@ export default function HeroSection() {
           </div>
         </section>
 
-        <PinCardsSection />
-
+                {/* imagene automatico*/}
         <ScrollAnimation direction="up" delay={0.1}>
           <Feature />
         </ScrollAnimation>
 
-        <WobbleCardSection />
+        {/* 3 tarjetas pin */}
+        <PinCardsSection />
 
+
+
+        {/* Izquierdo y derecho  y viceversa */}
         <SectionWithMockup
           title={
             <>
-              Intelligence,
+              Conoce los instrumentos
               <br />
-              delivered to you.
+              antes de entrar al laboratorio
             </>
           }
           description={
             <>
-              Get a tailored Monday morning brief directly in
+              Familiarízate con equipos y materiales
               <br />
-              your inbox, crafted by your virtual personal
+              utilizados en prácticas de química.
               <br />
-              analyst, spotlighting essential watchlist stories
+              Observa su estructura, función y uso
               <br />
-              and earnings for the week ahead.
+              dentro del trabajo experimental.
             </>
           }
           imageSrc="/img/sections/section1.png"
@@ -191,34 +186,42 @@ export default function HeroSection() {
         <SectionWithMockup
           title={
             <>
-              Insights,
+              Explora estructuras
               <br />
-              at your fingertips.
+              químicas en detalle
             </>
           }
           description={
             <>
-              Access real-time market data and analytics
+              Analiza la forma y organización
               <br />
-              designed for informed decision-making.
+              de diferentes compuestos mediante
               <br />
-              Your personalized dashboard keeps you
+              representaciones visuales diseñadas
               <br />
-              ahead of the curve.
+              para facilitar su comprensión.
             </>
           }
           imageSrc="/img/sections/section2.png"
           reverseLayout={true}
         />
+        <section className="py-20 lg:py-5 bg-background"></section>
 
-        <section className="py-20 lg:py-32 bg-background"></section>
+        {/* Rectangulo y cuadro 2*/}
+        <WobbleCardSection />
 
-        <StackingCardsDemo />
-
+        {/*Preguntas frecuentes*/}
         <FAQs />
 
+        {/* Footer*/}
         <Footer />
       </main>
     </>
   );
+}
+
+//croll de tarjetas de imagenes
+// import StackingCardsDemo from "@/components/scroll-comp";
+{
+  /* <StackingCardsDemo /> */
 }

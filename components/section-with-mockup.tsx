@@ -40,8 +40,8 @@ const SectionWithMockup: React.FC<SectionWithMockupProps> = ({
   };
 
   return (
-    <section className="relative py-25 md:py-40 bg-background">
-      <div className="mx-auto max-w-8xl px-6 lg:px-30">
+    <section className="relative pt-20 md:py-25">
+      <div className="mx-auto max-w-8xl px-6 lg:px-25">
         <motion.div
           className="grid grid-cols-1 md:grid-cols-2 items-center gap-50"
           variants={containerVariants}
@@ -56,11 +56,11 @@ const SectionWithMockup: React.FC<SectionWithMockupProps> = ({
               reverseLayout ? "md:order-2 md:pl-12" : "md:pr-12"
             }`}
           >
-            <h2 className="text-foreground text-3xl md:text-[55px] font-semibold leading-tight md:leading-[52px]">
+            <h2 className="text-mockup-ttl text-3xl md:text-[60px] md:leading-[55px] font-semibold leading-tight ">
               {title}
             </h2>
 
-            <p className="mt-6 text-muted-foreground text-[17px] leading-7">
+            <p className="text-mockup-desc mt-6 text-[17px] leading-6.5">
               {description}
             </p>
           </motion.div>

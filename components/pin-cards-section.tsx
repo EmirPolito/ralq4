@@ -7,56 +7,56 @@ import { Beaker, Atom, FlaskConical } from "lucide-react";
 
 export default function PinCardsSection() {
   return (
-    <section className="py-20 lg:py-40 bg-background overflow-hidden">
+    <section className="py-20 lg:py-30 bg-background overflow-hidden">
       <div className="container mx-auto px-5">
         <ScrollAnimation direction="up" delay={0.1}>
           <div className="text-center mb-7">
-            <h2 className="text-tarjetas-ttl1 text-3xl md:text-4xl lg:text-6xl font-semibold tracking-tight  text-balance">
-              Laboratorios Especializados
+            <h2 className="text-tarjetas-ttl1 text-3xl md:text-4xl lg:text-6xl font-semibold tracking-tight text-balance">
+              Áreas de Exploración Científica
             </h2>
 
-            <p className="text-tarjetas-desc2 mt-4 text-lg  max-w-5xl mx-auto whitespace-nowrap">
-              Explora tres categorias de laboratorio con instrumentos y equipos
-              detallados en modelos 3D interactivos.
+            <p className="text-tarjetas-desc2 mt-4 text-lg max-w-4xl mx-auto text-center">
+              La plataforma organiza el contenido en distintos entornos de
+              aprendizaje
+              <br />
+              que representan cómo se utiliza la química en contextos
+              educativos, analíticos e industriales.
             </p>
           </div>
         </ScrollAnimation>
 
         <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-20">
-          
           {/* Pin 1 */}
           <div className="h-[27rem] w-full lg:w-1/3 flex items-center justify-center">
-            <PinContainer title="Plantas Quimicas" href="#laboratorios">
-              <div className="bg-tarjetas-bg border border-border flex flex-col p-4 tracking-tight w-[22rem] h-[22rem] from-card to-card/50 backdrop-blur-sm  rounded-xl">
-                
+            <PinContainer title="Procesos Industriales" href="#laboratorios">
+              <div className="bg-tarjetas-bg border border-border flex flex-col p-4 tracking-tight w-[22rem] h-[22rem] from-card to-card/50 backdrop-blur-sm rounded-xl">
                 <div className="flex items-center gap-2">
                   <div className="text-tarjetas-txt3 text-xs">
-                    Laboratorio Industrial
+                    Entorno industrial
                   </div>
                 </div>
 
                 <div className="flex-1 mt-4 space-y-4">
                   <div className="flex items-center gap-2">
-                    <Beaker className="h-8 w-8 text-primary" />
+                    <Beaker className="text-tarjetas-1txt6 h-8 w-8" />
                     <div className="text-tarjetas-ttl4 text-xl font-bold">
-                      Plantas Quimicas
+                      Plantas Químicas
                     </div>
                   </div>
 
                   <p className="text-tarjetas-desc5 text-[15px] leading-relaxed">
-                    Explora procesos industriales mediante modelos 3D de
-                    reactores, columnas de destilacion y sistemas de enfriamiento.
+                    Comprende cómo se transforman las sustancias en procesos
+                    industriales observando equipos utilizados en producción
+                    química a gran escala.
                   </p>
 
                   <div className="grid grid-cols-3 gap-20 mt-10">
                     <div className="space-y-1">
-
                       <div className="text-tarjetas-1txt6 text-4xl font-bold">
                         +2
                       </div>
-
                       <div className="text-tarjetas-desc7 text-xs">
-                        Categorias
+                        Procesos
                       </div>
                     </div>
 
@@ -65,7 +65,7 @@ export default function PinCardsSection() {
                         3D
                       </div>
                       <div className="text-xs text-muted-foreground">
-                        Modelos
+                        Equipos
                       </div>
                     </div>
 
@@ -74,51 +74,49 @@ export default function PinCardsSection() {
                         RA
                       </div>
                       <div className="text-xs text-muted-foreground">
-                        Visual
+                        Visualización
                       </div>
                     </div>
-
                   </div>
 
                   <div className="py-3.5 flex justify-between items-end">
                     <div className="text-tarjetas-txt8 text-xs">
-                      Exploracion industrial interactiva
+                      Producción química explicada visualmente
                     </div>
                   </div>
-
                 </div>
               </div>
             </PinContainer>
           </div>
 
-
           {/* Pin 2 */}
           <div className="h-[25rem] w-full lg:w-1/3 flex items-center justify-center">
-            <PinContainer title="Analisis Instrumental" href="#laboratorios">
-              <div className="bg-tarjetas-bg border border-border flex flex-col p-4 tracking-tight w-[22rem] h-[22rem] from-card to-card/50 backdrop-blur-sm  rounded-xl">
-                
+            <PinContainer
+              title="Instrumentación Científica"
+              href="#laboratorios"
+            >
+              <div className="bg-tarjetas-bg border border-border flex flex-col p-4 tracking-tight w-[22rem] h-[22rem] from-card to-card/50 backdrop-blur-sm rounded-xl">
                 <div className="flex items-center gap-2">
                   <div className="text-tarjetas-txt3 text-xs">
-                    Instrumentacion Avanzada
+                    Tecnología analítica
                   </div>
                 </div>
 
                 <div className="flex-1 mt-4 space-y-4">
-
                   <div className="flex items-center gap-2">
-                    <Atom className="h-8 w-8 text-secondary" />
+                    <Atom className="text-tarjetas-2txt6 h-8 w-8" />
                     <div className="text-tarjetas-ttl4 text-xl font-bold">
-                      Analisis Instrumental
+                      Análisis Instrumental
                     </div>
                   </div>
 
                   <p className="text-tarjetas-desc5 text-[15px] leading-relaxed">
-                    Analiza muestras con espectrofotometros, cromatografos y
-                    sensores digitales representados en modelos 3D interactivos.
+                    Descubre cómo los instrumentos científicos permiten
+                    identificar compuestos, medir concentraciones y analizar
+                    propiedades químicas de diferentes sustancias.
                   </p>
 
                   <div className="grid grid-cols-3 gap-20 mt-10">
-
                     <div className="space-y-1">
                       <div className="text-tarjetas-2txt6 text-4xl font-bold">
                         8+
@@ -142,51 +140,49 @@ export default function PinCardsSection() {
                         3D
                       </div>
                       <div className="text-tarjetas-desc7 text-xs">
-                        Modelos
+                        Visualización
                       </div>
                     </div>
-
                   </div>
 
                   <div className="flex justify-between items-end">
                     <div className="py-3.5 text-tarjetas-txt8 text-xs">
-                      Precision analitica interactiva
+                      Herramientas científicas explicadas paso a paso
                     </div>
                   </div>
-
                 </div>
               </div>
             </PinContainer>
           </div>
 
-
           {/* Pin 3 */}
           <div className="h-[25rem] w-full lg:w-1/3 flex items-center justify-center">
-            <PinContainer title="Quimica General" href="#laboratorios">
-              <div className="bg-tarjetas-bg border border-border flex flex-col p-4 tracking-tight w-[22rem] h-[22rem] from-card to-card/50 backdrop-blur-sm  rounded-xl">
-                
+            <PinContainer
+              title="Fundamentos de Laboratorio"
+              href="#laboratorios"
+            >
+              <div className="bg-tarjetas-bg border border-border flex flex-col p-4 tracking-tight w-[22rem] h-[22rem] from-card to-card/50 backdrop-blur-sm rounded-xl">
                 <div className="flex items-center gap-2">
                   <div className="text-tarjetas-txt3 text-xs">
-                    Laboratorio Basico
+                    Laboratorio educativo
                   </div>
                 </div>
 
                 <div className="flex-1 mt-4 space-y-4">
-
                   <div className="flex items-center gap-2">
-                    <FlaskConical className="h-8 w-8 text-primary" />
+                    <FlaskConical className="text-tarjetas-3txt6 h-8 w-8" />
                     <div className="text-tarjetas-ttl4 text-xl font-bold">
-                      Quimica General
+                      Química General
                     </div>
                   </div>
 
                   <p className="text-tarjetas-desc5 text-[15px] leading-relaxed">
-                    Aprende fundamentos con matraces, balanzas y mecheros
-                    mediante modelos 3D educativos y exploracion interactiva.
+                    Familiarízate con el uso de materiales esenciales del
+                    laboratorio y comprende su función dentro de prácticas
+                    experimentales de química básica.
                   </p>
 
                   <div className="grid grid-cols-3 gap-20 mt-10">
-
                     <div className="space-y-1">
                       <div className="text-tarjetas-3txt6 text-4xl font-bold">
                         15+
@@ -198,10 +194,10 @@ export default function PinCardsSection() {
 
                     <div className="space-y-1">
                       <div className="text-tarjetas-3txt6 text-4xl font-bold">
-                        360
+                        360°
                       </div>
                       <div className="text-tarjetas-desc7 text-xs">
-                        Vista 3D
+                        Exploración
                       </div>
                     </div>
 
@@ -210,23 +206,20 @@ export default function PinCardsSection() {
                         RA
                       </div>
                       <div className="text-tarjetas-desc7 text-xs">
-                        Interactivo
+                        Interacción
                       </div>
                     </div>
-
                   </div>
 
                   <div className="flex justify-between items-end">
                     <div className="py-3.5 text-tarjetas-txt8 text-xs">
-                      Aprendizaje practico visual
+                      Introducción visual al trabajo de laboratorio
                     </div>
                   </div>
-
                 </div>
               </div>
             </PinContainer>
           </div>
-
         </div>
       </div>
     </section>
