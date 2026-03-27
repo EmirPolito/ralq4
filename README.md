@@ -7,6 +7,8 @@ _Construye 10x más rápido con NS._
 Una moderna aplicación web (Landing / Showcase) construida enfocándose en un diseño altamente interactivo, animaciones fluidas y experiencias 3D.
 
 [![Screenshot 1](https://github.com/user-attachments/assets/3a812062-6e7c-4ab6-98b8-fd33d02eb491)](#)
+<br>
+<br>
 [![Screenshot 2](https://github.com/user-attachments/assets/0e918093-9d4a-4429-b81a-17a54a7a1708)](#)
 
 </div>
@@ -20,6 +22,7 @@ Una moderna aplicación web (Landing / Showcase) construida enfocándose en un d
 - **UI Moderna**: Componentes altamente accesibles y reusables gracias a **Radix UI** y **Tailwind CSS v4**.
 
 ---
+
 
 ## 🛠️ Tecnologías Utilizadas
 
