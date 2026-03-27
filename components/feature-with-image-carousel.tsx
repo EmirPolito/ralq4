@@ -180,8 +180,8 @@ function Feature() {
                 ))}
               </CarouselContent>
 
-              <CarouselPrevious className="bg-carrusel2-sig cursor-pointer -left-20 border-carrusel2-sig/10" />
-              <CarouselNext className="bg-carrusel2-sig cursor-pointer right-0 border-carrusel2-sig/10" />
+              <CarouselPrevious className="bg-carrusel2-sig text-carrusel2-sig-txt cursor-pointer -left-20" />
+              <CarouselNext className="bg-carrusel2-sig text-carrusel2-sig-txt cursor-pointer right-0 " />
             </Carousel>
           </div>
         </div>

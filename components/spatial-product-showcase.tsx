@@ -1,7 +1,12 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { motion, AnimatePresence, Variants, useReducedMotion } from 'framer-motion';
+import { useState } from "react";
+import {
+  motion,
+  AnimatePresence,
+  Variants,
+  useReducedMotion,
+} from "framer-motion";
 import {
   Battery,
   Sliders,
@@ -11,9 +16,9 @@ import {
   Wifi,
   Music,
   LucideIcon,
-} from 'lucide-react';
+} from "lucide-react";
 
-export type ProductId = 'left' | 'right';
+export type ProductId = "left" | "right";
 
 export interface FeatureMetric {
   label: string;
@@ -40,48 +45,44 @@ export interface ProductData {
 }
 
 const PRODUCT_DATA: Record<ProductId, ProductData> = {
-left: {
-  id: 'left',
-  label: 'Instrumento',
-  title: 'Gradilla',
-  description:
-    'La gradilla es un instrumento de laboratorio utilizado para sostener y organizar tubos de ensayo de forma segura durante experimentos, reacciones químicas o procesos de análisis.',
-  image: 'https://ik.imagekit.io/kqmrslzuq/SOUND/left-earbud.png',
-  colors: {
-    gradient: 'from-[#111] to-[#000]',
-    glow: 'bg-[#222]',
-    ring: 'border-l-[#333]/50',
+  left: {
+    id: "left",
+    label: "Instrumento",
+    title: "Gradilla",
+    description:
+      "La gradilla es un instrumento de laboratorio utilizado para sostener y organizar tubos de ensayo de forma segura durante experimentos, reacciones químicas o procesos de análisis.",
+    image: "https://ik.imagekit.io/kqmrslzuq/SOUND/left-earbud.png",
+    colors: {
+      gradient: "from-[#111] to-[#000]",
+      glow: "bg-[#222]",
+      ring: "border-l-[#333]/50",
+    },
+    stats: { connectionStatus: "Disponible", batteryLevel: 82 },
+    features: [
+      { label: "Capacidad", value: 12, icon: Zap },
+      { label: "Estabilidad", value: 98, icon: Wifi },
+    ],
   },
-  stats: { connectionStatus: 'Disponible', batteryLevel: 82 },
-  features: [
-    { label: 'Capacidad', value: 12, icon: Zap },
-    { label: 'Estabilidad', value: 98, icon: Wifi },
-  ],
-},
 
-right: {
-  id: 'right',
-  label: 'Molecula',
-  title: 'Cafeína',
-  description:
-    'La cafeína es una molécula orgánica perteneciente al grupo de las metilxantinas. Es conocida por sus efectos estimulantes en el sistema nervioso central y se encuentra de forma natural en el café, té y cacao.',
-  image: 'https://ik.imagekit.io/kqmrslzuq/SOUND/right-earbud.png',
-  colors: {
-    gradient: 'from-[#111] to-[#000]',
-    glow: 'bg-[#222]',
-    ring: 'border-r-[#333]/50',
+  right: {
+    id: "right",
+    label: "Molecula",
+    title: "Cafeína",
+    description:
+      "La cafeína es una molécula orgánica perteneciente al grupo de las metilxantinas. Es conocida por sus efectos estimulantes en el sistema nervioso central y se encuentra de forma natural en el café, té y cacao.",
+    image: "https://ik.imagekit.io/kqmrslzuq/SOUND/right-earbud.png",
+    colors: {
+      gradient: "from-[#111] to-[#000]",
+      glow: "bg-[#222]",
+      ring: "border-r-[#333]/50",
+    },
+    stats: { connectionStatus: "Disponible", batteryLevel: 74 },
+    features: [
+      { label: "Átomos", value: 24, icon: Bluetooth },
+      { label: "Complejidad", value: 88, icon: Music },
+    ],
   },
-  stats: { connectionStatus: 'Disponible', batteryLevel: 74 },
-  features: [
-    { label: 'Átomos', value: 24, icon: Bluetooth },
-    { label: 'Complejidad', value: 88, icon: Music },
-  ],
-},
 };
-
- 
-
-
 
 const ANIMATIONS: {
   container: Variants;
@@ -100,35 +101,35 @@ const ANIMATIONS: {
     },
   },
   item: {
-    hidden: { opacity: 0, y: 20, filter: 'blur(10px)' },
+    hidden: { opacity: 0, y: 20, filter: "blur(10px)" },
     visible: {
       opacity: 1,
       y: 0,
-      filter: 'blur(0px)',
-      transition: { type: 'spring', stiffness: 100, damping: 20 },
+      filter: "blur(0px)",
+      transition: { type: "spring", stiffness: 100, damping: 20 },
     },
-    exit: { opacity: 0, y: -10, filter: 'blur(5px)' },
+    exit: { opacity: 0, y: -10, filter: "blur(5px)" },
   },
   image: (isLeft: boolean): Variants => ({
     initial: {
       opacity: 0,
       scale: 1.5,
-      filter: 'blur(15px)',
+      filter: "blur(15px)",
       rotate: isLeft ? -30 : 30,
       x: isLeft ? -80 : 80,
     },
     animate: {
       opacity: 1,
       scale: 1,
-      filter: 'blur(0px)',
+      filter: "blur(0px)",
       rotate: 0,
       x: 0,
-      transition: { type: 'spring', stiffness: 260, damping: 20 },
+      transition: { type: "spring", stiffness: 260, damping: 20 },
     },
     exit: {
       opacity: 0,
       scale: 0.6,
-      filter: 'blur(20px)',
+      filter: "blur(20px)",
       transition: { duration: 0.25 },
     },
   }),
@@ -139,8 +140,8 @@ const BackgroundGradient = ({ isLeft }: { isLeft: boolean }) => (
     <motion.div
       animate={{
         background: isLeft
-          ? 'radial-gradient(circle at 0% 50%, rgba(0,0,0,0.25), transparent 50%)'
-          : 'radial-gradient(circle at 100% 50%, rgba(0,0,0,0.25), transparent 50%)',
+          ? "radial-gradient(circle at 0% 50%, rgba(0,0,0,0.25), transparent 50%)"
+          : "radial-gradient(circle at 100% 50%, rgba(0,0,0,0.25), transparent 50%)",
       }}
       transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
       className="absolute inset-0"
@@ -148,24 +149,30 @@ const BackgroundGradient = ({ isLeft }: { isLeft: boolean }) => (
   </div>
 );
 
-const ProductVisual = ({ data, isLeft }: { data: ProductData; isLeft: boolean }) => (
+const ProductVisual = ({
+  data,
+  isLeft,
+}: {
+  data: ProductData;
+  isLeft: boolean;
+}) => (
   <motion.div layout="position" className="relative group shrink-0">
     <motion.div
       animate={{ rotate: 360 }}
-      transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-      className={`absolute inset-[-20%] rounded-full border border-dashed border-foreground/30 ${data.colors.ring}`}
+      transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+      className={`absolute inset-[-20%] rounded-full border border-dashed border-demo-border/30 ${data.colors.ring}`}
     />
     <motion.div
       animate={{ scale: [1, 1.05, 1] }}
-      transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-      className={`absolute inset-0 rounded-full bg-gradient-to-br ${data.colors.gradient} blur-2xl opacity-30`}
+      transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+      className={`absolute inset-0 rounded-full bg-demo-bg ${data.colors.gradient} blur-2xl opacity-10`}
     />
 
     {/* Contenedor circular más pequeño */}
-    <div className="relative h-64 w-64 md:h-96 md:w-96 rounded-full border border-foreground/10 shadow-2xl flex items-center justify-center overflow-hidden bg-background/20 backdrop-blur-sm">
+    <div className="relative h-64 w-64 md:h-88 md:w-88 rounded-full border border-demo-border/15 shadow-2xl flex items-center justify-center overflow-hidden  backdrop-blur-sm">
       <motion.div
         animate={{ y: [-10, 10, -10] }}
-        transition={{ repeat: Infinity, duration: 6, ease: 'easeInOut' }}
+        transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
         className="relative z-10 w-full h-full flex items-center justify-center"
       >
         <AnimatePresence mode="wait">
@@ -184,23 +191,32 @@ const ProductVisual = ({ data, isLeft }: { data: ProductData; isLeft: boolean })
       </motion.div>
     </div>
 
+    {/* Boton DISPONIBLE */}
     <motion.div
       layout="position"
-      className="absolute -bottom-15 left-1/2 -translate-x-1/2 whitespace-nowrap"
+      className="absolute -bottom-12 left-1/2 -translate-x-1/2 whitespace-nowrap"
     >
-      <div className="flex items-center gap-3 text-xs uppercase tracking-widest text-muted-foreground bg-card/80 px-4 py-2 rounded-full border border-foreground/5 backdrop-blur">
-        <span className={`h-1.5 w-1.5 rounded-full ${data.colors.glow} animate-pulse`} />
+      <div className="text-demo-dis-txt bg-demo-dis-bg/70 flex items-center gap-3 border-demo-border/10 border text-xs uppercase tracking-widest px-4 py-2 rounded-full backdrop-blur">
+        <span
+          className={`h-1.5 w-1.5 rounded-full ${data.colors.glow} animate-pulse`}
+        />
         {data.stats.connectionStatus}
       </div>
     </motion.div>
   </motion.div>
 );
 
-const ProductDetails = ({ data, isLeft }: { data: ProductData; isLeft: boolean }) => {
+const ProductDetails = ({
+  data,
+  isLeft,
+}: {
+  data: ProductData;
+  isLeft: boolean;
+}) => {
   // Forzamos que siempre esté alineado a la izquierda
-  const alignClass = 'items-start text-left';
-  const flexDirClass = 'flex-row'; // barra de progreso igual
-  const barColorClass = isLeft ? 'left-0 bg-[#9cc2a9]' : 'left-0 bg-[#60806b]'; // izquierda para ambos
+  const alignClass = "items-start text-left";
+  const flexDirClass = "flex-row"; // barra de progreso igual
+  const barColorClass = isLeft ? "left-0 bg-[#9cc2a9]" : "left-0 bg-[#60806b]"; // izquierda para ambos
 
   return (
     <motion.div
@@ -210,21 +226,27 @@ const ProductDetails = ({ data, isLeft }: { data: ProductData; isLeft: boolean }
       exit="exit"
       className={`flex flex-col ${alignClass}`}
     >
+      {/* mini ttl */}
       <motion.h2
         variants={ANIMATIONS.item}
-        className="text-sm font-normal uppercase tracking-[0.2em] text-muted-foreground mb-3"
+        className="text-demo-mini-ttl text-sm font-normal uppercase tracking-[0.2em] mb-2.5"
       >
-         {data.label}
+        {data.label}
       </motion.h2>
+
+      {/* ttl */}
       <motion.h1
-  variants={ANIMATIONS.item}
-  className="text-4xl md:text-5xl font-bold tracking-tight mb-2 text-transparent bg-clip-text bg-gradient-to-b from-foreground to-muted-foreground whitespace-nowrap"
->
-  {data.title}
-</motion.h1>
+        variants={ANIMATIONS.item}
+        //  text-transparent
+        className="text-demo-ttl text-4xl md:text-5xl font-bold tracking-tight mb-2  bg-clip-text bg-gradient-to-b from-foreground to-muted-foreground whitespace-nowrap"
+      >
+        {data.title}
+      </motion.h1>
+
+      {/* desc */}
       <motion.p
         variants={ANIMATIONS.item}
-        className="text-muted-foreground mb-8 max-w-sm leading-relaxed mr-auto"
+        className="text-demo-desc mb-8 max-w-sm leading-relaxed mr-auto"
       >
         {data.description}
       </motion.p>
@@ -235,15 +257,21 @@ const ProductDetails = ({ data, isLeft }: { data: ProductData; isLeft: boolean }
       >
         {data.features.map((feature, idx) => (
           <div key={feature.label} className="group">
-            <div className={`flex items-center justify-between mb-3 text-sm ${flexDirClass}`}>
+            <div
+              className={`flex items-center justify-between mb-3 text-sm ${flexDirClass}`}
+            >
               <div
                 className={`flex items-center gap-2 ${
-                  feature.value > 50 ? 'text-foreground' : 'text-muted-foreground'
+                  feature.value > 50
+                    ? "text-foreground"
+                    : "text-muted-foreground"
                 }`}
               >
                 <feature.icon size={16} /> <span>{feature.label}</span>
               </div>
-              <span className="font-mono text-xs text-muted-foreground">{feature.value}%</span>
+              <span className="font-mono text-xs text-muted-foreground">
+                {feature.value}%
+              </span>
             </div>
             <div className="relative h-2 w-full bg-muted rounded-full overflow-hidden">
               <motion.div
@@ -276,7 +304,6 @@ const ProductDetails = ({ data, isLeft }: { data: ProductData; isLeft: boolean }
       >
         {/* <Battery size={16} />
         <span className="text-sm font-medium">{data.stats.batteryLevel}% Carga</span> */}
-        
       </motion.div>
     </motion.div>
   );
@@ -289,31 +316,34 @@ const Switcher = ({
   activeId: ProductId;
   onToggle: (id: ProductId) => void;
 }) => {
-  const options = Object.values(PRODUCT_DATA).map((p) => ({ id: p.id, label: p.label }));
+  const options = Object.values(PRODUCT_DATA).map((p) => ({
+    id: p.id,
+    label: p.label,
+  }));
 
   return (
-    <div className="absolute bottom-12 inset-x-0 flex justify-center z-50 pointer-events-none">
-      <motion.div className="pointer-events-auto flex items-center gap-1 p-1.5 rounded-full bg-card/30 backdrop-blur-2xl border border-foreground/10 shadow-[0_20px_60px_rgba(0,0,0,0.6)] ring-1 ring-foreground/5">
+    <div className="absolute bottom-10 inset-x-0 flex justify-center z-50 pointer-events-none">
+      <motion.div className="bg-demo-btn-bg text-demo-btn-txt pointer-events-auto flex items-center gap-1 p-1.5 rounded-full bg-card/10 backdrop-blur-2xl border border-foreground/10 shadow-[0_20px_60px_rgba(0,0,0,0.6)] ring-1 ring-foreground/5">
         {options.map((opt) => (
           <motion.button
             key={opt.id}
             onClick={() => onToggle(opt.id)}
             whileTap={{ scale: 0.96 }}
-            className="relative w-24 h-12 rounded-full flex items-center justify-center text-sm font-medium focus:outline-none"
+            className="cursor-pointer relative w-24 h-12 rounded-full flex items-center justify-center text-sm font-medium focus:outline-none"
           >
             {activeId === opt.id && (
               <motion.div
                 layoutId="island-surface"
                 className="absolute inset-0 rounded-full bg-gradient-to-b from-foreground/10 to-foreground/5 shadow-inner"
-                transition={{ type: 'spring', stiffness: 220, damping: 22 }}
+                transition={{ type: "spring", stiffness: 220, damping: 22 }}
               />
             )}
-            
+
             <span
               className={`relative z-10 transition-colors duration-300 ${
                 activeId === opt.id
-                  ? 'text-foreground'
-                  : 'text-muted-foreground hover:text-foreground/70'
+                  ? "text-foreground"
+                  : "text-muted-foreground hover:text-foreground/70"
               }`}
             >
               {opt.label}
@@ -333,10 +363,10 @@ const Switcher = ({
 };
 
 export default function EarbudShowcase() {
-  const [activeSide, setActiveSide] = useState<ProductId>('left');
+  const [activeSide, setActiveSide] = useState<ProductId>("left");
 
   const currentData = PRODUCT_DATA[activeSide];
-  const isLeft = activeSide === 'left';
+  const isLeft = activeSide === "left";
 
   return (
     <div className="relative min-h-screen w-full bg-background text-foreground overflow-hidden selection:bg-muted flex flex-col items-center justify-center">
@@ -345,16 +375,20 @@ export default function EarbudShowcase() {
       <main className="relative z-10 w-full px-6 py-8 flex flex-col justify-center max-w-7xl mx-auto">
         <motion.div
           layout
-          transition={{ type: 'spring', bounce: 0, duration: 0.9 }}
+          transition={{ type: "spring", bounce: 0, duration: 0.9 }}
           className={`flex flex-col md:flex-row items-center justify-center gap-12 md:gap-22 lg:gap-55 w-full ${
-            isLeft ? 'md:flex-row' : 'md:flex-row-reverse'
+            isLeft ? "md:flex-row" : "md:flex-row-reverse"
           }`}
         >
           <ProductVisual data={currentData} isLeft={isLeft} />
 
           <motion.div layout="position" className="w-full max-w-md">
             <AnimatePresence mode="wait">
-              <ProductDetails key={activeSide} data={currentData} isLeft={isLeft} />
+              <ProductDetails
+                key={activeSide}
+                data={currentData}
+                isLeft={isLeft}
+              />
             </AnimatePresence>
           </motion.div>
         </motion.div>
@@ -364,11 +398,6 @@ export default function EarbudShowcase() {
     </div>
   );
 }
-
-
-
-
-
 
 // 'use client';
 

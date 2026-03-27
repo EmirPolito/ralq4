@@ -59,7 +59,7 @@ export default function HeroSection() {
                       alcance de tus manos
                     </h1>
 
-                    <p className="text-hero-desc max-w-2xl text-base md:text-lg mt-6 dark:text-neutral-200">
+                    <p className="text-hero-desc max-w-2xl text-base md:text-lg mt-6 ">
                       Nuestra plataforma permite a los estudiantes aprender
                       sobre instrumentos de laboratorio de quimica mediante
                       modelos 3D en Realidad Aumentada.

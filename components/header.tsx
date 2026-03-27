@@ -35,8 +35,8 @@ export const HeroHeader = () => {
       >
         <div
           className={cn(
-            "mx-auto max-w-8xl rounded-4xl px-6 transition-all duration-300 lg:px-15",
-            scrolled && "bg-background/40 backdrop-blur-2xl",
+            "mx-auto max-w-8xl rounded-2xl px-6 transition-all duration-300 lg:px-15",
+            scrolled && "bg-background/40 backdrop-blur-2xl ",
           )}
         >
           <motion.div
@@ -102,9 +102,9 @@ export const HeroHeader = () => {
                 <Button
                   size="sm"
                   className="cursor-pointer rounded-full px-5 py-5
-                  bg-header-login-bg
+                  bg-header-login-bg-2
                   text-header-login-txt
-                  hover:bg-header-login-bg">
+                  hover:bg-header-login-bg-2">
                   Iniciar sesión
                 </Button>
                 {/* <div className="text-white">o</div> */}
@@ -112,7 +112,7 @@ export const HeroHeader = () => {
                   
                   size="sm"
                   className="cursor-pointer rounded-full px-5 py-5
-                  bg-header-login-bg
+                  bg-header-regis-bg
                   text-header-login-txt 
                   hover:bg-header-regis-bg">
                   <Link href="#">

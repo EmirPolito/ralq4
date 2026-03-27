@@ -15,7 +15,7 @@ import {
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
 
 const colorOptions = [
-  { name: "Normal", value: "default", color: "#60806b" },
+  { name: "Por defecto", value: "default", color: "" },
   { name: "Azul", value: "blue", color: "#3b82f6" },
   { name: "Morado", value: "purple", color: "#8b5cf6" },
   { name: "Rojo", value: "red", color: "#ef4444" },
@@ -108,7 +108,7 @@ export function ThemeControls() {
   const currentTheme = resolvedTheme || theme
 
   return (
-    <div className="flex items-center gap-1 pl-1">
+    <div className="flex items-center gap-3 pl-3">
       {/* Theme Mode Dropdown */}
       <DropdownMenu modal={false}>
         <DropdownMenuTrigger asChild>
@@ -116,21 +116,21 @@ export function ThemeControls() {
             type="button"
             variant="ghost"
             size="icon"
-            className="h-9 w-9 cursor-pointer hover:bg-transparent focus:ring-0 focus:outline-none focus-visible:ring-0 focus-visible:border-transparent outline-none"
+            className="h-8 w-8 cursor-pointer hover:bg-transparent focus:ring-0 focus:outline-none focus-visible:ring-0 focus-visible:border-transparent outline-none"
           >
             <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
             <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
             <span className="sr-only">Cambiar modo</span>
           </Button>
         </DropdownMenuTrigger>
-        <DropdownMenuContent align="end" className="z-[100]">
+        <DropdownMenuContent align="end" className="z-[100] rounded-2xl ">
           <DropdownMenuLabel>Modo de visualización</DropdownMenuLabel>
           <DropdownMenuSeparator />
           <DropdownMenuItem
             onClick={() => setTheme("light")}
-            className="cursor-pointer hover:bg-transparent focus:bg-transparent"
+            className="  cursor-pointer hover:bg-transparent focus:bg-transparent"
           >
-            <Sun className="mr-2 h-4 w-4" />
+            <Sun className="mr-2 h-47 w-4" />
             <span>Claro</span>
             {currentTheme === "light" && !colorblind && (
               <span className="ml-auto text-primary">*</span>
@@ -178,23 +178,23 @@ export function ThemeControls() {
             <span className="sr-only">Seleccionar color</span>
           </Button>
         </PopoverTrigger>
-        <PopoverContent className="w-48 z-[100]" align="end">
+        <PopoverContent className="rounded-2xl w-42 z-[100]" align="end">
           <div className="space-y-2">
-            <p className="text-sm font-medium text-foreground mb-3">Color principal</p>
+            <p className="text-sm font-medium text-foreground mb-3">Selecciona un color</p>
             <div className="flex flex-col gap-1">
               {colorOptions.map((option) => (
                 <button
                   key={option.value}
                   onClick={() => handleColorChange(option.value)}
                   className={`flex items-center gap-3 w-full px-2 py-1.5 rounded-md cursor-pointer hover:bg-transparent focus:bg-transparent focus:outline-none outline-none ${
-                    primaryColor === option.value ? "bg-muted" : ""
+                    primaryColor === option.value ? "" : ""
                   }`}
                   aria-label={`Color ${option.name}`}
                 >
                   <div
                     className={`h-3 w-3 rounded-full shrink-0 ${
                       primaryColor === option.value
-                        ? "ring-2 ring-offset-1 ring-foreground"
+                        ? "ring-1 ring-offset-1 ring-foreground"
                         : ""
                     }`}
                     style={{ backgroundColor: option.color }}
@@ -217,7 +217,7 @@ export function ThemeControls() {
         aria-label="Reducir animaciones"
       >
         <span
-          className={`inline-block h-5 w-5 transform rounded-full transition-transform ${
+          className={`inline-block h-4.5 w-4.5 transform rounded-full transition-transform ${
             reducedMotion ? "translate-x-6 bg-muted-foreground" : "translate-x-1 bg-primary"
           }`}
         />
@@ -225,3 +225,18 @@ export function ThemeControls() {
     </div>
   )
 }
+      {/* Reduced Motion Toggle tipo switch */}
+      {/* <button
+        className="relative inline-flex h-6 w-12 items-center rounded-full bg-muted cursor-pointer transition-colors focus:outline-none outline-none focus-visible:ring-0 focus-visible:outline-none"
+        onClick={toggleReducedMotion}
+        aria-label="Reducir animaciones"
+      >
+        <span
+          className={`inline-block h-4.5 w-4.5 transform rounded-full transition-transform ${
+            reducedMotion ? "translate-x-6 bg-muted-foreground" : "translate-x-1 bg-primary"
+          }`}
+        />
+      </button>
+    </div>
+  )
+} */}

@@ -94,7 +94,7 @@ export default function FAQs() {
                   </AccordionTrigger>
 
                   <AccordionContent>
-                    <p className="text-muted-foreground pb-2 text-base leading-relaxed">
+                    <p className="text-preg-txt pb-2 text-base leading-relaxed">
                       {item.answer}
                     </p>
                   </AccordionContent>

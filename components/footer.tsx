@@ -28,7 +28,7 @@ export default function Footer() {
               </span>
             </Link>
 
-            <h1 className="text-footer-txt mt-2 px-1">
+            <h1 className="text-footer-txt mt-2 px-0">
               Desarrollado por{" "}
               <span className="text-footer-link gap-2">
                 <Link

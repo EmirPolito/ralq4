@@ -29,7 +29,7 @@ export default function PinCardsSection() {
           {/* Pin 1 */}
           <div className="h-[27rem] w-full lg:w-1/3 flex items-center justify-center">
             <PinContainer title="Procesos Industriales" href="#laboratorios">
-              <div className="bg-tarjetas-bg border border-border flex flex-col p-4 tracking-tight w-[22rem] h-[22rem] from-card to-card/50 backdrop-blur-sm rounded-xl">
+              <div className="bg-tarjetas-bg border border-border flex flex-col p-4 tracking-tight w-[22rem] h-[22rem] from-card to-card/50 backdrop-blur-sm rounded-2xl">
                 <div className="flex items-center gap-2">
                   <div className="text-tarjetas-txt3 text-xs">
                     Entorno industrial
@@ -62,19 +62,19 @@ export default function PinCardsSection() {
 
                     <div className="space-y-1">
                       <div className="text-tarjetas-1txt6 text-4xl font-bold">
-                        3D
+                        RA
                       </div>
-                      <div className="text-xs text-muted-foreground">
-                        Equipos
+                      <div className="text-tarjetas-desc7 text-xs">
+                        Visualización
                       </div>
                     </div>
 
                     <div className="space-y-1">
                       <div className="text-tarjetas-1txt6 text-4xl font-bold">
-                        RA
+                        3D
                       </div>
-                      <div className="text-xs text-muted-foreground">
-                        Visualización
+                      <div className="text-tarjetas-desc7 text-xs">
+                        Modelos
                       </div>
                     </div>
                   </div>
@@ -95,7 +95,7 @@ export default function PinCardsSection() {
               title="Instrumentación Científica"
               href="#laboratorios"
             >
-              <div className="bg-tarjetas-bg border border-border flex flex-col p-4 tracking-tight w-[22rem] h-[22rem] from-card to-card/50 backdrop-blur-sm rounded-xl">
+              <div className="bg-tarjetas-bg border border-border flex flex-col p-4 tracking-tight w-[22rem] h-[22rem] from-card to-card/50 backdrop-blur-sm rounded-2xl">
                 <div className="flex items-center gap-2">
                   <div className="text-tarjetas-txt3 text-xs">
                     Tecnología analítica
@@ -112,8 +112,7 @@ export default function PinCardsSection() {
 
                   <p className="text-tarjetas-desc5 text-[15px] leading-relaxed">
                     Descubre cómo los instrumentos científicos permiten
-                    identificar compuestos, medir concentraciones y analizar
-                    propiedades químicas de diferentes sustancias.
+                    identificar compuestos y analizar propiedades químicas de diferentes sustancias.
                   </p>
 
                   <div className="grid grid-cols-3 gap-20 mt-10">
@@ -140,7 +139,7 @@ export default function PinCardsSection() {
                         3D
                       </div>
                       <div className="text-tarjetas-desc7 text-xs">
-                        Visualización
+                        Modelos
                       </div>
                     </div>
                   </div>
@@ -161,7 +160,7 @@ export default function PinCardsSection() {
               title="Fundamentos de Laboratorio"
               href="#laboratorios"
             >
-              <div className="bg-tarjetas-bg border border-border flex flex-col p-4 tracking-tight w-[22rem] h-[22rem] from-card to-card/50 backdrop-blur-sm rounded-xl">
+              <div className="bg-tarjetas-bg border border-border flex flex-col p-4 tracking-tight w-[22rem] h-[22rem] from-card to-card/50 backdrop-blur-sm rounded-2xl">
                 <div className="flex items-center gap-2">
                   <div className="text-tarjetas-txt3 text-xs">
                     Laboratorio educativo

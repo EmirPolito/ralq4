@@ -16,7 +16,7 @@ export default function WobbleCardSection() {
               Funcionalidades de la Plataforma
             </h2>
 
-            <p className="mt-4 text-lg text-muted-foreground max-w-6xl mx-auto text-balance">
+            <p className="mt-4 text-lg text-wobble-desc max-w-6xl mx-auto text-balance">
               RALQ integra diferentes herramientas educativas diseñadas para
               facilitar la comprensión de la química mediante exploración
               visual, información científica y recursos interactivos.

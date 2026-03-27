@@ -20,7 +20,7 @@
   --header-login-bg: transparent;
   --header-redir: #616161;
   --header-redir-cursor: #000000;
-  --header-login-bg: #60806b;
+  --header-login-bg-2: #60806b;
   --header-login-txt: #ffffff;
   --header-regis-bg: #60806b;
   --header-regis-txt: #ffffff;
@@ -68,10 +68,10 @@
   --wobble-ttl: #000000;
   --wobble-desc: #616161;
 
-  --wobble-bg-1: #a2ada7;
+  --wobble-bg-1: #2c2d2c;
   --wobble-bg-2: #768082;
   --wobble-bg-3: #768082;
-  --wobble-bg-4: #a2ada7;
+  --wobble-bg-4: #2c2d2c;
 
   --wobble-ttl-5: #ffffff;
   --wobble-desc-6: #ebe8e8;
@@ -100,6 +100,46 @@
   --footer-pag-hov: #000000;
   --footer-ralq: #8aa394;
 
+  /* demo/demo.tsx */
+  --demo-bg: #3f3a3a;
+  --demo-border: #000000;
+  --demo-dis-bg: #ffffff;
+  --demo-dis-txt: #464646;
+
+  --demo-btn-border: #515352;
+  --demo-btn-bg: #ffffff;
+  --demo-btn-txt: #7b1c1c;
+  --demo-btn-des: #2c7246;
+
+  --demo-mini-ttl: #4f4e4e;
+  --demo-ttl: #000000;
+  --demo-desc: #4f4e4e;
+
+  /* =========================
+   CONTACT - BASE (HEX)
+========================= */
+  --contact-ttl: #000000;
+  --contact-desc: #4f4e4e;
+
+  --contact-card-bg: #ffffff;
+  --contact-card-border: #e5e5e5;
+  --contact-label: #000000;
+
+
+  --contact-input-text: #000000;
+  --contact-input-border: #e5e5e5;
+  --contact-input-border-hover: #9ca3af;
+
+  --contact-btn-bg: #1f2937;
+  --contact-btn-text: #ffffff;
+  --contact-btn-hover: #1f2937;
+
+  --contact-team-name: #000000;
+  --contact-team-email: #6b7280;
+
+  --contact-social: #6b7280;
+  --contact-social-hover: #000000;
+
   /* UI */
   --background: #0a0a0a;
   --foreground: #fafafa;
@@ -123,10 +163,9 @@
 }
 
 .dark {
-  /* BASE */
   /* Titulo y Descripción general */
-  --titulos: #000000;
-  --descripciones: #4f4e4e;
+  --titulos: #ffffff;
+  --descripciones: #dad9d9;
 
   /* Base colors */
   --verde-claro: #9cc2a9;
@@ -137,90 +176,108 @@
 
   /* Header */
   --header-login-bg: transparent;
-  --header-redir: #616161;
-  --header-redir-cursor: #000000;
-  --header-login-bg: #60806b;
+  --header-redir: #c9c7c7;
+  --header-redir-cursor: #ffffff;
+  --header-login-bg-2: #3e413f;
   --header-login-txt: #ffffff;
-  --header-regis-bg: #60806b;
+  --header-regis-bg: #3e413f;
   --header-regis-txt: #ffffff;
 
   /* Hero */
-  --hero-bg: #f3ecec;
-  --hero-ttl: #0b0b0b;
-  --hero-desc: #616161;
-  --hero-bg-demo: #6c7973;
-  --hero-txt-demo: #ffffff;
+  --hero-bg: #f9f9f9;
+  --hero-ttl: #ffffff;
+  --hero-desc: #ddd8d8;
+  --hero-bg-demo: #ffffff;
+  --hero-txt-demo: #020202;
 
-  /* Carrusel */
-  --carrusel-bg: #4b6554;
-  --carrusel-ttl: #292828;
-  --carrusel-desc: #616161;
+  /* Carrusel 1*/
+  --carrusel2-bg: #1d1e1d;
+  --carrusel-ttl: #ffffff;
+  --carrusel-desc: #d2d1d1;
+
+  /* --carrusel 2 */
+  --carrusel2-mini-bg: #0866b3;
+  --carrusel2-mini-txt: #fefefe;
+
+  --carrusel2-ttl: #ffffff;
+  --carrusel2-desc: #dad9d9;
+
+  --carrusel2-sig: #181818;
+  --carrusel2-sig-txt: #ffffff;
 
   /* Tarjetas pin3d */
-  --tarjetas-ttl1: #000000;
-  --tarjetas-desc2: #616161;
+  --tarjetas-ttl1: #ffffff;
+  --tarjetas-desc2: #dad9d9;
 
-  --tarjetas-bg: #ffffff;
-  --tarjetas-border: #4b6554;
+  --tarjetas-bg: #131212;
+  --tarjetas-border: #252826;
 
-  --tarjetas-txt3: #6c6c6c;
-  --tarjetas-ttl4: #000000;
-  --tarjetas-desc5: #342f2f;
+  --tarjetas-txt3: #dad9d9;
+  --tarjetas-ttl4: #ffffff;
+  --tarjetas-desc5: #dad9d9;
 
   --tarjetas-1txt6: #0ca814;
   --tarjetas-2txt6: #116fda;
   --tarjetas-3txt6: #ebb40d;
 
-  --tarjetas-desc7: #5e5b5b;
-  --tarjetas-txt8: #6c6c6c;
-
-  /* --carrusel 2 */
-  --carrusel2-bg: #486452;
-  --carrusel2-mini-bg: #0866b3;
-  --carrusel2-mini-txt: #fefefe;
-  --carrusel2-ttl: #f9f7f7;
-  --carrusel2-desc: #f7f7f7;
-  --carrusel2-sig: #ffffff;
-  --carrusel2-sig-txt: #f1ebeb;
+  --tarjetas-desc7: #dad9d9;
+  --tarjetas-txt8: #ffffff;
 
   /* wobble 4 */
-  --wobble-ttl: #000000;
-  --wobble-desc: #616161;
+  --wobble-ttl: #ffffff;
+  --wobble-desc: #dad9d9;
 
-  --wobble-bg-1: #a2ada7;
-  --wobble-bg-2: #545d5f;
-  --wobble-bg-3: #545d5f;
-  --wobble-bg-4: #a2ada7;
+  --wobble-bg-1: #2e2e2e;
+  --wobble-bg-2: #191a1a;
+  --wobble-bg-3: #191a1a;
+  --wobble-bg-4: #2e2e2e;
 
   --wobble-ttl-5: #ffffff;
-  --wobble-desc-6: #ebe8e8;
+  --wobble-desc-6: #dad9d9;
   --wobble-dmas-7: #f00a0a;
 
   /* 2 mockup cada lado */
   --mockup-bg: #4b6554;
-  --mockup-ttl: #000000;
-  --mockup-desc: #4f4e4e;
+  --mockup-ttl: #ffffff;
+  --mockup-desc: #dad9d9;
 
   /* Preguntas frecuentes */
   --preg-bg: #4b6554;
-  --preg-ttl: #000000;
-  --preg-desc: #4f4e4e;
+  --preg-ttl: #ffffff;
+  --preg-desc: #dad9d9;
   --preg-link: #1472bf;
-  --preg-preg: #000000;
-  --preg-txt: #4f4e4e;
+  --preg-preg: #ffffff;
+  --preg-txt: #c9c6c6;
 
   /* Footer */
   --footer-bg: #4b6554;
-  --footer-txt: #000000;
+
+  --footer-txt: #ffffff;
   --footer-link: #1472bf;
-  --footer-derechos: #0e0e0e;
-  --footer-ttl: #000000;
-  --footer-pag: #645e5e;
-  --footer-pag-hov: #000000;
-  --footer-ralq: #4b6554;
+  --footer-derechos: #c9c6c6;
+
+  --footer-ttl: #ffffff;
+  --footer-pag: #9a9a9a;
+  --footer-pag-hov: #ffffff;
+  --footer-ralq: #444a47;
+
+  /* demo/demo.tsx */
+  --demo-bg: #acacac;
+  --demo-border: #727272;
+  --demo-dis-bg: #181717;
+  --demo-dis-txt: #cdcdcd;
+
+  --demo-btn-border: #515352;
+  --demo-btn-bg: #232222;
+  --demo-btn-txt: #e80e0e;
+  --demo-btn-des: #0be55b;
+
+  --demo-mini-ttl: #dad9d9;
+  --demo-ttl: #ffffff;
+  --demo-desc: #dad9d9;
 
   /* UI */
-  --background: #0a0a0a;
+  --background: #422020;
   --foreground: #fafafa;
   --card: #141414;
   --card-foreground: #fafafa;
@@ -344,187 +401,1305 @@
   --sidebar-ring: var(--user-primary-light);
 }
 
-/* User primary color overrides */
+/* Azul */
 [data-color="blue"] {
-  --user-primary: #3b82f6;
-  --user-primary-light: #93c5fd;
+  /* Titulo y Descripción general */
+  --titulos: #ffffff;
+  --descripciones: #616161;
 
   /* Header */
   --header-login-bg: transparent;
-  --header-redirigidores: #becbc2;
-  --header-redirigidores-cursor: #b9b9b9;
-  --header-loginbg: #3b82f6;
-  --header-login-text: #ffffff;
-  --header-registerbg: #3b82f6;
-  --header-register-text: #ffffff;
+  --header-redir: #6b6b6b;
+  --header-redir-cursor: #1c6aa9;
+  --header-login-bg-2: #1c6aa9;
+  --header-login-txt: #ffffff;
+  --header-regis-bg: #1c6aa9;
+  --header-regis-txt: #ffffff;
 
   /* Hero */
-  --hero-bg: #f7f6f6;
-  --hero-titulo: #000000;
-  --hero-descripcion: #464646;
-  --hero-bg-btn-demo: #93c5fd;
-  --hero-texto-btn-demo: #ffffff;
+  --hero-bg: #ffffff;
+  --hero-ttl: #1c6aa9;
+  --hero-desc: #616161;
+  --hero-bg-demo: #1c6aa9;
+  --hero-txt-demo: #fcfcfc;
 
-  /* Carrusel */
-  --carrusel-bg: #26b8e9;
-  --carrusel-titulo: #f7f6f6;
-  --carrusel-descripcion: #f7f6f6;
+  /* Carrusel 1 */
+  --carrusel2-bg: #b7b7b7;
+  --carrusel-ttl: #000000;
+  --carrusel-desc: #1c6aa9;
+
+  /* Carrusel 2 */
+  --carrusel2-mini-bg: #1c6aa9;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #1c6aa9;
+  --carrusel2-desc: #616161;
+
+  --carrusel2-sig: #181818;
+  --carrusel2-sig-txt: #1c6aa9;
+
+  /* Tarjetas pin3d */
+  --tarjetas-ttl1: #1c6aa9;
+  --tarjetas-desc2: #616161;
+
+  --tarjetas-bg: #f7f9f7;
+  --tarjetas-border: #e2e8e3;
+
+  --tarjetas-txt3: #616161;
+  --tarjetas-ttl4: #000000;
+  --tarjetas-desc5: #616161;
+
+  --tarjetas-1txt6: #1c6aa9;
+  --tarjetas-2txt6: #1c6aa9;
+  --tarjetas-3txt6: #1c6aa9;
+
+  --tarjetas-desc7: #616161;
+  --tarjetas-txt8: #616161;
+
+  /* 2 mockup cada lado */
+  --mockup-bg: #4b6554;
+  --mockup-ttl: #1c6aa9;
+  --mockup-desc: #616161;
+
+  /* wobble 4 */
+  --wobble-ttl: #1c6aa9;
+  --wobble-desc: #616161;
+
+  --wobble-bg-1: #2c2d2c;
+  --wobble-bg-2: #1c6aa9;
+  --wobble-bg-3: #1c6aa9;
+  --wobble-bg-4: #2c2d2c;
+
+  --wobble-ttl-5: #ffffff;
+  --wobble-desc-6: #efefef;
+  --wobble-dmas-7: #f00a0a;
+
+  /* Preguntas frecuentes */
+  --preg-bg: #4b6554;
+  --preg-ttl: #1c6aa9;
+  --preg-desc: #616161;
+  --preg-link: #1c6aa9;
+  --preg-preg: #1c6aa9;
+  --preg-txt: #616161;
+
+  /* Footer */
+  --footer-bg: #4b6554;
+
+  --footer-txt: #616161;
+  --footer-link: #1c6aa9;
+  --footer-derechos: #616161;
+
+  --footer-ttl: #1c6aa9;
+  --footer-pag: #7b7b7b;
+  --footer-pag-hov: #1c6aa9;
+  --footer-ralq: #1c6aa9;
+
+  /* demo/demo.tsx */
+  --demo-bg: #acacac;
+  --demo-border: #727272;
+  --demo-dis-bg: #181717;
+  --demo-dis-txt: #cdcdcd;
+
+  --demo-btn-border: #515352;
+  --demo-btn-bg: #232222;
+  --demo-btn-txt: #e80e0e;
+  --demo-btn-des: #1c6aa9;
+
+  --demo-mini-ttl: #dad9d9;
+  --demo-ttl: #ffffff;
+  --demo-desc: #dad9d9;
 }
 
+[data-color="blue"].dark,
+.dark [data-color="blue"] {
+  /* Titulo y Descripción general */
+  --titulos: #ffffff;
+  --descripciones: #616161;
+
+  /* Header */
+  --header-login-bg: transparent;
+  --header-redir: #c4c4c4;
+  --header-redir-cursor: #3680d1;
+
+  --header-login-bg-2: #3680d1;
+  --header-login-txt: #ffffff;
+  --header-regis-bg: #3680d1;
+  --header-regis-txt: #ffffff;
+
+  /* Hero */
+  --hero-bg: #ffffff;
+  --hero-ttl: #2066b2;
+  --hero-desc: #c4c4c4;
+  --hero-bg-demo: #2066b2;
+  --hero-txt-demo: #fcfcfc;
+
+  /* Carrusel 1 */
+  --carrusel2-bg: #b7b7b7;
+  --carrusel-ttl: #fcfcfc;
+  --carrusel-desc: #3680d1;
+
+  /* Carrusel 2 */
+  --carrusel2-mini-bg: #3680d1;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #3680d1;
+  --carrusel2-desc: #c4c4c4;
+
+  --carrusel2-sig: #181818;
+  --carrusel2-sig-txt: #3680d1;
+
+  /* Tarjetas pin3d */
+  --tarjetas-ttl1: #3680d1;
+  --tarjetas-desc2: #c4c4c4;
+
+  --tarjetas-bg: #131313;
+  --tarjetas-border: #e2e8e3;
+
+  --tarjetas-txt3: #c4c4c4;
+  --tarjetas-ttl4: #ffffff;
+  --tarjetas-desc5: #c4c4c4;
+
+  --tarjetas-1txt6: #3680d1;
+  --tarjetas-2txt6: #3680d1;
+  --tarjetas-3txt6: #3680d1;
+
+  --tarjetas-desc7: #c4c4c4;
+  --tarjetas-txt8: #c4c4c4;
+
+  /* 2 mockup cada lado */
+  --mockup-ttl: #3680d1;
+  --mockup-desc: #c4c4c4;
+
+  /* wobble 4 */
+  --wobble-ttl: #3680d1;
+  --wobble-desc: #c4c4c4;
+
+  --wobble-bg-1: #2c2d2c;
+  --wobble-bg-2: #3680d1;
+  --wobble-bg-3: #3680d1;
+  --wobble-bg-4: #2c2d2c;
+
+  --wobble-ttl-5: #ffffff;
+  --wobble-desc-6: #efefef;
+  --wobble-dmas-7: #f00a0a;
+
+  /* Preguntas frecuentes */
+  --preg-bg: #4b6554;
+  --preg-ttl: #3680d1;
+  --preg-desc: #c4c4c4;
+  --preg-link: #3680d1;
+  --preg-preg: #3680d1;
+  --preg-txt: #c4c4c4;
+
+  /* Footer */
+  --footer-bg: #4b6554;
+
+  --footer-txt: #c4c4c4;
+  --footer-link: #3680d1;
+  --footer-derechos: #c4c4c4;
+
+  --footer-ttl: #3680d1;
+  --footer-pag: #7b7b7b;
+  --footer-pag-hov: #3680d1;
+  --footer-ralq: #3680d1;
+
+  /* demo/demo.tsx */
+  --demo-bg: #acacac;
+  --demo-border: #727272;
+  --demo-dis-bg: #181717;
+  --demo-dis-txt: #cdcdcd;
+
+  --demo-btn-border: #515352;
+  --demo-btn-bg: #232222;
+  --demo-btn-txt: #e80e0e;
+  --demo-btn-des: #3680d1;
+
+  --demo-mini-ttl: #dad9d9;
+  --demo-ttl: #ffffff;
+  --demo-desc: #dad9d9;
+}
+
+/* Morado */
 [data-color="purple"] {
-  --user-primary: #8b5cf6;
-  --user-primary-light: #c4b5fd;
+  /* Titulo y Descripción general */
+  --titulos: #ffffff;
+  --descripciones: #616161;
 
   /* Header */
   --header-login-bg: transparent;
-  --header-redirigidores: #becbc2;
-  --header-redirigidores-cursor: #b9b9b9;
-  --header-loginbg: #8b5cf6;
-  --header-login-text: #ffffff;
-  --header-registerbg: #8b5cf6;
-  --header-register-text: #ffffff;
+  --header-redir: #6b6b6b;
+  --header-redir-cursor: #6326a0;
+  --header-login-bg-2: #6326a0;
+  --header-login-txt: #ffffff;
+  --header-regis-bg: #6326a0;
+  --header-regis-txt: #ffffff;
 
   /* Hero */
-  --hero-bg: #f7f6f6;
-  --hero-titulo: #000000;
-  --hero-descripcion: #464646;
-  --hero-bg-btn-demo: #c4b5fd;
-  --hero-texto-btn-demo: #ffffff;
+  --hero-bg: #ffffff;
+  --hero-ttl: #6326a0;
+  --hero-desc: #616161;
+  --hero-bg-demo: #6326a0;
+  --hero-txt-demo: #fcfcfc;
 
-  /* Carrusel */
-  --carrusel-bg: #831fe0;
-  --carrusel-titulo: #f7f6f6;
-  --carrusel-descripcion: #f7f6f6;
+  /* Carrusel 1*/
+  --carrusel2-bg: #b7b7b7;
+  --carrusel-ttl: #000000;
+  --carrusel-desc: #6326a0;
+
+  /* --carrusel 2 */
+  --carrusel2-mini-bg: #6326a0;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #6326a0;
+  --carrusel2-desc: #616161;
+
+  --carrusel2-sig: #181818;
+  --carrusel2-sig-txt: #6326a0;
+
+  /* Tarjetas pin3d */
+  --tarjetas-ttl1: #6326a0;
+  --tarjetas-desc2: #616161;
+
+  --tarjetas-bg: #f7f9f7;
+  --tarjetas-border: #e2e8e3;
+
+  --tarjetas-txt3: #616161;
+  --tarjetas-ttl4: #000000;
+  --tarjetas-desc5: #616161;
+
+  --tarjetas-1txt6: #6326a0;
+  --tarjetas-2txt6: #6326a0;
+  --tarjetas-3txt6: #6326a0;
+
+  --tarjetas-desc7: #616161;
+  --tarjetas-txt8: #616161;
+
+  /* 2 mockup cada lado */
+  --mockup-bg: #4b6554;
+  --mockup-ttl: #6326a0;
+  --mockup-desc: #616161;
+
+  /* wobble 4 */
+  --wobble-ttl: #6326a0;
+  --wobble-desc: #616161;
+
+  --wobble-bg-1: #2c2d2c;
+  --wobble-bg-2: #6326a0;
+  --wobble-bg-3: #6326a0;
+  --wobble-bg-4: #2c2d2c;
+
+  --wobble-ttl-5: #ffffff;
+  --wobble-desc-6: #efefef;
+  --wobble-dmas-7: #f00a0a;
+
+  /* Preguntas frecuentes */
+  --preg-bg: #4b6554;
+  --preg-ttl: #6326a0;
+  --preg-desc: #616161;
+  --preg-link: #6326a0;
+  --preg-preg: #6326a0;
+  --preg-txt: #616161;
+
+  /* Footer */
+  --footer-bg: #4b6554;
+
+  --footer-txt: #616161;
+  --footer-link: #6326a0;
+  --footer-derechos: #616161;
+
+  --footer-ttl: #6326a0;
+  --footer-pag: #7b7b7b;
+  --footer-pag-hov: #6326a0;
+  --footer-ralq: #6326a0;
+
+  /* demo/demo.tsx */
+  --demo-bg: #acacac;
+  --demo-border: #727272;
+  --demo-dis-bg: #181717;
+  --demo-dis-txt: #cdcdcd;
+
+  --demo-btn-border: #515352;
+  --demo-btn-bg: #232222;
+  --demo-btn-txt: #e80e0e;
+  --demo-btn-des: #6326a0;
+
+  --demo-mini-ttl: #dad9d9;
+  --demo-ttl: #ffffff;
+  --demo-desc: #dad9d9;
 }
 
-[data-color="green"] {
-  --user-primary: #60806b;
-  --user-primary-light: #9cc2a9;
+[data-color="purple"].dark,
+.dark [data-color="purple"] {
+  /* Titulo y Descripción general */
+  --titulos: #ffffff;
+  --descripciones: #616161;
 
   /* Header */
   --header-login-bg: transparent;
-  --header-redirigidores: #becbc2;
-  --header-redirigidores-cursor: #b9b9b9;
-  --header-loginbg: #60806b;
-  --header-login-text: #ffffff;
-  --header-registerbg: #60806b;
-  --header-register-text: #ffffff;
+  --header-redir: #c4c4c4;
+  --header-redir-cursor: #8330c3;
+
+  --header-login-bg-2: #8330c3;
+  --header-login-txt: #ffffff;
+  --header-regis-bg: #8330c3;
+  --header-regis-txt: #ffffff;
 
   /* Hero */
-  --hero-bg: #f7f6f6;
-  --hero-titulo: #000000;
-  --hero-descripcion: #464646;
-  --hero-bg-btn-demo: #9cc2a9;
-  --hero-texto-btn-demo: #ffffff;
+  --hero-bg: #ffffff;
+  --hero-ttl: #7714c2;
+  --hero-desc: #c4c4c4;
+  --hero-bg-demo: #7714c2;
+  --hero-txt-demo: #fcfcfc;
 
-  /* Carrusel */
-  --carrusel-bg: #4b6554;
-  --carrusel-titulo: #f7f6f6;
-  --carrusel-descripcion: #f7f6f6;
+  /* Carrusel 1*/
+  --carrusel2-bg: #b7b7b7;
+  --carrusel-ttl: #fcfcfc;
+  --carrusel-desc: #8330c3;
+
+  /* --carrusel 2 */
+  --carrusel2-mini-bg: #8330c3;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #8330c3;
+  --carrusel2-desc: #c4c4c4;
+
+  --carrusel2-sig: #181818;
+  --carrusel2-sig-txt: #8330c3;
+
+  /* Tarjetas pin3d */
+  --tarjetas-ttl1: #8330c3;
+  --tarjetas-desc2: #c4c4c4;
+
+  --tarjetas-bg: #131313;
+  --tarjetas-border: #e2e8e3;
+
+  --tarjetas-txt3: #c4c4c4;
+  --tarjetas-ttl4: #ffffff;
+  --tarjetas-desc5: #c4c4c4;
+
+  --tarjetas-1txt6: #8330c3;
+  --tarjetas-2txt6: #8330c3;
+  --tarjetas-3txt6: #8330c3;
+
+  --tarjetas-desc7: #c4c4c4;
+  --tarjetas-txt8: #c4c4c4;
+
+  /* 2 mockup cada lado */
+  --mockup-ttl: #8330c3;
+  --mockup-desc: #c4c4c4;
+
+  /* wobble 4 */
+  --wobble-ttl: #8330c3;
+  --wobble-desc: #c4c4c4;
+
+  --wobble-bg-1: #2c2d2c;
+  --wobble-bg-2: #8330c3;
+  --wobble-bg-3: #8330c3;
+  --wobble-bg-4: #2c2d2c;
+
+  --wobble-ttl-5: #ffffff;
+  --wobble-desc-6: #efefef;
+  --wobble-dmas-7: #f00a0a;
+
+  /* Preguntas frecuentes */
+  --preg-bg: #4b6554;
+  --preg-ttl: #8330c3;
+  --preg-desc: #c4c4c4;
+  --preg-link: #8330c3;
+  --preg-preg: #8330c3;
+  --preg-txt: #c4c4c4;
+
+  /* Footer */
+  --footer-bg: #4b6554;
+
+  --footer-txt: #c4c4c4;
+  --footer-link: #8330c3;
+  --footer-derechos: #c4c4c4;
+
+  --footer-ttl: #8330c3;
+  --footer-pag: #7b7b7b;
+  --footer-pag-hov: #8330c3;
+  --footer-ralq: #8330c3;
+
+  /* demo/demo.tsx */
+  --demo-bg: #acacac;
+  --demo-border: #727272;
+  --demo-dis-bg: #181717;
+  --demo-dis-txt: #cdcdcd;
+
+  --demo-btn-border: #515352;
+  --demo-btn-bg: #232222;
+  --demo-btn-txt: #e80e0e;
+  --demo-btn-des: #8330c3;
+
+  --demo-mini-ttl: #dad9d9;
+  --demo-ttl: #ffffff;
+  --demo-desc: #dad9d9;
 }
 
+/* Rojo */
 [data-color="red"] {
-  --user-primary: #ef4444;
-  --user-primary-light: #fca5a5;
+  /* Titulo y Descripción general */
+  --titulos: #ffffff;
+  --descripciones: #616161;
 
   /* Header */
   --header-login-bg: transparent;
-  --header-redirigidores: #becbc2;
-  --header-redirigidores-cursor: #b9b9b9;
-  --header-loginbg: #ef4444;
-  --header-login-text: #ffffff;
-  --header-registerbg: #ef4444;
-  --header-register-text: #ffffff;
+  --header-redir: #6b6b6b;
+  --header-redir-cursor: #ec0c0c;
+
+  --header-login-bg-2: #ec0c0c;
+  --header-login-txt: #ffffff;
+  --header-regis-bg: #ec0c0c;
+  --header-regis-txt: #ffffff;
 
   /* Hero */
-  --hero-bg: #f7f6f6;
-  --hero-titulo: #000000;
-  --hero-descripcion: #464646;
-  --hero-bg-btn-demo: #fca5a5;
-  --hero-texto-btn-demo: #ffffff;
+  --hero-bg: #ffffff;
+  --hero-ttl: #ec0c0c;
+  --hero-desc: #616161;
+  --hero-bg-demo: #ec0c0c;
+  --hero-txt-demo: #fcfcfc;
 
-  /* Carrusel */
-  --carrusel-bg: #e41a1a;
-  --carrusel-titulo: #f7f6f6;
-  --carrusel-descripcion: #f7f6f6;
+  /* Carrusel 1*/
+  --carrusel2-bg: #b7b7b7;
+  --carrusel-ttl: #000000;
+  --carrusel-desc: #ec0c0c;
+
+  /* --carrusel 2 */
+  --carrusel2-mini-bg: #ec0c0c;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #ec0c0c;
+  --carrusel2-desc: #616161;
+
+  --carrusel2-sig: #181818;
+  --carrusel2-sig-txt: #ec0c0c;
+
+  /* Tarjetas pin3d */
+  --tarjetas-ttl1: #ec0c0c;
+  --tarjetas-desc2: #616161;
+
+  --tarjetas-bg: #f7f9f7;
+  --tarjetas-border: #e2e8e3;
+
+  --tarjetas-txt3: #616161;
+  --tarjetas-ttl4: #000000;
+  --tarjetas-desc5: #616161;
+
+  --tarjetas-1txt6: #ec0c0c;
+  --tarjetas-2txt6: #ec0c0c;
+  --tarjetas-3txt6: #ec0c0c;
+
+  --tarjetas-desc7: #616161;
+  --tarjetas-txt8: #616161;
+
+  /* 2 mockup cada lado */
+  --mockup-bg: #4b6554;
+  --mockup-ttl: #ec0c0c;
+  --mockup-desc: #616161;
+
+  /* wobble 4 */
+  --wobble-ttl: #ec0c0c;
+  --wobble-desc: #616161;
+
+  --wobble-bg-1: #2c2d2c;
+  --wobble-bg-2: #ec0c0c;
+  --wobble-bg-3: #ec0c0c;
+  --wobble-bg-4: #2c2d2c;
+
+  --wobble-ttl-5: #ffffff;
+  --wobble-desc-6: #efefef;
+  --wobble-dmas-7: #f00a0a;
+
+  /* Preguntas frecuentes */
+  --preg-bg: #4b6554;
+  --preg-ttl: #ec0c0c;
+  --preg-desc: #616161;
+  --preg-link: #ec0c0c;
+  --preg-preg: #ec0c0c;
+  --preg-txt: #616161;
+
+  /* Footer */
+  --footer-bg: #4b6554;
+
+  --footer-txt: #616161;
+  --footer-link: #ec0c0c;
+  --footer-derechos: #616161;
+
+  --footer-ttl: #ec0c0c;
+  --footer-pag: #7b7b7b;
+  --footer-pag-hov: #ec0c0c;
+  --footer-ralq: #ec0c0c;
+
+  /* demo/demo.tsx */
+  --demo-bg: #acacac;
+  --demo-border: #727272;
+  --demo-dis-bg: #181717;
+  --demo-dis-txt: #cdcdcd;
+
+  --demo-btn-border: #515352;
+  --demo-btn-bg: #232222;
+  --demo-btn-txt: #e80e0e;
+  --demo-btn-des: #ec0c0c;
+
+  --demo-mini-ttl: #dad9d9;
+  --demo-ttl: #ffffff;
+  --demo-desc: #dad9d9;
 }
 
+[data-color="red"].dark,
+.dark [data-color="red"] {
+  /* Titulo y Descripción general */
+  --titulos: #ffffff;
+  --descripciones: #616161;
+
+  /* Header */
+  --header-login-bg: transparent;
+  --header-redir: #c4c4c4;
+  --header-redir-cursor: #ff1a1a;
+
+  --header-login-bg-2: #ff1a1a;
+  --header-login-txt: #ffffff;
+  --header-regis-bg: #ff1a1a;
+  --header-regis-txt: #ffffff;
+
+  /* Hero */
+  --hero-bg: #ffffff;
+  --hero-ttl: #ff1a1a;
+  --hero-desc: #c4c4c4;
+  --hero-bg-demo: #ff1a1a;
+  --hero-txt-demo: #fcfcfc;
+
+  /* Carrusel 1*/
+  --carrusel2-bg: #b7b7b7;
+  --carrusel-ttl: #fcfcfc;
+  --carrusel-desc: #ff1a1a;
+
+  /* --carrusel 2 */
+  --carrusel2-mini-bg: #ff1a1a;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #ff1a1a;
+  --carrusel2-desc: #c4c4c4;
+
+  --carrusel2-sig: #181818;
+  --carrusel2-sig-txt: #ff1a1a;
+
+  /* Tarjetas pin3d */
+  --tarjetas-ttl1: #ff1a1a;
+  --tarjetas-desc2: #c4c4c4;
+
+  --tarjetas-bg: #131313;
+  --tarjetas-border: #e2e8e3;
+
+  --tarjetas-txt3: #c4c4c4;
+  --tarjetas-ttl4: #ffffff;
+  --tarjetas-desc5: #c4c4c4;
+
+  --tarjetas-1txt6: #ff1a1a;
+  --tarjetas-2txt6: #ff1a1a;
+  --tarjetas-3txt6: #ff1a1a;
+
+  --tarjetas-desc7: #c4c4c4;
+  --tarjetas-txt8: #c4c4c4;
+
+  /* 2 mockup cada lado */
+  --mockup-ttl: #ff1a1a;
+  --mockup-desc: #c4c4c4;
+
+  /* wobble 4 */
+  --wobble-ttl: #ff1a1a;
+  --wobble-desc: #c4c4c4;
+
+  --wobble-bg-1: #2c2d2c;
+  --wobble-bg-2: #ff1a1a;
+  --wobble-bg-3: #ff1a1a;
+  --wobble-bg-4: #2c2d2c;
+
+  --wobble-ttl-5: #ffffff;
+  --wobble-desc-6: #efefef;
+  --wobble-dmas-7: #f00a0a;
+
+  /* Preguntas frecuentes */
+  --preg-bg: #4b6554;
+  --preg-ttl: #ff1a1a;
+  --preg-desc: #c4c4c4;
+  --preg-link: #ff1a1a;
+  --preg-preg: #ff1a1a;
+  --preg-txt: #c4c4c4;
+
+  /* Footer */
+  --footer-bg: #4b6554;
+
+  --footer-txt: #c4c4c4;
+  --footer-link: #ff1a1a;
+  --footer-derechos: #c4c4c4;
+
+  --footer-ttl: #ff1a1a;
+  --footer-pag: #7b7b7b;
+  --footer-pag-hov: #ff1a1a;
+  --footer-ralq: #ff1a1a;
+
+  /* demo/demo.tsx */
+  --demo-bg: #acacac;
+  --demo-border: #727272;
+  --demo-dis-bg: #181717;
+  --demo-dis-txt: #cdcdcd;
+
+  --demo-btn-border: #515352;
+  --demo-btn-bg: #232222;
+  --demo-btn-txt: #e80e0e;
+  --demo-btn-des: #ff1a1a;
+
+  --demo-mini-ttl: #dad9d9;
+  --demo-ttl: #ffffff;
+  --demo-desc: #dad9d9;
+}
+
+/* Naranja */
 [data-color="orange"] {
-  --user-primary: #f97316;
-  --user-primary-light: #fdba74;
+  /* Titulo y Descripción general */
+  --titulos: #ffffff;
+  --descripciones: #616161;
 
   /* Header */
   --header-login-bg: transparent;
-  --header-redirigidores: #becbc2;
-  --header-redirigidores-cursor: #b9b9b9;
-  --header-loginbg: #f97316;
-  --header-login-text: #ffffff;
-  --header-registerbg: #f97316;
-  --header-register-text: #ffffff;
+  --header-redir: #6b6b6b;
+  --header-redir-cursor: #ff6f00;
+
+  --header-login-bg-2: #ff6f00;
+  --header-login-txt: #ffffff;
+  --header-regis-bg: #ff6f00;
+  --header-regis-txt: #ffffff;
 
   /* Hero */
-  --hero-bg: #f7f6f6;
-  --hero-titulo: #000000;
-  --hero-descripcion: #464646;
-  --hero-bg-btn-demo: #fdba74;
-  --hero-texto-btn-demo: #ffffff;
+  --hero-bg: #ffffff;
+  --hero-ttl: #f77817;
+  --hero-desc: #616161;
+  --hero-bg-demo: #f77817;
+  --hero-txt-demo: #fcfcfc;
 
-  /* Carrusel */
-  --carrusel-bg: #e75917;
-  --carrusel-titulo: #f7f6f6;
-  --carrusel-descripcion: #f7f6f6;
+  /* Carrusel 1*/
+  --carrusel2-bg: #b7b7b7;
+  --carrusel-ttl: #000000;
+  --carrusel-desc: #f77817;
+
+  /* --carrusel 2 */
+  --carrusel2-mini-bg: #f77817;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #f77817;
+  --carrusel2-desc: #616161;
+
+  --carrusel2-sig: #181818;
+  --carrusel2-sig-txt: #f77817;
+
+  /* Tarjetas pin3d */
+  --tarjetas-ttl1: #f77817;
+  --tarjetas-desc2: #616161;
+
+  --tarjetas-bg: #f7f9f7;
+  --tarjetas-border: #e2e8e3;
+
+  --tarjetas-txt3: #616161;
+  --tarjetas-ttl4: #000000;
+  --tarjetas-desc5: #616161;
+
+  --tarjetas-1txt6: #f77817;
+  --tarjetas-2txt6: #f77817;
+  --tarjetas-3txt6: #f77817;
+
+  --tarjetas-desc7: #616161;
+  --tarjetas-txt8: #616161;
+
+  /* 2 mockup cada lado */
+  --mockup-bg: #4b6554;
+  --mockup-ttl: #f77817;
+  --mockup-desc: #616161;
+
+  /* wobble 4 */
+  --wobble-ttl: #f77817;
+  --wobble-desc: #616161;
+
+  --wobble-bg-1: #2c2d2c;
+  --wobble-bg-2: #f77817;
+  --wobble-bg-3: #f77817;
+  --wobble-bg-4: #2c2d2c;
+
+  --wobble-ttl-5: #ffffff;
+  --wobble-desc-6: #efefef;
+  --wobble-dmas-7: #f00a0a;
+
+  /* Preguntas frecuentes */
+  --preg-bg: #4b6554;
+  --preg-ttl: #f77817;
+  --preg-desc: #616161;
+  --preg-link: #f77817;
+  --preg-preg: #f77817;
+  --preg-txt: #616161;
+
+  /* Footer */
+  --footer-bg: #4b6554;
+
+  --footer-txt: #616161;
+  --footer-link: #f77817;
+  --footer-derechos: #616161;
+
+  --footer-ttl: #f77817;
+  --footer-pag: #7b7b7b;
+  --footer-pag-hov: #f77817;
+  --footer-ralq: #f77817;
+
+  /* demo/demo.tsx */
+  --demo-bg: #acacac;
+  --demo-border: #727272;
+  --demo-dis-bg: #181717;
+  --demo-dis-txt: #cdcdcd;
+
+  --demo-btn-border: #515352;
+  --demo-btn-bg: #232222;
+  --demo-btn-txt: #e80e0e;
+  --demo-btn-des: #ff6f00;
+
+  --demo-mini-ttl: #dad9d9;
+  --demo-ttl: #ffffff;
+  --demo-desc: #dad9d9;
 }
 
+[data-color="orange"].dark,
+.dark [data-color="orange"] {
+  /* Titulo y Descripción general */
+  --titulos: #ffffff;
+  --descripciones: #616161;
+
+  /* Header */
+  --header-login-bg: transparent;
+  --header-redir: #c4c4c4;
+  --header-redir-cursor: #ff9100;
+
+  --header-login-bg-2: #ff9100;
+  --header-login-txt: #ffffff;
+  --header-regis-bg: #ff9100;
+  --header-regis-txt: #ffffff;
+
+  /* Hero */
+  --hero-bg: #ffffff;
+  --hero-ttl: #ff8400;
+  --hero-desc: #c4c4c4;
+  --hero-bg-demo: #ff8400;
+  --hero-txt-demo: #fcfcfc;
+
+  /* Carrusel 1*/
+  --carrusel2-bg: #b7b7b7;
+  --carrusel-ttl: #fcfcfc;
+  --carrusel-desc: #ff9100;
+
+  /* --carrusel 2 */
+  --carrusel2-mini-bg: #ff9100;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #ff9100;
+  --carrusel2-desc: #c4c4c4;
+
+  --carrusel2-sig: #181818;
+  --carrusel2-sig-txt: #ff9100;
+
+  /* Tarjetas pin3d */
+  --tarjetas-ttl1: #ff9100;
+  --tarjetas-desc2: #c4c4c4;
+
+  --tarjetas-bg: #131313;
+  --tarjetas-border: #e2e8e3;
+
+  --tarjetas-txt3: #c4c4c4;
+  --tarjetas-ttl4: #ffffff;
+  --tarjetas-desc5: #c4c4c4;
+
+  --tarjetas-1txt6: #ff9100;
+  --tarjetas-2txt6: #ff9100;
+  --tarjetas-3txt6: #ff9100;
+
+  --tarjetas-desc7: #c4c4c4;
+  --tarjetas-txt8: #c4c4c4;
+
+  /* 2 mockup cada lado */
+  --mockup-ttl: #ff9100;
+  --mockup-desc: #c4c4c4;
+
+  /* wobble 4 */
+  --wobble-ttl: #ff9100;
+  --wobble-desc: #c4c4c4;
+
+  --wobble-bg-1: #2c2d2c;
+  --wobble-bg-2: #ff9100;
+  --wobble-bg-3: #ff9100;
+  --wobble-bg-4: #2c2d2c;
+
+  --wobble-ttl-5: #ffffff;
+  --wobble-desc-6: #efefef;
+  --wobble-dmas-7: #f00a0a;
+
+  /* Preguntas frecuentes */
+  --preg-bg: #4b6554;
+  --preg-ttl: #ff9100;
+  --preg-desc: #c4c4c4;
+  --preg-link: #ff9100;
+  --preg-preg: #ff9100;
+  --preg-txt: #c4c4c4;
+
+  /* Footer */
+  --footer-bg: #4b6554;
+
+  --footer-txt: #c4c4c4;
+  --footer-link: #ff9100;
+  --footer-derechos: #c4c4c4;
+
+  --footer-ttl: #ff9100;
+  --footer-pag: #7b7b7b;
+  --footer-pag-hov: #ff9100;
+  --footer-ralq: #ff9100;
+
+  /* demo/demo.tsx */
+  --demo-bg: #acacac;
+  --demo-border: #ff6f00;
+  --demo-dis-bg: #ff6f00;
+  --demo-dis-txt: #cdcdcd;
+
+  --demo-btn-border: #515352;
+  --demo-btn-bg: #232222;
+  --demo-btn-txt: #f77817;
+  --demo-btn-des: #f77817;
+
+  --demo-mini-ttl: #c4c4c4;
+  --demo-ttl: #f77817;
+  --demo-desc: #c4c4c4;
+}
+
+/* Rosa */
 [data-color="pink"] {
-  --user-primary: #ec4899;
-  --user-primary-light: #f9a8d4;
+  /* Titulo y Descripción general */
+  --titulos: #ffffff;
+  --descripciones: #616161;
 
   /* Header */
   --header-login-bg: transparent;
-  --header-redirigidores: #becbc2;
-  --header-redirigidores-cursor: #b9b9b9;
-  --header-loginbg: #ec4899;
-  --header-login-text: #ffffff;
-  --header-registerbg: #ec4899;
-  --header-register-text: #ffffff;
+  --header-redir: #6b6b6b;
+  --header-redir-cursor: #dc2cc2;
+
+  --header-login-bg-2: #dc2cc2;
+  --header-login-txt: #ffffff;
+  --header-regis-bg: #dc2cc2;
+  --header-regis-txt: #ffffff;
 
   /* Hero */
-  --hero-bg: #f7f6f6;
-  --hero-titulo: #000000;
-  --hero-descripcion: #464646;
-  --hero-bg-btn-demo: #f9a8d4;
-  --hero-texto-btn-demo: #ffffff;
+  --hero-bg: #ffffff;
+  --hero-ttl: #dc2cc2;
+  --hero-desc: #616161;
+  --hero-bg-demo: #dc2cc2;
+  --hero-txt-demo: #fcfcfc;
 
-  /* Carrusel */
-  --carrusel-bg: #df19aa;
-  --carrusel-titulo: #f7f6f6;
-  --carrusel-descripcion: #f7f6f6;
+  /* Carrusel 1*/
+  --carrusel2-bg: #b7b7b7;
+  --carrusel-ttl: #000000;
+  --carrusel-desc: #dc2cc2;
+
+  /* --carrusel 2 */
+  --carrusel2-mini-bg: #dc2cc2;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #dc2cc2;
+  --carrusel2-desc: #616161;
+
+  --carrusel2-sig: #181818;
+  --carrusel2-sig-txt: #dc2cc2;
+
+  /* Tarjetas pin3d */
+  --tarjetas-ttl1: #dc2cc2;
+  --tarjetas-desc2: #616161;
+
+  --tarjetas-bg: #f7f9f7;
+  --tarjetas-border: #e2e8e3;
+
+  --tarjetas-txt3: #616161;
+  --tarjetas-ttl4: #000000;
+  --tarjetas-desc5: #616161;
+
+  --tarjetas-1txt6: #dc2cc2;
+  --tarjetas-2txt6: #dc2cc2;
+  --tarjetas-3txt6: #dc2cc2;
+
+  --tarjetas-desc7: #616161;
+  --tarjetas-txt8: #616161;
+
+  /* 2 mockup cada lado */
+  --mockup-bg: #4b6554;
+  --mockup-ttl: #dc2cc2;
+  --mockup-desc: #616161;
+
+  /* wobble 4 */
+  --wobble-ttl: #dc2cc2;
+  --wobble-desc: #616161;
+
+  --wobble-bg-1: #2c2d2c;
+  --wobble-bg-2: #dc2cc2;
+  --wobble-bg-3: #dc2cc2;
+  --wobble-bg-4: #2c2d2c;
+
+  --wobble-ttl-5: #ffffff;
+  --wobble-desc-6: #efefef;
+  --wobble-dmas-7: #f00a0a;
+
+  /* Preguntas frecuentes */
+  --preg-bg: #4b6554;
+  --preg-ttl: #dc2cc2;
+  --preg-desc: #616161;
+  --preg-link: #dc2cc2;
+  --preg-preg: #dc2cc2;
+  --preg-txt: #616161;
+
+  /* Footer */
+  --footer-bg: #4b6554;
+
+  --footer-txt: #616161;
+  --footer-link: #dc2cc2;
+  --footer-derechos: #616161;
+
+  --footer-ttl: #dc2cc2;
+  --footer-pag: #7b7b7b;
+  --footer-pag-hov: #dc2cc2;
+  --footer-ralq: #dc2cc2;
+
+  /* demo/demo.tsx */
+  --demo-bg: #3f3a3a;
+  --demo-border: #727272;
+  --demo-dis-bg: #181717;
+  --demo-dis-txt: #cdcdcd;
+
+  --demo-btn-border: #515352;
+  --demo-btn-bg: #232222;
+  --demo-btn-txt: #e80e0e;
+  --demo-btn-des: #0be55b;
+
+  --demo-mini-ttl: #dad9d9;
+  --demo-ttl: #ffffff;
+  --demo-desc: #dad9d9;
 }
 
-[data-color="green"] {
-  --user-primary: #06b6d4;
-  --user-primary-light: #67e8f9;
+[data-color="pink"].dark,
+.dark [data-color="pink"] {
+  /* Titulo y Descripción general */
+  --titulos: #ffffff;
+  --descripciones: #616161;
 
   /* Header */
   --header-login-bg: transparent;
-  --header-redirigidores: #becbc2;
-  --header-redirigidores-cursor: #b9b9b9;
-  --header-loginbg: #06b6d4;
-  --header-login-text: #ffffff;
-  --header-registerbg: #06b6d4;
-  --header-register-text: #ffffff;
+
+  --header-redir: #c4c4c4;
+  --header-redir-cursor: #dc2cc2;
+
+  --header-login-bg-2: #dc2cc2;
+  --header-login-txt: #ffffff;
+  --header-regis-bg: #dc2cc2;
+  --header-regis-txt: #ffffff;
 
   /* Hero */
-  --hero-bg: #f7f6f6;
-  --hero-titulo: #000000;
-  --hero-descripcion: #464646;
-  --hero-bg-btn-demo: #67e8f9;
-  --hero-texto-btn-demo: #ffffff;
+  --hero-bg: #ffffff;
+  --hero-ttl: #dc2cc2;
+  --hero-desc: #c4c4c4;
+  --hero-bg-demo: #dc2cc2;
+  --hero-txt-demo: #fcfcfc;
 
-  /* Carrusel */
-  --carrusel-bg: #19de3d;
-  --carrusel-titulo: #f7f6f6;
-  --carrusel-descripcion: #f7f6f6;
+  /* Carrusel 1*/
+  --carrusel2-bg: #b7b7b7;
+  --carrusel-ttl: #fcfcfc;
+  --carrusel-desc: #dc2cc2;
+
+  /* --carrusel 2 */
+  --carrusel2-mini-bg: #dc2cc2;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #dc2cc2;
+  --carrusel2-desc: #c4c4c4;
+
+  --carrusel2-sig: #181818;
+  --carrusel2-sig-txt: #dc2cc2;
+
+  /* Tarjetas pin3d */
+  --tarjetas-ttl1: #dc2cc2;
+  --tarjetas-desc2: #c4c4c4;
+
+  --tarjetas-bg: #131313;
+  --tarjetas-border: #e2e8e3;
+
+  --tarjetas-txt3: #c4c4c4;
+  --tarjetas-ttl4: #ffffff;
+  --tarjetas-desc5: #c4c4c4;
+
+  --tarjetas-1txt6: #dc2cc2;
+  --tarjetas-2txt6: #dc2cc2;
+  --tarjetas-3txt6: #dc2cc2;
+
+  --tarjetas-desc7: #c4c4c4;
+  --tarjetas-txt8: #c4c4c4;
+
+  /* 2 mockup cada lado */
+  /* --mockup-bg: #4b6554; */
+  --mockup-ttl: #dc2cc2;
+  --mockup-desc: #c4c4c4;
+
+  /* wobble 4 */
+  --wobble-ttl: #dc2cc2;
+  --wobble-desc: #c4c4c4;
+
+  --wobble-bg-1: #2c2d2c;
+  --wobble-bg-2: #dc2cc2;
+  --wobble-bg-3: #dc2cc2;
+  --wobble-bg-4: #2c2d2c;
+
+  --wobble-ttl-5: #ffffff;
+  --wobble-desc-6: #efefef;
+  --wobble-dmas-7: #f00a0a;
+
+  /* Preguntas frecuentes */
+  --preg-bg: #4b6554;
+  --preg-ttl: #dc2cc2;
+  --preg-desc: #c4c4c4;
+  --preg-link: #dc2cc2;
+  --preg-preg: #dc2cc2;
+  --preg-txt: #c4c4c4;
+
+  /* Footer */
+  --footer-bg: #4b6554;
+
+  --footer-txt: #c4c4c4;
+  --footer-link: #dc2cc2;
+  --footer-derechos: #c4c4c4;
+
+  --footer-ttl: #dc2cc2;
+  --footer-pag: #7b7b7b;
+  --footer-pag-hov: #dc2cc2;
+  --footer-ralq: #dc2cc2;
+}
+
+/* Verde  */
+[data-color="green"] {
+  /* Titulo y Descripción general */
+  --titulos: #ffffff;
+  --descripciones: #616161;
+
+  /* Header */
+  --header-login-bg: transparent;
+  --header-redir: #6b6b6b;
+  --header-redir-cursor: #18b638;
+
+  --header-login-bg-2: #18b638;
+  --header-login-txt: #ffffff;
+  --header-regis-bg: #18b638;
+  --header-regis-txt: #ffffff;
+
+  /* Hero */
+  --hero-bg: #ffffff;
+  --hero-ttl: #18b638;
+  --hero-desc: #616161;
+  --hero-bg-demo: #18b638;
+  --hero-txt-demo: #fcfcfc;
+
+  /* Carrusel 1*/
+  --carrusel2-bg: #b7b7b7;
+  --carrusel-ttl: #000000;
+  --carrusel-desc: #3ab052;
+
+  /* --carrusel 2 */
+  --carrusel2-mini-bg: #1bb339;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #18b638;
+  --carrusel2-desc: #616161;
+
+  --carrusel2-sig: #181818;
+  --carrusel2-sig-txt: #53d96e;
+
+  /* Tarjetas pin3d */
+  --tarjetas-ttl1: #18b638;
+  --tarjetas-desc2: #616161;
+
+  --tarjetas-bg: #f7f9f7;
+  --tarjetas-border: #e2e8e3;
+
+  --tarjetas-txt3: #616161;
+  --tarjetas-ttl4: #000000;
+  --tarjetas-desc5: #616161;
+
+  --tarjetas-1txt6: #0ca814;
+  --tarjetas-2txt6: #116fda;
+  --tarjetas-3txt6: #ebb40d;
+
+  --tarjetas-desc7: #616161;
+  --tarjetas-txt8: #616161;
+
+  /* 2 mockup cada lado */
+  --mockup-bg: #4b6554;
+  --mockup-ttl: #18b638;
+  --mockup-desc: #616161;
+
+  /* wobble 4 */
+  --wobble-ttl: #18b638;
+  --wobble-desc: #616161;
+
+  --wobble-bg-1: #98a29b;
+  --wobble-bg-2: #3dce5a;
+  --wobble-bg-3: #3dce5a;
+  --wobble-bg-4: #98a29b;
+
+  --wobble-ttl-5: #ffffff;
+  --wobble-desc-6: #efefef;
+  --wobble-dmas-7: #f00a0a;
+
+  /* Preguntas frecuentes */
+  --preg-bg: #4b6554;
+  --preg-ttl: #18b638;
+  --preg-desc: #616161;
+  --preg-link: #18b638;
+  --preg-preg: #18b638;
+  --preg-txt: #616161;
+
+  /* Footer */
+  --footer-bg: #4b6554;
+
+  --footer-txt: #616161;
+  --footer-link: #18b638;
+  --footer-derechos: #616161;
+
+  --footer-ttl: #18b638;
+  --footer-pag: #7b7b7b;
+  --footer-pag-hov: #18b638;
+  --footer-ralq: #41c95c;
+
+  /* demo/demo.tsx */
+  --demo-bg: #acacac;
+  --demo-border: #727272;
+  --demo-dis-bg: #181717;
+  --demo-dis-txt: #cdcdcd;
+
+  --demo-btn-border: #515352;
+  --demo-btn-bg: #232222;
+  --demo-btn-txt: #e80e0e;
+  --demo-btn-des: #0be55b;
+
+  --demo-mini-ttl: #dad9d9;
+  --demo-ttl: #ffffff;
+  --demo-desc: #dad9d9;
+}
+
+[data-color="green"].dark,
+.dark [data-color="green"] {
+  /* Titulo y Descripción general */
+  --titulos: #ffffff;
+  --descripciones: #616161;
+
+  /* Header */
+  --header-login-bg: transparent;
+
+  --header-redir: #c4c4c4;
+  --header-redir-cursor: #18b638;
+
+  --header-login-bg-2: #18b638;
+  --header-login-txt: #ffffff;
+  --header-regis-bg: #18b638;
+  --header-regis-txt: #ffffff;
+
+  /* Hero */
+  --hero-bg: #ffffff;
+  --hero-ttl: #1bc13c;
+  --hero-desc: #c4c4c4;
+  --hero-bg-demo: #18b638;
+  --hero-txt-demo: #fcfcfc;
+
+  /* Carrusel 1*/
+  --carrusel2-bg: #b7b7b7;
+  --carrusel-ttl: #fcfcfc;
+  --carrusel-desc: #3ab052;
+
+  /* --carrusel 2 */
+  --carrusel2-mini-bg: #1bb339;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #18b638;
+  --carrusel2-desc: #c4c4c4;
+
+  --carrusel2-sig: #181818;
+  --carrusel2-sig-txt: #53d96e;
+
+  /* Tarjetas pin3d */
+  --tarjetas-ttl1: #18b638;
+  --tarjetas-desc2: #c4c4c4;
+
+  --tarjetas-bg: #131313;
+  --tarjetas-border: #e2e8e3;
+
+  --tarjetas-txt3: #c4c4c4;
+  --tarjetas-ttl4: #ffffff;
+  --tarjetas-desc5: #c4c4c4;
+
+  --tarjetas-1txt6: #0ca814;
+  --tarjetas-2txt6: #116fda;
+  --tarjetas-3txt6: #ebb40d;
+
+  --tarjetas-desc7: #c4c4c4;
+  --tarjetas-txt8: #c4c4c4;
+
+  /* 2 mockup cada lado */
+  /* --mockup-bg: #4b6554; */
+  --mockup-ttl: #18b638;
+  --mockup-desc: #c4c4c4;
+
+  /* wobble 4 */
+  --wobble-ttl: #18b638;
+  --wobble-desc: #c4c4c4;
+
+  --wobble-bg-1: #2c2d2c;
+  --wobble-bg-2: #3dce5a;
+  --wobble-bg-3: #3dce5a;
+  --wobble-bg-4: #2c2d2c;
+
+  --wobble-ttl-5: #ffffff;
+  --wobble-desc-6: #efefef;
+  --wobble-dmas-7: #f00a0a;
+
+  /* Preguntas frecuentes */
+  --preg-bg: #4b6554;
+  --preg-ttl: #18b638;
+  --preg-desc: #c4c4c4;
+  --preg-link: #18b638;
+  --preg-preg: #18b638;
+  --preg-txt: #c4c4c4;
+
+  /* Footer */
+  --footer-bg: #4b6554;
+
+  --footer-txt: #c4c4c4;
+  --footer-link: #18b638;
+  --footer-derechos: #c4c4c4;
+
+  --footer-ttl: #18b638;
+  --footer-pag: #7b7b7b;
+  --footer-pag-hov: #18b638;
+  --footer-ralq: #1a7f2e;
+
+  /* demo/demo.tsx */
+  --demo-bg: #acacac;
+  --demo-border: #727272;
+  --demo-dis-bg: #181717;
+  --demo-dis-txt: #cdcdcd;
+
+  --demo-btn-border: #515352;
+  --demo-btn-bg: #232222;
+  --demo-btn-txt: #e80e0e;
+  --demo-btn-des: #0be55b;
+
+  --demo-mini-ttl: #dad9d9;
+  --demo-ttl: #ffffff;
+  --demo-desc: #dad9d9;
 }
 
 @theme inline {
@@ -572,7 +1747,7 @@
   --color-header-login-bg: var(--header-login-bg);
   --color-header-redir: var(--header-redir);
   --color-header-redir-cursor: var(--header-redir-cursor);
-  --color-header-login-bg: var(--header-loginbg);
+  --color-header-login-bg-2: var(--header-login-bg-2);
   --color-header-login-txt: var(--header-login-txt);
   --color-header-regis-bg: var(--header-regis-bg);
   --color-header-regis-txt: var(--header-regis-txt);
@@ -583,7 +1758,6 @@
   --color-hero-desc: var(--hero-desc);
   --color-hero-bg-demo: var(--hero-bg-demo);
   --color-hero-txt-demo: var(--hero-txt-demo);
-
 
   /* Carrusel */
   --color-carrusel-bg: var(--carrusel-bg);
@@ -640,7 +1814,7 @@
   --color-preg-desc: var(--preg-desc);
   --color-preg-link: var(--preg-link);
   --color-preg-preg: var(--preg-preg);
-  --color-preg-txt: var(--preg-txt-preg);
+  --color-preg-txt: var(--preg-txt);
 
   /* Footer */
   --color-footer-bg: var(--footer-bg);
@@ -651,6 +1825,44 @@
   --color-footer-pag: var(--footer-pag);
   --color-footer-pag-hov: var(--footer-pag-hov);
   --color-footer-ralq: var(--footer-ralq);
+
+  /* demo/demo.tsx */
+  --color-demo-bg: var(--demo-bg);
+  --color-demo-border: var(--demo-border);
+  --color-demo-dis-bg: var(--demo-dis-bg);
+  --color-demo-dis-txt: var(--demo-dis-txt);
+
+  --color-demo-btn-border: var(--demo-btn-border);
+  --color-demo-btn-bg: var(--demo-btn-bg);
+  --color-demo-btn-txt: var(--demo-btn-txt);
+  --color-demo-btn-desc: var(--demo-btn-desc);
+
+  --color-demo-mini-ttl: var(--demo-mini-ttl);
+  --color-demo-ttl: var(--demo-ttl);
+  --color-demo-desc: var(--demo-desc);
+
+  /* Contacto */
+  --color-contact-ttl: var(--contact-ttl);
+  --color-contact-desc: var(--contact-desc);
+
+  --color-contact-card-bg: var(--contact-card-bg);
+  --color-contact-card-border: var(--contact-card-border);
+
+  --color-contact-label: var(--contact-label);
+
+  --color-contact-input-text: var(--contact-input-text);
+  --color-contact-input-border: var(--contact-input-border);
+  --color-contact-input-border-hover: var(--contact-input-border-hover);
+
+  --color-contact-btn-bg: var(--contact-btn-bg);
+  --color-contact-btn-text: var(--contact-btn-text);
+  --color-contact-btn-hover: var(--contact-btn-hover);
+
+  --color-contact-team-name: var(--contact-team-name);
+  --color-contact-team-email: var(--contact-team-email);
+
+  --color-contact-social: var(--contact-social);
+  --color-contact-social-hover: var(--contact-social-hover);
 }
 
 @layer base {
