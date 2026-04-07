@@ -100,7 +100,7 @@ const inputClasses = `
         </p>
       </motion.div>
 
-      <div className="grid grid-cols-6 lg:grid-cols-2 gap-5 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 max-w-7xl mx-auto">
         <motion.div
           className="
             rounded-[13px]
@@ -193,7 +193,7 @@ const inputClasses = `
 
 
         <motion.div
-          className="pl-20 md:pl-23 lg:pl-40"
+          className="pl-0 md:pl-23 lg:pl-40"
           variants={fadeInUp}
           custom={0.6}
         >

@@ -59,9 +59,9 @@ export function LensDemo() {
   };
 
   return (
-    <div className="my-45">
+    <div className="my-24 md:my-45 px-5 md:px-6">
       {/* ---------------- ENCABEZADO ---------------- */}
-      <div className="max-w-7xl mx-auto mb-30 text-center">
+      <div className="max-w-7xl mx-auto mb-16 md:mb-30 text-center">
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -81,7 +81,7 @@ export function LensDemo() {
       </div>
 
       {/* ---------------- GRID DE TARJETAS ---------------- */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-17 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-17 max-w-7xl mx-auto">
         {cards.map((card, i) => (
           <Link key={i} href={card.link}>
             <motion.div

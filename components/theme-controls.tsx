@@ -126,29 +126,27 @@ export function ThemeControls() {
 
   return (
     <div className="flex items-center gap-2 pl-0">
-      {" "}
       {/* Theme Mode Dropdown */}
       <DropdownMenu modal={false}>
         <DropdownMenuTrigger asChild>
-          <Button
+          <button
             type="button"
-            variant="ghost"
-            size="icon"
-            className="h-8 w-8 cursor-pointer hover:bg-transparent focus:ring-0 focus:outline-none focus-visible:ring-0 focus-visible:border-transparent outline-none"
+            style={{ backgroundColor: 'transparent' }}
+            className="h-9 w-9 cursor-pointer flex items-center justify-center rounded-md transition-colors hover:!bg-transparent dark:hover:!bg-transparent focus:outline-none focus:ring-0 focus-visible:ring-0 outline-none group"
           >
-            <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-            <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+            <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0 !text-foreground group-hover:!text-foreground" />
+            <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 !text-foreground group-hover:!text-foreground" />
             <span className="sr-only">Cambiar modo</span>
-          </Button>
+          </button>
         </DropdownMenuTrigger>
         <DropdownMenuContent align="end" className="z-[100] rounded-2xl ">
           <DropdownMenuLabel>Modo de visualización</DropdownMenuLabel>
           <DropdownMenuSeparator />
           <DropdownMenuItem
             onClick={() => setTheme("light")}
-            className="  cursor-pointer hover:bg-transparent focus:bg-transparent"
+            className="cursor-pointer hover:bg-transparent focus:bg-transparent hover:text-foreground focus:text-foreground group"
           >
-            <Sun className="mr-2 h-47 w-4" />
+            <Sun className="mr-2 h-5 w-5" />
             <span>Claro</span>
             {currentTheme === "light" && !colorblind && (
               <span className="ml-auto text-primary">*</span>
@@ -156,9 +154,9 @@ export function ThemeControls() {
           </DropdownMenuItem>
           <DropdownMenuItem
             onClick={() => setTheme("dark")}
-            className="cursor-pointer hover:bg-transparent focus:bg-transparent"
+            className="cursor-pointer hover:bg-transparent focus:bg-transparent hover:text-foreground focus:text-foreground group"
           >
-            <Moon className="mr-2 h-4 w-4" />
+            <Moon className="mr-2 h-5 w-5" />
             <span>Oscuro</span>
             {currentTheme === "dark" && !colorblind && (
               <span className="ml-auto text-primary">*</span>
@@ -167,9 +165,9 @@ export function ThemeControls() {
           <DropdownMenuSeparator />
           <DropdownMenuItem
             onClick={toggleColorblind}
-            className="cursor-pointer hover:bg-transparent focus:bg-transparent"
+            className="cursor-pointer hover:bg-transparent focus:bg-transparent hover:text-foreground focus:text-foreground group"
           >
-            <Eye className="mr-2 h-4 w-4" />
+            <Eye className="mr-2 h-5 w-5" />
             <span>Modo daltonico</span>
             {colorblind && <span className="ml-auto text-primary">*</span>}
           </DropdownMenuItem>
@@ -182,7 +180,7 @@ export function ThemeControls() {
             type="button"
             variant="ghost"
             size="icon"
-            className="h-9 w-9 cursor-pointer flex items-center justify-center hover:bg-transparent focus:ring-0 focus:outline-none focus-visible:ring-0 focus-visible:border-transparent outline-none"
+            className="h-9 w-9 cursor-pointer flex items-center justify-center hover:bg-transparent dark:hover:bg-transparent focus:ring-0 focus:outline-none focus-visible:ring-0 focus-visible:border-transparent outline-none"
           >
             <Palette
               className="h-5 w-5"
@@ -230,7 +228,7 @@ export function ThemeControls() {
       </Popover>
       {/* Reduced Motion Toggle tipo switch */}
       <button
-        className="relative inline-flex h-6 w-12 items-center rounded-full bg-muted cursor-pointer transition-colors focus:outline-none outline-none focus-visible:ring-0 focus-visible:outline-none"
+        className="relative inline-flex h-6 w-12 items-center rounded-full bg-muted cursor-pointer transition-colors focus:outline-none outline-none focus-visible:ring-0 focus-visible:outline-none hover:bg-muted dark:hover:bg-muted"
         onClick={toggleReducedMotion}
         aria-label="Reducir animaciones"
       >

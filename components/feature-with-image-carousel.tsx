@@ -111,7 +111,7 @@ function Feature() {
 
   return (
     <div className="w-full py-20 lg:py-26">
-      <div className="container mx-auto px-15">
+      <div className="container mx-auto px-5 md:px-15">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 min-h-[400px]">
           {/* Texto */}
           <div className="flex gap-2 flex-col items-start">

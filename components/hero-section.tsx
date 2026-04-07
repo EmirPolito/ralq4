@@ -51,11 +51,11 @@ export default function HeroSection() {
         {/* HERO */}
         <section>
           <div>
-            <div className="aspect-2/3 relative z-10 flex flex-col justify-end px-5 lg:aspect-video">
+            <div className="aspect-2/3 relative z-10 flex flex-col justify-end px-0 lg:aspect-video">
               <div className="mx-auto w-full max-w-8xl pb-7 lg:px-35 lg:pb-75">
                 <ScrollAnimation direction="up" delay={0.2}>
-                  <div className="max-w-8xl relative mx-auto pt-28md:pt-32 pb-20 md:pb-10 px-5 w-full left-0 top-0">
-                    <h1 className="text-hero-ttl text-xl md:text-7xl font-bold">
+                  <div className="max-w-8xl relative mx-auto pt-36 md:pt-32 pb-20 md:pb-10 px-5 w-full left-0 top-0">
+                    <h1 className="text-hero-ttl text-3xl md:text-7xl font-bold">
                       Instrumentos al
                       <br />
                       alcance de tus manos
@@ -104,7 +104,7 @@ export default function HeroSection() {
 
         {/* Carrusel */}
         <section className="bg-background py-3">
-          <div className="group relative m-auto max-w-8xl px-5 -mt-32">
+          <div className="group relative m-auto max-w-8xl px-5 -mt-10 md:-mt-32">
             <div className="flex flex-col items-center md:flex-row">
               <div className="md:max-w-52 md:border-r md:border-[#9cc2a9]/30 md:px-5 md:pr-10 shrink-10">
                 <p className="text-carrusel-ttl text-start text-base md:text-lg font-semibold tracking-wide md:text-left">

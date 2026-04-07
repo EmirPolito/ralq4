@@ -34,8 +34,8 @@ export const HeroHeader = () => {
       >
         <div
           className={cn(
-            "mx-auto max-w-8xl rounded-2xl px-6 transition-all duration-300 lg:px-15",
-            scrolled && "bg-background/40 backdrop-blur-2xl ",
+            "mx-auto max-w-8xl rounded-2xl px-6 transition-all duration-300 lg:px-9",
+            scrolled && "bg-background/10 backdrop-blur-2xl ",
           )}
         >
           <motion.div
@@ -45,7 +45,7 @@ export const HeroHeader = () => {
               scrolled && "lg:py-4",
             )}
           >
-            <div className="flex w-full items-center justify-between gap-20 lg:w-auto">
+            <div className="flex w-full items-center justify-between gap-18 lg:w-auto">
               <Link
                 href="/"
                 aria-label="home"

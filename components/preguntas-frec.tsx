@@ -59,7 +59,7 @@ export default function FAQs() {
 
   return (
     <section className="bg-background @container py-22.5">
-      <div className="mx-auto max-w-8xl px-13">
+      <div className="mx-auto max-w-8xl px-5 md:px-13">
         <div className="@xl:flex-row @xl:items-start @xl:gap-15 flex flex-col gap-8">
           {/* LADO IZQUIERDO */}
           <div className="py-7 @xl:sticky @xl:top-24 @xl:w-83 shrink-0">

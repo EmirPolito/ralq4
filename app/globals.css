@@ -118,6 +118,10 @@
   --demo-ttl: #000000;
   --demo-desc: #4f4e4e;
 
+  /* Pin 3D */
+  --pin-line: #1472bf;
+  --pin-wave: #1472bf;
+
   /* =========================
    CONTACT - BASE (HEX)
 ========================= */
@@ -194,7 +198,7 @@
   --hero-txt-demo: #020202;
 
   /* Carrusel 1*/
-  --carrusel2-bg: #181717;
+  --carrusel2-bg: #0c0c0c;
   --carrusel-ttl: #ffffff;
   --carrusel-desc: #d2d1d1;
 
@@ -278,6 +282,10 @@
   --demo-mini-ttl: #dad9d9;
   --demo-ttl: #ffffff;
   --demo-desc: #dad9d9;
+
+  /* Pin 3D */
+  --pin-line: #ffffff;
+  --pin-wave: #ffffff;
 
   /* UI */
   --background: #000000;
@@ -413,36 +421,36 @@
   /* Header */
   --header-login-bg: transparent;
   --header-redir: #6b6b6b;
-  --header-redir-cursor: #1c6aa9;
-  --header-login-bg-2: #1c6aa9;
+  --header-redir-cursor: #155dfc;
+  --header-login-bg-2: #155dfc;
   --header-login-txt: #ffffff;
-  --header-regis-bg: #1c6aa9;
+  --header-regis-bg: #155dfc;
   --header-regis-txt: #ffffff;
 
   /* Hero */
   --hero-bg: #ffffff;
-  --hero-ttl: #1c6aa9;
+  --hero-ttl: #155dfc;
   --hero-desc: #616161;
-  --hero-bg-demo: #1c6aa9;
+  --hero-bg-demo: #155dfc;
   --hero-txt-demo: #fcfcfc;
 
   /* Carrusel 1 */
-  --carrusel2-bg: #b7b7b7;
-  --carrusel-ttl: #000000;
-  --carrusel-desc: #1c6aa9;
+  --carrusel-bg: #9cc2a9;
+  --carrusel-ttl: #155dfc;
+  --carrusel-desc: #155dfc;
 
   /* Carrusel 2 */
-  --carrusel2-mini-bg: #1c6aa9;
+  --carrusel2-mini-bg: #155dfc;
   --carrusel2-mini-txt: #ffffff;
 
-  --carrusel2-ttl: #1c6aa9;
+  --carrusel2-ttl: #155dfc;
   --carrusel2-desc: #616161;
 
   --carrusel2-sig: #181818;
-  --carrusel2-sig-txt: #1c6aa9;
+  --carrusel2-sig-txt: #155dfc;
 
   /* Tarjetas pin3d */
-  --tarjetas-ttl1: #1c6aa9;
+  --tarjetas-ttl1: #155dfc;
   --tarjetas-desc2: #616161;
 
   --tarjetas-bg: #f7f9f7;
@@ -452,25 +460,25 @@
   --tarjetas-ttl4: #000000;
   --tarjetas-desc5: #616161;
 
-  --tarjetas-1txt6: #1c6aa9;
-  --tarjetas-2txt6: #1c6aa9;
-  --tarjetas-3txt6: #1c6aa9;
+  --tarjetas-1txt6: #155dfc;
+  --tarjetas-2txt6: #155dfc;
+  --tarjetas-3txt6: #155dfc;
 
   --tarjetas-desc7: #616161;
   --tarjetas-txt8: #616161;
 
   /* 2 mockup cada lado */
   --mockup-bg: #4b6554;
-  --mockup-ttl: #1c6aa9;
+  --mockup-ttl: #155dfc;
   --mockup-desc: #616161;
 
   /* wobble 4 */
-  --wobble-ttl: #1c6aa9;
+  --wobble-ttl: #155dfc;
   --wobble-desc: #616161;
 
   --wobble-bg-1: #2c2d2c;
-  --wobble-bg-2: #1c6aa9;
-  --wobble-bg-3: #1c6aa9;
+  --wobble-bg-2: #155dfc;
+  --wobble-bg-3: #155dfc;
   --wobble-bg-4: #2c2d2c;
 
   --wobble-ttl-5: #ffffff;
@@ -479,23 +487,23 @@
 
   /* Preguntas frecuentes */
   --preg-bg: #4b6554;
-  --preg-ttl: #1c6aa9;
+  --preg-ttl: #155dfc;
   --preg-desc: #616161;
-  --preg-link: #1c6aa9;
-  --preg-preg: #1c6aa9;
+  --preg-link: #155dfc;
+  --preg-preg: #155dfc;
   --preg-txt: #616161;
 
   /* Footer */
   --footer-bg: #4b6554;
 
   --footer-txt: #616161;
-  --footer-link: #1c6aa9;
+  --footer-link: #155dfc;
   --footer-derechos: #616161;
 
-  --footer-ttl: #1c6aa9;
+  --footer-ttl: #155dfc;
   --footer-pag: #7b7b7b;
-  --footer-pag-hov: #1c6aa9;
-  --footer-ralq: #1c6aa9;
+  --footer-pag-hov: #155dfc;
+  --footer-ralq: #155dfc;
 
   /* demo/demo.tsx */
   --demo-bg: #acacac;
@@ -506,11 +514,15 @@
   --demo-btn-border: #515352;
   --demo-btn-bg: #232222;
   --demo-btn-txt: #e80e0e;
-  --demo-btn-des: #1c6aa9;
+  --demo-btn-des: #155dfc;
 
   --demo-mini-ttl: #dad9d9;
   --demo-ttl: #ffffff;
   --demo-desc: #dad9d9;
+
+  /* Pin 3D */
+  --pin-line: #1c6aa9;
+  --pin-wave: #1c6aa9;
 }
 
 [data-color="blue"].dark,
@@ -522,37 +534,37 @@
   /* Header */
   --header-login-bg: transparent;
   --header-redir: #c4c4c4;
-  --header-redir-cursor: #3680d1;
+  --header-redir-cursor: #155dfc;
 
-  --header-login-bg-2: #3680d1;
+  --header-login-bg-2: #155dfc;
   --header-login-txt: #ffffff;
-  --header-regis-bg: #3680d1;
+  --header-regis-bg: #155dfc;
   --header-regis-txt: #ffffff;
 
   /* Hero */
   --hero-bg: #ffffff;
-  --hero-ttl: #2066b2;
+  --hero-ttl: #155dfc;
   --hero-desc: #c4c4c4;
-  --hero-bg-demo: #2066b2;
+  --hero-bg-demo: #155dfc;
   --hero-txt-demo: #fcfcfc;
 
   /* Carrusel 1 */
   --carrusel2-bg: #b7b7b7;
   --carrusel-ttl: #fcfcfc;
-  --carrusel-desc: #3680d1;
+  --carrusel-desc: #155dfc;
 
   /* Carrusel 2 */
-  --carrusel2-mini-bg: #3680d1;
+  --carrusel2-mini-bg: #155dfc;
   --carrusel2-mini-txt: #ffffff;
 
-  --carrusel2-ttl: #3680d1;
+  --carrusel2-ttl: #155dfc;
   --carrusel2-desc: #c4c4c4;
 
   --carrusel2-sig: #181818;
-  --carrusel2-sig-txt: #3680d1;
+  --carrusel2-sig-txt: #155dfc;
 
   /* Tarjetas pin3d */
-  --tarjetas-ttl1: #3680d1;
+  --tarjetas-ttl1: #155dfc;
   --tarjetas-desc2: #c4c4c4;
 
   --tarjetas-bg: #131313;
@@ -562,24 +574,24 @@
   --tarjetas-ttl4: #ffffff;
   --tarjetas-desc5: #c4c4c4;
 
-  --tarjetas-1txt6: #3680d1;
-  --tarjetas-2txt6: #3680d1;
-  --tarjetas-3txt6: #3680d1;
+  --tarjetas-1txt6: #155dfc;
+  --tarjetas-2txt6: #155dfc;
+  --tarjetas-3txt6: #155dfc;
 
   --tarjetas-desc7: #c4c4c4;
   --tarjetas-txt8: #c4c4c4;
 
   /* 2 mockup cada lado */
-  --mockup-ttl: #3680d1;
+  --mockup-ttl: #155dfc;
   --mockup-desc: #c4c4c4;
 
   /* wobble 4 */
-  --wobble-ttl: #3680d1;
+  --wobble-ttl: #155dfc;
   --wobble-desc: #c4c4c4;
 
   --wobble-bg-1: #2c2d2c;
-  --wobble-bg-2: #3680d1;
-  --wobble-bg-3: #3680d1;
+  --wobble-bg-2: #155dfc;
+  --wobble-bg-3: #155dfc;
   --wobble-bg-4: #2c2d2c;
 
   --wobble-ttl-5: #ffffff;
@@ -588,22 +600,22 @@
 
   /* Preguntas frecuentes */
   --preg-bg: #4b6554;
-  --preg-ttl: #3680d1;
+  --preg-ttl: #155dfc;
   --preg-desc: #c4c4c4;
-  --preg-link: #3680d1;
-  --preg-preg: #3680d1;
+  --preg-link: #155dfc;
+  --preg-preg: #155dfc;
   --preg-txt: #c4c4c4;
 
   /* Footer */
   --footer-bg: #4b6554;
 
   --footer-txt: #c4c4c4;
-  --footer-link: #3680d1;
+  --footer-link: #155dfc;
   --footer-derechos: #c4c4c4;
 
-  --footer-ttl: #3680d1;
+  --footer-ttl: #155dfc;
   --footer-pag: #7b7b7b;
-  --footer-pag-hov: #3680d1;
+  --footer-pag-hov: #155dfc;
   --footer-ralq: #3680d1;
 
   /* demo/demo.tsx */
@@ -615,11 +627,15 @@
   --demo-btn-border: #515352;
   --demo-btn-bg: #232222;
   --demo-btn-txt: #e80e0e;
-  --demo-btn-des: #3680d1;
+  --demo-btn-des: #155dfc;
 
   --demo-mini-ttl: #dad9d9;
   --demo-ttl: #ffffff;
   --demo-desc: #dad9d9;
+
+  /* Pin 3D */
+  --pin-line: #3680d1;
+  --pin-wave: #3680d1;
 }
 
 /* Morado */
@@ -645,7 +661,7 @@
   --hero-txt-demo: #fcfcfc;
 
   /* Carrusel 1*/
-  --carrusel2-bg: #b7b7b7;
+  --carrusel-bg: #9cc2a9;
   --carrusel-ttl: #000000;
   --carrusel-desc: #6326a0;
 
@@ -729,6 +745,10 @@
   --demo-mini-ttl: #dad9d9;
   --demo-ttl: #ffffff;
   --demo-desc: #dad9d9;
+
+  /* Pin 3D */
+  --pin-line: #6326a0;
+  --pin-wave: #6326a0;
 }
 
 [data-color="purple"].dark,
@@ -838,6 +858,10 @@
   --demo-mini-ttl: #dad9d9;
   --demo-ttl: #ffffff;
   --demo-desc: #dad9d9;
+
+  /* Pin 3D */
+  --pin-line: #8330c3;
+  --pin-wave: #8330c3;
 }
 
 /* Rojo */
@@ -864,7 +888,7 @@
   --hero-txt-demo: #fcfcfc;
 
   /* Carrusel 1*/
-  --carrusel2-bg: #b7b7b7;
+  --carrusel-bg: #9cc2a9;
   --carrusel-ttl: #000000;
   --carrusel-desc: #ec0c0c;
 
@@ -948,6 +972,10 @@
   --demo-mini-ttl: #dad9d9;
   --demo-ttl: #ffffff;
   --demo-desc: #dad9d9;
+
+  /* Pin 3D */
+  --pin-line: #ec0c0c;
+  --pin-wave: #ec0c0c;
 }
 
 [data-color="red"].dark,
@@ -1057,6 +1085,10 @@
   --demo-mini-ttl: #dad9d9;
   --demo-ttl: #ffffff;
   --demo-desc: #dad9d9;
+
+  /* Pin 3D */
+  --pin-line: #ff1a1a;
+  --pin-wave: #ff1a1a;
 }
 
 /* Naranja */
@@ -1083,7 +1115,7 @@
   --hero-txt-demo: #fcfcfc;
 
   /* Carrusel 1*/
-  --carrusel2-bg: #b7b7b7;
+  --carrusel-bg: #9cc2a9;
   --carrusel-ttl: #000000;
   --carrusel-desc: #f77817;
 
@@ -1167,6 +1199,10 @@
   --demo-mini-ttl: #dad9d9;
   --demo-ttl: #ffffff;
   --demo-desc: #dad9d9;
+
+  /* Pin 3D */
+  --pin-line: #f77817;
+  --pin-wave: #f77817;
 }
 
 [data-color="orange"].dark,
@@ -1276,6 +1312,10 @@
   --demo-mini-ttl: #c4c4c4;
   --demo-ttl: #f77817;
   --demo-desc: #c4c4c4;
+
+  /* Pin 3D */
+  --pin-line: #ff9100;
+  --pin-wave: #ff9100;
 }
 
 /* Rosa */
@@ -1303,7 +1343,7 @@
   --hero-txt-demo: #fcfcfc;
 
   /* Carrusel 1*/
-  --carrusel2-bg: #b7b7b7;
+  --carrusel-bg: #9cc2a9;
   --carrusel-ttl: #ec003f;
   --carrusel-desc: #616161;
 
@@ -1387,6 +1427,10 @@
   --demo-mini-ttl: #dad9d9;
   --demo-ttl: #ffffff;
   --demo-desc: #dad9d9;
+
+  /* Pin 3D */
+  --pin-line: #ec003f;
+  --pin-wave: #ec003f;
 }
 
 [data-color="pink"].dark,
@@ -1483,7 +1527,11 @@
   --footer-ttl: #ec003f;
   --footer-pag: #7b7b7b;
   --footer-pag-hov: #ec003f;
-  --footer-ralq: #ec003f
+  --footer-ralq: #ec003f;
+
+  /* Pin 3D */
+  --pin-line: #ec003f;
+  --pin-wave: #ec003f;
 }
 
 /* Verde  */
@@ -1510,7 +1558,7 @@
   --hero-txt-demo: #fcfcfc;
 
   /* Carrusel 1*/
-  --carrusel2-bg: #b7b7b7;
+  --carrusel-bg: #9cc2a9;
   --carrusel-ttl: #000000;
   --carrusel-desc: #3ab052;
 
@@ -1594,6 +1642,10 @@
   --demo-mini-ttl: #dad9d9;
   --demo-ttl: #ffffff;
   --demo-desc: #dad9d9;
+
+  /* Pin 3D */
+  --pin-line: #18b638;
+  --pin-wave: #18b638;
 }
 
 [data-color="green"].dark,
@@ -1705,6 +1757,10 @@
   --demo-mini-ttl: #dad9d9;
   --demo-ttl: #ffffff;
   --demo-desc: #dad9d9;
+
+  /* Pin 3D */
+  --pin-line: #1bc13c;
+  --pin-wave: #1bc13c;
 }
 
 @theme inline {
@@ -1868,6 +1924,10 @@
 
   --color-contact-social: var(--contact-social);
   --color-contact-social-hover: var(--contact-social-hover);
+
+  /* Pin 3D */
+  --color-pin-line: var(--pin-line);
+  --color-pin-wave: var(--pin-wave);
 }
 
 @layer base {

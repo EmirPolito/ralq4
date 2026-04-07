@@ -18,7 +18,7 @@ export const IzquierdaDerecha = () => {
   return (
     <>
       {/* BLOQUE 1: Texto izquierda — Imagen derecha */}
-      <section className="relative py-20 md:py-28">
+      <section className="relative py-20 md:py-15">
         <div className="mx-auto max-w-[90rem] px-6 lg:px-3">
           <motion.div
             className="flex flex-col lg:flex-row items-center gap-12 lg:gap-32"
@@ -58,7 +58,7 @@ export const IzquierdaDerecha = () => {
       </section>
 
       {/* BLOQUE 2: Imagen izquierda — Texto derecha */}
-      <section className="relative py-20 md:py-35">
+      <section className="relative py-20 md:py-30">
         <div className="mx-auto max-w-[90rem] px-6 lg:px-0">
           <motion.div
             className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-32"
