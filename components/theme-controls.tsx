@@ -4,6 +4,7 @@ import * as React from "react";
 import { Moon, Sun, Eye, Palette } from "lucide-react";
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -20,12 +21,12 @@ import {
 
 const colorOptions = [
   { name: "Por defecto", value: "default", color: "" },
-  { name: "Azul", value: "blue", color: "#3b82f6" },
-  { name: "Morado", value: "purple", color: "#8b5cf6" },
+  { name: "Azul", value: "blue", color: "#155dfc" },
+  { name: "Morado", value: "purple", color: "#a800b7" },
   { name: "Rojo", value: "red", color: "#ef4444" },
   { name: "Naranja", value: "orange", color: "#f97316" },
   { name: "Rosa", value: "pink", color: "#ec003f" },
-  { name: "Verde", value: "green", color: "#15cb24" },
+  { name: "Verde", value: "green", color: "#5ea500" },
 ];
 
 // Custom event to communicate reduced motion state to other components
@@ -51,7 +52,7 @@ export function useReducedMotion() {
   return reducedMotion;
 }
 
-export function ThemeControls() {
+export function ThemeControls({ className }: { className?: string }) {
   const { theme, setTheme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = React.useState(false);
   const [colorblind, setColorblind] = React.useState(false);
@@ -125,13 +126,13 @@ export function ThemeControls() {
   const currentTheme = resolvedTheme || theme;
 
   return (
-    <div className="flex items-center gap-2 pl-0">
+    <div className={cn("flex items-center gap-3", className)}>
       {/* Theme Mode Dropdown */}
       <DropdownMenu modal={false}>
         <DropdownMenuTrigger asChild>
           <button
             type="button"
-            style={{ backgroundColor: 'transparent' }}
+            style={{ backgroundColor: "transparent" }}
             className="h-9 w-9 cursor-pointer flex items-center justify-center rounded-md transition-colors hover:!bg-transparent dark:hover:!bg-transparent focus:outline-none focus:ring-0 focus-visible:ring-0 outline-none group"
           >
             <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0 !text-foreground group-hover:!text-foreground" />

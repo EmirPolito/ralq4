@@ -6,12 +6,27 @@ import { motion, Variants, useReducedMotion } from "framer-motion";
 export const IzquierdaDerecha = () => {
   const shouldReduceMotion = useReducedMotion();
 
-  const fadeUp: Variants = {
-    hidden: { opacity: 0, y: shouldReduceMotion ? 0 : 40 },
+  const fromLeft: Variants = {
+    hidden: { opacity: 0, x: shouldReduceMotion ? 0 : -30 },
     visible: {
       opacity: 1,
-      y: 0,
-      transition: { duration: shouldReduceMotion ? 0 : 0.6, ease: "easeOut" },
+      x: 0,
+      transition: {
+        duration: shouldReduceMotion ? 0 : 1.2,
+        ease: [0.16, 1, 0.3, 1],
+      },
+    },
+  };
+
+  const fromRight: Variants = {
+    hidden: { opacity: 0, x: shouldReduceMotion ? 0 : 30 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: shouldReduceMotion ? 0 : 1.2,
+        ease: [0.16, 1, 0.3, 1],
+      },
     },
   };
 
@@ -25,10 +40,10 @@ export const IzquierdaDerecha = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.25 }}
-            transition={{ staggerChildren: 0.2 }}
+            variants={fromLeft}
           >
             {/* TEXTO */}
-            <motion.div className="flex-1 min-w-0" variants={fadeUp}>
+            <div className="flex-1 min-w-0">
               <h2 className="text-mockup-ttl text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight tracking-tight max-w-2xl">
                 Conoce los instrumentos del laboratorio de química
               </h2>
@@ -40,47 +55,41 @@ export const IzquierdaDerecha = () => {
                 laboratorio y realiza tus experimentos con mayor seguridad y
                 confianza.
               </p>
-            </motion.div>
+            </div>
 
             {/* IMAGEN */}
-            <motion.div
-              className="flex-1 min-w-0 flex justify-center"
-              variants={fadeUp}
-            >
+            <div className="flex-1 min-w-0 flex justify-center">
               <img
                 src="/img/sections/section1.png"
                 alt="Instrumentos de laboratorio"
                 className="w-full max-w-[550px] h-auto object-contain"
               />
-            </motion.div>
+            </div>
           </motion.div>
         </div>
       </section>
 
       {/* BLOQUE 2: Imagen izquierda — Texto derecha */}
-      <section className="relative py-20 md:py-30">
+      <section className="relative py-20 md:py-31">
         <div className="mx-auto max-w-[90rem] px-6 lg:px-0">
           <motion.div
             className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-32"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.25 }}
-            transition={{ staggerChildren: 0.2 }}
+            variants={fromRight}
           >
             {/* IMAGEN */}
-            <motion.div
-              className="flex-1 min-w-0 flex justify-center"
-              variants={fadeUp}
-            >
+            <div className="flex-1 min-w-0 flex justify-center">
               <img
                 src="/img/sections/section2.png"
                 alt="Estructuras químicas"
                 className="w-full max-w-[550px] h-auto object-contain"
               />
-            </motion.div>
+            </div>
 
             {/* TEXTO */}
-            <motion.div className="flex-1 min-w-0" variants={fadeUp}>
+            <div className="flex-1 min-w-0">
               <h2 className="text-mockup-ttl text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight tracking-tight max-w-2xl">
                 Explora las estructuras químicas de los compuestos{" "}
               </h2>
@@ -91,7 +100,7 @@ export const IzquierdaDerecha = () => {
                 representaciones visuales claras. Comprende su organización y
                 relación con sus propiedades de una forma más intuitiva.
               </p>
-            </motion.div>
+            </div>
           </motion.div>
         </div>
       </section>

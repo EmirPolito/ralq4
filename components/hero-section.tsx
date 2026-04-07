@@ -93,9 +93,13 @@ export default function HeroSection() {
                 muted
                 playsInline
                 className="
-                absolute inset-0 w-full h-full object-cover -scale-x-100
-                invert contrast-120 brightness-90
-                dark:invert-0 dark:brightness-110"
+                absolute inset-5
+                w-full h-full object-cover
+                -scale-x-95
+                invert contrast-115 
+                brightness-90
+                dark:invert-0 
+                dark:brightness-110"
                 src="https://videos.pexels.com/video-files/35968183/15249566_1920_1080_30fps.mp4"
               />
             </div>
@@ -117,7 +121,7 @@ export default function HeroSection() {
                   {circleItems.map((item, index) => (
                     <div
                       key={index}
-                      className="flex flex-col items-center gap-3"
+                      className=" flex flex-col items-center gap-3"
                     >
                       <div className="bg-carrusel2-bg h-55 w-55 rounded-full flex items-center justify-center overflow-hidden p-2 shadow-lg border-2">
                         <Image

@@ -30,7 +30,7 @@
   /* Hero */
   --hero-bg: #f9f9f9;
   --hero-ttl: #49504c;
-  --hero-desc: #4f4e4e;
+  --hero-desc: #454444;
   --hero-bg-demo: #3e413f;
   --hero-txt-demo: #ffffff;
 
@@ -95,9 +95,9 @@
 
   /* Footer */
   --footer-bg: #4b6554;
-  --footer-txt: #000000;
+  --footer-txt: #645e5e;
   --footer-link: #1472bf;
-  --footer-derechos: #0e0e0e;
+  --footer-derechos: #645e5e;
   --footer-ttl: #000000;
   --footer-pag: #645e5e;
   --footer-pag-hov: #000000;
@@ -170,6 +170,8 @@
 }
 
 .dark {
+  --bg-fondo: 101010;
+
   /* Titulo y Descripción general */
   --titulos: #ffffff;
   --descripciones: #dad9d9;
@@ -259,7 +261,7 @@
   /* Footer */
   --footer-bg: #4b6554;
 
-  --footer-txt: #ffffff;
+  --footer-txt: #c9c6c6;
   --footer-link: #1472bf;
   --footer-derechos: #c9c6c6;
 
@@ -288,7 +290,7 @@
   --pin-wave: #ffffff;
 
   /* UI */
-  --background: #000000;
+  --background: #101010;
   --foreground: #fafafa;
   --card: #141414;
   --card-foreground: #fafafa;
@@ -647,36 +649,36 @@
   /* Header */
   --header-login-bg: transparent;
   --header-redir: #6b6b6b;
-  --header-redir-cursor: #6326a0;
-  --header-login-bg-2: #6326a0;
+  --header-redir-cursor: #8a0194;
+  --header-login-bg-2: #8a0194;
   --header-login-txt: #ffffff;
-  --header-regis-bg: #6326a0;
+  --header-regis-bg: #8a0194;
   --header-regis-txt: #ffffff;
 
   /* Hero */
   --hero-bg: #ffffff;
-  --hero-ttl: #6326a0;
+  --hero-ttl: #8a0194;
   --hero-desc: #616161;
-  --hero-bg-demo: #6326a0;
+  --hero-bg-demo: #8a0194;
   --hero-txt-demo: #fcfcfc;
 
   /* Carrusel 1*/
   --carrusel-bg: #9cc2a9;
-  --carrusel-ttl: #000000;
-  --carrusel-desc: #6326a0;
+  --carrusel-ttl: #8a0194;
+  --carrusel-desc: #8a0194;
 
   /* --carrusel 2 */
-  --carrusel2-mini-bg: #6326a0;
+  --carrusel2-mini-bg: #8a0194;
   --carrusel2-mini-txt: #ffffff;
 
-  --carrusel2-ttl: #6326a0;
+  --carrusel2-ttl: #8a0194;
   --carrusel2-desc: #616161;
 
   --carrusel2-sig: #181818;
-  --carrusel2-sig-txt: #6326a0;
+  --carrusel2-sig-txt: #8a0194;
 
   /* Tarjetas pin3d */
-  --tarjetas-ttl1: #6326a0;
+  --tarjetas-ttl1: #8a0194;
   --tarjetas-desc2: #616161;
 
   --tarjetas-bg: #f7f9f7;
@@ -686,25 +688,25 @@
   --tarjetas-ttl4: #000000;
   --tarjetas-desc5: #616161;
 
-  --tarjetas-1txt6: #6326a0;
-  --tarjetas-2txt6: #6326a0;
-  --tarjetas-3txt6: #6326a0;
+  --tarjetas-1txt6: #8a0194;
+  --tarjetas-2txt6: #8a0194;
+  --tarjetas-3txt6: #8a0194;
 
   --tarjetas-desc7: #616161;
   --tarjetas-txt8: #616161;
 
   /* 2 mockup cada lado */
   --mockup-bg: #4b6554;
-  --mockup-ttl: #6326a0;
+  --mockup-ttl: #8a0194;
   --mockup-desc: #616161;
 
   /* wobble 4 */
-  --wobble-ttl: #6326a0;
+  --wobble-ttl: #8a0194;
   --wobble-desc: #616161;
 
   --wobble-bg-1: #2c2d2c;
-  --wobble-bg-2: #6326a0;
-  --wobble-bg-3: #6326a0;
+  --wobble-bg-2: #8a0194;
+  --wobble-bg-3: #8a0194;
   --wobble-bg-4: #2c2d2c;
 
   --wobble-ttl-5: #ffffff;
@@ -713,22 +715,22 @@
 
   /* Preguntas frecuentes */
   --preg-bg: #4b6554;
-  --preg-ttl: #6326a0;
+  --preg-ttl: #8a0194;
   --preg-desc: #616161;
-  --preg-link: #6326a0;
-  --preg-preg: #6326a0;
+  --preg-link: #8a0194;
+  --preg-preg: #8a0194;
   --preg-txt: #616161;
 
   /* Footer */
   --footer-bg: #4b6554;
 
   --footer-txt: #616161;
-  --footer-link: #6326a0;
+  --footer-link: #8a0194;
   --footer-derechos: #616161;
 
-  --footer-ttl: #6326a0;
+  --footer-ttl: #8a0194;
   --footer-pag: #7b7b7b;
-  --footer-pag-hov: #6326a0;
+  --footer-pag-hov: #8a0194;
   --footer-ralq: #6326a0;
 
   /* demo/demo.tsx */
@@ -753,6 +755,7 @@
 
 [data-color="purple"].dark,
 .dark [data-color="purple"] {
+
   /* Titulo y Descripción general */
   --titulos: #ffffff;
   --descripciones: #616161;
@@ -760,37 +763,37 @@
   /* Header */
   --header-login-bg: transparent;
   --header-redir: #c4c4c4;
-  --header-redir-cursor: #8330c3;
+  --header-redir-cursor: #a800b7;
 
-  --header-login-bg-2: #8330c3;
+  --header-login-bg-2: #8a0194;
   --header-login-txt: #ffffff;
-  --header-regis-bg: #8330c3;
+  --header-regis-bg: #8a0194;
   --header-regis-txt: #ffffff;
 
   /* Hero */
   --hero-bg: #ffffff;
-  --hero-ttl: #7714c2;
+  --hero-ttl: #a800b7;
   --hero-desc: #c4c4c4;
-  --hero-bg-demo: #7714c2;
+  --hero-bg-demo: #a800b7;
   --hero-txt-demo: #fcfcfc;
 
   /* Carrusel 1*/
   --carrusel2-bg: #b7b7b7;
-  --carrusel-ttl: #fcfcfc;
-  --carrusel-desc: #8330c3;
+  --carrusel-ttl: #a800b7;
+  --carrusel-desc: #a800b7;
 
   /* --carrusel 2 */
-  --carrusel2-mini-bg: #8330c3;
+  --carrusel2-mini-bg: #8a0194;
   --carrusel2-mini-txt: #ffffff;
 
-  --carrusel2-ttl: #8330c3;
+  --carrusel2-ttl: #a800b7;
   --carrusel2-desc: #c4c4c4;
 
   --carrusel2-sig: #181818;
-  --carrusel2-sig-txt: #8330c3;
+  --carrusel2-sig-txt: #a800b7;
 
   /* Tarjetas pin3d */
-  --tarjetas-ttl1: #8330c3;
+  --tarjetas-ttl1: #a800b7;
   --tarjetas-desc2: #c4c4c4;
 
   --tarjetas-bg: #131313;
@@ -800,24 +803,24 @@
   --tarjetas-ttl4: #ffffff;
   --tarjetas-desc5: #c4c4c4;
 
-  --tarjetas-1txt6: #8330c3;
-  --tarjetas-2txt6: #8330c3;
-  --tarjetas-3txt6: #8330c3;
+  --tarjetas-1txt6: #a800b7;
+  --tarjetas-2txt6: #a800b7;
+  --tarjetas-3txt6: #a800b7;
 
   --tarjetas-desc7: #c4c4c4;
   --tarjetas-txt8: #c4c4c4;
 
   /* 2 mockup cada lado */
-  --mockup-ttl: #8330c3;
+  --mockup-ttl: #a800b7;
   --mockup-desc: #c4c4c4;
 
   /* wobble 4 */
-  --wobble-ttl: #8330c3;
+  --wobble-ttl: #a800b7;
   --wobble-desc: #c4c4c4;
 
   --wobble-bg-1: #2c2d2c;
-  --wobble-bg-2: #8330c3;
-  --wobble-bg-3: #8330c3;
+  --wobble-bg-2: #8a0194;
+  --wobble-bg-3: #8a0194;
   --wobble-bg-4: #2c2d2c;
 
   --wobble-ttl-5: #ffffff;
@@ -826,22 +829,22 @@
 
   /* Preguntas frecuentes */
   --preg-bg: #4b6554;
-  --preg-ttl: #8330c3;
+  --preg-ttl: #a800b7;
   --preg-desc: #c4c4c4;
-  --preg-link: #8330c3;
-  --preg-preg: #8330c3;
+  --preg-link: #a800b7;
+  --preg-preg: #a800b7;
   --preg-txt: #c4c4c4;
 
   /* Footer */
   --footer-bg: #4b6554;
 
   --footer-txt: #c4c4c4;
-  --footer-link: #8330c3;
+  --footer-link: #a800b7;
   --footer-derechos: #c4c4c4;
 
-  --footer-ttl: #8330c3;
+  --footer-ttl: #a800b7;
   --footer-pag: #7b7b7b;
-  --footer-pag-hov: #8330c3;
+  --footer-pag-hov: #a800b7;
   --footer-ralq: #8330c3;
 
   /* demo/demo.tsx */
@@ -859,9 +862,11 @@
   --demo-ttl: #ffffff;
   --demo-desc: #dad9d9;
 
+
   /* Pin 3D */
-  --pin-line: #8330c3;
-  --pin-wave: #8330c3;
+  --pin-line: #c800de; /* numero 600 - #c800de */
+
+  --pin-wave: #c800de;
 }
 
 /* Rojo */
@@ -1543,37 +1548,37 @@
   /* Header */
   --header-login-bg: transparent;
   --header-redir: #6b6b6b;
-  --header-redir-cursor: #18b638;
+  --header-redir-cursor: #5ea500;
 
-  --header-login-bg-2: #18b638;
+  --header-login-bg-2: #5ea500;
   --header-login-txt: #ffffff;
-  --header-regis-bg: #18b638;
+  --header-regis-bg: #5ea500;
   --header-regis-txt: #ffffff;
 
   /* Hero */
   --hero-bg: #ffffff;
-  --hero-ttl: #18b638;
+  --hero-ttl: #5ea500;
   --hero-desc: #616161;
-  --hero-bg-demo: #18b638;
+  --hero-bg-demo: #5ea500;
   --hero-txt-demo: #fcfcfc;
 
   /* Carrusel 1*/
   --carrusel-bg: #9cc2a9;
-  --carrusel-ttl: #000000;
-  --carrusel-desc: #3ab052;
+  --carrusel-ttl: #5ea500;
+  --carrusel-desc: #5ea500;
 
   /* --carrusel 2 */
-  --carrusel2-mini-bg: #1bb339;
+  --carrusel2-mini-bg: #5ea500;
   --carrusel2-mini-txt: #ffffff;
 
-  --carrusel2-ttl: #18b638;
+  --carrusel2-ttl: #5ea500;
   --carrusel2-desc: #616161;
 
   --carrusel2-sig: #181818;
   --carrusel2-sig-txt: #53d96e;
 
   /* Tarjetas pin3d */
-  --tarjetas-ttl1: #18b638;
+  --tarjetas-ttl1: #5ea500;
   --tarjetas-desc2: #616161;
 
   --tarjetas-bg: #f7f9f7;
@@ -1583,25 +1588,25 @@
   --tarjetas-ttl4: #000000;
   --tarjetas-desc5: #616161;
 
-  --tarjetas-1txt6: #0ca814;
-  --tarjetas-2txt6: #116fda;
-  --tarjetas-3txt6: #ebb40d;
+  --tarjetas-1txt6: #5ea500;
+  --tarjetas-2txt6: #5ea500;
+  --tarjetas-3txt6: #5ea500;
 
   --tarjetas-desc7: #616161;
   --tarjetas-txt8: #616161;
 
   /* 2 mockup cada lado */
   --mockup-bg: #4b6554;
-  --mockup-ttl: #18b638;
+  --mockup-ttl: #5ea500;
   --mockup-desc: #616161;
 
   /* wobble 4 */
-  --wobble-ttl: #18b638;
+  --wobble-ttl: #5ea500;
   --wobble-desc: #616161;
 
   --wobble-bg-1: #98a29b;
-  --wobble-bg-2: #3dce5a;
-  --wobble-bg-3: #3dce5a;
+  --wobble-bg-2: #5ea500;
+  --wobble-bg-3: #5ea500;
   --wobble-bg-4: #98a29b;
 
   --wobble-ttl-5: #ffffff;
@@ -1610,23 +1615,23 @@
 
   /* Preguntas frecuentes */
   --preg-bg: #4b6554;
-  --preg-ttl: #18b638;
+  --preg-ttl: #5ea500;
   --preg-desc: #616161;
-  --preg-link: #18b638;
-  --preg-preg: #18b638;
+  --preg-link: #5ea500;
+  --preg-preg: #5ea500;
   --preg-txt: #616161;
 
   /* Footer */
   --footer-bg: #4b6554;
 
   --footer-txt: #616161;
-  --footer-link: #18b638;
+  --footer-link: #5ea500;
   --footer-derechos: #616161;
 
-  --footer-ttl: #18b638;
+  --footer-ttl: #5ea500;
   --footer-pag: #7b7b7b;
-  --footer-pag-hov: #18b638;
-  --footer-ralq: #41c95c;
+  --footer-pag-hov: #5ea500;
+  --footer-ralq: #5ea500;
 
   /* demo/demo.tsx */
   --demo-bg: #acacac;
@@ -1644,8 +1649,8 @@
   --demo-desc: #dad9d9;
 
   /* Pin 3D */
-  --pin-line: #18b638;
-  --pin-wave: #18b638;
+  --pin-line: #7ccf00;
+  --pin-wave: #7ccf00;
 }
 
 [data-color="green"].dark,
@@ -1658,37 +1663,37 @@
   --header-login-bg: transparent;
 
   --header-redir: #c4c4c4;
-  --header-redir-cursor: #18b638;
+  --header-redir-cursor: #7ccf00;
 
-  --header-login-bg-2: #18b638;
+  --header-login-bg-2: #7ccf00;
   --header-login-txt: #ffffff;
-  --header-regis-bg: #18b638;
+  --header-regis-bg: #7ccf00;
   --header-regis-txt: #ffffff;
 
   /* Hero */
   --hero-bg: #ffffff;
-  --hero-ttl: #1bc13c;
+  --hero-ttl: #7ccf00;
   --hero-desc: #c4c4c4;
-  --hero-bg-demo: #18b638;
+  --hero-bg-demo: #7ccf00;
   --hero-txt-demo: #fcfcfc;
 
   /* Carrusel 1*/
   --carrusel2-bg: #b7b7b7;
-  --carrusel-ttl: #fcfcfc;
-  --carrusel-desc: #3ab052;
+  --carrusel-ttl: #7ccf00;
+  --carrusel-desc: #7ccf00;
 
   /* --carrusel 2 */
-  --carrusel2-mini-bg: #1bb339;
+  --carrusel2-mini-bg: #5ea500;
   --carrusel2-mini-txt: #ffffff;
 
-  --carrusel2-ttl: #18b638;
+  --carrusel2-ttl: #7ccf00;
   --carrusel2-desc: #c4c4c4;
 
   --carrusel2-sig: #181818;
   --carrusel2-sig-txt: #53d96e;
 
   /* Tarjetas pin3d */
-  --tarjetas-ttl1: #18b638;
+  --tarjetas-ttl1: #7ccf00;
   --tarjetas-desc2: #c4c4c4;
 
   --tarjetas-bg: #131313;
@@ -1698,25 +1703,25 @@
   --tarjetas-ttl4: #ffffff;
   --tarjetas-desc5: #c4c4c4;
 
-  --tarjetas-1txt6: #0ca814;
-  --tarjetas-2txt6: #116fda;
-  --tarjetas-3txt6: #ebb40d;
+  --tarjetas-1txt6: #7ccf00;
+  --tarjetas-2txt6: #7ccf00;
+  --tarjetas-3txt6: #7ccf00;
 
   --tarjetas-desc7: #c4c4c4;
   --tarjetas-txt8: #c4c4c4;
 
   /* 2 mockup cada lado */
   /* --mockup-bg: #4b6554; */
-  --mockup-ttl: #18b638;
+  --mockup-ttl: #7ccf00;
   --mockup-desc: #c4c4c4;
 
   /* wobble 4 */
-  --wobble-ttl: #18b638;
+  --wobble-ttl: #7ccf00;
   --wobble-desc: #c4c4c4;
 
   --wobble-bg-1: #2c2d2c;
-  --wobble-bg-2: #3dce5a;
-  --wobble-bg-3: #3dce5a;
+  --wobble-bg-2: #5ea500;
+  --wobble-bg-3: #5ea500;
   --wobble-bg-4: #2c2d2c;
 
   --wobble-ttl-5: #ffffff;
@@ -1725,23 +1730,23 @@
 
   /* Preguntas frecuentes */
   --preg-bg: #4b6554;
-  --preg-ttl: #18b638;
+  --preg-ttl: #7ccf00;
   --preg-desc: #c4c4c4;
-  --preg-link: #18b638;
-  --preg-preg: #18b638;
+  --preg-link: #7ccf00;
+  --preg-preg: #7ccf00;
   --preg-txt: #c4c4c4;
 
   /* Footer */
   --footer-bg: #4b6554;
 
   --footer-txt: #c4c4c4;
-  --footer-link: #18b638;
+  --footer-link: #7ccf00;
   --footer-derechos: #c4c4c4;
 
-  --footer-ttl: #18b638;
+  --footer-ttl: #7ccf00;
   --footer-pag: #7b7b7b;
-  --footer-pag-hov: #18b638;
-  --footer-ralq: #1a7f2e;
+  --footer-pag-hov: #7ccf00;
+  --footer-ralq: #7ccf00;
 
   /* demo/demo.tsx */
   --demo-bg: #acacac;
@@ -1759,8 +1764,8 @@
   --demo-desc: #dad9d9;
 
   /* Pin 3D */
-  --pin-line: #1bc13c;
-  --pin-wave: #1bc13c;
+  --pin-line: #7ccf00;
+  --pin-wave: #7ccf00;
 }
 
 @theme inline {
