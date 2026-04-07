@@ -5,6 +5,7 @@ Una moderna aplicación web (Landing / Showcase) construida enfocándose en un d
 <div align="center">
   <img src="https://github.com/user-attachments/assets/3a812062-6e7c-4ab6-98b8-fd33d02eb491" alt="Screenshot 1" width="800" />
   <br />
+  <br />
   <img src="https://github.com/user-attachments/assets/0e918093-9d4a-4429-b81a-17a54a7a1708" alt="Screenshot 2" width="800" />
 </div>
 
