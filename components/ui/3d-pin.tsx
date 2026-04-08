@@ -54,7 +54,7 @@ export const PinContainer = ({
           }}
           className={cn(
             "absolute left-1/2 p-4 top-1/2 flex justify-start items-start rounded-2xl shadow-[0_8px_16px_rgb(0_0_0/0.4)] bg-card border border-border group-hover/pin:border-primary/30 overflow-hidden",
-            reducedMotion ? "transition-none duration-0" : "transition duration-700"
+            reducedMotion ? "transition duration-200" : "transition duration-700"
           )}
         >
           <div className={cn("relative z-50", className)}>
@@ -79,7 +79,7 @@ export const PinPerspective = ({
     <motion.div 
       className={cn(
         "pointer-events-none w-96 h-80 flex items-center justify-center opacity-0 group-hover/pin:opacity-100 z-[60]",
-        reducedMotion ? "transition-none duration-0" : "transition duration-500"
+        reducedMotion ? "transition duration-150" : "transition duration-500"
       )}
     >
       <div className="w-full h-full -mt-7 flex-none inset-0">
@@ -171,11 +171,11 @@ export const PinPerspective = ({
         <>
           <motion.div className={cn(
             "absolute right-1/2 bottom-1/2 bg-gradient-to-b from-transparent to-pin-line translate-y-[14px] w-px h-20 group-hover/pin:h-40 blur-[2px]",
-            reducedMotion && "transition-none"
+            reducedMotion && "transition-all duration-150"
           )} />
           <motion.div className={cn(
             "absolute right-1/2 bottom-1/2 bg-gradient-to-b from-transparent to-pin-line translate-y-[14px] w-px h-20 group-hover/pin:h-40",
-            reducedMotion && "transition-none"
+            reducedMotion && "transition-all duration-150"
           )} />
           <motion.div className="absolute right-1/2 translate-x-[1.5px] bottom-1/2 bg-pin-line translate-y-[14px] w-[4px] h-[4px] rounded-full z-40 blur-[3px]" />
           <motion.div className="absolute right-1/2 translate-x-[0.5px] bottom-1/2 bg-pin-line/70 translate-y-[14px] w-[2px] h-[2px] rounded-full z-40" />
