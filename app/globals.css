@@ -170,7 +170,7 @@
 }
 
 .dark {
-  --bg-fondo: 101010;
+  --bg-fondo: 000000;
 
   /* Titulo y Descripción general */
   --titulos: #ffffff;
@@ -290,7 +290,7 @@
   --pin-wave: #ffffff;
 
   /* UI */
-  --background: #101010;
+  --background: #000000;
   --foreground: #fafafa;
   --card: #141414;
   --card-foreground: #fafafa;
@@ -894,7 +894,7 @@
 
   /* Carrusel 1*/
   --carrusel-bg: #9cc2a9;
-  --carrusel-ttl: #000000;
+  --carrusel-ttl: #ec0c0c;
   --carrusel-desc: #ec0c0c;
 
   /* --carrusel 2 */
@@ -1121,7 +1121,7 @@
 
   /* Carrusel 1*/
   --carrusel-bg: #9cc2a9;
-  --carrusel-ttl: #000000;
+  --carrusel-ttl: #f77817;
   --carrusel-desc: #f77817;
 
   /* --carrusel 2 */
