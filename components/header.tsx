@@ -79,45 +79,76 @@ export const HeroHeader = () => {
               </div>
             </div>
 
-            <div className="bg-background in-data-[state=active]:block lg:in-data-[state=active]:flex mb-6 hidden w-full flex-wrap items-center justify-end space-y-8 rounded-3xl border p-6 shadow-2xl shadow-zinc-300/20 md:flex-nowrap lg:m-0 lg:flex lg:w-fit lg:gap-6 lg:space-y-0 lg:border-transparent lg:bg-transparent lg:p-0 lg:shadow-none dark:shadow-none dark:lg:bg-transparent">
-              <div className="lg:hidden">
-                <ul className="space-y-6 text-base">
+            <div className="bg-background in-data-[state=active]:block lg:in-data-[state=active]:flex mb-6 hidden w-full flex-wrap items-center justify-end rounded-3xl border p-6 shadow-2xl shadow-zinc-300/20 md:flex-nowrap lg:m-0 lg:flex lg:w-fit lg:gap-6 lg:space-y-0 lg:border-transparent lg:bg-transparent lg:p-0 lg:shadow-none dark:shadow-none dark:lg:bg-transparent">
+              {/* Menu items - solo visible en movil */}
+              <div className="lg:hidden w-full">
+                <ul className="space-y-4 text-base mb-6">
                   {menuItems.map((item, index) => (
                     <li key={index}>
                       <Link
                         href={item.href}
-                        className="text-muted-foreground hover:text-accent-foreground block duration-150"
+                        className="text-muted-foreground hover:text-accent-foreground block duration-150 py-1"
                       >
                         <span>{item.name}</span>
                       </Link>
                     </li>
                   ))}
                 </ul>
+                
+                {/* Separador */}
+                <div className="border-t border-border/30 my-4" />
+                
+                {/* Controles y botones en movil - layout vertical */}
+                <div className="flex flex-col gap-4">
+                  {/* Theme Controls */}
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm text-muted-foreground">Preferencias</span>
+                    <ThemeControls className="" />
+                  </div>
+                  
+                  {/* Botones de auth */}
+                  <div className="flex items-center justify-between gap-3 pt-2">
+                    <Button
+                      asChild
+                      size="sm"
+                      className="cursor-pointer text-header-login-txt bg-transparent hover:bg-transparent focus:outline-none shadow-none px-0 py-0"
+                    >
+                      <Link href="/login">
+                        <span>Iniciar sesion</span>
+                      </Link>
+                    </Button>
+
+                    <Button
+                      asChild
+                      size="sm"
+                      className="cursor-pointer rounded-full px-5 py-2.5 bg-header-regis-bg text-header-regis-txt hover:bg-header-regis-bg"
+                    >
+                      <Link href="/registro">
+                        <span>Registrarse</span>
+                      </Link>
+                    </Button>
+                  </div>
+                </div>
               </div>
 
-              <div className="flex w-full flex-wrap items-center justify-end gap-6 lg:w-fit">
-                {/* Theme Controls separado a la izquierda */}
+              {/* Desktop layout */}
+              <div className="hidden lg:flex w-full flex-wrap items-center justify-end gap-6 lg:w-fit">
                 <ThemeControls className="mr-8 lg:mr-12" />
 
-                {/* Botón solo texto - Iniciar sesión */}
                 <Button
                   asChild
                   size="sm"
                   className="cursor-pointer text-header-login-txt bg-transparent hover:bg-transparent focus:outline-none shadow-none px-0 py-0"
                 >
                   <Link href="/login">
-                    <span>Iniciar sesión</span>
+                    <span>Iniciar sesion</span>
                   </Link>
                 </Button>
 
-                {/* Botón Registrarse mantiene estilo original */}
                 <Button
                   asChild
                   size="sm"
-                  className="cursor-pointer rounded-full px-5 py-5
-      bg-header-regis-bg
-      text-header-regis-txt
-      hover:bg-header-regis-bg"
+                  className="cursor-pointer rounded-full px-5 py-5 bg-header-regis-bg text-header-regis-txt hover:bg-header-regis-bg"
                 >
                   <Link href="/registro">
                     <span>Registrarse</span>

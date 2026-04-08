@@ -120,7 +120,7 @@ export function InfiniteSlider({
       }
     : {};
 
-  // If reduced motion is enabled, render static content
+  // If reduced motion is enabled, render static content without any animation
   if (reducedMotion) {
     return (
       <div className={cn('overflow-hidden', className)}>
@@ -129,6 +129,7 @@ export function InfiniteSlider({
           style={{
             gap: `${gap}px`,
             flexDirection: direction === 'horizontal' ? 'row' : 'column',
+            transform: 'translate3d(0px, 0px, 0px)', // Force static position
           }}
           ref={ref}
         >

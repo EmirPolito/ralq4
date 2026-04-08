@@ -54,28 +54,28 @@ export default function HeroSection() {
             <div className="aspect-2/3 relative z-10 flex flex-col justify-end px-0 lg:aspect-video">
               <div className="mx-auto w-full max-w-8xl pb-7 lg:px-35 lg:pb-75">
                 <ScrollAnimation direction="up" delay={0.2}>
-                  <div className="max-w-8xl relative mx-auto pt-36 md:pt-32 pb-20 md:pb-10 px-5 w-full left-0 top-0">
-                    <h1 className="text-hero-ttl text-3xl md:text-7xl font-bold">
+                  <div className="max-w-8xl relative mx-auto pt-24 sm:pt-28 md:pt-32 pb-16 sm:pb-20 md:pb-10 px-4 sm:px-5 w-full left-0 top-0">
+                    <h1 className="text-hero-ttl text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-bold leading-tight">
                       Instrumentos al
                       <br />
                       alcance de tus manos
                     </h1>
 
-                    <p className="text-hero-desc max-w-2xl text-base md:text-lg mt-6 ">
+                    <p className="text-hero-desc max-w-xs sm:max-w-md md:max-w-2xl text-sm sm:text-base md:text-lg mt-4 sm:mt-6 leading-relaxed">
                       Nuestra plataforma permite a los estudiantes aprender
                       sobre instrumentos de laboratorio de quimica mediante
                       modelos 3D en Realidad Aumentada.
                     </p>
 
-                    <div className="mt-8 flex items-center gap-2">
+                    <div className="mt-6 sm:mt-8 flex items-center gap-2">
                       <Button
                         asChild
                         size="lg"
-                        className="h-12 rounded-full pl-5 pr-3 text-base bg-hero-bg-demo text-hero-txt-demo hover:bg-primary-hero-bg-btn-demo/80"
+                        className="h-10 sm:h-12 rounded-full pl-4 sm:pl-5 pr-2 sm:pr-3 text-sm sm:text-base bg-hero-bg-demo text-hero-txt-demo hover:bg-primary-hero-bg-btn-demo/80"
                       >
                         <Link href="/demo">
                           <span className="text-nowrap">Ver demo</span>
-                          <ChevronRight className="ml-1" />
+                          <ChevronRight className="ml-1 size-4 sm:size-5" />
                         </Link>
                       </Button>
                     </div>
