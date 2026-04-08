@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { useReducedMotion } from "@/components/theme-controls";
 
 export const PinContainer = ({
   children,
@@ -17,6 +18,7 @@ export const PinContainer = ({
   className?: string;
   containerClassName?: string;
 }) => {
+  const reducedMotion = useReducedMotion();
   const [transform, setTransform] = useState(
     "translate(-50%,-50%) rotateX(0deg)"
   );
@@ -50,7 +52,10 @@ export const PinContainer = ({
           style={{
             transform: transform,
           }}
-          className="absolute left-1/2 p-4 top-1/2 flex justify-start items-start rounded-2xl shadow-[0_8px_16px_rgb(0_0_0/0.4)] bg-card border border-border group-hover/pin:border-primary/30 transition duration-700 overflow-hidden"
+          className={cn(
+            "absolute left-1/2 p-4 top-1/2 flex justify-start items-start rounded-2xl shadow-[0_8px_16px_rgb(0_0_0/0.4)] bg-card border border-border group-hover/pin:border-primary/30 overflow-hidden",
+            reducedMotion ? "transition-none duration-0" : "transition duration-700"
+          )}
         >
           <div className={cn("relative z-50", className)}>
             {children}
@@ -58,18 +63,25 @@ export const PinContainer = ({
         </div>
       </div>
 
-      <PinPerspective title={title} />
+      <PinPerspective title={title} reducedMotion={reducedMotion} />
     </Link>
   );
 };
 
 export const PinPerspective = ({
   title,
+  reducedMotion = false,
 }: {
   title?: string;
+  reducedMotion?: boolean;
 }) => {
   return (
-    <motion.div className="pointer-events-none w-96 h-80 flex items-center justify-center opacity-0 group-hover/pin:opacity-100 z-[60] transition duration-500">
+    <motion.div 
+      className={cn(
+        "pointer-events-none w-96 h-80 flex items-center justify-center opacity-0 group-hover/pin:opacity-100 z-[60]",
+        reducedMotion ? "transition-none duration-0" : "transition duration-500"
+      )}
+    >
       <div className="w-full h-full -mt-7 flex-none inset-0">
 
         {/* etiqueta superior */}
@@ -90,72 +102,81 @@ export const PinPerspective = ({
           }}
           className="absolute left-1/2 top-1/2 ml-[0.09375rem] mt-4 -translate-x-1/2 -translate-y-1/2"
         >
-          <>
-            <motion.div
-              initial={{
-                opacity: 0,
-                scale: 0,
-                x: "-50%",
-                y: "-50%",
-              }}
-              animate={{
-                opacity: [0, 1, 0.5, 0],
-                scale: 1,
-                z: 0,
-              }}
-              transition={{
-                duration: 6,
-                repeat: Infinity,
-                delay: 0,
-              }}
-              className="absolute left-1/2 top-1/2 h-[11.25rem] w-[11.25rem] rounded-full bg-pin-wave/[0.08] shadow-[0_8px_16px_rgb(0_0_0/0.4)]"
-            />
+          {/* Solo mostrar ondas animadas si las animaciones están habilitadas */}
+          {!reducedMotion && (
+            <>
+              <motion.div
+                initial={{
+                  opacity: 0,
+                  scale: 0,
+                  x: "-50%",
+                  y: "-50%",
+                }}
+                animate={{
+                  opacity: [0, 1, 0.5, 0],
+                  scale: 1,
+                  z: 0,
+                }}
+                transition={{
+                  duration: 6,
+                  repeat: Infinity,
+                  delay: 0,
+                }}
+                className="absolute left-1/2 top-1/2 h-[11.25rem] w-[11.25rem] rounded-full bg-pin-wave/[0.08] shadow-[0_8px_16px_rgb(0_0_0/0.4)]"
+              />
 
-            <motion.div
-              initial={{
-                opacity: 0,
-                scale: 0,
-                x: "-50%",
-                y: "-50%",
-              }}
-              animate={{
-                opacity: [0, 1, 0.5, 0],
-                scale: 1,
-                z: 0,
-              }}
-              transition={{
-                duration: 6,
-                repeat: Infinity,
-                delay: 2,
-              }}
-              className="absolute left-1/2 top-1/2 h-[11.25rem] w-[11.25rem] rounded-full bg-pin-wave/[0.08] shadow-[0_8px_16px_rgb(0_0_0/0.4)]"
-            />
+              <motion.div
+                initial={{
+                  opacity: 0,
+                  scale: 0,
+                  x: "-50%",
+                  y: "-50%",
+                }}
+                animate={{
+                  opacity: [0, 1, 0.5, 0],
+                  scale: 1,
+                  z: 0,
+                }}
+                transition={{
+                  duration: 6,
+                  repeat: Infinity,
+                  delay: 2,
+                }}
+                className="absolute left-1/2 top-1/2 h-[11.25rem] w-[11.25rem] rounded-full bg-pin-wave/[0.08] shadow-[0_8px_16px_rgb(0_0_0/0.4)]"
+              />
 
-            <motion.div
-              initial={{
-                opacity: 0,
-                scale: 0,
-                x: "-50%",
-                y: "-50%",
-              }}
-              animate={{
-                opacity: [0, 1, 0.5, 0],
-                scale: 1,
-                z: 0,
-              }}
-              transition={{
-                duration: 6,
-                repeat: Infinity,
-                delay: 4,
-              }}
-              className="absolute left-1/2 top-1/2 h-[11.25rem] w-[11.25rem] rounded-full bg-pin-wave/[0.08] shadow-[0_8px_16px_rgb(0_0_0/0.4)]"
-            />
-          </>
+              <motion.div
+                initial={{
+                  opacity: 0,
+                  scale: 0,
+                  x: "-50%",
+                  y: "-50%",
+                }}
+                animate={{
+                  opacity: [0, 1, 0.5, 0],
+                  scale: 1,
+                  z: 0,
+                }}
+                transition={{
+                  duration: 6,
+                  repeat: Infinity,
+                  delay: 4,
+                }}
+                className="absolute left-1/2 top-1/2 h-[11.25rem] w-[11.25rem] rounded-full bg-pin-wave/[0.08] shadow-[0_8px_16px_rgb(0_0_0/0.4)]"
+              />
+            </>
+          )}
         </div>
 
         <>
-          <motion.div className="absolute right-1/2 bottom-1/2 bg-gradient-to-b from-transparent to-pin-line translate-y-[14px] w-px h-20 group-hover/pin:h-40 blur-[2px]" />
-          <motion.div className="absolute right-1/2 bottom-1/2 bg-gradient-to-b from-transparent to-pin-line translate-y-[14px] w-px h-20 group-hover/pin:h-40" />
+          <motion.div className={cn(
+            "absolute right-1/2 bottom-1/2 bg-gradient-to-b from-transparent to-pin-line translate-y-[14px] w-px h-20 group-hover/pin:h-40 blur-[2px]",
+            reducedMotion && "transition-none"
+          )} />
+          <motion.div className={cn(
+            "absolute right-1/2 bottom-1/2 bg-gradient-to-b from-transparent to-pin-line translate-y-[14px] w-px h-20 group-hover/pin:h-40",
+            reducedMotion && "transition-none"
+          )} />
           <motion.div className="absolute right-1/2 translate-x-[1.5px] bottom-1/2 bg-pin-line translate-y-[14px] w-[4px] h-[4px] rounded-full z-40 blur-[3px]" />
           <motion.div className="absolute right-1/2 translate-x-[0.5px] bottom-1/2 bg-pin-line/70 translate-y-[14px] w-[2px] h-[2px] rounded-full z-40" />
         </>
