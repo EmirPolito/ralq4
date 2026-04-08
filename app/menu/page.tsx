@@ -1,6 +1,6 @@
 "use client";
 
-import { LensDemo } from "@/components/contenido-menu1";
+import { LensDemo } from "@/components/menu/contenido-menu1";
 
 export default function MenuPage() {
   return (

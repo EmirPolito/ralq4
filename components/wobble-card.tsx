@@ -55,7 +55,7 @@ export default function WobbleCardSection() {
                 width={370}
                 height={370}
                 alt="Exploración de instrumentos de laboratorio"
-                className="absolute -right-4 lg:-right-[2%] -bottom-3.5 object-contain rounded-2xl"
+                className="absolute -right-10 md:-right-[10%] lg:-right-[2%] -bottom-10 object-contain rounded-2xl hidden sm:block lg:w-[350px]"
               />
             </WobbleCard>
 
@@ -108,7 +108,7 @@ export default function WobbleCardSection() {
                 width={370}
                 height={370}
                 alt="Visualización de estructuras científicas"
-                className="absolute -right-4 lg:-right-[2%] -bottom-2 object-contain rounded-2xl"
+                className="absolute -right-10 md:-right-[10%] lg:-right-[2%] -bottom-10 object-contain rounded-2xl hidden sm:block lg:w-[350px]"
               />
             </WobbleCard>
           </div>

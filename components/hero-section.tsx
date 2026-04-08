@@ -1,16 +1,16 @@
 "use client";
 
 import React from "react";
-import { HeroHeader } from "./header";
-import { Hero } from "@/components/hero";
-import { Carousel } from "@/components/carousel";
 import { ScrollAnimation } from "@/components/motion-primitives/scroll-animation";
-import { Feature } from "@/components/feature-with-image-carousel";
-import FAQs from "@/components/preguntas-frec";
-import Footer from "@/components/footer";
-import WobbleCardSection from "@/components/wobble-card-section";
-import PinCardsSection from "@/components/pin-cards-section";
+import { HeroHeader } from "@/components/header";
+import { Hero } from "@/components/hero";
+import { Carousel } from "@/components/carrusel-1";
+import PinCardsSection from "@/components/3d-pin-demo";
 import { IzquierdaDerecha } from "@/components/izquierda-derecha";
+import WobbleCardSection from "@/components/wobble-card";
+import { Feature } from "@/components/carrusel-2";
+import FAQs from "@/components/preguntas-frecuentes";
+import Footer from "@/components/footer";
 
 export default function HeroSection() {
   return (

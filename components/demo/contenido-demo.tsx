@@ -5,8 +5,8 @@ import {
   motion,
   AnimatePresence,
   Variants,
-  useReducedMotion,
 } from "framer-motion";
+import { useReducedMotion } from "@/hooks/use-reduced-motion";
 import {
   Sliders,
   ChevronRight,

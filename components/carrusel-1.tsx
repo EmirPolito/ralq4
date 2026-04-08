@@ -16,8 +16,8 @@ const circleItems = [
 
 export function Carousel() {
   return (
-    <section className="bg-background py-3">
-      <div className="group relative m-auto max-w-8xl px-5 -mt-10 md:-mt-32">
+    <section className="bg-background py-14">
+      <div className="group relative m-auto max-w-8xl px-5 mt-5 md:-mt-16">
         <div className="flex flex-col items-center md:flex-row">
           <div className="md:max-w-52 md:border-r md:border-[#9cc2a9]/30 md:px-5 md:pr-10 shrink-10">
             <p className="text-carrusel-ttl text-start text-base md:text-lg font-semibold tracking-wide md:text-left">

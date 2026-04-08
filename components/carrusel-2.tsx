@@ -17,33 +17,7 @@ import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 import { useTheme } from "next-themes";
 
-function useReducedMotion() {
-  const [reducedMotion, setReducedMotion] = useState(false);
-
-  useEffect(() => {
-    const checkReducedMotion = () => {
-      const saved = localStorage.getItem("reducedMotion") === "true";
-      const hasClass =
-        document.documentElement.classList.contains("reduce-motion");
-      setReducedMotion(saved || hasClass);
-    };
-
-    checkReducedMotion();
-
-    const observer = new MutationObserver(() => {
-      checkReducedMotion();
-    });
-
-    observer.observe(document.documentElement, {
-      attributes: true,
-      attributeFilter: ["class"],
-    });
-
-    return () => observer.disconnect();
-  }, []);
-
-  return reducedMotion;
-}
+import { useReducedMotion } from "@/hooks/use-reduced-motion";
 
 const carouselImages = [
   {

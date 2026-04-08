@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import { useReducedMotion } from "@/components/theme-controls";
+import { useReducedMotion } from "@/hooks/use-reduced-motion";
 
 export const PinContainer = ({
   children,

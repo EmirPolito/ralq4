@@ -1,7 +1,8 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { motion, type Variants } from "framer-motion";
+import { useReducedMotion } from "@/hooks/use-reduced-motion";
 
 interface ScrollAnimationProps {
   children: React.ReactNode;
@@ -11,35 +12,6 @@ interface ScrollAnimationProps {
   direction?: "up" | "down" | "left" | "right" | "fade";
   once?: boolean;
   amount?: number;
-}
-
-function useReducedMotion() {
-  const [reducedMotion, setReducedMotion] = useState(false);
-
-  useEffect(() => {
-    // Check localStorage for user preference
-    const checkReducedMotion = () => {
-      const saved = localStorage.getItem("reducedMotion") === "true";
-      const hasClass = document.documentElement.classList.contains("reduce-motion");
-      setReducedMotion(saved || hasClass);
-    };
-
-    checkReducedMotion();
-
-    // Listen for changes to the class
-    const observer = new MutationObserver(() => {
-      checkReducedMotion();
-    });
-
-    observer.observe(document.documentElement, {
-      attributes: true,
-      attributeFilter: ["class"],
-    });
-
-    return () => observer.disconnect();
-  }, []);
-
-  return reducedMotion;
 }
 
 const getVariants = (direction: string): Variants => {

@@ -8,6 +8,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import Link from "next/link";
+import { ScrollAnimation } from "@/components/motion-primitives/scroll-animation";
 
 const faqItems = [
   {
@@ -58,12 +59,16 @@ export default function FAQs() {
   if (!mounted) return null;
 
   return (
-    <section className="bg-background @container py-22.5">
-      <div className="mx-auto max-w-8xl px-5 md:px-13">
-        <div className="@xl:flex-row @xl:items-start @xl:gap-15 flex flex-col gap-8">
+    <section className="bg-background @container py-16 md:py-24 lg:py-32">
+      <div className="mx-auto max-w-8xl px-6 md:px-12 lg:px-15">
+        <div className="@xl:flex-row @xl:items-start lg:gap-5 flex flex-col gap-12">
           {/* LADO IZQUIERDO */}
-          <div className="py-7 @xl:sticky @xl:top-24 @xl:w-83 shrink-0">
-            <h2 className="text-preg-ttl font-semibold text-6xl font-medium">
+          <ScrollAnimation
+            direction="up"
+            delay={0.1}
+            className="@xl:sticky @xl:top-24 lg:w-96 shrink-0"
+          >
+            <h2 className="text-preg-ttl font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight">
               Preguntas Frecuentes
             </h2>
 
@@ -76,10 +81,10 @@ export default function FAQs() {
                 Contáctanos
               </Link>
             </p>
-          </div>
+          </ScrollAnimation>
 
           {/* LADO DERECHO */}
-          <div className="flex-1">
+          <ScrollAnimation direction="up" delay={0.2} className="flex-1">
             <Accordion type="single" collapsible>
               {faqItems.map((item) => (
                 <AccordionItem
@@ -99,7 +104,7 @@ export default function FAQs() {
                 </AccordionItem>
               ))}
             </Accordion>
-          </div>
+          </ScrollAnimation>
         </div>
       </div>
     </section>

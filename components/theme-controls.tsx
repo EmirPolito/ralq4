@@ -36,27 +36,7 @@ const colorOptions = [
   { name: "Verde", value: "green", color: "#5ea500" },
 ];
 
-export const REDUCED_MOTION_EVENT = "reducedMotionChange";
-
-export function useReducedMotion() {
-  const [reducedMotion, setReducedMotion] = React.useState(false);
-
-  React.useEffect(() => {
-    setReducedMotion(localStorage.getItem("reducedMotion") === "true");
-
-    const handler = (e: CustomEvent) => {
-      setReducedMotion(e.detail.reducedMotion);
-    };
-    window.addEventListener(REDUCED_MOTION_EVENT, handler as EventListener);
-    return () =>
-      window.removeEventListener(
-        REDUCED_MOTION_EVENT,
-        handler as EventListener,
-      );
-  }, []);
-
-  return reducedMotion;
-}
+import { REDUCED_MOTION_EVENT, useReducedMotion } from "@/hooks/use-reduced-motion";
 
 export function ThemeControls({ className }: { className?: string }) {
   const { theme, setTheme, resolvedTheme } = useTheme();
@@ -228,9 +208,7 @@ export function ThemeControls({ className }: { className?: string }) {
             </DropdownMenuItem>
 
             <DropdownMenuItem
-              onClick={(e) => {
-                e.preventDefault();
-                e.stopPropagation();
+              onClick={() => {
                 if (!colorblind) {
                   setColorblind(true);
                   localStorage.setItem("colorblind", "true");

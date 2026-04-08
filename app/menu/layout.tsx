@@ -1,6 +1,6 @@
 "use client";
 
-import { AnimatedHeaderMenu } from "@/components/headerMenu";
+import { AnimatedHeaderMenu } from "@/components/menu/headerMenu";
 import "../globals.css";
 
 export default function HeaderLayout({

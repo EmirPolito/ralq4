@@ -94,18 +94,20 @@ export const HeroHeader = () => {
                     </li>
                   ))}
                 </ul>
-                
+
                 {/* Separador */}
                 <div className="border-t border-border/30 my-4" />
-                
+
                 {/* Controles y botones en movil - layout vertical */}
                 <div className="flex flex-col gap-4">
                   {/* Theme Controls */}
                   <div className="flex items-center justify-between">
-                    <span className="text-sm text-muted-foreground">Preferencias</span>
+                    <span className="text-sm text-muted-foreground">
+                      Preferencias
+                    </span>
                     <ThemeControls className="" />
                   </div>
-                  
+
                   {/* Botones de auth */}
                   <div className="flex items-center justify-between gap-3 pt-2">
                     <Button

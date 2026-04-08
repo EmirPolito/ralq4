@@ -6,7 +6,7 @@ import {
   motion,
 } from "motion/react";
 import React, { useEffect, useRef, useState } from "react";
-import { useReducedMotion } from "@/components/theme-controls";
+import { useReducedMotion } from "@/hooks/use-reduced-motion";
 
 interface TimelineEntry {
   title: string;

@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 import { ScrollAnimation } from "@/components/motion-primitives/scroll-animation";
-import { useReducedMotion } from "@/components/theme-controls";
+import { useReducedMotion } from "@/hooks/use-reduced-motion";
 
 export function Hero() {
   const reducedMotion = useReducedMotion();
@@ -24,31 +24,31 @@ export function Hero() {
   return (
     <section>
       <div>
-        <div className="aspect-2/3 relative z-10 flex flex-col justify-end px-0 lg:aspect-video">
-          <div className="mx-auto w-full max-w-8xl pb-7 lg:px-30 lg:pb-78">
+        <div className="relative z-10 flex min-h-[80vh] flex-col justify-end px-4 sm:px-6 md:px-12 lg:px-20 lg:min-h-screen">
+          <div className="mx-auto w-full max-w-7xl pb-12 sm:pb-20 md:pb-32 lg:pb-35">
             <ScrollAnimation direction="up" delay={0.2}>
-              <div className="max-w-8xl relative mx-auto pt-24 sm:pt-28 md:pt-32 pb-16 sm:pb-20 md:pb-5 px-4 sm:px-3 w-full left-0 top-0">
-                <h1 className="text-hero-ttl text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-bold leading-tight">
+              <div className="flex flex-col items-center text-center sm:items-start sm:text-left">
+                <h1 className="text-hero-ttl text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold leading-tight tracking-tight">
                   Instrumentos al
                   <br />
                   alcance de tus manos
                 </h1>
 
-                <p className="text-hero-desc max-w-xs sm:max-w-md md:max-w-2xl text-sm sm:text-base md:text-lg mt-4 sm:mt-1 leading-relaxed">
+                <p className="text-hero-desc max-w-sm sm:max-w-md md:max-w-2xl text-base sm:text-lg md:text-xl mt-2 leading-relaxed">
                   Nuestra plataforma permite a los estudiantes aprender sobre
-                  instrumentos de laboratorio de quimica mediante modelos 3D en
+                  instrumentos de laboratorio de química mediante modelos 3D en
                   Realidad Aumentada.
                 </p>
 
-                <div className="mt-6 sm:mt-10 flex items-center gap-2">
+                <div className="mt-10 flex items-center justify-center sm:justify-start gap-4">
                   <Button
                     asChild
                     size="lg"
-                    className="h-10 sm:h-11.5 rounded-full pl-4 sm:pl-5 pr-2 sm:pr-3 text-sm sm:text-base bg-hero-bg-demo text-hero-txt-demo hover:bg-primary-hero-bg-btn-demo/80"
+                    className="h-12 rounded-full px-8 text-base font-medium shadow-lg transition-all hover:scale-105 active:scale-95 bg-hero-bg-demo text-hero-txt-demo hover:opacity-90"
                   >
                     <Link href="/demo">
                       <span className="text-nowrap">Ver demo</span>
-                      <ChevronRight className="ml-1 size-4 sm:size-4.5" />
+                      <ChevronRight className="ml-2 size-5" />
                     </Link>
                   </Button>
                 </div>

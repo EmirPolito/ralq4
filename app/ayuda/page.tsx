@@ -1,7 +1,7 @@
 "use client";
 
 import { HeroHeader } from "@/components/header";
-import ContenidoAyuda from "@/components/contenido-ayuda";
+import ContenidoAyuda from "@/components/ayuda";
 import Footer from "@/components/footer";
 
 export default function AyudaPage() {

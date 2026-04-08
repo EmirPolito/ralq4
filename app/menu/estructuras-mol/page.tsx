@@ -1,6 +1,6 @@
 "use client";
 
-import { AnimatedHeaderMenu } from "@/components/headerMenu";
+import { AnimatedHeaderMenu } from "@/components/menu/headerMenu";
 // import { ContenidoMol } from "@/components/contenido-mol";
 
 export default function EstructurasMol() {

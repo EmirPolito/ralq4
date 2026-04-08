@@ -1,7 +1,7 @@
 "use client";
 
 import { HeroHeader } from "@/components/header";
-import ContactSection from "@/components/contact-section";
+import ContactSection from "@/components/contacto";
 import Footer from "@/components/footer";
 
 export default function ContactPage() {

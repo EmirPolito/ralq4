@@ -4,34 +4,7 @@ import { useMotionValue, animate, motion } from 'motion/react';
 import { useState, useEffect } from 'react';
 import useMeasure from 'react-use-measure';
 
-function useReducedMotion() {
-  const [reducedMotion, setReducedMotion] = useState(false);
-
-  useEffect(() => {
-    // Check localStorage for user preference
-    const checkReducedMotion = () => {
-      const saved = localStorage.getItem("reducedMotion") === "true";
-      const hasClass = document.documentElement.classList.contains("reduce-motion");
-      setReducedMotion(saved || hasClass);
-    };
-
-    checkReducedMotion();
-
-    // Listen for changes to the class
-    const observer = new MutationObserver(() => {
-      checkReducedMotion();
-    });
-
-    observer.observe(document.documentElement, {
-      attributes: true,
-      attributeFilter: ["class"],
-    });
-
-    return () => observer.disconnect();
-  }, []);
-
-  return reducedMotion;
-}
+import { useReducedMotion } from '@/hooks/use-reduced-motion';
 
 export type InfiniteSliderProps = {
   children: React.ReactNode;

@@ -2,7 +2,7 @@
 
 import React, { useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
-import { useReducedMotion } from "@/components/theme-controls";
+import { useReducedMotion } from "@/hooks/use-reduced-motion";
 
 interface LensProps {
   children: React.ReactNode;
