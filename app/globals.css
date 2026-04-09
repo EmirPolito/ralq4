@@ -148,10 +148,11 @@
   --contact-card-bg: #ffffff;
   --contact-card-border: #d1d1d1;
 
-  --contact-label: #475569;
+  --contact-label: #2c2a2a;
 
   --contact-input-text: #000000;
-  --contact-input-desc: #000000;
+  --contact-input-desc: #2c2a2a;
+  
   --contact-input-bg: #ffffff;
   --contact-input-border: #d1d1d1;
   --contact-input-border-hover: #000000;
@@ -763,7 +764,7 @@
    Contacto
 ========================= */
   --contact-ttl: #155dfc;
-  --contact-desc: #616161;
+  --contact-desc: #2c2a2a;
 
   --contact-card-bg: #ffffff;
   --contact-card-border: #d1d1d1;
@@ -771,7 +772,7 @@
   --contact-label: #155dfc;
 
   --contact-input-text: #155dfc;
-  --contact-input-desc: #000000;
+  --contact-input-desc: #2c2a2a;
   --contact-input-bg: #ffffff;
   --contact-input-border: #e2e8e3;
   --contact-input-border-hover: #155dfc;
@@ -1103,7 +1104,7 @@
    Contacto
 ========================= */
   --contact-ttl: #8a0194;
-  --contact-desc: #616161;
+  --contact-desc: #2c2a2a;
 
   --contact-card-bg: #ffffff;
   --contact-card-border: #d1d1d1;
@@ -1111,7 +1112,7 @@
   --contact-label: #8a0194;
 
   --contact-input-text: #8a0194;
-  --contact-input-desc: #000000;
+  --contact-input-desc: #2c2a2a;
   --contact-input-bg: #ffffff;
   --contact-input-border: #e2e8e3;
   --contact-input-border-hover: #8a0194;
@@ -1443,7 +1444,7 @@
    Contacto
 ========================= */
   --contact-ttl: #ec0c0c;
-  --contact-desc: #616161;
+  --contact-desc: #2c2a2a;
 
   --contact-card-bg: #ffffff;
   --contact-card-border: #d1d1d1;
@@ -1451,7 +1452,7 @@
   --contact-label: #ec0c0c;
 
   --contact-input-text: #ec0c0c;
-  --contact-input-desc: #000000;
+  --contact-input-desc: #2c2a2a;
   --contact-input-bg: #ffffff;
   --contact-input-border: #e2e8e3;
   --contact-input-border-hover: #ec0c0c;
@@ -1783,7 +1784,7 @@
    Contacto
 ========================= */
   --contact-ttl: #f77817;
-  --contact-desc: #616161;
+  --contact-desc: #2c2a2a;
 
   --contact-card-bg: #ffffff;
   --contact-card-border: #d1d1d1;
@@ -1791,7 +1792,7 @@
   --contact-label: #f77817;
 
   --contact-input-text: #f77817;
-  --contact-input-desc: #000000;
+  --contact-input-desc: #2c2a2a;
   --contact-input-bg: #ffffff;
   --contact-input-border: #e2e8e3;
   --contact-input-border-hover: #f77817;
@@ -2123,7 +2124,7 @@
    Contacto
 ========================= */
   --contact-ttl: #ec003f;
-  --contact-desc: #616161;
+  --contact-desc: #2c2a2a;
 
   --contact-card-bg: #ffffff;
   --contact-card-border: #d1d1d1;
@@ -2131,7 +2132,7 @@
   --contact-label: #ec003f;
 
   --contact-input-text: #ec003f;
-  --contact-input-desc: #000000;
+  --contact-input-desc: #2c2a2a;
   --contact-input-bg: #ffffff;
   --contact-input-border: #e2e8e3;
   --contact-input-border-hover: #ec003f;
@@ -2471,7 +2472,7 @@
   --contact-label: #5ea500;
 
   --contact-input-text: #5ea500;
-  --contact-input-desc: #000000;
+  --contact-input-desc: #2c2a2a;
   --contact-input-bg: #ffffff;
   --contact-input-border: #e2e8e3;
   --contact-input-border-hover: #5ea500;
