@@ -30,6 +30,7 @@
 
   --hero-bg-demo: #313432;
   --hero-txt-demo: #ffffff;
+  --hero-hvr-demo: #313432;
 
 
   /* Carrusel 1*/
@@ -244,6 +245,7 @@
 
   --hero-bg-demo: #ffffff;
   --hero-txt-demo: #020202;
+  --hero-hvr-demo: #ffffff;
 
 
   /* Carrusel 1*/
@@ -441,7 +443,7 @@
   /* Header */
   --header-login-bg: transparent;
   --header-redir: #333333;
-  --header-redir-cursor: #0072b2;
+  --header-redir-cursor: #d55e00;
 
   --header-login-bg-2: #3a3a3a;
   --header-login-txt: #333333;
@@ -452,11 +454,12 @@
 
   /* Hero */
   --hero-bg: #ffffff;
-  --hero-ttl: #1e1f20;
+  --hero-ttl: #0072b2;
   --hero-desc: #333333;
 
-  --hero-bg-demo: #1e1f20;
+  --hero-bg-demo: #0072b2;
   --hero-txt-demo: #ffffff;
+  --hero-hvr-demo: #d55e00;
 
 
   /* Carrusel 1*/
@@ -531,7 +534,7 @@
   /* Footer */
   --footer-bg: #ffffff;
   --footer-txt: #000000;
-  --footer-link: #d55e00;
+  --footer-link: #0072b2;
   --footer-derechos: #333333;
 
   --footer-ttl: #000000;
@@ -559,10 +562,10 @@
   /* =========================
    Sobre Nosotros
 ========================= */
-  --nos-ttl: #000000;
+  --nos-ttl: #0072b2;
   --nos-desc: #333333;
 
-  --nos-fechas: #000000;
+  --nos-fechas: #0072b2;
   --nos-txt: #333333;
 
 
@@ -592,20 +595,21 @@
   --contact-team-name: #000000;
   --contact-team-email: #333333;
 
-  --contact-social: #333333;
-  --contact-social-hvr: #0072b2;
+  --contact-social: #0072b2;
+  --contact-social-hvr: #d55e00;
 
 
   /* =========================
    Ayuda
 ========================= */
-  --ayuda-ttl: #000000;
+  --ayuda-ttl: #0072b2;
   --ayuda-desc: #333333;
 
-  --ayuda-preg-ttl: #000000;
+  --ayuda-preg-ttl: #0072b2;
   --ayuda-preg-txt: #333333;
 
-  --ayuda-link: #000000;
+  --ayuda-link: #0072b2;
+  --ayuda-link-hvr: #d55e00;
 
 
   /* UI */
@@ -658,6 +662,7 @@
 
   --hero-bg-demo: #155dfc;
   --hero-txt-demo: #fcfcfc;
+  --hero-hvr-demo: #155dfc;
 
 
   /* Carrusel 1*/
@@ -828,6 +833,7 @@
 
   --hero-bg-demo: #155dfc;
   --hero-txt-demo: #fcfcfc;
+  --hero-hvr-demo: #155dfc;
 
 
   /* Carrusel 1*/
@@ -998,6 +1004,7 @@
 
   --hero-bg-demo: #8a0194;
   --hero-txt-demo: #fcfcfc;
+  --hero-hvr-demo: #8a0194;
 
 
   /* Carrusel 1*/
@@ -1168,6 +1175,7 @@
 
   --hero-bg-demo: #a800b7;
   --hero-txt-demo: #fcfcfc;
+  --hero-hvr-demo: #a800b7;
 
 
   /* Carrusel 1*/
@@ -1338,6 +1346,7 @@
 
   --hero-bg-demo: #ec0c0c;
   --hero-txt-demo: #fcfcfc;
+  --hero-hvr-demo: #ec0c0c;
 
 
   /* Carrusel 1*/
@@ -1508,6 +1517,7 @@
 
   --hero-bg-demo: #ff1a1a;
   --hero-txt-demo: #fcfcfc;
+  --hero-hvr-demo: #ff1a1a;
 
 
   /* Carrusel 1*/
@@ -1678,6 +1688,7 @@
 
   --hero-bg-demo: #f77817;
   --hero-txt-demo: #fcfcfc;
+  --hero-hvr-demo: #f77817;
 
 
   /* Carrusel 1*/
@@ -1848,6 +1859,7 @@
 
   --hero-bg-demo: #ff8400;
   --hero-txt-demo: #fcfcfc;
+  --hero-hvr-demo: #ff8400;
 
 
   /* Carrusel 1*/
@@ -2018,6 +2030,7 @@
 
   --hero-bg-demo: #ec003f;
   --hero-txt-demo: #fcfcfc;
+  --hero-hvr-demo: #ec003f;
 
 
   /* Carrusel 1*/
@@ -2188,6 +2201,7 @@
 
   --hero-bg-demo: #ec003f;
   --hero-txt-demo: #fcfcfc;
+  --hero-hvr-demo: #ec003f;
 
 
   /* Carrusel 1*/
@@ -2358,6 +2372,7 @@
 
   --hero-bg-demo: #5ea500;
   --hero-txt-demo: #fcfcfc;
+  --hero-hvr-demo: #5ea500;
 
 
   /* Carrusel 1*/
@@ -2528,6 +2543,7 @@
 
   --hero-bg-demo: #7ccf00;
   --hero-txt-demo: #fcfcfc;
+  --hero-hvr-demo: #7ccf00;
 
 
   /* Carrusel 1*/
@@ -2717,6 +2733,7 @@
   --color-header-login-bg: var(--header-login-bg);
   --color-header-redir: var(--header-redir);
   --color-header-redir-cursor: var(--header-redir-cursor);
+  
   --color-header-login-bg-2: var(--header-login-bg-2);
   --color-header-login-txt: var(--header-login-txt);
   --color-header-regis-bg: var(--header-regis-bg);
@@ -2726,8 +2743,10 @@
   --color-hero-bg: var(--hero-bg);
   --color-hero-ttl: var(--hero-ttl);
   --color-hero-desc: var(--hero-desc);
+
   --color-hero-bg-demo: var(--hero-bg-demo);
   --color-hero-txt-demo: var(--hero-txt-demo);
+  --color-hero-hvr-demo: var(--hero-hvr-demo);
 
   /* Carrusel */
   --color-carrusel-bg: var(--carrusel-bg);
@@ -2855,6 +2874,7 @@
   --color-ayuda-preg-txt: var(--ayuda-preg-txt);
 
   --color-ayuda-link: var(--ayuda-link);
+  --color-ayuda-link-hvr: var(--ayuda-link-hvr);
 }
 
 @layer base {

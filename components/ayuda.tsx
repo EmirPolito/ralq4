@@ -152,7 +152,7 @@ export default function ContenidoBlog() {
                   >
                     <Link
                       href={item.href}
-                      className="text-ayuda-link inline-flex items-center gap-2 font-medium hover:gap-3 transition-all duration-300 group/link"
+                      className="hover:text-ayuda-link-hvr text-ayuda-link inline-flex items-center gap-2 font-medium hover:gap-3 transition-all duration-300 group/link"
                     >
                       Ver más
                       <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover/link:translate-x-1" />

@@ -44,7 +44,7 @@ export function Hero() {
                   <Button
                     asChild
                     size="lg"
-                    className="h-12 rounded-full px-8 text-base font-medium shadow-lg transition-all hover:scale-105 active:scale-95 bg-hero-bg-demo text-hero-txt-demo hover:opacity-90"
+                    className="h-12 rounded-full px-8 text-base font-medium shadow-lg transition-all hover:scale-100 active:scale-95 bg-hero-bg-demo text-hero-txt-demo hover:bg-hero-hvr-demo"
                   >
                     <Link href="/demo">
                       <span className="text-nowrap">Ver demo</span>
