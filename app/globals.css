@@ -121,31 +121,52 @@
   --demo-ttl: #000000;
   --demo-desc: #4f4e4e;
 
+  /* =========================
+   Sobre Nosotros
+========================= */
+  --nos-ttl: #000000;
+  --nos-desc: #2c2a2a;
+
+  --nos-fechas: #000000;
+  --nos-txt: #2c2a2a;
+
 
   /* =========================
-   CONTACT - BASE (HEX)
+   Contacto
 ========================= */
   --contact-ttl: #000000;
-  --contact-desc: #4f4e4e;
+  --contact-desc: #2c2a2a;
 
   --contact-card-bg: #ffffff;
-  --contact-card-border: #e5e5e5;
-  --contact-label: #000000;
-
+  --contact-card-border: #d1d1d1;
 
   --contact-input-text: #000000;
-  --contact-input-border: #e5e5e5;
-  --contact-input-border-hover: #9ca3af;
+  --contact-input-desc: #000000;
 
-  --contact-btn-bg: #1f2937;
+  --contact-btn-bg: #000000;
   --contact-btn-text: #ffffff;
-  --contact-btn-hover: #1f2937;
+  --contact-btn-hover: #000000;
 
+  
+  --contact-team-ttl: #000000;
   --contact-team-name: #000000;
-  --contact-team-email: #6b7280;
+  --contact-team-correo: #3e3e3e;
 
-  --contact-social: #6b7280;
-  --contact-social-hover: #000000;
+  --contact-social: #000000;
+  --contact-social-hvr: #181818;
+
+
+  /* =========================
+   Ayuda
+========================= */
+  --ayuda-ttl: #000000;
+  --ayuda-desc: #2c2a2a;
+
+  --ayuda-preg-ttl: #000000;
+  --ayuda-preg-txt: #2c2a2a;
+
+  --ayuda-link: #000000;
+
 
   /* UI */
   --background: #ffffff;
@@ -289,6 +310,14 @@
   --demo-mini-ttl: #dad9d9;
   --demo-ttl: #ffffff;
   --demo-desc: #dad9d9;
+
+
+  /* Sobre Nosotros */
+  --nos-ttl: #ffffff;
+  --nos-desc: #dad9d9;
+
+  --nos-fechas: #ffffff;
+  --nos-txt: #dad9d9;
 
 
   /* UI */
@@ -1981,6 +2010,13 @@
   --color-demo-ttl: var(--demo-ttl);
   --color-demo-desc: var(--demo-desc);
 
+  /* Sobre Nosotros */
+  --color-nos-ttl: var(--nos-ttl);
+  --color-nos-desc: var(--nos-desc);
+
+  --color-nos-fechas: var(--nos-fechas);
+  --color-nos-txt: var(--nos-txt);
+
   /* Contacto */
   --color-contact-ttl: var(--contact-ttl);
   --color-contact-desc: var(--contact-desc);
@@ -1991,6 +2027,7 @@
   --color-contact-label: var(--contact-label);
 
   --color-contact-input-text: var(--contact-input-text);
+  --color-contact-input-desc: var(--contact-input-desc);
   --color-contact-input-border: var(--contact-input-border);
   --color-contact-input-border-hover: var(--contact-input-border-hover);
 
@@ -2001,12 +2038,26 @@
   --color-contact-team-name: var(--contact-team-name);
   --color-contact-team-email: var(--contact-team-email);
 
+  --color-contact-team-ttl: var(--contact-team-ttl);
+  --color-contact-team-name: var(--contact-team-name);
+  --color-contact-team-correo: var(--contact-team-correo);
+
   --color-contact-social: var(--contact-social);
-  --color-contact-social-hover: var(--contact-social-hover);
+  --color-contact-social-hvr: var(--contact-social-hvr);
 
   /* Pin 3D */
   --color-pin-line: var(--pin-line);
   --color-pin-wave: var(--pin-wave);
+
+
+  /* Ayuda */
+  --color-ayuda-ttl: var(--ayuda-ttl);
+  --color-ayuda-desc: var(--ayuda-desc);
+
+  --color-ayuda-preg-ttl: var(--ayuda-preg-ttl);
+  --color-ayuda-preg-txt: var(--ayuda-preg-txt);
+
+  --color-ayuda-link: var(--ayuda-link);
 }
 
 @layer base {

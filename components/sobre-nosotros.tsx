@@ -9,11 +9,11 @@ export function SobreNosotros() {
       title: "2023",
       content: (
         <div>
-          <p className="mb-2 text-base md:text-lg text-[var(--foreground)]">
+          <p className="text-nos-txt mb-2 text-base md:text-lg">
             Establecimos los cimientos del proyecto, definiendo objetivos y
             metodologías.
           </p>
-          <p className="mb-8 text-base md:text-lg text-[var(--foreground-secondary)]">
+          <p className="text-nos-txt mb-8 text-base md:text-lg">
             Nos centramos en crear una experiencia educativa innovadora y
             motivadora.
           </p>
@@ -37,11 +37,11 @@ export function SobreNosotros() {
       title: "2024",
       content: (
         <div>
-          <p className="mb-2 text-base md:text-lg text-[var(--foreground)]">
+          <p className="text-nos-txt mb-2 text-base md:text-lg">
             Desarrollamos nuevas secciones y plantillas interactivas para la
             plataforma.
           </p>
-          <p className="mb-8 text-base md:text-lg text-[var(--foreground-secondary)]">
+          <p className="text-nos-txt mb-8 text-base md:text-lg">
             Mejoramos la experiencia visual y la adaptabilidad a diferentes
             dispositivos.
           </p>
@@ -64,11 +64,11 @@ export function SobreNosotros() {
       title: "2025",
       content: (
         <div>
-          <p className="mb-2 text-base md:text-lg text-[var(--foreground)]">
+          <p className="text-nos-txt mb-2 text-base md:text-lg">
             Lanzamos la experiencia web de RALQ con contenido 3D interactivo
             para estudiantes.
           </p>
-          <p className="mb-8 text-base md:text-lg text-[var(--foreground-secondary)]">
+          <p className="text-nos-txt mb-8 text-base md:text-lg">
             Nos enfocamos en que fuera accesible, atractiva y fácil de usar en
             cualquier plataforma.
           </p>
@@ -92,11 +92,11 @@ export function SobreNosotros() {
       title: "Mejoras continuas",
       content: (
         <div>
-          <p className="mb-2 text-base md:text-lg text-[var(--foreground)]">
+          <p className="text-nos-txt mb-2 text-base md:text-lg">
             Seguiremos Implementando nuevas funciones y modelos 3D para mejorar
             la interacción.
           </p>
-          <p className="mb-8 text-base md:text-lg text-[var(--foreground-secondary)]">
+          <p className="text-nos-txt mb-8 text-base md:text-lg">
             Actualizaremos componentes y secciones para mantener la plataforma
             más accesible.
           </p>

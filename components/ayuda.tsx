@@ -90,9 +90,8 @@ export default function ContenidoBlog() {
   }
 
   return (
-    <div className="w-full bg-background py-37 px-4 transition-colors">
+    <div className="w-full bg-background py-29.5 px-4 transition-colors">
       <div className="max-w-6xl mx-auto">
-
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -100,11 +99,11 @@ export default function ContenidoBlog() {
           transition={{ duration: 0.7, ease: "easeOut" }}
           className="text-center mb-30"
         >
-          <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-3 text-balance">
+          <h1 className="text-ayuda-ttl text-5xl md:text-6xl font-bold  mb-3 text-balance">
             Centro de Ayuda
           </h1>
 
-          <p className="text-lg text-muted-foreground text-balance max-w-1xl mx-auto">
+          <p className="text-ayuda-desc text-lg text-balance max-w-1xl mx-auto">
             Encuentra asistencia rápida sobre el funcionamiento del sistema
             RALQ, guías, tutoriales, reportes y soporte personalizado.
           </p>
@@ -127,17 +126,17 @@ export default function ContenidoBlog() {
                     ease: "easeOut",
                     delay: (rowIndex * 3 + itemIndex) * 0.08, // animación escalonada SOLO al cargar
                   }}
-                  className={`py-13 px-8 transition-all duration-300 relative group border-border
+                  className={`py-2 px-8 transition-all duration-300 relative group border-border
                     ${itemIndex !== row.length - 1 ? "md:border-r" : ""}
                   `}
                   onMouseEnter={() => setHoveredId(item.id)}
                   onMouseLeave={() => setHoveredId(null)}
                 >
                   <div className="mb-8">
-                    <h2 className="text-2xl font-semibold text-foreground mb-3">
+                    <h2 className="text-ayuda-preg-ttl text-2xl font-semibold mb-3">
                       {item.title}
                     </h2>
-                    <p className="text-muted-foreground text-base leading-relaxed">
+                    <p className="text-ayuda-preg-txt text-base leading-relaxed">
                       {item.description}
                     </p>
                   </div>
@@ -153,7 +152,7 @@ export default function ContenidoBlog() {
                   >
                     <Link
                       href={item.href}
-                      className="inline-flex items-center gap-2 text-primary-2 font-medium hover:gap-3 transition-all duration-300 group/link"
+                      className="text-ayuda-link inline-flex items-center gap-2 font-medium hover:gap-3 transition-all duration-300 group/link"
                     >
                       Ver más
                       <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover/link:translate-x-1" />

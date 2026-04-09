@@ -63,10 +63,10 @@ export default function ContactForm() {
   };
 
   // 🔥 CLASES CORREGIDAS
-const inputClasses = `
+  const inputClasses = `
   rounded-[8px]
-  border border-border
-  text-contact-txt 
+  border border-contact-card-border
+  text-contact-input-desc
   text-sm                 
   leading-5               
   px-2.5 
@@ -80,50 +80,53 @@ const inputClasses = `
   focus-visible:outline-none
   focus-visible:ring-0
   focus-visible:ring-offset-0
-  focus-visible:border-gray-400
 `;
 
   return (
     <motion.section
-      className="relative min-h-screen font-inter px-6 pt-35 pb-32"
+      className="relative min-h-screen font-inter px-6 pt-30 pb-32"
       initial="hidden"
       animate="visible"
     >
       <motion.div className="text-center mb-30" variants={fadeInUp} custom={0}>
-        <h1 className="text-contact-title text-5xl md:text-6xl font-semibold mb-2 text-balance">
+        <h1 className="text-contact-ttl text-5xl md:text-6xl font-semibold mb-2 text-balance">
           Contáctanos
         </h1>
 
-        <p className="text-contact-description text-lg text-muted-foreground text-balance max-w-1xl mx-auto">
+        <p className="text-contact-desc text-lg text-balance max-w-1xl mx-auto">
           Si necesitas soporte, deseas colaborar o tienes preguntas sobre la
           plataforma, estámos disponible para ayudarte.
         </p>
       </motion.div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 max-w-6xl mx-auto transform -translate-y-11">
         <motion.div
           className="
-            rounded-[13px]
-            bg-[var(--card)]
-            p-7
+            rounded-[15px]
+            bg-contact-card-bg
+            border
+            border-contact-card-border
+            p-7.5
             w-full
             shadow-sm
-            border
           "
           variants={fadeInUp}
           custom={0.1}
         >
-          <h1 className="text-2xl font-semibold mb-0">
+          <h1 className="text-contact-ttl text-2xl font-semibold mb-0">
             Envíanos un mensaje.
           </h1>
 
-          <p className="text-muted-foreground mb-8">
+          <p className="text-contact-desc mb-7">
             Rellena el formulario y te responderemos lo antes posible.
           </p>
 
           <form onSubmit={handleSubmit} className=" space-y-6">
             <motion.div variants={fadeInUp} custom={0.2}>
-              <Label htmlFor="name" className="text-sm font-semibold ">
+              <Label
+                htmlFor="name"
+                className="text-contact-input-text text-sm font-semibold "
+              >
                 Nombre completo
               </Label>
               <Input
@@ -138,7 +141,10 @@ const inputClasses = `
             </motion.div>
 
             <motion.div variants={fadeInUp} custom={0.3}>
-              <Label htmlFor="email" className="text-sm font-semibold">
+              <Label
+                htmlFor="email"
+                className="text-contact-input-text text-sm font-semibold"
+              >
                 Email
               </Label>
               <Input
@@ -153,7 +159,10 @@ const inputClasses = `
             </motion.div>
 
             <motion.div variants={fadeInUp} custom={0.4}>
-              <Label htmlFor="message" className="text-sm font-semibold">
+              <Label
+                htmlFor="message"
+                className="text-contact-input-text text-sm font-semibold"
+              >
                 Mensaje
               </Label>
               <textarea
@@ -173,8 +182,9 @@ const inputClasses = `
                 disabled={isLoading}
                 className="
                   cursor-pointer
-                  bg-gray-800
-                  text-white
+                  bg-contact-btn-bg
+                  text-contact-btn-text
+                  hover:bg-contact-btn-hover  
                   py-4.5
                   rounded-[8px] 
                   mt-1 
@@ -182,7 +192,6 @@ const inputClasses = `
                   text-sm
                   w-full
                   transition-none
-                  hover:bg-gray-800   
                   flex items-center justify-center"
               >
                 {isLoading ? loadingText : "Enviar mensaje"}
@@ -191,13 +200,12 @@ const inputClasses = `
           </form>
         </motion.div>
 
-
         <motion.div
           className="pl-0 md:pl-23 lg:pl-40"
           variants={fadeInUp}
           custom={0.6}
         >
-          <h3 className="text-2xl font-semibold mb-9">
+          <h3 className="text-contact-team-ttl text-2xl font-semibold mb-9">
             Miembros del equipo
           </h3>
 
@@ -214,17 +222,19 @@ const inputClasses = `
               },
             ].map((member, i) => (
               <motion.li key={i} variants={fadeInUp} custom={0.7 + i * 0.1}>
-                <p className="text-base font-medium text-[var(--foreground)]">
+                <p className="text-base font-medium text-contact-team-name">
                   {member.name}
                 </p>
-                <p className="text-sm opacity-70">{member.email}</p>
+                <p className="text-sm text-contact-team-correo">
+                  {member.email}
+                </p>
               </motion.li>
             ))}
           </ul>
 
           <div className="flex gap-7 mt-8">
             <a
-              className="text-muted-foreground hover:text-primary transition-colors"
+              className="text-contact-social hover:text-contact-social-hvr transition-colors"
               href="https://www.facebook.com/profile.php?id=61563746413453"
             >
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -233,16 +243,20 @@ const inputClasses = `
             </a>
 
             <a
-              className="text-muted-foreground hover:text-primary transition-colors"
+              className="text-contact-social hover:text-contact-social-hvr transition-colors"
               href="https://www.instagram.com/ralq.utsv?igsh=Z256dmRoOXY3ZDg2"
             >
-              <svg className="w-6.5 h-6.5" fill="currentColor" viewBox="0 0 24 24">
+              <svg
+                className="w-6.5 h-6.5"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
                 <path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0022.4 1a9.09 9.09 0 01-2.88 1.1 4.52 4.52 0 00-7.72 4.13A12.84 12.84 0 013 2.15A4.52 4.52 0 004.6 9.72a4.51 4.51 0 01-2.05-.57v.06a4.52 4.52 0 003.63 4.43a4.52 4.52 0 01-2.04.08a4.52 4.52 0 004.22 3.14A9.06 9.06 0 012 19.54a12.79 12.79 0 006.92 2.03c8.3 0 12.85-6.87 12.85-12.85c0-.2-.01-.42-.02-.63A9.2 9.2 0 0023 3z" />
               </svg>
             </a>
 
             <a
-              className="text-muted-foreground hover:text-primary transition-colors"
+              className="text-contact-social hover:text-contact-social-hvr transition-colors"
               href="https://chat.whatsapp.com/HGGxXfwclFBEQBHr2clRLm"
             >
               <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 32 32">

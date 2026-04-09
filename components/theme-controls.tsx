@@ -36,7 +36,10 @@ const colorOptions = [
   { name: "Verde", value: "green", color: "#5ea500" },
 ];
 
-import { REDUCED_MOTION_EVENT, useReducedMotion } from "@/hooks/use-reduced-motion";
+import {
+  REDUCED_MOTION_EVENT,
+  useReducedMotion,
+} from "@/hooks/use-reduced-motion";
 
 export function ThemeControls({ className }: { className?: string }) {
   const { theme, setTheme, resolvedTheme } = useTheme();
@@ -135,7 +138,7 @@ export function ThemeControls({ className }: { className?: string }) {
 
   return (
     <TooltipProvider delayDuration={400}>
-      <div className={cn("flex items-center gap-4", className)}>
+      <div className={cn("flex items-center gap-5", className)}>
         {/* Theme Mode Dropdown */}
         <DropdownMenu modal={false}>
           <Tooltip>
