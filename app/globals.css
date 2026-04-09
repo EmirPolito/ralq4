@@ -6,104 +6,112 @@
 
 :root {
   /* General */
-  --bg-fondo: #ffffff;  /* Fondo en modo claro */
-  --titulos: #000000;  /* Titulos en modo claro */
-  --descripciones: #2c2a2a;  /* Descripciones en modo claro */
+  --bg-fondo: #ffffff;
+  --titulos: #000000;
+  --descripciones: #2c2a2a;
 
 
   /* Header */
-  --header-login-bg: transparent;  /* Fondo transparente del header */
-  --header-redir: #2c2a2a;  /* Texto de las paginas (Nosotros,contacto,etc)*/
-  --header-redir-cursor: #000000;  /* Hover de las paginas (Nosotros,contacto,etc)*/
+  --header-login-bg: transparent;
+  --header-redir: #2c2a2a;
+  --header-redir-cursor: #000000;
 
-  --header-login-bg-2: #fffdfd;  /* Fondo de iniciar sesion */
-  --header-login-txt: #060606;  /* Texto de iniciar sesion */
+  --header-login-bg-2: #fffdfd;
+  --header-login-txt: #060606;
 
-  --header-regis-bg: #60806b;  /* Fondo de registrarse */
-  --header-regis-txt: #ffffff;  /* Texto de registrarse */
+  --header-regis-bg: #60806b;
+  --header-regis-txt: #ffffff;
 
 
   /* Hero */
-  --hero-ttl: #313432; /* Titulo del hero */
-  --hero-desc: #2c2a2a; /* Descripcion del hero */
+  --hero-bg: #ffffff;
+  --hero-ttl: #313432;
+  --hero-desc: #2c2a2a;
 
-  --hero-bg-demo: #313432; /* Fondo del boton demo */
-  --hero-txt-demo: #ffffff; /* Texto del boton demo */
+  --hero-bg-demo: #313432;
+  --hero-txt-demo: #ffffff;
 
 
   /* Carrusel 1*/
-  --carrusel-bg: #9cc2a9; /* Fondo del carrusel 1 */
-  --carrusel-ttl: #3b3d3c; /* Titulo del carrusel 1 */
-  --carrusel-desc: #2c2a2a; /* Descripcion del carrusel 1 */
+  --carrusel-bg: #9cc2a9;
+  --carrusel-ttl: #3b3d3c;
+  --carrusel-desc: #2c2a2a;
 
 
   /* Tarjetas pin3d */
-  --tarjetas-ttl1: #000000; /* Titulo principal */
-  --tarjetas-desc2: #2c2a2a; /* Descripcion */
+  --tarjetas-ttl1: #000000;
+  --tarjetas-desc2: #2c2a2a;
 
-  --tarjetas-bg: #ffffff; /* Fondo de la tarjeta */
-  --tarjetas-border: #4b6554; /* Borde de la tarjeta */
+  --tarjetas-bg: #ffffff;
+  --tarjetas-border: #4b6554;
 
-  --tarjetas-txt3: #2c2a2a; /* Mini texto arriba de la tarjeta*/
-  --tarjetas-ttl4: #000000; /* Titulo de la tarjeta */
-  --tarjetas-desc5: #2c2a2a; /* Descripcion de la tarjeta */
+  --tarjetas-txt3: #2c2a2a;
+  --tarjetas-ttl4: #000000;
+  --tarjetas-desc5: #2c2a2a;
 
-  --tarjetas-1txt6: #0ca814; /* Color de el icono y texto de abajo 1 */
-  --tarjetas-2txt6: #116fda; /* Color de el icono y texto de abajo 2 */
-  --tarjetas-3txt6: #ebb40d; /* Color de el icono y texto de abajo 3 */
+  --tarjetas-1txt6: #0ca814;
+  --tarjetas-2txt6: #116fda;
+  --tarjetas-3txt6: #ebb40d;
 
-  --tarjetas-desc7: #2c2a2a; /* Texto debajo del txt de color */
-  --tarjetas-txt8: #2c2a2a; /* Mini texto abajo de la tarjeta */
+  --tarjetas-desc7: #2c2a2a;
+  --tarjetas-txt8: #2c2a2a;
 
-  --pin-line: #1472bf; /* Linea azul del pin */
-  --pin-wave: #1472bf; /* Onda azul del pin */
+  --pin-line: #1472bf;
+  --pin-wave: #1472bf;
 
 
   /* 2 mockup cada lado */
-  --mockup-ttl: #000000; /* Titulo */
-  --mockup-desc: #2c2a2a; /* Descripcion */
+  --mockup-bg: #4b6554;
+  --mockup-ttl: #000000;
+  --mockup-desc: #2c2a2a;
 
 
   /* wobble 4 */
-  --wobble-ttl: #000000; /* Titulo */
-  --wobble-desc: #2c2a2a; /* Descripcion */
+  --wobble-ttl: #000000;
+  --wobble-desc: #2c2a2a;
 
-  --wobble-bg-1: #eeeeee; /* Fondo rectangulo 1 */
-  --wobble-bg-2: #dae5de; /* Fondo cuadro 1 */
-  --wobble-bg-3: #dae5de; /* Fondo cuadro 2 */
-  --wobble-bg-4: #eeeeee; /* Fondo rectangulo 2 */
+  --wobble-bg-1: #eeeeee;
+  --wobble-bg-2: #dae5de;
+  --wobble-bg-3: #dae5de;
+  --wobble-bg-4: #eeeeee;
 
-  --wobble-ttl-5: #000000; /* Titulo del rectangulo y cuadro */
-  --wobble-desc-6: #2c2a2a; /* Descripcion del rectangulo y cuadro */
+  --wobble-ttl-5: #000000;
+  --wobble-desc-6: #2c2a2a;
+  --wobble-dmas-7: #ffffff;
 
 
     /* --carrusel 2 */
-  --carrusel2-mini-bg: #0866b3; /* Fondo del mini texto */
-  --carrusel2-mini-txt: #fefefe; /* Texto del mini texto */
+  --carrusel2-bg: #ffffff;
+  --carrusel2-mini-bg: #0866b3;
+  --carrusel2-mini-txt: #fefefe;
 
-  --carrusel2-ttl: #020202; /* Titulo */
-  --carrusel2-desc: #2c2a2a; /* Descripcion */
+  --carrusel2-ttl: #020202;
+  --carrusel2-desc: #2c2a2a;
+  --carrusel2-sig: #000000;
+  --carrusel2-sig-txt: #ffffff;
 
 
   /* Preguntas frecuentes */
-  --preg-ttl: #000000;  /* Titulo */
-  --preg-desc: #2c2a2a; /* Necesitas más ayuda? */
-  --preg-link: #1472bf; /* Link de contacto*/
+  --preg-bg: #ffffff;
+  --preg-ttl: #000000;
+  --preg-desc: #2c2a2a;
+  --preg-link: #1472bf;
 
-  --preg-preg: #000000; /* Pregunta */
-  --preg-txt: #2c2a2a; /* Texto dentro de la pregunta */
+  --preg-preg: #000000;
+  --preg-txt: #2c2a2a;
 
 
   /* Footer */
-  --footer-txt: #2c2a2a; /* Desarrollado por */
-  --footer-link: #1472bf; /* Link de los desarroladores */
-  --footer-derechos: #2c2a2a; /* Derechos reservados */
+  --footer-bg: #ffffff;
+  --footer-txt: #2c2a2a;
+  --footer-link: #1472bf;
+  --footer-derechos: #2c2a2a;
 
-  --footer-ttl: #000000; /* Titulo de las secciones */
-  --footer-pag: #2c2a2a; /* Texto de las secciones */
-  --footer-pag-hov: #000000; /* Hover de los textos  */
+  --footer-ttl: #000000;
+  --footer-pag: #2c2a2a;
+  --footer-pag-hov: #000000;
 
-  --footer-ralq: #88a695; /* Logo de RALQ */
+  --footer-ralq: #88a695;
 
 
   /* demo/demo.tsx */
@@ -140,20 +148,25 @@
   --contact-card-bg: #ffffff;
   --contact-card-border: #d1d1d1;
 
+  --contact-label: #475569;
+
   --contact-input-text: #000000;
   --contact-input-desc: #000000;
+  --contact-input-bg: #ffffff;
+  --contact-input-border: #d1d1d1;
+  --contact-input-border-hover: #000000;
 
   --contact-btn-bg: #000000;
   --contact-btn-text: #ffffff;
-  --contact-btn-hover: #000000;
+  --contact-btn-hover: #333333;
 
   
   --contact-team-ttl: #000000;
   --contact-team-name: #000000;
-  --contact-team-correo: #3e3e3e;
+  --contact-team-email: #475569;
 
   --contact-social: #000000;
-  --contact-social-hvr: #181818;
+  --contact-social-hvr: #333333;
 
 
   /* =========================
@@ -179,7 +192,7 @@
   --primary-foreground: #ffffff;
   --secondary: #f4f4f5;
   --secondary-foreground: #18181b;
-  --muted: #f4f4f5;
+  --muted: #e6e6e6; /*bg para el boton de las animaciones */
   --muted-foreground: #71717a;
   --accent: #f4f4f5;
   --accent-foreground: #18181b;
@@ -188,12 +201,23 @@
   --border: #e4e4e7;
   --input: #e4e4e7;
   --ring: #60806b;
+  --chart-1: #f97316;
+  --chart-2: #10b981;
+  --chart-3: #3b82f6;
+  --chart-4: #eab308;
+  --chart-5: #ef4444;
+  --radius: 0.5rem;
+  --sidebar: #f8fafc;
+  --sidebar-foreground: #334155;
+  --sidebar-primary: #1e293b;
+  --sidebar-primary-foreground: #f8fafc;
+  --sidebar-accent: #f1f5f9;
+  --sidebar-accent-foreground: #1e293b;
+  --sidebar-border: #e2e8f0;
+  --sidebar-ring: #3b82f6;
 }
 
-
-
 .dark {
-
   /* General */
   --bg-fondo: #000000;
   --titulos: #ffffff;
@@ -204,21 +228,25 @@
   --header-login-bg: transparent;
   --header-redir: #c9c7c7;
   --header-redir-cursor: #ffffff;
+
   --header-login-bg-2: #3e413f;
   --header-login-txt: #ffffff;
+
   --header-regis-bg: #3e413f;
   --header-regis-txt: #ffffff;
+
 
   /* Hero */
   --hero-bg: #000000;
   --hero-ttl: #ffffff;
   --hero-desc: #ddd8d8;
+
   --hero-bg-demo: #ffffff;
   --hero-txt-demo: #020202;
 
 
   /* Carrusel 1*/
-  --carrusel2-bg: #050505;
+  --carrusel-bg: #050505;
   --carrusel-ttl: #ffffff;
   --carrusel-desc: #d2d1d1;
 
@@ -246,10 +274,9 @@
 
 
   /* 2 mockup cada lado */
-  --mockup-bg: #4b6554;
+  --mockup-bg: #000000;
   --mockup-ttl: #ffffff;
   --mockup-desc: #dad9d9;
-
 
 
   /* wobble 4 */
@@ -263,27 +290,29 @@
 
   --wobble-ttl-5: #ffffff;
   --wobble-desc-6: #dad9d9;
-  --wobble-dmas-7: #f00a0a;
+  --wobble-dmas-7: #ffffff;
 
 
-  /* --carrusel 2 */
+    /* --carrusel 2 */
+  --carrusel2-bg: #000000;
   --carrusel2-mini-bg: #0866b3;
   --carrusel2-mini-txt: #fefefe;
 
   --carrusel2-ttl: #ffffff;
   --carrusel2-desc: #dad9d9;
-
-  --carrusel2-sig: #513030;
-  --carrusel2-sig-txt: #ffffff;
+  --carrusel2-sig: #ffffff;
+  --carrusel2-sig-txt: #000000;
 
 
   /* Preguntas frecuentes */
-  --preg-bg: #4b6554;
+  --preg-bg: #000000;
   --preg-ttl: #ffffff;
   --preg-desc: #dad9d9;
   --preg-link: #1472bf;
+
   --preg-preg: #ffffff;
   --preg-txt: #c9c6c6;
+
 
   /* Footer */
   --footer-bg: #000000;
@@ -294,7 +323,9 @@
   --footer-ttl: #ffffff;
   --footer-pag: #dddddd;
   --footer-pag-hov: #ffffff;
+
   --footer-ralq: #999999;
+
 
   /* demo/demo.tsx */
   --demo-bg: #acacac;
@@ -311,8 +342,9 @@
   --demo-ttl: #ffffff;
   --demo-desc: #dad9d9;
 
-
-  /* Sobre Nosotros */
+  /* =========================
+   Sobre Nosotros
+========================= */
   --nos-ttl: #ffffff;
   --nos-desc: #dad9d9;
 
@@ -320,14 +352,49 @@
   --nos-txt: #dad9d9;
 
 
-  /* UI */
-  /* Base colors */
-  --verde-claro: #9cc2a9;
-  --verde-obscuro: #60806b;
-  --gris: #9d9d9d;
-  --gris-claro: #e8e8e8;
-  --blanco: #ffffff;
+  /* =========================
+   Contacto
+========================= */
+  --contact-ttl: #ffffff;
+  --contact-desc: #dddddd;
 
+  --contact-card-bg: #0a0a0a;
+  --contact-card-border: #1f1f1f;
+
+  --contact-label: #dad9d9;
+
+  --contact-input-text: #ffffff;
+  --contact-input-desc: #dddddd;
+  --contact-input-bg: #141313;
+  --contact-input-border: #333333;
+  --contact-input-border-hover: #ffffff;
+
+  --contact-btn-bg: #ffffff;
+  --contact-btn-text: #000000;
+  --contact-btn-hover: #ffffff;
+
+  
+  --contact-team-ttl: #ffffff;
+  --contact-team-name: #ffffff;
+  --contact-team-email: #dad9d9;
+
+  --contact-social: #e3e3e3;
+  --contact-social-hvr: #ffffff;
+
+
+  /* =========================
+   Ayuda
+========================= */
+  --ayuda-ttl: #ffffff;
+  --ayuda-desc: #dad9d9;
+
+  --ayuda-preg-ttl: #ffffff;
+  --ayuda-preg-txt: #dad9d9;
+
+  --ayuda-link: #ffffff;
+
+
+  /* UI */
   --background: #000000;
   --foreground: #fafafa;
   --card: #09090b;
@@ -347,20 +414,28 @@
   --border: #27272a;
   --input: #27272a;
   --ring: #60806b;
+  --chart-1: #3b82f6;
+  --chart-2: #10b981;
+  --chart-3: #f97316;
+  --chart-4: #eab308;
+  --chart-5: #ef4444;
+  --sidebar: #0f172a;
+  --sidebar-foreground: #94a3b8;
+  --sidebar-primary: #ffffff;
+  --sidebar-primary-foreground: #0f172a;
+  --sidebar-accent: #1e293b;
+  --sidebar-accent-foreground: #f8fafc;
+  --sidebar-border: #1e293b;
+  --sidebar-ring: #3b82f6;
 }
 
 
 .colorblind {
-  /* Titulo y Descripción general */
+  /* General */
+  --bg-fondo: #ffffff;
   --titulos: #000000;
   --descripciones: #333333;
 
-  /* Base colors - Wong Palette Optimized */
-  --verde-claro: #56b4e9; /* Sky Blue */
-  --verde-obscuro: #0072b2; /* Deep Blue (Safe Primary) */
-  --gris: #9d9d9d;
-  --gris-claro: #e8e8e8;
-  --blanco: #ffffff;
 
   /* Header */
   --header-login-bg: transparent;
@@ -373,17 +448,21 @@
   --header-regis-bg: #0072b2;
   --header-regis-txt: #ffffff;
 
+
   /* Hero */
-  --hero-bg: #fdfdfd;
+  --hero-bg: #ffffff;
   --hero-ttl: #1e1f20;
   --hero-desc: #333333;
+
   --hero-bg-demo: #1e1f20;
   --hero-txt-demo: #ffffff;
+
 
   /* Carrusel 1*/
   --carrusel-bg: #56b4e9;
   --carrusel-ttl: #000000;
   --carrusel-desc: #333333;
+
 
   /* Tarjetas pin3d */
   --tarjetas-ttl1: #000000;
@@ -403,15 +482,15 @@
   --tarjetas-desc7: #333333;
   --tarjetas-txt8: #333333;
 
-  /* --carrusel 2 */
-  --carrusel2-bg: #ffffff;
-  --carrusel2-mini-bg: #0072b2;
-  --carrusel2-mini-txt: #ffffff;
-  --carrusel2-ttl: #000000;
-  --carrusel2-desc: #333333;
-  
-  --carrusel2-sig: #ffffff;
-  --carrusel2-sig-txt: #000000;
+  --pin-line: #0072b2;
+  --pin-wave: #56b4e9;
+
+
+  /* 2 mockup cada lado */
+  --mockup-bg: #ffffff;
+  --mockup-ttl: #000000;
+  --mockup-desc: #333333;
+
 
   /* wobble 4 */
   --wobble-ttl: #000000;
@@ -424,30 +503,42 @@
 
   --wobble-ttl-5: #000000;
   --wobble-desc-6: #333333;
-  --wobble-dmas-7: #d55e00; /* Vermillion (Safe Red substitute) */
+  --wobble-dmas-7: #0072b2;
 
-  /* 2 mockup cada lado */
-  --mockup-bg: #0072b2;
-  --mockup-ttl: #000000;
-  --mockup-desc: #333333;
+
+    /* --carrusel 2 */
+  --carrusel2-bg: #ffffff;
+  --carrusel2-mini-bg: #0072b2;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #000000;
+  --carrusel2-desc: #333333;
+  --carrusel2-sig: #000000;
+  --carrusel2-sig-txt: #ffffff;
+
 
   /* Preguntas frecuentes */
-  --preg-bg: #0072b2;
+  --preg-bg: #ffffff;
   --preg-ttl: #000000;
   --preg-desc: #333333;
   --preg-link: #d55e00;
+
   --preg-preg: #000000;
   --preg-txt: #333333;
+
 
   /* Footer */
   --footer-bg: #ffffff;
   --footer-txt: #000000;
   --footer-link: #d55e00;
   --footer-derechos: #333333;
+
   --footer-ttl: #000000;
   --footer-pag: #333333;
   --footer-pag-hov: #000000;
+
   --footer-ralq: #0072b2;
+
 
   /* demo/demo.tsx */
   --demo-bg: #1a1a1a;
@@ -464,28 +555,59 @@
   --demo-ttl: #000000;
   --demo-desc: #333333;
 
-  /* Pin 3D */
-  --pin-line: #0072b2;
-  --pin-wave: #56b4e9;
+  /* =========================
+   Sobre Nosotros
+========================= */
+  --nos-ttl: #000000;
+  --nos-desc: #333333;
 
-  /* CONTACT */
-  --contact-ttl: #000000;
+  --nos-fechas: #000000;
+  --nos-txt: #333333;
+
+
+  /* =========================
+   Contacto
+========================= */
+  --contact-ttl: #0072b2;
   --contact-desc: #333333;
+
   --contact-card-bg: #ffffff;
-  --contact-card-border: #0072b2;
-  --contact-label: #000000;
-  --contact-input-text: #000000;
+  --contact-card-border: #d1d1d1;
+
+  --contact-label: #464646;
+
+  --contact-input-text: #0072b2;
+  --contact-input-desc: #464646;
+  --contact-input-bg: #ffffff;
   --contact-input-border: #cccccc;
   --contact-input-border-hover: #0072b2;
+
   --contact-btn-bg: #0072b2;
   --contact-btn-text: #ffffff;
   --contact-btn-hover: #d55e00;
+
+  
+  --contact-team-ttl: #000000;
   --contact-team-name: #000000;
   --contact-team-email: #333333;
-  --contact-social: #333333;
-  --contact-social-hover: #0072b2;
 
-  /* UI Tokens Mapping */
+  --contact-social: #333333;
+  --contact-social-hvr: #0072b2;
+
+
+  /* =========================
+   Ayuda
+========================= */
+  --ayuda-ttl: #000000;
+  --ayuda-desc: #333333;
+
+  --ayuda-preg-ttl: #000000;
+  --ayuda-preg-txt: #333333;
+
+  --ayuda-link: #000000;
+
+
+  /* UI */
   --background: #ffffff;
   --foreground: #000000;
   --card: #ffffff;
@@ -496,7 +618,7 @@
   --primary-foreground: #ffffff;
   --secondary: #f4f4f5;
   --secondary-foreground: #000000;
-  --muted: #f4f4f5;
+  --muted: #e6e6e6; /*bg para el boton de las animaciones */
   --muted-foreground: #333333;
   --accent: #e69f00;
   --accent-foreground: #000000;
@@ -511,40 +633,37 @@
 
 /* Azul */
 [data-color="blue"] {
-  /* Titulo y Descripción general */
-  --titulos: #ffffff;
+  /* General */
+  --bg-fondo: #ffffff;
+  --titulos: #155dfc;
   --descripciones: #616161;
+
 
   /* Header */
   --header-login-bg: transparent;
   --header-redir: #6b6b6b;
   --header-redir-cursor: #155dfc;
+
   --header-login-bg-2: #155dfc;
-  --header-login-txt: #155dfc;
+  --header-login-txt: #ffffff;
+
   --header-regis-bg: #155dfc;
   --header-regis-txt: #ffffff;
 
+
   /* Hero */
-  --hero-bg: #ffffff;
   --hero-ttl: #155dfc;
   --hero-desc: #616161;
+
   --hero-bg-demo: #155dfc;
   --hero-txt-demo: #fcfcfc;
 
-  /* Carrusel 1 */
+
+  /* Carrusel 1*/
   --carrusel-bg: #9cc2a9;
   --carrusel-ttl: #155dfc;
   --carrusel-desc: #155dfc;
 
-  /* Carrusel 2 */
-  --carrusel2-mini-bg: #155dfc;
-  --carrusel2-mini-txt: #ffffff;
-
-  --carrusel2-ttl: #155dfc;
-  --carrusel2-desc: #616161;
-
-  --carrusel2-sig: #181818;
-  --carrusel2-sig-txt: #155dfc;
 
   /* Tarjetas pin3d */
   --tarjetas-ttl1: #155dfc;
@@ -564,10 +683,14 @@
   --tarjetas-desc7: #616161;
   --tarjetas-txt8: #616161;
 
+  --pin-line: #1c6aa9;
+  --pin-wave: #1c6aa9;
+
+
   /* 2 mockup cada lado */
-  --mockup-bg: #4b6554;
   --mockup-ttl: #155dfc;
   --mockup-desc: #616161;
+
 
   /* wobble 4 */
   --wobble-ttl: #155dfc;
@@ -580,18 +703,26 @@
 
   --wobble-ttl-5: #ffffff;
   --wobble-desc-6: #efefef;
-  --wobble-dmas-7: #f00a0a;
+
+
+    /* --carrusel 2 */
+  --carrusel2-mini-bg: #155dfc;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #155dfc;
+  --carrusel2-desc: #616161;
+
 
   /* Preguntas frecuentes */
-  --preg-bg: #4b6554;
   --preg-ttl: #155dfc;
   --preg-desc: #616161;
   --preg-link: #155dfc;
+
   --preg-preg: #155dfc;
   --preg-txt: #616161;
 
+
   /* Footer */
-  --footer-bg: #ffffff;
   --footer-txt: #2c2a2a;
   --footer-link: #155dfc;
   --footer-derechos: #2c2a2a;
@@ -599,7 +730,9 @@
   --footer-ttl: #155dfc;
   --footer-pag: #2c2a2a;
   --footer-pag-hov: #155dfc;
+
   --footer-ralq: #155dfc;
+
 
   /* demo/demo.tsx */
   --demo-bg: #acacac;
@@ -616,16 +749,65 @@
   --demo-ttl: #ffffff;
   --demo-desc: #dad9d9;
 
-  /* Pin 3D */
-  --pin-line: #1c6aa9;
-  --pin-wave: #1c6aa9;
+  /* =========================
+   Sobre Nosotros
+========================= */
+  --nos-ttl: #155dfc;
+  --nos-desc: #616161;
+
+  --nos-fechas: #155dfc;
+  --nos-txt: #616161;
+
+
+  /* =========================
+   Contacto
+========================= */
+  --contact-ttl: #155dfc;
+  --contact-desc: #616161;
+
+  --contact-card-bg: #ffffff;
+  --contact-card-border: #d1d1d1;
+
+  --contact-label: #155dfc;
+
+  --contact-input-text: #155dfc;
+  --contact-input-desc: #000000;
+  --contact-input-bg: #ffffff;
+  --contact-input-border: #e2e8e3;
+  --contact-input-border-hover: #155dfc;
+
+  --contact-btn-bg: #155dfc;
+  --contact-btn-text: #ffffff;
+  --contact-btn-hover: #134ed1;
+
+  
+  --contact-team-ttl: #155dfc;
+  --contact-team-name: #155dfc;
+  --contact-team-email: #616161;
+
+  --contact-social: #155dfc;
+  --contact-social-hvr: #134ed1;
+
+
+  /* =========================
+   Ayuda
+========================= */
+  --ayuda-ttl: #155dfc;
+  --ayuda-desc: #616161;
+
+  --ayuda-preg-ttl: #155dfc;
+  --ayuda-preg-txt: #616161;
+
+  --ayuda-link: #155dfc;
 }
 
 [data-color="blue"].dark,
 .dark [data-color="blue"] {
-  /* Titulo y Descripción general */
-  --titulos: #ffffff;
-  --descripciones: #616161;
+  /* General */
+  --bg-fondo: #000000;
+  --titulos: #155dfc;
+  --descripciones: #dddddd;
+
 
   /* Header */
   --header-login-bg: transparent;
@@ -634,30 +816,24 @@
 
   --header-login-bg-2: #155dfc;
   --header-login-txt: #ffffff;
+
   --header-regis-bg: #155dfc;
   --header-regis-txt: #ffffff;
 
+
   /* Hero */
-  --hero-bg: #ffffff;
   --hero-ttl: #155dfc;
   --hero-desc: #dddddd;
+
   --hero-bg-demo: #155dfc;
   --hero-txt-demo: #fcfcfc;
 
-  /* Carrusel 1 */
-  --carrusel2-bg: #0c0c0c;
+
+  /* Carrusel 1*/
+  --carrusel-bg: #0c0c0c;
   --carrusel-ttl: #155dfc;
   --carrusel-desc: #155dfc;
 
-  /* Carrusel 2 */
-  --carrusel2-mini-bg: #155dfc;
-  --carrusel2-mini-txt: #ffffff;
-
-  --carrusel2-ttl: #155dfc;
-  --carrusel2-desc: #dddddd;
-
-  --carrusel2-sig: #181818;
-  --carrusel2-sig-txt: #155dfc;
 
   /* Tarjetas pin3d */
   --tarjetas-ttl1: #155dfc;
@@ -677,9 +853,14 @@
   --tarjetas-desc7: #dddddd;
   --tarjetas-txt8: #dddddd;
 
+  --pin-line: #3680d1;
+  --pin-wave: #3680d1;
+
+
   /* 2 mockup cada lado */
   --mockup-ttl: #155dfc;
   --mockup-desc: #dddddd;
+
 
   /* wobble 4 */
   --wobble-ttl: #155dfc;
@@ -692,17 +873,26 @@
 
   --wobble-ttl-5: #ffffff;
   --wobble-desc-6: #efefef;
-  --wobble-dmas-7: #f00a0a;
+
+
+    /* --carrusel 2 */
+  --carrusel2-mini-bg: #155dfc;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #155dfc;
+  --carrusel2-desc: #dddddd;
+
 
   /* Preguntas frecuentes */
   --preg-ttl: #155dfc;
   --preg-desc: #dddddd;
   --preg-link: #155dfc;
+
   --preg-preg: #155dfc;
   --preg-txt: #dddddd;
 
+
   /* Footer */
-  --footer-bg: #000000;
   --footer-txt: #dddddd;
   --footer-link: #155dfc;
   --footer-derechos: #dddddd;
@@ -710,7 +900,9 @@
   --footer-ttl: #155dfc;
   --footer-pag: #dddddd;
   --footer-pag-hov: #155dfc;
+
   --footer-ralq: #1567bf;
+
 
   /* demo/demo.tsx */
   --demo-bg: #acacac;
@@ -727,47 +919,91 @@
   --demo-ttl: #ffffff;
   --demo-desc: #dad9d9;
 
-  /* Pin 3D */
-  --pin-line: #3680d1;
-  --pin-wave: #3680d1;
+  /* =========================
+   Sobre Nosotros
+========================= */
+  --nos-ttl: #155dfc;
+  --nos-desc: #dddddd;
+
+  --nos-fechas: #155dfc;
+  --nos-txt: #dddddd;
+
+
+  /* =========================
+   Contacto
+========================= */
+  --contact-ttl: #155dfc;
+  --contact-desc: #dddddd;
+
+  --contact-card-bg: #0a0a0a;
+  --contact-card-border: #1f1f1f;
+
+  --contact-label: #155dfc;
+
+  --contact-input-text: #155dfc;
+  --contact-input-desc: #ffffff;
+  --contact-input-bg: #141313;
+  --contact-input-border: #333333;
+  --contact-input-border-hover: #155dfc;
+
+  --contact-btn-bg: #155dfc;
+  --contact-btn-text: #ffffff;
+  --contact-btn-hover: #134ed1;
+
+  
+  --contact-team-ttl: #155dfc;
+  --contact-team-name: #155dfc;
+  --contact-team-email: #dddddd;
+
+  --contact-social: #155dfc;
+  --contact-social-hvr: #134ed1;
+
+
+  /* =========================
+   Ayuda
+========================= */
+  --ayuda-ttl: #155dfc;
+  --ayuda-desc: #dddddd;
+
+  --ayuda-preg-ttl: #155dfc;
+  --ayuda-preg-txt: #dddddd;
+
+  --ayuda-link: #155dfc;
 }
 
 /* Morado */
 [data-color="purple"] {
-  /* Titulo y Descripción general */
-  --titulos: #ffffff;
+  /* General */
+  --bg-fondo: #ffffff;
+  --titulos: #8a0194;
   --descripciones: #616161;
+
 
   /* Header */
   --header-login-bg: transparent;
   --header-redir: #6b6b6b;
   --header-redir-cursor: #8a0194;
+
   --header-login-bg-2: #8a0194;
-  --header-login-txt: #8a0194;
+  --header-login-txt: #ffffff;
+
   --header-regis-bg: #8a0194;
   --header-regis-txt: #ffffff;
 
+
   /* Hero */
-  --hero-bg: #ffffff;
   --hero-ttl: #8a0194;
   --hero-desc: #616161;
+
   --hero-bg-demo: #8a0194;
   --hero-txt-demo: #fcfcfc;
+
 
   /* Carrusel 1*/
   --carrusel-bg: #9cc2a9;
   --carrusel-ttl: #8a0194;
   --carrusel-desc: #8a0194;
 
-  /* --carrusel 2 */
-  --carrusel2-mini-bg: #8a0194;
-  --carrusel2-mini-txt: #ffffff;
-
-  --carrusel2-ttl: #8a0194;
-  --carrusel2-desc: #616161;
-
-  --carrusel2-sig: #181818;
-  --carrusel2-sig-txt: #8a0194;
 
   /* Tarjetas pin3d */
   --tarjetas-ttl1: #8a0194;
@@ -787,10 +1023,14 @@
   --tarjetas-desc7: #616161;
   --tarjetas-txt8: #616161;
 
+  --pin-line: #6326a0;
+  --pin-wave: #6326a0;
+
+
   /* 2 mockup cada lado */
-  --mockup-bg: #4b6554;
   --mockup-ttl: #8a0194;
   --mockup-desc: #616161;
+
 
   /* wobble 4 */
   --wobble-ttl: #8a0194;
@@ -803,19 +1043,26 @@
 
   --wobble-ttl-5: #ffffff;
   --wobble-desc-6: #efefef;
-  --wobble-dmas-7: #f00a0a;
+
+
+    /* --carrusel 2 */
+  --carrusel2-mini-bg: #8a0194;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #8a0194;
+  --carrusel2-desc: #616161;
+
 
   /* Preguntas frecuentes */
-  --preg-bg: #4b6554;
   --preg-ttl: #8a0194;
   --preg-desc: #616161;
   --preg-link: #8a0194;
+
   --preg-preg: #8a0194;
   --preg-txt: #616161;
 
-  /* Footer */
-  --footer-bg: #ffffff;
 
+  /* Footer */
   --footer-txt: #2c2a2a;
   --footer-link: #8a0194;
   --footer-derechos: #2c2a2a;
@@ -823,7 +1070,9 @@
   --footer-ttl: #8a0194;
   --footer-pag: #2c2a2a;
   --footer-pag-hov: #8a0194;
+
   --footer-ralq: #6326a0;
+
 
   /* demo/demo.tsx */
   --demo-bg: #acacac;
@@ -840,17 +1089,65 @@
   --demo-ttl: #ffffff;
   --demo-desc: #dad9d9;
 
-  /* Pin 3D */
-  --pin-line: #6326a0;
-  --pin-wave: #6326a0;
+  /* =========================
+   Sobre Nosotros
+========================= */
+  --nos-ttl: #8a0194;
+  --nos-desc: #616161;
+
+  --nos-fechas: #8a0194;
+  --nos-txt: #616161;
+
+
+  /* =========================
+   Contacto
+========================= */
+  --contact-ttl: #8a0194;
+  --contact-desc: #616161;
+
+  --contact-card-bg: #ffffff;
+  --contact-card-border: #d1d1d1;
+
+  --contact-label: #8a0194;
+
+  --contact-input-text: #8a0194;
+  --contact-input-desc: #000000;
+  --contact-input-bg: #ffffff;
+  --contact-input-border: #e2e8e3;
+  --contact-input-border-hover: #8a0194;
+
+  --contact-btn-bg: #8a0194;
+  --contact-btn-text: #ffffff;
+  --contact-btn-hover: #7b0185;
+
+  
+  --contact-team-ttl: #8a0194;
+  --contact-team-name: #8a0194;
+  --contact-team-email: #616161;
+
+  --contact-social: #8a0194;
+  --contact-social-hvr: #7b0185;
+
+
+  /* =========================
+   Ayuda
+========================= */
+  --ayuda-ttl: #8a0194;
+  --ayuda-desc: #616161;
+
+  --ayuda-preg-ttl: #8a0194;
+  --ayuda-preg-txt: #616161;
+
+  --ayuda-link: #8a0194;
 }
 
 [data-color="purple"].dark,
 .dark [data-color="purple"] {
+  /* General */
+  --bg-fondo: #000000;
+  --titulos: #a800b7;
+  --descripciones: #dddddd;
 
-  /* Titulo y Descripción general */
-  --titulos: #ffffff;
-  --descripciones: #616161;
 
   /* Header */
   --header-login-bg: transparent;
@@ -859,31 +1156,23 @@
 
   --header-login-bg-2: #8a0194;
   --header-login-txt: #ffffff;
+
   --header-regis-bg: #8a0194;
   --header-regis-txt: #ffffff;
 
+
   /* Hero */
-  --hero-bg: #ffffff;
   --hero-ttl: #a800b7;
   --hero-desc: #dddddd;
+
   --hero-bg-demo: #a800b7;
   --hero-txt-demo: #fcfcfc;
 
+
   /* Carrusel 1*/
-  --carrusel2-bg: #0c0c0c;
+  --carrusel-bg: #0c0c0c;
   --carrusel-ttl: #a800b7;
   --carrusel-desc: #a800b7;
-
-  /* --carrusel 2 */
-  --carrusel2-mini-bg: #8a0194;
-  --carrusel2-mini-txt: #ffffff;
-
-  --carrusel2-ttl: #a800b7;
-  --carrusel2-desc: #dddddd;
-
-  --carrusel2-sig: #181818;
-  --carrusel2-sig-txt: #a800b7;
-
 
 
   /* Tarjetas pin3d */
@@ -898,16 +1187,20 @@
   --tarjetas-desc5: #dddddd;
 
   --tarjetas-1txt6: #a800b7;
-
   --tarjetas-2txt6: #a800b7;
   --tarjetas-3txt6: #a800b7;
 
   --tarjetas-desc7: #dddddd;
   --tarjetas-txt8: #dddddd;
 
+  --pin-line: #c800de;
+  --pin-wave: #c800de;
+
+
   /* 2 mockup cada lado */
   --mockup-ttl: #a800b7;
   --mockup-desc: #dddddd;
+
 
   /* wobble 4 */
   --wobble-ttl: #a800b7;
@@ -920,22 +1213,26 @@
 
   --wobble-ttl-5: #ffffff;
   --wobble-desc-6: #efefef;
-  --wobble-dmas-7: #f00a0a;
 
 
+    /* --carrusel 2 */
+  --carrusel2-mini-bg: #8a0194;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #a800b7;
+  --carrusel2-desc: #dddddd;
 
 
   /* Preguntas frecuentes */
-  --preg-bg: #4b6554;
   --preg-ttl: #a800b7;
   --preg-desc: #dddddd;
   --preg-link: #a800b7;
+
   --preg-preg: #a800b7;
   --preg-txt: #dddddd;
 
-  /* Footer */
-  --footer-bg: #000000;
 
+  /* Footer */
   --footer-txt: #dddddd;
   --footer-link: #a800b7;
   --footer-derechos: #dddddd;
@@ -943,7 +1240,9 @@
   --footer-ttl: #a800b7;
   --footer-pag: #dddddd;
   --footer-pag-hov: #a800b7;
+
   --footer-ralq: #8330c3;
+
 
   /* demo/demo.tsx */
   --demo-bg: #acacac;
@@ -960,18 +1259,65 @@
   --demo-ttl: #ffffff;
   --demo-desc: #dad9d9;
 
+  /* =========================
+   Sobre Nosotros
+========================= */
+  --nos-ttl: #a800b7;
+  --nos-desc: #dddddd;
 
-  /* Pin 3D */
-  --pin-line: #c800de; /* numero 600 - #c800de */
+  --nos-fechas: #a800b7;
+  --nos-txt: #dddddd;
 
-  --pin-wave: #c800de;
+
+  /* =========================
+   Contacto
+========================= */
+  --contact-ttl: #a800b7;
+  --contact-desc: #dddddd;
+
+  --contact-card-bg: #0a0a0a;
+  --contact-card-border: #1f1f1f;
+
+  --contact-label: #a800b7;
+
+  --contact-input-text: #a800b7;
+  --contact-input-desc: #ffffff;
+  --contact-input-bg: #141313;
+  --contact-input-border: #333333;
+  --contact-input-border-hover: #a800b7;
+
+  --contact-btn-bg: #8a0194;
+  --contact-btn-text: #ffffff;
+  --contact-btn-hover: #7b0185;
+
+  
+  --contact-team-ttl: #a800b7;
+  --contact-team-name: #a800b7;
+  --contact-team-email: #dddddd;
+
+  --contact-social: #a800b7;
+  --contact-social-hvr: #7b0185;
+
+
+  /* =========================
+   Ayuda
+========================= */
+  --ayuda-ttl: #a800b7;
+  --ayuda-desc: #dddddd;
+
+  --ayuda-preg-ttl: #a800b7;
+  --ayuda-preg-txt: #dddddd;
+
+  --ayuda-link: #a800b7;
 }
 
 /* Rojo */
 [data-color="red"] {
-  /* Titulo y Descripción general */
-  --titulos: #ffffff;
+  /* General */
+  --bg-fondo: #ffffff;
+  --titulos: #ec0c0c;
   --descripciones: #616161;
+
 
   /* Header */
   --header-login-bg: transparent;
@@ -979,31 +1325,25 @@
   --header-redir-cursor: #ec0c0c;
 
   --header-login-bg-2: #ec0c0c;
-  --header-login-txt: #ec0c0c;
+  --header-login-txt: #ffffff;
+
   --header-regis-bg: #ec0c0c;
   --header-regis-txt: #ffffff;
 
+
   /* Hero */
-  --hero-bg: #ffffff;
   --hero-ttl: #ec0c0c;
   --hero-desc: #616161;
+
   --hero-bg-demo: #ec0c0c;
   --hero-txt-demo: #fcfcfc;
+
 
   /* Carrusel 1*/
   --carrusel-bg: #9cc2a9;
   --carrusel-ttl: #ec0c0c;
   --carrusel-desc: #ec0c0c;
 
-  /* --carrusel 2 */
-  --carrusel2-mini-bg: #ec0c0c;
-  --carrusel2-mini-txt: #ffffff;
-
-  --carrusel2-ttl: #ec0c0c;
-  --carrusel2-desc: #616161;
-
-  --carrusel2-sig: #181818;
-  --carrusel2-sig-txt: #ec0c0c;
 
   /* Tarjetas pin3d */
   --tarjetas-ttl1: #ec0c0c;
@@ -1023,10 +1363,14 @@
   --tarjetas-desc7: #616161;
   --tarjetas-txt8: #616161;
 
+  --pin-line: #ec0c0c;
+  --pin-wave: #ec0c0c;
+
+
   /* 2 mockup cada lado */
-  --mockup-bg: #4b6554;
   --mockup-ttl: #ec0c0c;
   --mockup-desc: #616161;
+
 
   /* wobble 4 */
   --wobble-ttl: #ec0c0c;
@@ -1039,19 +1383,26 @@
 
   --wobble-ttl-5: #ffffff;
   --wobble-desc-6: #efefef;
-  --wobble-dmas-7: #f00a0a;
+
+
+    /* --carrusel 2 */
+  --carrusel2-mini-bg: #ec0c0c;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #ec0c0c;
+  --carrusel2-desc: #616161;
+
 
   /* Preguntas frecuentes */
-  --preg-bg: #4b6554;
   --preg-ttl: #ec0c0c;
   --preg-desc: #616161;
   --preg-link: #ec0c0c;
+
   --preg-preg: #ec0c0c;
   --preg-txt: #616161;
 
-  /* Footer */
-  --footer-bg: #ffffff;
 
+  /* Footer */
   --footer-txt: #2c2a2a;
   --footer-link: #ec0c0c;
   --footer-derechos: #2c2a2a;
@@ -1059,7 +1410,9 @@
   --footer-ttl: #ec0c0c;
   --footer-pag: #2c2a2a;
   --footer-pag-hov: #ec0c0c;
+
   --footer-ralq: #ec0c0c;
+
 
   /* demo/demo.tsx */
   --demo-bg: #acacac;
@@ -1076,16 +1429,65 @@
   --demo-ttl: #ffffff;
   --demo-desc: #dad9d9;
 
-  /* Pin 3D */
-  --pin-line: #ec0c0c;
-  --pin-wave: #ec0c0c;
+  /* =========================
+   Sobre Nosotros
+========================= */
+  --nos-ttl: #ec0c0c;
+  --nos-desc: #616161;
+
+  --nos-fechas: #ec0c0c;
+  --nos-txt: #616161;
+
+
+  /* =========================
+   Contacto
+========================= */
+  --contact-ttl: #ec0c0c;
+  --contact-desc: #616161;
+
+  --contact-card-bg: #ffffff;
+  --contact-card-border: #d1d1d1;
+
+  --contact-label: #ec0c0c;
+
+  --contact-input-text: #ec0c0c;
+  --contact-input-desc: #000000;
+  --contact-input-bg: #ffffff;
+  --contact-input-border: #e2e8e3;
+  --contact-input-border-hover: #ec0c0c;
+
+  --contact-btn-bg: #ec0c0c;
+  --contact-btn-text: #ffffff;
+  --contact-btn-hover: #d10a0a;
+
+  
+  --contact-team-ttl: #ec0c0c;
+  --contact-team-name: #ec0c0c;
+  --contact-team-email: #616161;
+
+  --contact-social: #ec0c0c;
+  --contact-social-hvr: #d10a0a;
+
+
+  /* =========================
+   Ayuda
+========================= */
+  --ayuda-ttl: #ec0c0c;
+  --ayuda-desc: #616161;
+
+  --ayuda-preg-ttl: #ec0c0c;
+  --ayuda-preg-txt: #616161;
+
+  --ayuda-link: #ec0c0c;
 }
 
 [data-color="red"].dark,
 .dark [data-color="red"] {
-  /* Titulo y Descripción general */
-  --titulos: #ffffff;
+  /* General */
+  --bg-fondo: #000000;
+  --titulos: #ff1a1a;
   --descripciones: #dddddd;
+
 
   /* Header */
   --header-login-bg: transparent;
@@ -1094,31 +1496,23 @@
 
   --header-login-bg-2: #ff1a1a;
   --header-login-txt: #ffffff;
+
   --header-regis-bg: #ff1a1a;
   --header-regis-txt: #ffffff;
 
+
   /* Hero */
-  --hero-bg: #ffffff;
   --hero-ttl: #ff1a1a;
   --hero-desc: #dddddd;
+
   --hero-bg-demo: #ff1a1a;
   --hero-txt-demo: #fcfcfc;
 
+
   /* Carrusel 1*/
-  --carrusel2-bg: #0c0c0c;
+  --carrusel-bg: #0c0c0c;
   --carrusel-ttl: #ff1a1a;
   --carrusel-desc: #ff1a1a;
-
-
-  /* --carrusel 2 */
-  --carrusel2-mini-bg: #ff1a1a;
-  --carrusel2-mini-txt: #ffffff;
-
-  --carrusel2-ttl: #ff1a1a;
-  --carrusel2-desc: #dddddd;
-
-  --carrusel2-sig: #181818;
-  --carrusel2-sig-txt: #ff1a1a;
 
 
   /* Tarjetas pin3d */
@@ -1139,6 +1533,10 @@
   --tarjetas-desc7: #dddddd;
   --tarjetas-txt8: #dddddd;
 
+  --pin-line: #ff1a1a;
+  --pin-wave: #ff1a1a;
+
+
   /* 2 mockup cada lado */
   --mockup-ttl: #ff1a1a;
   --mockup-desc: #dddddd;
@@ -1155,20 +1553,26 @@
 
   --wobble-ttl-5: #ffffff;
   --wobble-desc-6: #efefef;
-  --wobble-dmas-7: #f00a0a;
+
+
+    /* --carrusel 2 */
+  --carrusel2-mini-bg: #ff1a1a;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #ff1a1a;
+  --carrusel2-desc: #dddddd;
 
 
   /* Preguntas frecuentes */
-  --preg-bg: #4b6554;
   --preg-ttl: #ff1a1a;
   --preg-desc: #dddddd;
   --preg-link: #ff1a1a;
+
   --preg-preg: #ff1a1a;
   --preg-txt: #dddddd;
 
-  /* Footer */
-  --footer-bg: #000000;
 
+  /* Footer */
   --footer-txt: #dddddd;
   --footer-link: #ff1a1a;
   --footer-derechos: #dddddd;
@@ -1176,7 +1580,9 @@
   --footer-ttl: #ff1a1a;
   --footer-pag: #dddddd;
   --footer-pag-hov: #ff1a1a;
+
   --footer-ralq: #ff1a1a;
+
 
   /* demo/demo.tsx */
   --demo-bg: #acacac;
@@ -1193,16 +1599,65 @@
   --demo-ttl: #ffffff;
   --demo-desc: #dad9d9;
 
-  /* Pin 3D */
-  --pin-line: #ff1a1a;
-  --pin-wave: #ff1a1a;
+  /* =========================
+   Sobre Nosotros
+========================= */
+  --nos-ttl: #ff1a1a;
+  --nos-desc: #dddddd;
+
+  --nos-fechas: #ff1a1a;
+  --nos-txt: #dddddd;
+
+
+  /* =========================
+   Contacto
+========================= */
+  --contact-ttl: #ff1a1a;
+  --contact-desc: #dddddd;
+
+  --contact-card-bg: #0a0a0a;
+  --contact-card-border: #1f1f1f;
+
+  --contact-label: #ff1a1a;
+
+  --contact-input-text: #ff1a1a;
+  --contact-input-desc: #ffffff;
+  --contact-input-bg: #141313;
+  --contact-input-border: #333333;
+  --contact-input-border-hover: #ff1a1a;
+
+  --contact-btn-bg: #ff1a1a;
+  --contact-btn-text: #ffffff;
+  --contact-btn-hover: #d10a0a;
+
+  
+  --contact-team-ttl: #ff1a1a;
+  --contact-team-name: #ff1a1a;
+  --contact-team-email: #dddddd;
+
+  --contact-social: #ff1a1a;
+  --contact-social-hvr: #d10a0a;
+
+
+  /* =========================
+   Ayuda
+========================= */
+  --ayuda-ttl: #ff1a1a;
+  --ayuda-desc: #dddddd;
+
+  --ayuda-preg-ttl: #ff1a1a;
+  --ayuda-preg-txt: #dddddd;
+
+  --ayuda-link: #ff1a1a;
 }
 
 /* Naranja */
 [data-color="orange"] {
-  /* Titulo y Descripción general */
-  --titulos: #ffffff;
+  /* General */
+  --bg-fondo: #ffffff;
+  --titulos: #f77817;
   --descripciones: #616161;
+
 
   /* Header */
   --header-login-bg: transparent;
@@ -1210,31 +1665,25 @@
   --header-redir-cursor: #ff6f00;
 
   --header-login-bg-2: #ff6f00;
-  --header-login-txt: #ff6f00;
+  --header-login-txt: #ffffff;
+
   --header-regis-bg: #ff6f00;
   --header-regis-txt: #ffffff;
 
+
   /* Hero */
-  --hero-bg: #ffffff;
   --hero-ttl: #f77817;
   --hero-desc: #616161;
+
   --hero-bg-demo: #f77817;
   --hero-txt-demo: #fcfcfc;
+
 
   /* Carrusel 1*/
   --carrusel-bg: #9cc2a9;
   --carrusel-ttl: #f77817;
   --carrusel-desc: #f77817;
 
-  /* --carrusel 2 */
-  --carrusel2-mini-bg: #f77817;
-  --carrusel2-mini-txt: #ffffff;
-
-  --carrusel2-ttl: #f77817;
-  --carrusel2-desc: #616161;
-
-  --carrusel2-sig: #181818;
-  --carrusel2-sig-txt: #f77817;
 
   /* Tarjetas pin3d */
   --tarjetas-ttl1: #f77817;
@@ -1254,10 +1703,14 @@
   --tarjetas-desc7: #616161;
   --tarjetas-txt8: #616161;
 
+  --pin-line: #f77817;
+  --pin-wave: #f77817;
+
+
   /* 2 mockup cada lado */
-  --mockup-bg: #4b6554;
   --mockup-ttl: #f77817;
   --mockup-desc: #616161;
+
 
   /* wobble 4 */
   --wobble-ttl: #f77817;
@@ -1270,19 +1723,26 @@
 
   --wobble-ttl-5: #ffffff;
   --wobble-desc-6: #efefef;
-  --wobble-dmas-7: #f00a0a;
+
+
+    /* --carrusel 2 */
+  --carrusel2-mini-bg: #f77817;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #f77817;
+  --carrusel2-desc: #616161;
+
 
   /* Preguntas frecuentes */
-  --preg-bg: #4b6554;
   --preg-ttl: #f77817;
   --preg-desc: #616161;
   --preg-link: #f77817;
+
   --preg-preg: #f77817;
   --preg-txt: #616161;
 
-  /* Footer */
-  --footer-bg: #ffffff;
 
+  /* Footer */
   --footer-txt: #2c2a2a;
   --footer-link: #f77817;
   --footer-derechos: #2c2a2a;
@@ -1290,7 +1750,9 @@
   --footer-ttl: #f77817;
   --footer-pag: #2c2a2a;
   --footer-pag-hov: #f77817;
+
   --footer-ralq: #f77817;
+
 
   /* demo/demo.tsx */
   --demo-bg: #acacac;
@@ -1307,16 +1769,65 @@
   --demo-ttl: #ffffff;
   --demo-desc: #dad9d9;
 
-  /* Pin 3D */
-  --pin-line: #f77817;
-  --pin-wave: #f77817;
+  /* =========================
+   Sobre Nosotros
+========================= */
+  --nos-ttl: #f77817;
+  --nos-desc: #616161;
+
+  --nos-fechas: #f77817;
+  --nos-txt: #616161;
+
+
+  /* =========================
+   Contacto
+========================= */
+  --contact-ttl: #f77817;
+  --contact-desc: #616161;
+
+  --contact-card-bg: #ffffff;
+  --contact-card-border: #d1d1d1;
+
+  --contact-label: #f77817;
+
+  --contact-input-text: #f77817;
+  --contact-input-desc: #000000;
+  --contact-input-bg: #ffffff;
+  --contact-input-border: #e2e8e3;
+  --contact-input-border-hover: #f77817;
+
+  --contact-btn-bg: #f77817;
+  --contact-btn-text: #ffffff;
+  --contact-btn-hover: #d16613;
+
+  
+  --contact-team-ttl: #f77817;
+  --contact-team-name: #f77817;
+  --contact-team-email: #616161;
+
+  --contact-social: #f77817;
+  --contact-social-hvr: #d16613;
+
+
+  /* =========================
+   Ayuda
+========================= */
+  --ayuda-ttl: #f77817;
+  --ayuda-desc: #616161;
+
+  --ayuda-preg-ttl: #f77817;
+  --ayuda-preg-txt: #616161;
+
+  --ayuda-link: #f77817;
 }
 
 [data-color="orange"].dark,
 .dark [data-color="orange"] {
-  /* Titulo y Descripción general */
-  --titulos: #ffffff;
+  /* General */
+  --bg-fondo: #000000;
+  --titulos: #ff8400;
   --descripciones: #dddddd;
+
 
   /* Header */
   --header-login-bg: transparent;
@@ -1325,30 +1836,24 @@
 
   --header-login-bg-2: #ff9100;
   --header-login-txt: #ffffff;
+
   --header-regis-bg: #ff9100;
   --header-regis-txt: #ffffff;
 
+
   /* Hero */
-  --hero-bg: #ffffff;
   --hero-ttl: #ff8400;
   --hero-desc: #dddddd;
+
   --hero-bg-demo: #ff8400;
   --hero-txt-demo: #fcfcfc;
 
+
   /* Carrusel 1*/
-  --carrusel2-bg: #0c0c0c;
+  --carrusel-bg: #0c0c0c;
   --carrusel-ttl: #ff9100;
   --carrusel-desc: #ff9100;
 
-  /* --carrusel 2 */
-  --carrusel2-mini-bg: #ff9100;
-  --carrusel2-mini-txt: #ffffff;
-
-  --carrusel2-ttl: #ff9100;
-  --carrusel2-desc: #dddddd;
-
-  --carrusel2-sig: #181818;
-  --carrusel2-sig-txt: #ff9100;
 
   /* Tarjetas pin3d */
   --tarjetas-ttl1: #ff9100;
@@ -1368,9 +1873,14 @@
   --tarjetas-desc7: #dddddd;
   --tarjetas-txt8: #dddddd;
 
+  --pin-line: #ff9100;
+  --pin-wave: #ff9100;
+
+
   /* 2 mockup cada lado */
   --mockup-ttl: #ff9100;
   --mockup-desc: #dddddd;
+
 
   /* wobble 4 */
   --wobble-ttl: #ff9100;
@@ -1383,19 +1893,26 @@
 
   --wobble-ttl-5: #ffffff;
   --wobble-desc-6: #efefef;
-  --wobble-dmas-7: #f00a0a;
+
+
+    /* --carrusel 2 */
+  --carrusel2-mini-bg: #ff9100;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #ff9100;
+  --carrusel2-desc: #dddddd;
+
 
   /* Preguntas frecuentes */
-  --preg-bg: #4b6554;
   --preg-ttl: #ff9100;
   --preg-desc: #dddddd;
   --preg-link: #ff9100;
+
   --preg-preg: #ff9100;
   --preg-txt: #dddddd;
 
-  /* Footer */
-  --footer-bg: #000000;
 
+  /* Footer */
   --footer-txt: #dddddd;
   --footer-link: #ff9100;
   --footer-derechos: #dddddd;
@@ -1403,7 +1920,9 @@
   --footer-ttl: #ff9100;
   --footer-pag: #dddddd;
   --footer-pag-hov: #ff9100;
+
   --footer-ralq: #ff9100;
+
 
   /* demo/demo.tsx */
   --demo-bg: #acacac;
@@ -1420,16 +1939,65 @@
   --demo-ttl: #f77817;
   --demo-desc: #c4c4c4;
 
-  /* Pin 3D */
-  --pin-line: #ff9100;
-  --pin-wave: #ff9100;
+  /* =========================
+   Sobre Nosotros
+========================= */
+  --nos-ttl: #ff8400;
+  --nos-desc: #dddddd;
+
+  --nos-fechas: #ff8400;
+  --nos-txt: #dddddd;
+
+
+  /* =========================
+   Contacto
+========================= */
+  --contact-ttl: #ff8400;
+  --contact-desc: #dddddd;
+
+  --contact-card-bg: #0a0a0a;
+  --contact-card-border: #1f1f1f;
+
+  --contact-label: #ff8400;
+
+  --contact-input-text: #ff8400;
+  --contact-input-desc: #ffffff;
+  --contact-input-bg: #141313;
+  --contact-input-border: #333333;
+  --contact-input-border-hover: #ff8400;
+
+  --contact-btn-bg: #e17100;
+  --contact-btn-text: #ffffff;
+  --contact-btn-hover: #d16613;
+
+  
+  --contact-team-ttl: #ff8400;
+  --contact-team-name: #ff8400;
+  --contact-team-email: #dddddd;
+
+  --contact-social: #ff8400;
+  --contact-social-hvr: #d16613;
+
+
+  /* =========================
+   Ayuda
+========================= */
+  --ayuda-ttl: #ff8400;
+  --ayuda-desc: #dddddd;
+
+  --ayuda-preg-ttl: #ff8400;
+  --ayuda-preg-txt: #dddddd;
+
+  --ayuda-link: #ff8400;
 }
 
 /* Rosa */
 [data-color="pink"] {
-  /* Titulo y Descripción general */
-  --titulos: #ffffff;
+  /* General */
+  --bg-fondo: #ffffff;
+  --titulos: #ec003f;
   --descripciones: #616161;
+
 
   /* Header */
   --header-login-bg: transparent;
@@ -1442,27 +2010,20 @@
   --header-regis-bg: #ec003f;
   --header-regis-txt: #ffffff;
 
+
   /* Hero */
-  --hero-bg: #ffffff;
   --hero-ttl: #ec003f;
   --hero-desc: #616161;
+
   --hero-bg-demo: #ec003f;
   --hero-txt-demo: #fcfcfc;
+
 
   /* Carrusel 1*/
   --carrusel-bg: #9cc2a9;
   --carrusel-ttl: #ec003f;
   --carrusel-desc: #616161;
 
-  /* --carrusel 2 */
-  --carrusel2-mini-bg: #ec003f;
-  --carrusel2-mini-txt: #fff;
-
-  --carrusel2-ttl: #ec003f;
-  --carrusel2-desc: #616161;
-
-  --carrusel2-sig: #181818;
-  --carrusel2-sig-txt: #ec003f;
 
   /* Tarjetas pin3d */
   --tarjetas-ttl1: #ec003f;
@@ -1482,10 +2043,14 @@
   --tarjetas-desc7: #616161;
   --tarjetas-txt8: #616161;
 
+  --pin-line: #ec003f;
+  --pin-wave: #ec003f;
+
+
   /* 2 mockup cada lado */
-  --mockup-bg: #4b6554;
   --mockup-ttl: #ec003f;
   --mockup-desc: #616161;
+
 
   /* wobble 4 */
   --wobble-ttl: #ec003f;
@@ -1498,19 +2063,26 @@
 
   --wobble-ttl-5: #ffffff;
   --wobble-desc-6: #efefef;
-  --wobble-dmas-7: #f00a0a;
+
+
+    /* --carrusel 2 */
+  --carrusel2-mini-bg: #ec003f;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #ec003f;
+  --carrusel2-desc: #616161;
+
 
   /* Preguntas frecuentes */
-  --preg-bg: #4b6554;
   --preg-ttl: #ec003f;
   --preg-desc: #616161;
   --preg-link: #ec003f;
+
   --preg-preg: #ec003f;
   --preg-txt: #616161;
 
-  /* Footer */
-  --footer-bg: #ffffff;
 
+  /* Footer */
   --footer-txt: #2c2a2a;
   --footer-link: #ec003f;
   --footer-derechos: #2c2a2a;
@@ -1518,7 +2090,9 @@
   --footer-ttl: #ec003f;
   --footer-pag: #2c2a2a;
   --footer-pag-hov: #ec003f;
+
   --footer-ralq: #ec003f;
+
 
   /* demo/demo.tsx */
   --demo-bg: #3f3a3a;
@@ -1535,20 +2109,68 @@
   --demo-ttl: #ffffff;
   --demo-desc: #dad9d9;
 
-  /* Pin 3D */
-  --pin-line: #ec003f;
-  --pin-wave: #ec003f;
+  /* =========================
+   Sobre Nosotros
+========================= */
+  --nos-ttl: #ec003f;
+  --nos-desc: #616161;
+
+  --nos-fechas: #ec003f;
+  --nos-txt: #616161;
+
+
+  /* =========================
+   Contacto
+========================= */
+  --contact-ttl: #ec003f;
+  --contact-desc: #616161;
+
+  --contact-card-bg: #ffffff;
+  --contact-card-border: #d1d1d1;
+
+  --contact-label: #ec003f;
+
+  --contact-input-text: #ec003f;
+  --contact-input-desc: #000000;
+  --contact-input-bg: #ffffff;
+  --contact-input-border: #e2e8e3;
+  --contact-input-border-hover: #ec003f;
+
+  --contact-btn-bg: #ec003f;
+  --contact-btn-text: #ffffff;
+  --contact-btn-hover: #c40034;
+
+  
+  --contact-team-ttl: #ec003f;
+  --contact-team-name: #ec003f;
+  --contact-team-email: #616161;
+
+  --contact-social: #ec003f;
+  --contact-social-hvr: #c40034;
+
+
+  /* =========================
+   Ayuda
+========================= */
+  --ayuda-ttl: #ec003f;
+  --ayuda-desc: #616161;
+
+  --ayuda-preg-ttl: #ec003f;
+  --ayuda-preg-txt: #616161;
+
+  --ayuda-link: #ec003f;
 }
 
 [data-color="pink"].dark,
 .dark [data-color="pink"] {
-  /* Titulo y Descripción general */
-  --titulos: #ffffff;
+  /* General */
+  --bg-fondo: #000000;
+  --titulos: #ec003f;
   --descripciones: #dddddd;
+
 
   /* Header */
   --header-login-bg: transparent;
-
   --header-redir: #dddddd;
   --header-redir-cursor: #ec003f;
 
@@ -1558,27 +2180,20 @@
   --header-regis-bg: #ec003f;
   --header-regis-txt: #ffffff;
 
+
   /* Hero */
-  --hero-bg: #ffffff;
   --hero-ttl: #ec003f;
   --hero-desc: #dddddd;
+
   --hero-bg-demo: #ec003f;
   --hero-txt-demo: #fcfcfc;
 
+
   /* Carrusel 1*/
-  --carrusel2-bg: #0c0c0c;
+  --carrusel-bg: #0c0c0c;
   --carrusel-ttl: #ec003f;
   --carrusel-desc: #ec003f;
 
-  /* --carrusel 2 */
-  --carrusel2-mini-bg: #ec003f;
-  --carrusel2-mini-txt: #ffffff;
-
-  --carrusel2-ttl: #ec003f;
-  --carrusel2-desc: #dddddd;
-
-  --carrusel2-sig: #181818;
-  --carrusel2-sig-txt: #ec003f;
 
   /* Tarjetas pin3d */
   --tarjetas-ttl1: #ec003f;
@@ -1598,10 +2213,14 @@
   --tarjetas-desc7: #dddddd;
   --tarjetas-txt8: #dddddd;
 
+  --pin-line: #ec003f;
+  --pin-wave: #ec003f;
+
+
   /* 2 mockup cada lado */
-  /* --mockup-bg: #4b6554; */
   --mockup-ttl: #ec003f;
   --mockup-desc: #dddddd;
+
 
   /* wobble 4 */
   --wobble-ttl: #ec003f;
@@ -1614,19 +2233,26 @@
 
   --wobble-ttl-5: #ffffff;
   --wobble-desc-6: #efefef;
-  --wobble-dmas-7: #f00a0a;
+
+
+    /* --carrusel 2 */
+  --carrusel2-mini-bg: #ec003f;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #ec003f;
+  --carrusel2-desc: #dddddd;
+
 
   /* Preguntas frecuentes */
-  --preg-bg: #4b6554;
   --preg-ttl: #ec003f;
   --preg-desc: #dddddd;
   --preg-link: #ec003f;
+
   --preg-preg: #ec003f;
   --preg-txt: #dddddd;
 
-  /* Footer */
-  --footer-bg: #000000;
 
+  /* Footer */
   --footer-txt: #dddddd;
   --footer-link: #ec003f;
   --footer-derechos: #dddddd;
@@ -1634,18 +2260,84 @@
   --footer-ttl: #ec003f;
   --footer-pag: #dddddd;
   --footer-pag-hov: #ec003f;
+
   --footer-ralq: #ec003f;
 
-  /* Pin 3D */
-  --pin-line: #ec003f;
-  --pin-wave: #ec003f;
+
+  /* demo/demo.tsx */
+  --demo-bg: #acacac;
+  --demo-border: #727272;
+  --demo-dis-bg: #181717;
+  --demo-dis-txt: #cdcdcd;
+
+  --demo-btn-border: #515352;
+  --demo-btn-bg: #232222;
+  --demo-btn-txt: #e80e0e;
+  --demo-btn-des: #ec003f;
+
+  --demo-mini-ttl: #dad9d9;
+  --demo-ttl: #ffffff;
+  --demo-desc: #dad9d9;
+
+  /* =========================
+   Sobre Nosotros
+========================= */
+  --nos-ttl: #ec003f;
+  --nos-desc: #dddddd;
+
+  --nos-fechas: #ec003f;
+  --nos-txt: #dddddd;
+
+
+  /* =========================
+   Contacto
+========================= */
+  --contact-ttl: #ec003f;
+  --contact-desc: #dddddd;
+
+  --contact-card-bg: #0a0a0a;
+  --contact-card-border: #1f1f1f;
+
+  --contact-label: #ec003f;
+
+  --contact-input-text: #ec003f;
+  --contact-input-desc: #ffffff;
+  --contact-input-bg: #141313;
+  --contact-input-border: #333333;
+  --contact-input-border-hover: #ec003f;
+
+  --contact-btn-bg: #ec003f;
+  --contact-btn-text: #ffffff;
+  --contact-btn-hover: #c40034;
+
+  
+  --contact-team-ttl: #ec003f;
+  --contact-team-name: #ec003f;
+  --contact-team-email: #dddddd;
+
+  --contact-social: #ec003f;
+  --contact-social-hvr: #c40034;
+
+
+  /* =========================
+   Ayuda
+========================= */
+  --ayuda-ttl: #ec003f;
+  --ayuda-desc: #dddddd;
+
+  --ayuda-preg-ttl: #ec003f;
+  --ayuda-preg-txt: #dddddd;
+
+  --ayuda-link: #ec003f;
 }
 
 /* Verde  */
 [data-color="green"] {
-  /* Titulo y Descripción general */
-  --titulos: #ffffff;
-  --descripciones: #616161;
+  /* General */
+  --bg-fondo: #ffffff;
+  --titulos: #5ea500;
+  --descripciones: #2c2a2a;
+
 
   /* Header */
   --header-login-bg: transparent;
@@ -1653,31 +2345,25 @@
   --header-redir-cursor: #5ea500;
 
   --header-login-bg-2: #5ea500;
-  --header-login-txt: #5ea500;
+  --header-login-txt: #ffffff;
+
   --header-regis-bg: #5ea500;
   --header-regis-txt: #ffffff;
 
+
   /* Hero */
-  --hero-bg: #ffffff;
   --hero-ttl: #5ea500;
   --hero-desc: #2c2a2a;
+
   --hero-bg-demo: #5ea500;
   --hero-txt-demo: #fcfcfc;
+
 
   /* Carrusel 1*/
   --carrusel-bg: #9cc2a9;
   --carrusel-ttl: #5ea500;
   --carrusel-desc: #5ea500;
 
-  /* --carrusel 2 */
-  --carrusel2-mini-bg: #5ea500;
-  --carrusel2-mini-txt: #ffffff;
-
-  --carrusel2-ttl: #5ea500;
-  --carrusel2-desc: #2c2a2a;
-
-  --carrusel2-sig: #181818;
-  --carrusel2-sig-txt: #53d96e;
 
   /* Tarjetas pin3d */
   --tarjetas-ttl1: #5ea500;
@@ -1697,11 +2383,14 @@
   --tarjetas-desc7: #2c2a2a;
   --tarjetas-txt8: #2c2a2a;
 
+  --pin-line: #7ccf00;
+  --pin-wave: #7ccf00;
+
 
   /* 2 mockup cada lado */
-  --mockup-bg: #4b6554;
   --mockup-ttl: #5ea500;
   --mockup-desc: #2c2a2a;
+
 
   /* wobble 4 */
   --wobble-ttl: #5ea500;
@@ -1714,19 +2403,26 @@
 
   --wobble-ttl-5: #ffffff;
   --wobble-desc-6: #efefef;
-  --wobble-dmas-7: #f00a0a;
+
+
+    /* --carrusel 2 */
+  --carrusel2-mini-bg: #5ea500;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #5ea500;
+  --carrusel2-desc: #2c2a2a;
+
 
   /* Preguntas frecuentes */
-  --preg-bg: #4b6554;
   --preg-ttl: #5ea500;
   --preg-desc: #2c2a2a;
   --preg-link: #5ea500;
+
   --preg-preg: #5ea500;
   --preg-txt: #2c2a2a;
 
-  /* Footer */
-  --footer-bg: #ffffff;
 
+  /* Footer */
   --footer-txt: #2c2a2a;
   --footer-link: #5ea500;
   --footer-derechos: #2c2a2a;
@@ -1734,7 +2430,9 @@
   --footer-ttl: #5ea500;
   --footer-pag: #2c2a2a;
   --footer-pag-hov: #5ea500;
+
   --footer-ralq: #5ea500;
+
 
   /* demo/demo.tsx */
   --demo-bg: #acacac;
@@ -1751,49 +2449,91 @@
   --demo-ttl: #ffffff;
   --demo-desc: #dad9d9;
 
-  /* Pin 3D */
-  --pin-line: #7ccf00;
-  --pin-wave: #7ccf00;
+  /* =========================
+   Sobre Nosotros
+========================= */
+  --nos-ttl: #5ea500;
+  --nos-desc: #2c2a2a;
+
+  --nos-fechas: #5ea500;
+  --nos-txt: #2c2a2a;
+
+
+  /* =========================
+   Contacto
+========================= */
+  --contact-ttl: #5ea500;
+  --contact-desc: #2c2a2a;
+
+  --contact-card-bg: #ffffff;
+  --contact-card-border: #d1d1d1;
+
+  --contact-label: #5ea500;
+
+  --contact-input-text: #5ea500;
+  --contact-input-desc: #000000;
+  --contact-input-bg: #ffffff;
+  --contact-input-border: #e2e8e3;
+  --contact-input-border-hover: #5ea500;
+
+  --contact-btn-bg: #5ea500;
+  --contact-btn-text: #ffffff;
+  --contact-btn-hover: #4e8a00;
+
+  
+  --contact-team-ttl: #5ea500;
+  --contact-team-name: #5ea500;
+  --contact-team-email: #2c2a2a;
+
+  --contact-social: #5ea500;
+  --contact-social-hvr: #4e8a00;
+
+
+  /* =========================
+   Ayuda
+========================= */
+  --ayuda-ttl: #5ea500;
+  --ayuda-desc: #2c2a2a;
+
+  --ayuda-preg-ttl: #5ea500;
+  --ayuda-preg-txt: #2c2a2a;
+
+  --ayuda-link: #5ea500;
 }
 
 [data-color="green"].dark,
 .dark [data-color="green"] {
-  /* Titulo y Descripción general */
-  --titulos: #ffffff;
+  /* General */
+  --bg-fondo: #000000;
+  --titulos: #7ccf00;
   --descripciones: #dddddd;
+
 
   /* Header */
   --header-login-bg: transparent;
-
   --header-redir: #dddddd;
   --header-redir-cursor: #7ccf00;
 
   --header-login-bg-2: #7ccf00;
   --header-login-txt: #ffffff;
+
   --header-regis-bg: #7ccf00;
   --header-regis-txt: #ffffff;
 
+
   /* Hero */
-  --hero-bg: #ffffff;
   --hero-ttl: #7ccf00;
   --hero-desc: #dddddd;
+
   --hero-bg-demo: #7ccf00;
   --hero-txt-demo: #fcfcfc;
 
+
   /* Carrusel 1*/
-  --carrusel2-bg: #0c0c0c;
+  --carrusel-bg: #0c0c0c;
   --carrusel-ttl: #7ccf00;
   --carrusel-desc: #7ccf00;
 
-  /* --carrusel 2 */
-  --carrusel2-mini-bg: #5ea500;
-  --carrusel2-mini-txt: #ffffff;
-
-  --carrusel2-ttl: #7ccf00;
-  --carrusel2-desc: #dddddd;
-
-  --carrusel2-sig: #181818;
-  --carrusel2-sig-txt: #53d96e;
 
   /* Tarjetas pin3d */
   --tarjetas-ttl1: #7ccf00;
@@ -1813,10 +2553,14 @@
   --tarjetas-desc7: #dddddd;
   --tarjetas-txt8: #dddddd;
 
+  --pin-line: #7ccf00;
+  --pin-wave: #7ccf00;
+
+
   /* 2 mockup cada lado */
-  /* --mockup-bg: #4b6554; */
   --mockup-ttl: #7ccf00;
   --mockup-desc: #dddddd;
+
 
   /* wobble 4 */
   --wobble-ttl: #7ccf00;
@@ -1829,19 +2573,26 @@
 
   --wobble-ttl-5: #ffffff;
   --wobble-desc-6: #efefef;
-  --wobble-dmas-7: #f00a0a;
+
+
+    /* --carrusel 2 */
+  --carrusel2-mini-bg: #5ea500;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #7ccf00;
+  --carrusel2-desc: #dddddd;
+
 
   /* Preguntas frecuentes */
-  --preg-bg: #4b6554;
   --preg-ttl: #7ccf00;
   --preg-desc: #dddddd;
   --preg-link: #7ccf00;
+
   --preg-preg: #7ccf00;
   --preg-txt: #dddddd;
 
-  /* Footer */
-  --footer-bg: #000000;
 
+  /* Footer */
   --footer-txt: #dddddd;
   --footer-link: #7ccf00;
   --footer-derechos: #dddddd;
@@ -1849,7 +2600,9 @@
   --footer-ttl: #7ccf00;
   --footer-pag: #dddddd;
   --footer-pag-hov: #7ccf00;
+
   --footer-ralq: #7ccf00;
+
 
   /* demo/demo.tsx */
   --demo-bg: #acacac;
@@ -1866,9 +2619,56 @@
   --demo-ttl: #ffffff;
   --demo-desc: #dad9d9;
 
-  /* Pin 3D */
-  --pin-line: #7ccf00;
-  --pin-wave: #7ccf00;
+  /* =========================
+   Sobre Nosotros
+========================= */
+  --nos-ttl: #7ccf00;
+  --nos-desc: #dddddd;
+
+  --nos-fechas: #7ccf00;
+  --nos-txt: #dddddd;
+
+
+  /* =========================
+   Contacto
+========================= */
+  --contact-ttl: #7ccf00;
+  --contact-desc: #dddddd;
+
+  --contact-card-bg: #0a0a0a;
+  --contact-card-border: #1f1f1f;
+
+  --contact-label: #7ccf00;
+
+  --contact-input-text: #7ccf00;
+  --contact-input-desc: #ffffff;
+  --contact-input-bg: #141313;
+  --contact-input-border: #333333;
+  --contact-input-border-hover: #7ccf00;
+
+  --contact-btn-bg: #7ccf00;
+  --contact-btn-text: #ffffff;
+  --contact-btn-hover: #4e8a00;
+
+  
+  --contact-team-ttl: #7ccf00;
+  --contact-team-name: #7ccf00;
+  --contact-team-email: #dddddd;
+
+  --contact-social: #7ccf00;
+  --contact-social-hvr: #4e8a00;
+
+
+  /* =========================
+   Ayuda
+========================= */
+  --ayuda-ttl: #7ccf00;
+  --ayuda-desc: #dddddd;
+
+  --ayuda-preg-ttl: #7ccf00;
+  --ayuda-preg-txt: #dddddd;
+
+  --ayuda-link: #7ccf00;
 }
 
 @theme inline {
@@ -1950,6 +2750,9 @@
   --color-tarjetas-desc7: var(--tarjetas-desc7);
   --color-tarjetas-txt8: var(--tarjetas-txt8);
 
+  --color-pin-line: var(--pin-line);
+  --color-pin-wave: var(--pin-wave);
+
   /* --carrusel 2 */
   --color-carrusel2-bg: var(--carrusel2-bg);
   --color-carrusel2-mini-bg: var(--carrusel2-mini-bg);
@@ -2028,6 +2831,7 @@
 
   --color-contact-input-text: var(--contact-input-text);
   --color-contact-input-desc: var(--contact-input-desc);
+  --color-contact-input-bg: var(--contact-input-bg);
   --color-contact-input-border: var(--contact-input-border);
   --color-contact-input-border-hover: var(--contact-input-border-hover);
 
@@ -2035,20 +2839,12 @@
   --color-contact-btn-text: var(--contact-btn-text);
   --color-contact-btn-hover: var(--contact-btn-hover);
 
+  --color-contact-team-ttl: var(--contact-team-ttl);
   --color-contact-team-name: var(--contact-team-name);
   --color-contact-team-email: var(--contact-team-email);
 
-  --color-contact-team-ttl: var(--contact-team-ttl);
-  --color-contact-team-name: var(--contact-team-name);
-  --color-contact-team-correo: var(--contact-team-correo);
-
   --color-contact-social: var(--contact-social);
   --color-contact-social-hvr: var(--contact-social-hvr);
-
-  /* Pin 3D */
-  --color-pin-line: var(--pin-line);
-  --color-pin-wave: var(--pin-wave);
-
 
   /* Ayuda */
   --color-ayuda-ttl: var(--ayuda-ttl);

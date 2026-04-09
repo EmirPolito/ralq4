@@ -66,7 +66,9 @@ export default function ContactForm() {
   const inputClasses = `
   rounded-[8px]
   border border-contact-card-border
+  bg-contact-input-bg
   text-contact-input-desc
+  placeholder:text-contact-input-desc
   text-sm                 
   leading-5               
   px-2.5 
@@ -214,18 +216,18 @@ export default function ContactForm() {
               { name: "Emir Polito Guevara", email: "emirpolitog@mail.com" },
               {
                 name: "Irving Esteban Molina Méndez",
-                email: "cristiandaniel@mail.com",
+                email: "cristiandaniel@gmail.com",
               },
               {
                 name: "Cristian Daniel Barraza Hernández",
-                email: "irvingesteban@mail.com",
+                email: "irvingesteban@gmail.com",
               },
             ].map((member, i) => (
               <motion.li key={i} variants={fadeInUp} custom={0.7 + i * 0.1}>
                 <p className="text-base font-medium text-contact-team-name">
                   {member.name}
                 </p>
-                <p className="text-sm text-contact-team-correo">
+                <p className="text-sm text-contact-team-email">
                   {member.email}
                 </p>
               </motion.li>
