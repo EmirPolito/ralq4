@@ -10,7 +10,7 @@ export default function PinCardsSection() {
     <section className="py-20 lg:py-25 overflow-hidden">
       <div className="container mx-auto px-8">
         <ScrollAnimation direction="up" delay={0.1}>
-          <div className="text-center mb-2">
+          <div className="text-center mb-16">
             <h2 className="text-tarjetas-ttl1 text-3xl md:text-4xl lg:text-6xl font-semibold tracking-tight text-balance">
               Áreas de Exploración Científica
             </h2>
@@ -41,23 +41,23 @@ export default function PinCardsSection() {
                     </div>
                   </div>
 
-                  <div className="flex-1 mt-4 space-y-4">
+                  <div className="flex-1 mt-8 sm:mt-4 space-y-2 sm:space-y-4">
                     <div className="flex items-center gap-2">
-                      <Beaker className="text-tarjetas-1txt6 h-8 w-8" />
-                      <div className="text-tarjetas-ttl4 text-xl font-bold">
+                      <Beaker className="text-tarjetas-1txt6 h-6 w-6 sm:h-8 sm:w-8" />
+                      <div className="text-tarjetas-ttl4 text-lg sm:text-xl font-bold">
                         Plantas Químicas
                       </div>
                     </div>
 
-                    <p className="text-tarjetas-desc5 text-[15px] leading-relaxed">
+                    <p className="text-tarjetas-desc5 text-[13px] sm:text-[15px] leading-relaxed">
                       Comprende cómo se transforman las sustancias en procesos
                       industriales observando equipos utilizados en producción
                       química a gran escala.
                     </p>
 
-                    <div className="grid grid-cols-3 gap-10 sm:gap-20 mt-10">
+                    <div className="grid grid-cols-3 gap-10 sm:gap-20 mt-4 sm:mt-10">
                       <div className="space-y-1">
-                        <div className="text-tarjetas-1txt6 text-4xl font-bold">
+                        <div className="text-tarjetas-1txt6 text-2xl sm:text-4xl font-bold">
                           +2
                         </div>
                         <div className="text-tarjetas-desc7 text-xs">
@@ -66,7 +66,7 @@ export default function PinCardsSection() {
                       </div>
 
                       <div className="space-y-1">
-                        <div className="text-tarjetas-1txt6 text-4xl font-bold">
+                        <div className="text-tarjetas-1txt6 text-2xl sm:text-4xl font-bold">
                           RA
                         </div>
                         <div className="text-tarjetas-desc7 text-xs">
@@ -75,7 +75,7 @@ export default function PinCardsSection() {
                       </div>
 
                       <div className="space-y-1">
-                        <div className="text-tarjetas-1txt6 text-4xl font-bold">
+                        <div className="text-tarjetas-1txt6 text-2xl sm:text-4xl font-bold">
                           3D
                         </div>
                         <div className="text-tarjetas-desc7 text-xs">
@@ -113,23 +113,23 @@ export default function PinCardsSection() {
                     </div>
                   </div>
 
-                  <div className="flex-1 mt-4 space-y-4">
+                  <div className="flex-1 mt-8 sm:mt-4 space-y-2 sm:space-y-4">
                     <div className="flex items-center gap-2">
-                      <Atom className="text-tarjetas-2txt6 h-8 w-8" />
-                      <div className="text-tarjetas-ttl4 text-xl font-bold">
+                      <Atom className="text-tarjetas-2txt6 h-6 w-6 sm:h-8 sm:w-8" />
+                      <div className="text-tarjetas-ttl4 text-lg sm:text-xl font-bold">
                         Análisis Instrumental
                       </div>
                     </div>
 
-                    <p className="text-tarjetas-desc5 text-[15px] leading-relaxed">
+                    <p className="text-tarjetas-desc5 text-[13px] sm:text-[15px] leading-relaxed">
                       Descubre cómo los instrumentos científicos permiten
                       identificar compuestos y analizar propiedades químicas de
                       diferentes sustancias.
                     </p>
 
-                    <div className="grid grid-cols-3 gap-10 sm:gap-20 mt-10">
+                    <div className="grid grid-cols-3 gap-10 sm:gap-20 mt-4 sm:mt-10">
                       <div className="space-y-1">
-                        <div className="text-tarjetas-2txt6 text-4xl font-bold">
+                        <div className="text-tarjetas-2txt6 text-2xl sm:text-4xl font-bold">
                           8+
                         </div>
                         <div className="text-tarjetas-desc7 text-xs">
@@ -138,7 +138,7 @@ export default function PinCardsSection() {
                       </div>
 
                       <div className="space-y-1">
-                        <div className="text-tarjetas-2txt6 text-4xl font-bold">
+                        <div className="text-tarjetas-2txt6 text-2xl sm:text-4xl font-bold">
                           RA
                         </div>
                         <div className="text-tarjetas-desc7 text-xs">
@@ -147,7 +147,7 @@ export default function PinCardsSection() {
                       </div>
 
                       <div className="space-y-1">
-                        <div className="text-tarjetas-2txt6 text-4xl font-bold">
+                        <div className="text-tarjetas-2txt6 text-2xl sm:text-4xl font-bold">
                           3D
                         </div>
                         <div className="text-tarjetas-desc7 text-xs">
@@ -185,23 +185,23 @@ export default function PinCardsSection() {
                     </div>
                   </div>
 
-                  <div className="flex-1 mt-4 space-y-4">
+                  <div className="flex-1 mt-8 sm:mt-4 space-y-2 sm:space-y-4">
                     <div className="flex items-center gap-2">
-                      <FlaskConical className="text-tarjetas-3txt6 h-8 w-8" />
-                      <div className="text-tarjetas-ttl4 text-xl font-bold">
+                      <FlaskConical className="text-tarjetas-3txt6 h-6 w-6 sm:h-8 sm:w-8" />
+                      <div className="text-tarjetas-ttl4 text-lg sm:text-xl font-bold">
                         Química General
                       </div>
                     </div>
 
-                    <p className="text-tarjetas-desc5 text-[15px] leading-relaxed">
+                    <p className="text-tarjetas-desc5 text-[13px] sm:text-[15px] leading-relaxed">
                       Familiarízate con el uso de materiales esenciales del
                       laboratorio y comprende su función dentro de prácticas
                       experimentales de química básica.
                     </p>
 
-                    <div className="grid grid-cols-3 gap-10 sm:gap-20 mt-10">
+                    <div className="grid grid-cols-3 gap-10 sm:gap-20 mt-4 sm:mt-10">
                       <div className="space-y-1">
-                        <div className="text-tarjetas-3txt6 text-4xl font-bold">
+                        <div className="text-tarjetas-3txt6 text-2xl sm:text-4xl font-bold">
                           15+
                         </div>
                         <div className="text-tarjetas-desc7 text-xs">
@@ -210,7 +210,7 @@ export default function PinCardsSection() {
                       </div>
 
                       <div className="space-y-1">
-                        <div className="text-tarjetas-3txt6 text-4xl font-bold">
+                        <div className="text-tarjetas-3txt6 text-2xl sm:text-4xl font-bold">
                           360°
                         </div>
                         <div className="text-tarjetas-desc7 text-xs">
@@ -219,7 +219,7 @@ export default function PinCardsSection() {
                       </div>
 
                       <div className="space-y-1">
-                        <div className="text-tarjetas-3txt6 text-4xl font-bold">
+                        <div className="text-tarjetas-3txt6 text-2xl sm:text-4xl font-bold">
                           RA
                         </div>
                         <div className="text-tarjetas-desc7 text-xs">

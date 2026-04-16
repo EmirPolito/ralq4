@@ -55,7 +55,7 @@ export const PinContainer = ({
     if (!isMobile || reducedMotion) return;
 
     if (inView) {
-      setTransform("translate(-50%,-50%) rotateX(12deg) scale(0.95)");
+      setTransform("translate(-50%,-50%) rotateX(20deg) scale(0.95)");
     } else {
       setTransform("translate(-50%,-50%) rotateX(0deg) scale(1)");
     }
@@ -148,7 +148,7 @@ export const PinPerspective = ({
   return (
     <motion.div
       className={cn(
-        "pointer-events-none w-[18.5rem] h-[18.5rem] sm:w-96 sm:h-80 flex items-center justify-center z-[60]",
+        "pointer-events-none w-[19rem] h-[19rem] sm:w-96 sm:h-80 flex items-center justify-center z-[60]",
         reducedMotion ? "transition duration-150" : "transition duration-500",
         isActive ? "opacity-100" : "opacity-0 group-hover/pin:opacity-100",
       )}
@@ -156,9 +156,10 @@ export const PinPerspective = ({
       <div className="w-full h-full -mt-7 flex-none inset-0">
         {/* etiqueta superior — en móvil es un Link clickeable */}
         <div
+          style={isMobile ? { transform: isActive ? "translateY(-2.1rem)" : "translateY(0)" } : {}}
           className={cn(
             "absolute inset-x-0 flex justify-center transition-all duration-500",
-            isActive ? "top-[-5rem]" : "top-0",
+            isMobile ? "top-0 transition-transform duration-300 ease-out will-change-transform" : (isActive ? "top-[-2.1rem]" : "top-0"),
           )}
         >
           {isMobile && href ? (
@@ -192,84 +193,62 @@ export const PinPerspective = ({
           {!reducedMotion && (
             <>
               <motion.div
-                initial={{
-                  opacity: 0,
-                  scale: 0,
-                  x: "-50%",
-                  y: "-50%",
-                }}
-                animate={{
-                  opacity: [0, 1, 0.5, 0],
-                  scale: 1,
-                  z: 0,
-                }}
-                transition={{
-                  duration: 6,
-                  repeat: Infinity,
-                  delay: 0,
-                }}
-                className="absolute left-1/2 top-1/2 h-[11.25rem] w-[11.25rem] rounded-full bg-pin-wave/[0.08] shadow-[0_8px_16px_rgb(0_0_0/0.4)]"
+                initial={{ opacity: 0, scale: 0, x: "-50%", y: "-50%" }}
+                animate={{ opacity: [0, 1, 0.5, 0], scale: 1, z: 0 }}
+                transition={{ duration: 3, repeat: Infinity, delay: 0 }}
+                className="absolute left-1/2 top-1/2 h-[11.25rem] w-[11.25rem] rounded-full bg-pin-wave/[0.08] shadow-[0_8px_16px_rgb(0_0_0/0.4)] will-change-[opacity,transform]"
               />
-
               <motion.div
-                initial={{
-                  opacity: 0,
-                  scale: 0,
-                  x: "-50%",
-                  y: "-50%",
-                }}
-                animate={{
-                  opacity: [0, 1, 0.5, 0],
-                  scale: 1,
-                  z: 0,
-                }}
-                transition={{
-                  duration: 6,
-                  repeat: Infinity,
-                  delay: 2,
-                }}
-                className="absolute left-1/2 top-1/2 h-[11.25rem] w-[11.25rem] rounded-full bg-pin-wave/[0.08] shadow-[0_8px_16px_rgb(0_0_0/0.4)]"
+                initial={{ opacity: 0, scale: 0, x: "-50%", y: "-50%" }}
+                animate={{ opacity: [0, 1, 0.5, 0], scale: 1, z: 0 }}
+                transition={{ duration: 3, repeat: Infinity, delay: 1 }}
+                className="absolute left-1/2 top-1/2 h-[11.25rem] w-[11.25rem] rounded-full bg-pin-wave/[0.08] shadow-[0_8px_16px_rgb(0_0_0/0.4)] will-change-[opacity,transform]"
               />
-
               <motion.div
-                initial={{
-                  opacity: 0,
-                  scale: 0,
-                  x: "-50%",
-                  y: "-50%",
-                }}
-                animate={{
-                  opacity: [0, 1, 0.5, 0],
-                  scale: 1,
-                  z: 0,
-                }}
-                transition={{
-                  duration: 6,
-                  repeat: Infinity,
-                  delay: 4,
-                }}
-                className="absolute left-1/2 top-1/2 h-[11.25rem] w-[11.25rem] rounded-full bg-pin-wave/[0.08] shadow-[0_8px_16px_rgb(0_0_0/0.4)]"
+                initial={{ opacity: 0, scale: 0, x: "-50%", y: "-50%" }}
+                animate={{ opacity: [0, 1, 0.5, 0], scale: 1, z: 0 }}
+                transition={{ duration: 3, repeat: Infinity, delay: 2 }}
+                className="absolute left-1/2 top-1/2 h-[11.25rem] w-[11.25rem] rounded-full bg-pin-wave/[0.08] shadow-[0_8px_16px_rgb(0_0_0/0.4)] will-change-[opacity,transform]"
               />
             </>
           )}
         </div>
 
         <>
-          <motion.div
-            className={cn(
-              "absolute right-1/2 bottom-1/2 bg-gradient-to-b from-transparent to-pin-line translate-y-[14px] w-px h-20 blur-[2px]",
-              isActive ? "h-60" : "group-hover/pin:h-40",
-              reducedMotion && "transition-all duration-150",
-            )}
-          />
-          <motion.div
-            className={cn(
-              "absolute right-1/2 bottom-1/2 bg-gradient-to-b from-transparent to-pin-line translate-y-[14px] w-px h-20",
-              isActive ? "h-60" : "group-hover/pin:h-40",
-              reducedMotion && "transition-all duration-150",
-            )}
-          />
-          <motion.div className="absolute right-1/2 translate-x-[1.5px] bottom-1/2 bg-pin-line translate-y-[14px] w-[4px] h-[4px] rounded-full z-40 blur-[3px]" />
+          {/* Versión móvil optimizada (GPU) */}
+          {isMobile ? (
+            <div
+              style={{
+                transform: isActive 
+                  ? "translateY(14px) scaleY(1)" 
+                  : "translateY(14px) scaleY(0.45)",
+                transformOrigin: "bottom",
+                opacity: isActive ? 1 : 0,
+              }}
+              className={cn(
+                "absolute right-1/2 bottom-1/2 bg-gradient-to-b from-transparent to-pin-line w-px h-40 transition-all duration-300 ease-out will-change-[transform,opacity]",
+                reducedMotion && "duration-150",
+              )}
+            />
+          ) : (
+            <>
+              <motion.div
+                className={cn(
+                  "absolute right-1/2 bottom-1/2 bg-gradient-to-b from-transparent to-pin-line translate-y-[14px] w-px h-20 blur-[2px]",
+                  isActive ? "h-44" : "group-hover/pin:h-44",
+                  reducedMotion && "transition-all duration-150",
+                )}
+              />
+              <motion.div
+                className={cn(
+                  "absolute right-1/2 bottom-1/2 bg-gradient-to-b from-transparent to-pin-line translate-y-[14px] w-px",
+                  isActive ? "h-44" : "group-hover/pin:h-44",
+                  reducedMotion && "transition-all duration-150",
+                )}
+              />
+            </>
+          )}
+          <motion.div className="absolute right-1/2 translate-x-[1.5px] bottom-1/2 bg-pin-line translate-y-[14px] w-[4px] h-[4px] rounded-full z-40 blur-[2px]" />
           <motion.div className="absolute right-1/2 translate-x-[0.5px] bottom-1/2 bg-pin-line/70 translate-y-[14px] w-[2px] h-[2px] rounded-full z-40" />
         </>
       </div>
