@@ -1,6 +1,7 @@
 "use client";
 
-import { AnimatedHeaderMenu } from "@/components/menu/headerMenu";
+import { MenuSidebar } from "@/components/menu/layout/menu-sidebar";
+import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
 import "../globals.css";
 
 export default function HeaderLayout({
@@ -9,9 +10,13 @@ export default function HeaderLayout({
   children?: React.ReactNode;
 }) {
   return (
-    <>
-      <AnimatedHeaderMenu /> {/* Solo un header */}
-      {children}
-    </>
+    <SidebarProvider>
+      <MenuSidebar />
+      <SidebarInset className="bg-[#fefcf8] dark:bg-[#0c0c0e]">
+        <main className="w-full h-full flex-1">
+          {children}
+        </main>
+      </SidebarInset>
+    </SidebarProvider>
   );
 }

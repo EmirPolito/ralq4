@@ -1,11 +1,11 @@
 "use client";
 
-import { LensDemo } from "@/components/menu/contenido-menu1";
+import { ContenidoHome } from "@/components/menu/views/home/contenido-home";
 
 export default function MenuPage() {
   return (
     <div>
-      <LensDemo />
+      <ContenidoHome />
     </div>
   );
 }
