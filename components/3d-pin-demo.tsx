@@ -25,12 +25,16 @@ export default function PinCardsSection() {
           </div>
         </ScrollAnimation>
 
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-20">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-24 lg:gap-20">
           {/* Pin 1 */}
-          <ScrollAnimation direction="up" delay={0.2} className="w-full lg:w-1/3">
-            <div className="h-[27rem] flex items-center justify-center">
+          <ScrollAnimation
+            direction="up"
+            delay={0.2}
+            className="w-full lg:w-1/3"
+          >
+            <div className="h-[22rem] sm:h-[27rem] flex items-center justify-center">
               <PinContainer title="Procesos Industriales" href="#laboratorios">
-                <div className="bg-tarjetas-bg border border-border flex flex-col p-4 tracking-tight w-[22rem] h-[22rem] from-card to-card/50 backdrop-blur-sm rounded-2xl">
+                <div className="bg-tarjetas-bg border border-border flex flex-col p-4 tracking-tight w-[19rem] h-[19rem] sm:w-[22rem] sm:h-[22rem] from-card to-card/50 backdrop-blur-sm rounded-2xl">
                   <div className="flex items-center gap-2">
                     <div className="text-tarjetas-txt3 text-xs">
                       Entorno industrial
@@ -51,7 +55,7 @@ export default function PinCardsSection() {
                       química a gran escala.
                     </p>
 
-                    <div className="grid grid-cols-3 gap-20 mt-10">
+                    <div className="grid grid-cols-3 gap-10 sm:gap-20 mt-10">
                       <div className="space-y-1">
                         <div className="text-tarjetas-1txt6 text-4xl font-bold">
                           +2
@@ -74,7 +78,9 @@ export default function PinCardsSection() {
                         <div className="text-tarjetas-1txt6 text-4xl font-bold">
                           3D
                         </div>
-                        <div className="text-tarjetas-desc7 text-xs">Modelos</div>
+                        <div className="text-tarjetas-desc7 text-xs">
+                          Modelos
+                        </div>
                       </div>
                     </div>
 
@@ -90,13 +96,17 @@ export default function PinCardsSection() {
           </ScrollAnimation>
 
           {/* Pin 2 */}
-          <ScrollAnimation direction="up" delay={0.3} className="w-full lg:w-1/3">
-            <div className="h-[25rem] flex items-center justify-center">
+          <ScrollAnimation
+            direction="up"
+            delay={0.3}
+            className="w-full lg:w-1/3"
+          >
+            <div className="h-[22rem] sm:h-[27rem] flex items-center justify-center">
               <PinContainer
                 title="Instrumentación Científica"
                 href="#laboratorios"
               >
-                <div className="bg-tarjetas-bg border border-border flex flex-col p-4 tracking-tight w-[22rem] h-[22rem] from-card to-card/50 backdrop-blur-sm rounded-2xl">
+                <div className="bg-tarjetas-bg border border-border flex flex-col p-4 tracking-tight w-[19rem] h-[19rem] sm:w-[22rem] sm:h-[22rem] from-card to-card/50 backdrop-blur-sm rounded-2xl">
                   <div className="flex items-center gap-2">
                     <div className="text-tarjetas-txt3 text-xs">
                       Tecnología analítica
@@ -117,7 +127,7 @@ export default function PinCardsSection() {
                       diferentes sustancias.
                     </p>
 
-                    <div className="grid grid-cols-3 gap-20 mt-10">
+                    <div className="grid grid-cols-3 gap-10 sm:gap-20 mt-10">
                       <div className="space-y-1">
                         <div className="text-tarjetas-2txt6 text-4xl font-bold">
                           8+
@@ -140,7 +150,9 @@ export default function PinCardsSection() {
                         <div className="text-tarjetas-2txt6 text-4xl font-bold">
                           3D
                         </div>
-                        <div className="text-tarjetas-desc7 text-xs">Modelos</div>
+                        <div className="text-tarjetas-desc7 text-xs">
+                          Modelos
+                        </div>
                       </div>
                     </div>
 
@@ -156,13 +168,17 @@ export default function PinCardsSection() {
           </ScrollAnimation>
 
           {/* Pin 3 */}
-          <ScrollAnimation direction="up" delay={0.4} className="w-full lg:w-1/3">
-            <div className="h-[25rem] flex items-center justify-center">
+          <ScrollAnimation
+            direction="up"
+            delay={0.4}
+            className="w-full lg:w-1/3"
+          >
+            <div className="h-[22rem] sm:h-[27rem] flex items-center justify-center">
               <PinContainer
                 title="Fundamentos de Laboratorio"
                 href="#laboratorios"
               >
-                <div className="bg-tarjetas-bg border border-border flex flex-col p-4 tracking-tight w-[22rem] h-[22rem] from-card to-card/50 backdrop-blur-sm rounded-2xl">
+                <div className="bg-tarjetas-bg border border-border flex flex-col p-4 tracking-tight w-[19rem] h-[19rem] sm:w-[22rem] sm:h-[22rem] from-card to-card/50 backdrop-blur-sm rounded-2xl">
                   <div className="flex items-center gap-2">
                     <div className="text-tarjetas-txt3 text-xs">
                       Laboratorio educativo
@@ -183,7 +199,7 @@ export default function PinCardsSection() {
                       experimentales de química básica.
                     </p>
 
-                    <div className="grid grid-cols-3 gap-20 mt-10">
+                    <div className="grid grid-cols-3 gap-10 sm:gap-20 mt-10">
                       <div className="space-y-1">
                         <div className="text-tarjetas-3txt6 text-4xl font-bold">
                           15+

@@ -120,10 +120,13 @@ export function ThemeControls({ className }: { className?: string }) {
     applyReducedMotion(newValue);
   };
 
+  const [isPaletteOpen, setIsPaletteOpen] = React.useState(false);
+
   const handleColorChange = (color: string) => {
     setPrimaryColor(color);
     localStorage.setItem("primaryColor", color);
     applyColorTheme(color);
+    setIsPaletteOpen(false);
   };
 
   const currentThemeColor = React.useMemo(() => {
@@ -244,7 +247,7 @@ export function ThemeControls({ className }: { className?: string }) {
         </DropdownMenu>
 
         {/* Color Selector Popover */}
-        <Popover modal={false}>
+        <Popover open={isPaletteOpen} onOpenChange={setIsPaletteOpen} modal={false}>
           <Tooltip>
             <TooltipTrigger asChild>
               <PopoverTrigger asChild>

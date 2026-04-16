@@ -55,7 +55,7 @@ export const PinContainer = ({
     if (!isMobile || reducedMotion) return;
 
     if (inView) {
-      setTransform("translate(-50%,-50%) rotateX(25deg) scale(0.88)");
+      setTransform("translate(-50%,-50%) rotateX(12deg) scale(0.95)");
     } else {
       setTransform("translate(-50%,-50%) rotateX(0deg) scale(1)");
     }
@@ -148,14 +148,19 @@ export const PinPerspective = ({
   return (
     <motion.div
       className={cn(
-        "pointer-events-none w-96 h-80 flex items-center justify-center z-[60]",
+        "pointer-events-none w-[18.5rem] h-[18.5rem] sm:w-96 sm:h-80 flex items-center justify-center z-[60]",
         reducedMotion ? "transition duration-150" : "transition duration-500",
         isActive ? "opacity-100" : "opacity-0 group-hover/pin:opacity-100",
       )}
     >
       <div className="w-full h-full -mt-7 flex-none inset-0">
         {/* etiqueta superior — en móvil es un Link clickeable */}
-        <div className="absolute top-0 inset-x-0 flex justify-center">
+        <div
+          className={cn(
+            "absolute inset-x-0 flex justify-center transition-all duration-500",
+            isActive ? "top-[-5rem]" : "top-0",
+          )}
+        >
           {isMobile && href ? (
             <Link
               href={href}
@@ -253,14 +258,14 @@ export const PinPerspective = ({
           <motion.div
             className={cn(
               "absolute right-1/2 bottom-1/2 bg-gradient-to-b from-transparent to-pin-line translate-y-[14px] w-px h-20 blur-[2px]",
-              isActive ? "h-40" : "group-hover/pin:h-40",
+              isActive ? "h-60" : "group-hover/pin:h-40",
               reducedMotion && "transition-all duration-150",
             )}
           />
           <motion.div
             className={cn(
               "absolute right-1/2 bottom-1/2 bg-gradient-to-b from-transparent to-pin-line translate-y-[14px] w-px h-20",
-              isActive ? "h-40" : "group-hover/pin:h-40",
+              isActive ? "h-60" : "group-hover/pin:h-40",
               reducedMotion && "transition-all duration-150",
             )}
           />
