@@ -7,7 +7,7 @@ export const IzquierdaDerecha = () => {
   return (
     <>
       {/* BLOQUE 1: Texto izquierda — Imagen derecha */}
-      <section className="relative py-16 md:py-24 lg:py-32">
+      <section className="relative py-16 md:py-24 lg:py-10">
         <div className="mx-auto max-w-8xl px-6 md:px-12 lg:px-20">
           <ScrollAnimation
             direction="right"
@@ -41,7 +41,7 @@ export const IzquierdaDerecha = () => {
       </section>
 
       {/* BLOQUE 2: Imagen izquierda — Texto derecha */}
-      <section className="relative py-16 md:py-24 lg:py-32">
+      <section className="relative py-16 md:py-24 lg:py-9">
         <div className="mx-auto max-w-8xl px-6 md:px-12 lg:px-20">
           <ScrollAnimation
             direction="left"

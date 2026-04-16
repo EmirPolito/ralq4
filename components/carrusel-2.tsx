@@ -14,7 +14,7 @@ import Link from "next/link";
 import { useState, useEffect, useCallback } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, ArrowLeft, ArrowRight } from "lucide-react";
 import { useTheme } from "next-themes";
 
 import { useReducedMotion } from "@/hooks/use-reduced-motion";
@@ -84,7 +84,7 @@ function Feature() {
   const bgColor = resolvedTheme === "light" ? "#dff4e5" : "var(--background)";
 
   return (
-    <div className="w-full py-20 lg:py-26">
+    <div className="w-full py-20 lg:py-10">
       <div className="container mx-auto px-5 md:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 min-h-[400px]">
           {/* Texto */}
@@ -134,8 +134,13 @@ function Feature() {
               opts={{
                 loop: true,
                 dragFree: false,
+                watchDrag: !reducedMotion,
               }}
-              className="cursor-pointer active:cursor-grabbing"
+              className={
+                reducedMotion
+                  ? "cursor-default"
+                  : "cursor-pointer active:cursor-grabbing"
+              }
             >
               <CarouselContent>
                 {carouselImages.map((image, index) => (
@@ -153,11 +158,29 @@ function Feature() {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-
-              {/* Botones para cambiar imagen cada lado */}
-              {/* <CarouselPrevious className=" cursor-pointer -left-23" />
-              <CarouselNext className=" cursor-pointer -right-7 " /> */}
             </Carousel>
+
+            {/* Flechas manuales — siempre reservan espacio para evitar saltos */}
+            <div
+              className={`-ml-6 gap-7.5 mt-5 flex items-center justify-center transition-opacity ${reducedMotion ? "opacity-100" : "opacity-0 pointer-events-none"}`}
+            >
+              <button
+                onClick={() => api?.scrollPrev()}
+                className="h-11 w-11 flex items-center justify-center rounded-full cursor-pointer bg-transparent hover:opacity-70 transition-opacity focus:outline-none"
+                aria-label="Imagen anterior"
+                tabIndex={reducedMotion ? 0 : -1}
+              >
+                <ArrowLeft className="h-5 w-5 text-foreground" />
+              </button>
+              <button
+                onClick={() => api?.scrollNext()}
+                className="h-8 w-8 flex items-center justify-center rounded-full cursor-pointer bg-transparent hover:opacity-70 transition-opacity focus:outline-none"
+                aria-label="Imagen siguiente"
+                tabIndex={reducedMotion ? 0 : -1}
+              >
+                <ArrowRight className="h-5 w-5 text-foreground" />
+              </button>
+            </div>
           </div>
         </div>
       </div>

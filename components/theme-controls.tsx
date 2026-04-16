@@ -56,11 +56,19 @@ export function ThemeControls({ className }: { className?: string }) {
 
     setColorblind(savedColorblind);
     setReducedMotion(savedReducedMotion);
-    setPrimaryColor(savedColor);
+
+    // Si el modo daltónico está activo, forzar color por defecto
+    if (savedColorblind) {
+      setPrimaryColor("default");
+      localStorage.setItem("primaryColor", "default");
+      applyColorTheme("default");
+    } else {
+      setPrimaryColor(savedColor);
+      applyColorTheme(savedColor);
+    }
 
     applyColorblindMode(savedColorblind);
     applyReducedMotion(savedReducedMotion);
-    applyColorTheme(savedColor);
   }, []);
 
   const applyColorblindMode = (enabled: boolean) => {
@@ -96,9 +104,12 @@ export function ThemeControls({ className }: { className?: string }) {
     localStorage.setItem("colorblind", String(newValue));
     applyColorblindMode(newValue);
 
-    // Si se activa el modo daltónico, forzar el tema claro
+    // Si se activa el modo daltónico, forzar el tema claro y color por defecto
     if (newValue) {
       setTheme("light");
+      setPrimaryColor("default");
+      localStorage.setItem("primaryColor", "default");
+      applyColorTheme("default");
     }
   };
 
@@ -217,6 +228,10 @@ export function ThemeControls({ className }: { className?: string }) {
                   localStorage.setItem("colorblind", "true");
                   applyColorblindMode(true);
                   setTheme("light");
+                  // Resetear color a por defecto en modo daltónico
+                  setPrimaryColor("default");
+                  localStorage.setItem("primaryColor", "default");
+                  applyColorTheme("default");
                 }
               }}
               className="cursor-pointer hover:bg-transparent focus:bg-transparent hover:text-foreground focus:text-foreground group"

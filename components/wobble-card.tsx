@@ -6,7 +6,7 @@ import { ScrollAnimation } from "@/components/motion-primitives/scroll-animation
 
 export default function WobbleCardSection() {
   return (
-    <section className="py-20 lg:py-28 bg-background">
+    <section className="py-25 lg:py-40 bg-background">
       <div className="container mx-auto px-5 md:px-15">
         {/* Titulo y descripcion inicial */}
         <ScrollAnimation direction="up" delay={0.1}>
