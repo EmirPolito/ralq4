@@ -7,7 +7,7 @@ import { Beaker, Atom, FlaskConical } from "lucide-react";
 
 export default function PinCardsSection() {
   return (
-    <section className="py-20 lg:py-18 overflow-hidden">
+    <section className="py-20 lg:py-15 overflow-hidden">
       <div className="container mx-auto px-8">
         <ScrollAnimation direction="up" delay={0.1}>
           <div className="text-center mb-5">

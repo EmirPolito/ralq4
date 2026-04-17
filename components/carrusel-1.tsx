@@ -15,22 +15,27 @@ const circleItems = [
 ];
 
 export function Carousel() {
+  const [gap, setGap] = React.useState(56);
+
+  React.useEffect(() => {
+    const handleResize = () => {
+      setGap(window.innerWidth < 768 ? 32 : 56);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <section className="bg-background py-16">
-      <div className="group relative m-auto max-w-8xl px-0 mt-5 md:-mt-16">
+      <div className="group relative m-auto max-w-8xl px-0 mt-5 md:-mt-15">
         <div className="flex flex-col items-center md:flex-row">
-          <div className="md:max-w-52 md:border-r md:border-[#9cc2a9]/30 md:px-5 md:pr-10 shrink-10">
-            {/* <p className="text-carrusel-ttl text-start text-base md:text-lg font-semibold tracking-wide md:text-left">
-              Hora de aprender
-            </p> */}
-          </div>
-
-          <div className="relative py-13 md:w-[calc(100%-5rem)]">
-            <InfiniteSlider speedOnHover={20} speed={40} gap={56}>
+          <div className="relative py-13 w-full">
+            <InfiniteSlider speedOnHover={20} speed={40} gap={gap}>
               {circleItems.map((item, index) => (
                 <div key={index} className="flex flex-col items-center gap-5">
                   {/* border-1 */}
-                  <div className="bg-carrusel2-bg h-55 w-55 rounded-full flex items-center justify-center overflow-hidden p-1.5 shadow-lg">
+                  <div className="bg-carrusel2-bg h-44 w-44 md:h-55 md:w-55 rounded-full flex items-center justify-center overflow-hidden p-1.5">
                     <Image
                       src={item.image}
                       alt={item.title}
@@ -45,18 +50,6 @@ export function Carousel() {
                 </div>
               ))}
             </InfiniteSlider>
-            <div className="bg-linear-to-r from-background absolute inset-y-0 left-0 w-1"></div>
-            <div className="bg-linear-to-l from-background absolute inset-y-0 right-0 w-1"></div>
-            <ProgressiveBlur
-              className="pointer-events-none absolute left-0 top-0 h-full w-20"
-              direction="left"
-              blurIntensity={1}
-            />
-            <ProgressiveBlur
-              className="pointer-events-none absolute right-0 top-0 h-full w-20"
-              direction="right"
-              blurIntensity={1}
-            />
           </div>
         </div>
       </div>
