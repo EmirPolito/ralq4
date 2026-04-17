@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { Moon, Sun, Eye, Palette } from "lucide-react";
+import { Moon, Sun, Eye, Palette, HelpCircle } from "lucide-react";
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -199,29 +199,49 @@ export function ThemeControls({
       >
         {/* Theme Mode Dropdown / Cycle */}
         {isMobile ? (
-          <button
-            type="button"
-            onClick={handleThemeCycle}
-            className="h-9 w-9 cursor-pointer flex items-center justify-center rounded-md group"
-          >
-            {colorblind ? (
-              <Eye
-                className="h-6 w-6 transition-all"
-                style={{ color: currentThemeColor }}
-              />
-            ) : (
-              <>
-                <Sun
-                  className="h-6 w-6 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"
+          <div className="relative flex flex-col items-center">
+            <Popover>
+              <PopoverTrigger asChild>
+                <button className="absolute -top-6 h-5 w-5 rounded-full bg-muted/25 flex items-center justify-center border border-border/10 shadow-sm transition-transform active:scale-95">
+                  <HelpCircle
+                    className="size-3.5"
+                    style={{ color: currentThemeColor }}
+                  />
+                </button>
+              </PopoverTrigger>
+              <PopoverContent
+                side="top"
+                className="w-35 p-1 rounded-xl bg-popover/95 backdrop-blur-md border-border/50 text-xs shadow-xl z-[150]"
+              >
+                <p className="font-medium text-foreground leading-relaxed text-center">
+                  Cambiar modo de visualización.
+                </p>
+              </PopoverContent>
+            </Popover>
+            <button
+              type="button"
+              onClick={handleThemeCycle}
+              className="h-9 w-9 cursor-pointer flex items-center justify-center rounded-md group mt-1"
+            >
+              {colorblind ? (
+                <Eye
+                  className="h-6 w-6 transition-all"
                   style={{ color: currentThemeColor }}
                 />
-                <Moon
-                  className="absolute h-6 w-6 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"
-                  style={{ color: currentThemeColor }}
-                />
-              </>
-            )}
-          </button>
+              ) : (
+                <>
+                  <Sun
+                    className="h-6 w-6 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"
+                    style={{ color: currentThemeColor }}
+                  />
+                  <Moon
+                    className="absolute h-6 w-6 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"
+                    style={{ color: currentThemeColor }}
+                  />
+                </>
+              )}
+            </button>
+          </div>
         ) : (
           <DropdownMenu modal={false}>
             <Tooltip>
@@ -325,13 +345,36 @@ export function ThemeControls({
 
         {/* Color Selector Popover / Cycle */}
         {isMobile ? (
-          <button
-            type="button"
-            onClick={handleColorCycle}
-            className="h-9 w-9 cursor-pointer flex items-center justify-center rounded-md"
-          >
-            <Palette className="h-6 w-6" style={{ color: currentThemeColor }} />
-          </button>
+          <div className="relative flex flex-col items-center">
+            <Popover>
+              <PopoverTrigger asChild>
+                <button className="absolute -top-6.5 h-5 w-5 rounded-full bg-muted/25 flex items-center justify-center border border-border/10 shadow-sm transition-transform active:scale-95">
+                  <HelpCircle
+                    className="size-3.5"
+                    style={{ color: currentThemeColor }}
+                  />
+                </button>
+              </PopoverTrigger>
+              <PopoverContent
+                side="top"
+                className="w-35 p-1 rounded-xl bg-popover/95 backdrop-blur-md border-border/50 text-xs shadow-xl z-[150]"
+              >
+                <p className="font-medium text-foreground leading-relaxed text-center">
+                  Personalizar colores del sitio.
+                </p>
+              </PopoverContent>
+            </Popover>
+            <button
+              type="button"
+              onClick={handleColorCycle}
+              className="h-9 w-9 cursor-pointer flex items-center justify-center rounded-md mt-1"
+            >
+              <Palette
+                className="h-6 w-6"
+                style={{ color: currentThemeColor }}
+              />
+            </button>
+          </div>
         ) : (
           <Popover
             open={isPaletteOpen}
@@ -408,13 +451,37 @@ export function ThemeControls({
         )}
 
         {/* Reduced Motion Toggle tipo switch */}
-        <div className={cn(isMobile ? "flex items-center justify-center" : "")}>
+        <div
+          className={cn(
+            isMobile ? "flex flex-col items-center relative" : "relative",
+          )}
+        >
+          {isMobile && (
+            <Popover>
+              <PopoverTrigger asChild>
+                <button className="absolute -top-8 h-5 w-5 rounded-full bg-muted/25 flex items-center justify-center border border-border/10 shadow-sm transition-transform active:scale-95">
+                  <HelpCircle
+                    className="size-3.5"
+                    style={{ color: currentThemeColor }}
+                  />
+                </button>
+              </PopoverTrigger>
+              <PopoverContent
+                side="top"
+                className="w-35 p-1 rounded-xl bg-popover/95 backdrop-blur-md border-border/50 text-xs shadow-xl z-[150]"
+              >
+                <p className="font-medium text-foreground leading-relaxed text-center">
+                  Activar/Desactivar animaciones.
+                </p>
+              </PopoverContent>
+            </Popover>
+          )}
           <Tooltip>
             <TooltipTrigger asChild>
               <button
                 className={cn(
                   "relative inline-flex h-6 w-12 items-center rounded-full cursor-pointer transition-colors focus:outline-none outline-none focus-visible:ring-0 focus-visible:outline-none",
-                  isMobile ? "bg-muted/20" : "bg-muted hover:bg-muted/80",
+                  isMobile ? "bg-muted/25 mt-1" : "bg-muted hover:bg-muted/80",
                 )}
                 onClick={toggleReducedMotion}
                 aria-label="Reducir animaciones"

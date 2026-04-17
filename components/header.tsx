@@ -173,10 +173,10 @@ export const HeroHeader = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3 }}
-                className="mt-auto pb-11 space-y-9"
+                className="mt-auto pb-11.5 space-y-9"
               >
                 {/* Theme Controls - Centered Cycle Mode */}
-                <div className="flex items-center justify-center pt-29">
+                <div className="flex items-center justify-center pt-27">
                   <ThemeControls isMobile={true} />
                 </div>
 
@@ -185,7 +185,7 @@ export const HeroHeader = () => {
                   <Button
                     asChild
                     variant="ghost"
-                    className="w-full justify-center h-11 text-xs font-medium rounded-xl bg-muted/20 text-[var(--titulos)] hover:bg-muted/30 transition-all"
+                    className="w-full justify-center h-11 text-xs font-medium rounded-xl bg-muted/25 text-[var(--titulos)] hover:bg-muted/35 transition-all"
                     onClick={() => setMenuState(false)}
                   >
                     <Link href="/login">Iniciar sesión</Link>
