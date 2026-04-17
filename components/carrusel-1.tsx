@@ -16,20 +16,21 @@ const circleItems = [
 
 export function Carousel() {
   return (
-    <section className="bg-background py-14">
-      <div className="group relative m-auto max-w-8xl px-5 mt-5 md:-mt-16">
+    <section className="bg-background py-16">
+      <div className="group relative m-auto max-w-8xl px-0 mt-5 md:-mt-16">
         <div className="flex flex-col items-center md:flex-row">
           <div className="md:max-w-52 md:border-r md:border-[#9cc2a9]/30 md:px-5 md:pr-10 shrink-10">
-            <p className="text-carrusel-ttl text-start text-base md:text-lg font-semibold tracking-wide md:text-left">
+            {/* <p className="text-carrusel-ttl text-start text-base md:text-lg font-semibold tracking-wide md:text-left">
               Hora de aprender
-            </p>
+            </p> */}
           </div>
 
           <div className="relative py-13 md:w-[calc(100%-5rem)]">
             <InfiniteSlider speedOnHover={20} speed={40} gap={56}>
               {circleItems.map((item, index) => (
-                <div key={index} className="flex flex-col items-center gap-3">
-                  <div className="bg-carrusel2-bg h-55 w-55 rounded-full flex items-center justify-center overflow-hidden p-2 shadow-lg border-1">
+                <div key={index} className="flex flex-col items-center gap-5">
+                  {/* border-1 */}
+                  <div className="bg-carrusel2-bg h-55 w-55 rounded-full flex items-center justify-center overflow-hidden p-1.5 shadow-lg">
                     <Image
                       src={item.image}
                       alt={item.title}

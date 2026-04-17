@@ -1110,7 +1110,7 @@
   --footer-pag: #2c2a2a;
   --footer-pag-hov: #8a0194;
 
-  --footer-ralq: #6326a0;
+  --footer-ralq: #8a0194;
 
 
   /* demo/demo.tsx */
@@ -1212,7 +1212,7 @@
   --hero-ttl: #a800b7;
   --hero-desc: #dddddd;
 
-  --hero-bg-demo: #a800b7;
+  --hero-bg-demo: #8a0194;
   --hero-txt-demo: #fcfcfc;
   --hero-hvr-demo: #a800b7;
 
@@ -1289,7 +1289,7 @@
   --footer-pag: #dddddd;
   --footer-pag-hov: #a800b7;
 
-  --footer-ralq: #8330c3;
+  --footer-ralq: #8a0194;
 
 
   /* demo/demo.tsx */
@@ -1388,12 +1388,12 @@
 
 
   /* Hero */
-  --hero-ttl: #fdc700;
+  --hero-ttl: #f0b100;
   --hero-desc: #616161;
 
-  --hero-bg-demo: #fdc700;
+  --hero-bg-demo: #f0b100;
   --hero-txt-demo: #fcfcfc;
-  --hero-hvr-demo: #fdc700;
+  --hero-hvr-demo: #f0b100;
 
 
   /* Carrusel 1*/
@@ -1570,7 +1570,7 @@
   --hero-ttl: #fdc700;
   --hero-desc: #dddddd;
 
-  --hero-bg-demo: #fdc700;
+  --hero-bg-demo: #f0b100;
   --hero-txt-demo: #fcfcfc;
   --hero-hvr-demo: #fdc700;
 
@@ -1613,8 +1613,8 @@
   --wobble-desc: #dddddd;
 
   --wobble-bg-1: #1a1818;
-  --wobble-bg-2: #fdc700;
-  --wobble-bg-3: #fdc700;
+  --wobble-bg-2: #f0b100;
+  --wobble-bg-3: #f0b100;
   --wobble-bg-4: #1a1818;
 
   --wobble-ttl-5: #ffffff;
@@ -1622,7 +1622,7 @@
 
 
     /* --carrusel 2 */
-  --carrusel2-mini-bg: #fdc700;
+  --carrusel2-mini-bg: #f0b100;
   --carrusel2-mini-txt: #ffffff;
 
   --carrusel2-ttl: #fdc700;

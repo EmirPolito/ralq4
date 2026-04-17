@@ -23,13 +23,14 @@ export default function Footer() {
                 <img
                   src="/logos/logo-blanco.png"
                   alt="RALQ logo"
-                  className="hidden h-10 w-auto dark:block"
+                  className="px-1 hidden h-10 w-auto dark:block"
                 />
               </span>
             </Link>
 
-            <h1 className="text-footer-txt mt-2 px-0">
-              Desarrollado por{" "}
+            <h1 className="text-footer-txt mt-1.5 px-1">
+              Realidad Aumentada para Laboratorios de Quimica.
+              {/* Desarrollado por{" "}
               <span className="text-footer-link gap-2">
                 <Link
                   className="hover:underline"
@@ -52,10 +53,10 @@ export default function Footer() {
                 >
                   @cristiandnl
                 </Link>
-              </span>
+              </span> */}
             </h1>
 
-            <p className="text-footer-derechos mt-1.5">
+            <p className="text-footer-derechos mt-1 px-1">
               © {new Date().getFullYear()} RALQ. Todos los derechos reservados.
             </p>
           </div>
