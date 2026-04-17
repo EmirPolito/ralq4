@@ -1,105 +1,86 @@
-# RALQ-4-Next.js
+# RALQ - Realidad Aumentada para Laboratorios de Química
 
-Una moderna aplicación web (Landing / Showcase) construida enfocándose en un diseño altamente interactivo, animaciones fluidas, experiencias 3D y autenticación segura.
+Una plataforma educativa de vanguardia construida con **Next.js**, diseñada para transformar la enseñanza de la química mediante experiencias visuales inmersivas, componentes interactivos y un diseño de alto impacto.
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/3a812062-6e7c-4ab6-98b8-fd33d02eb491" alt="Screenshot 1" width="800" />
+  <img src="https://github.com/user-attachments/assets/3a812062-6e7c-4ab6-98b8-fd33d02eb491" alt="RALQ Hero Section" width="800" />
   <br />
-  <br />
-  <img src="https://github.com/user-attachments/assets/0e918093-9d4a-4429-b81a-17a54a7a1708" alt="Screenshot 2" width="800" />
+  <p><i>Acelerando el aprendizaje de Gen-AI y Química en cualquier dispositivo.</i></p>
 </div>
 
-## 🚀 Características Principales
+---
 
-- **Autenticación con Clerk**: Gestión de usuarios segura y lista para producción (Login/Registro/Perfil).
-- **Experiencias 3D**: Integración nativa con modelos de **Spline** (`@splinetool/react-spline`) para un _Earbud Showcase_ interactivo.
-- **Animaciones Avanzadas**: Transiciones de páginas, scroll paralaje y componentes espaciales utilizando **Framer Motion** y **Motion Primitives**.
-- **Modo Oscuro / Claro**: Soporte completo de temas personalizados mediante `next-themes` y **Tailwind CSS v4**.
-- **Formulario de Contacto Funcional**: Uso de `react-hook-form`, validación con `zod` y envío de correos desde la API estructurada empleando `nodemailer`.
-- **Rendimiento Optimo**: Construido sobre la base de **Next.js 16** con Turbopack.
+## 🌟 Características Destacadas
+
+### 🎨 Diseño Premium & UX
+- **Deep Dark Mode**: Interfaz "True Black" optimizada para pantallas OLED, eliminando grises innecesarios para un contraste perfecto.
+- **Accesibilidad**: Soporte nativo para modo **Daltónico** y reducción de movimiento.
+- **Fluidez Extrema**: Animaciones basadas en física (Spring animations) mediante **Framer Motion** para una navegación orgánica.
+
+### 🧪 Componentes Interactivos
+- **Interactive Image Accordion**: Visualización dinámica de conceptos químicos con transiciones fluidas y optimización de carga.
+- **3D Pin Cards**: Tarjetas con efecto de profundidad y labels flotantes para destacar características clave.
+- **Apple-style Carousel**: Carrusel de tarjetas con desenfoque dinámico y enfoque en el contenido visual.
+
+### 🔐 Seguridad y Rendimiento
+- **Autenticación con Clerk**: Flujos de Login y Registro personalizados, adaptables al tema y con validación robusta.
+- **Optimización de Imágenes**: Implementación de `next/image` con estrategias de carga diferida para manejar recursos de alta resolución.
+- **Arquitectura Escalable**: Estructura basada en App Router y Server Components para máxima velocidad.
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ Stack Tecnológico
 
-### Frontend
-
-- **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
-- **Autenticación**: [Clerk](https://clerk.com/)
+- **Framework**: [Next.js 16](https://nextjs.org/) (App Router & Turbopack)
 - **Estilos**: [Tailwind CSS v4](https://tailwindcss.com/)
-- **Animaciones**: [Framer Motion](https://www.framer.com/motion/)
-- **Integración 3D**: [Spline](https://spline.design/)
-- **Librería UI**: [Radix UI](https://www.radix-ui.com/)
-
-### Backend & API
-
-- **Mailing**: [Nodemailer](https://nodemailer.com/)
-- **Validación**: [Zod](https://zod.dev/)
-- **Analíticas**: [@vercel/analytics](https://vercel.com/analytics)
+- **Autenticación**: [Clerk Auth](https://clerk.com/)
+- **Animaciones**: [Framer Motion / Motion React](https://www.framer.com/motion/)
+- **Componentes UI**: [Shadcn/UI](https://ui.shadcn.com/) + Radix UI
+- **Analíticas**: [Vercel Analytics](https://vercel.com/analytics)
 
 ---
 
-## 📂 Estructura del Proyecto
+## ⚙️ Configuración del Proyecto
 
-```text
-├── app/
-│   ├── api/             # Rutas API (Auth, Contacto, Env check)
-│   ├── login/           # Páginas de autenticación de Clerk
-│   ├── menu/            # Area protegida (requiere login)
-│   ├── layout.tsx       # Root layout con ClerkProvider y ThemeProvider
-│   └── globals.css      # Estilos globales y variables de Tailwind v4
-├── components/
-│   ├── ui/              # Componentes base (Shadcn/Radix)
-│   └── hero-section.tsx # Secciones principales de la landing
-├── middleware.ts        # Protección de rutas y sesiones (Clerk)
-└── next.config.mjs      # Configuración de Next.js y Turbo
+### 1. Requisitos Previos
+- Node.js 18+ 
+- pnpm / npm / yarn
+
+### 2. Instalación
+```bash
+git clone https://github.com/EmirPolito/RALQ-4-Next.js.git
+cd RALQ-4-Next.js
+pnpm install
 ```
 
----
+### 3. Variables de Entorno
+Crea un archivo `.env.local` en la raíz con las siguientes claves:
 
-## ⚙️ Instalación Local
-
-1. **Clonar repositorio**:
-
-   ```bash
-   git clone https://github.com/EmirPolito/RALQ-4-Next.js.git
-   cd RALQ-4-Next.js
-   ```
-
-2. **Instalar dependencias**:
-
-   ```bash
-   pnpm install
-   ```
-
-3. **Variables de Entorno**:
-   Crea un archivo `.env` basado en las claves de Clerk y tu configuración de correo.
-
-4. **Correr en desarrollo**:
-   ```bash
-   pnpm dev
-   ```
+| Variable | Descripción |
+| :--- | :--- |
+| `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` | Clave pública de tu proyecto en Clerk |
+| `CLERK_SECRET_KEY` | Clave secreta de Clerk (solo servidor) |
+| `NEXT_PUBLIC_CLERK_SIGN_IN_URL` | `/login` |
+| `NEXT_PUBLIC_CLERK_SIGN_UP_URL` | `/registro` |
+| `EMAIL_USER` / `EMAIL_PASS` | Configuración para el formulario de contacto |
 
 ---
 
-## ☁️ Despliegue en Vercel
+## ☁️ Despliegue
 
-Este proyecto está optimizado para desplegarse en **Vercel** con un solo clic. Asegúrate de configurar las siguientes **Environment Variables** en el dashboard de Vercel:
-
-| Variable                            | Requerido para            |
-| :---------------------------------- | :------------------------ |
-| `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` | Autenticación (Frontend)  |
-| `CLERK_SECRET_KEY`                  | Autenticación (Backend)   |
-| `EMAIL_HOST`                        | Host SMTP para contacto   |
-| `EMAIL_PORT`                        | Puerto SMTP (e.g. 465)    |
-| `EMAIL_USER`                        | Usuario de correo         |
-| `EMAIL_PASS`                        | Contraseña / App Password |
+El proyecto está listo para ser desplegado en **Vercel**. Asegúrate de configurar las variables de entorno mencionadas arriba en el panel de control de Vercel antes de realizar el despliegue para evitar errores de renderizado en los componentes de autenticación.
 
 ---
 
 ## 👨‍💻 Autor
 
-**Emir Polito**
+**Emir Polito** - *Desarrollador y Visionario detrás de RALQ*
 
-- GitHub: [github.com/EmirPolito](https://github.com/EmirPolito)
-- LinkedIn: [linkedin.com/in/emir-polito-g/](https://www.linkedin.com/in/emir-polito-g/)
+- GitHub: [@EmirPolito](https://github.com/EmirPolito)
+- LinkedIn: [Emir Polito](https://www.linkedin.com/in/emir-polito-g/)
+
+---
+
+<div align="center">
+  <p>Construido con ❤️ para la educación científica.</p>
+</div>
