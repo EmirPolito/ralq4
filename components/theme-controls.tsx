@@ -360,7 +360,7 @@ export function ThemeControls({
                 className="w-35 p-1 rounded-xl bg-popover/95 backdrop-blur-md border-border/50 text-xs shadow-xl z-[150]"
               >
                 <p className="font-medium text-foreground leading-relaxed text-center">
-                  Personalizar colores del sitio.
+                  Personalizar la paleta de colores.
                 </p>
               </PopoverContent>
             </Popover>
@@ -481,7 +481,7 @@ export function ThemeControls({
               <button
                 className={cn(
                   "relative inline-flex h-6 w-12 items-center rounded-full cursor-pointer transition-colors focus:outline-none outline-none focus-visible:ring-0 focus-visible:outline-none",
-                  isMobile ? "bg-muted/25 mt-1" : "bg-muted hover:bg-muted/80",
+                  isMobile ? "bg-muted/40 mt-1" : "bg-muted hover:bg-muted/80",
                 )}
                 onClick={toggleReducedMotion}
                 aria-label="Reducir animaciones"

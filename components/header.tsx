@@ -176,7 +176,7 @@ export const HeroHeader = () => {
                 className="mt-auto pb-11.5 space-y-9"
               >
                 {/* Theme Controls - Centered Cycle Mode */}
-                <div className="flex items-center justify-center pt-27">
+                <div className="flex items-center justify-center pt-27.5">
                   <ThemeControls isMobile={true} />
                 </div>
 
@@ -185,7 +185,7 @@ export const HeroHeader = () => {
                   <Button
                     asChild
                     variant="ghost"
-                    className="w-full justify-center h-11 text-xs font-medium rounded-xl bg-muted/25 text-[var(--titulos)] hover:bg-muted/35 transition-all"
+                    className="w-full justify-center h-11 text-xs font-medium rounded-xl bg-muted/40 text-[var(--titulos)] hover:bg-muted/35 transition-all"
                     onClick={() => setMenuState(false)}
                   >
                     <Link href="/login">Iniciar sesión</Link>
