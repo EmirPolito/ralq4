@@ -25,13 +25,13 @@ export default function HeroSection() {
         {/* 3 tarjetas pin */}
         <PinCardsSection />
 
-        {/* 3 pasos para laboratorio completo*/}
-        <TresPasosLaboratorio />
-
         {/* imagene automatico*/}
         <ScrollAnimation direction="up" delay={0.1}>
           <Feature />
         </ScrollAnimation>
+
+        {/* 3 pasos para laboratorio completo*/}
+        <TresPasosLaboratorio />
 
         {/* Comentario*/}
         <ImgCursorDemo />

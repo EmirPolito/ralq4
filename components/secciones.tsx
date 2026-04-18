@@ -14,13 +14,18 @@ const features = [
       "Explora modelos moleculares tridimensionales con detalle atómico. Rota, acerca y analiza cada enlace químico, ángulo de enlace y propiedad fisicoquímica en tiempo real.",
     highlight: "ver cada átomo",
     highlightColors: {
-      rectangle: "bg-primary/8 border-primary/20 leading-loose",
-      pointer: "text-primary h-3 w-3",
+      rectangle: "bg-tres-01-mini-bg/10 border-tres-01-mini-borde leading-loose",
+      pointer: "text-tres-01-cursor h-3 w-3",
     },
     visual: <MoleculeVisual />,
-    color: "bg-primary",
-    textColor: "text-primary",
-    borderColor: "border-primary/20",
+    color: "bg-tres-01-mini-bg",
+    textColor: "text-tres-01-ttl",
+    borderColor: "border-tres-01-marcos",
+    numColor: "text-tres-01-num",
+    miniBg: "bg-tres-01-mini-bg",
+    miniBorder: "border-tres-01-mini-borde",
+    miniTxt: "text-tres-01-mini-txt",
+    descColor: "text-tres-01-desc",
   },
   {
     id: "instruments",
@@ -31,13 +36,18 @@ const features = [
       "Desde matraces Erlenmeyer hasta espectrofotómetros. Cada instrumento renderizado en alta resolución con anotaciones técnicas y guías de uso.",
     highlight: "practicar sin riesgos",
     highlightColors: {
-      rectangle: "bg-teal-50 border-teal-200 leading-loose",
-      pointer: "text-teal-600 h-3 w-3",
+      rectangle: "bg-tres-02-mini-bg/10 border-tres-02-mini-borde leading-loose",
+      pointer: "text-tres-02-cursor h-3 w-3",
     },
     visual: <InstrumentVisual />,
-    color: "bg-teal-500",
-    textColor: "text-teal-600",
-    borderColor: "border-teal-200",
+    color: "bg-tres-02-mini-bg",
+    textColor: "text-tres-02-ttl",
+    borderColor: "border-tres-02-marcos",
+    numColor: "text-tres-02-num",
+    miniBg: "bg-tres-02-mini-bg",
+    miniBorder: "border-tres-02-mini-borde",
+    miniTxt: "text-tres-02-mini-txt",
+    descColor: "text-tres-02-desc",
   },
   {
     id: "ar",
@@ -48,30 +58,18 @@ const features = [
       "Proyecta modelos 3D en tu entorno usando la cámara de tu dispositivo. Coloca una molécula en tu escritorio o un instrumento en tu laboratorio real en menos de 2 segundos.",
     highlight: "el laboratorio a ti",
     highlightColors: {
-      rectangle: "bg-sky-50 border-sky-200 leading-loose",
-      pointer: "text-sky-600 h-3 w-3",
+      rectangle: "bg-tres-03-mini-bg/10 border-tres-03-mini-borde leading-loose",
+      pointer: "text-tres-03-cursor h-3 w-3",
     },
     visual: <ARVisual />,
-    color: "bg-sky-500",
-    textColor: "text-sky-600",
-    borderColor: "border-sky-200",
-  },
-  {
-    id: "learn",
-    number: "04",
-    title: "Aprendizaje Continuo",
-    tag: "Siempre disponible",
-    description:
-      "Progreso guardado, cuestionarios integrados y métricas de aprendizaje. Accede desde cualquier dispositivo y continúa exactamente donde lo dejaste.",
-    highlight: "aprender sin límites",
-    highlightColors: {
-      rectangle: "bg-emerald-50 border-emerald-200 leading-loose",
-      pointer: "text-emerald-600 h-3 w-3",
-    },
-    visual: <LearnVisual />,
-    color: "bg-emerald-500",
-    textColor: "text-emerald-600",
-    borderColor: "border-emerald-200",
+    color: "bg-tres-03-mini-bg",
+    textColor: "text-tres-03-ttl",
+    borderColor: "border-tres-03-marcos",
+    numColor: "text-tres-03-num",
+    miniBg: "bg-tres-03-mini-bg",
+    miniBorder: "border-tres-03-mini-borde",
+    miniTxt: "text-tres-03-mini-txt",
+    descColor: "text-tres-03-desc",
   },
 ];
 
@@ -82,20 +80,20 @@ export default function SeccionesDemo() {
   return (
     <section
       id="features"
-      className="relative overflow-hidden bg-background px-4 py-28 md:px-8"
+      className="relative overflow-hidden bg-tres-bg px-4 py-28 md:px-8"
     >
       <div className="mx-auto max-w-7xl">
         {/* Top row — editorial heading + selector */}
         <div className="mb-14 flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
           <div className="max-w-lg">
-            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-tres-desc">
               Funcionalidades
             </p>
-            <h2 className="text-balance text-4xl font-bold leading-[1.1] tracking-tight text-foreground md:text-5xl">
+            <h2 className="text-balance text-4xl font-bold leading-[1.1] tracking-tight text-tres-ttl md:text-5xl">
               Todo lo que necesitas, <br className="hidden md:block" />
               <PointerHighlight
-                rectangleClassName="bg-primary/8 border-primary/20 leading-loose"
-                pointerClassName="text-primary h-3 w-3"
+                rectangleClassName="bg-tres-01-mini-bg/10 border-tres-01-mini-borde leading-loose"
+                pointerClassName="text-tres-01-cursor h-3 w-3"
                 containerClassName="inline-block"
               >
                 <span className="relative z-10">nada que sobra.</span>
@@ -112,7 +110,7 @@ export default function SeccionesDemo() {
                 className={`relative rounded-full border px-4 py-2 text-sm font-semibold transition-all duration-200 ${
                   active === f.id
                     ? `${f.color} ${f.borderColor} text-white shadow-sm`
-                    : "border-border bg-card text-muted-foreground hover:border-primary/20 hover:text-foreground"
+                    : "border-border bg-card text-muted-foreground hover:border-tres-01-marcos hover:text-tres-ttl"
                 }`}
               >
                 <span className="mr-1.5 text-[10px] opacity-60">
@@ -135,27 +133,29 @@ export default function SeccionesDemo() {
             className="grid grid-cols-1 gap-10 lg:grid-cols-[2fr_3fr] will-change-[transform,opacity]"
           >
             {/* Left — text panel */}
-            <div
-              className={`relative flex flex-col justify-between overflow-hidden rounded-3xl border ${current.borderColor} bg-card p-8 md:p-10`}
-            >
-              <div>
-                <span
-                  className={`mb-5 inline-block text-7xl font-black opacity-[0.06] ${current.textColor} leading-none`}
-                >
-                  {current.number}
-                </span>
-                <p
-                  className={`mb-2 text-xs font-semibold uppercase tracking-[0.18em] ${current.textColor}`}
-                >
-                  {current.tag}
-                </p>
-                <h3 className="text-2xl font-bold tracking-tight text-foreground md:text-3xl">
-                  {current.title}
-                </h3>
-                <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                  {current.description}
-                </p>
-              </div>
+              <div
+                className={`relative flex flex-col justify-between overflow-hidden rounded-3xl border ${current.borderColor} bg-card p-8 md:p-10`}
+              >
+                <div>
+                  <span
+                    className={`mb-5 inline-block text-7xl font-black ${current.numColor} leading-none`}
+                  >
+                    {current.number}
+                  </span>
+                  <div className="mb-4">
+                    <span
+                      className={`inline-block rounded-full border px-3 py-1 text-xs font-semibold ${current.miniBg} ${current.miniBorder} ${current.miniTxt}`}
+                    >
+                      {current.tag}
+                    </span>
+                  </div>
+                  <h3 className={`text-2xl font-bold tracking-tight ${current.textColor} md:text-3xl`}>
+                    {current.title}
+                  </h3>
+                  <p className={`mt-4 text-base leading-relaxed ${current.descColor}`}>
+                    {current.description}
+                  </p>
+                </div>
               <div className="mt-8 pt-6 border-t border-border">
                 <div className="text-sm text-muted-foreground">
                   {"Diseñado para "}

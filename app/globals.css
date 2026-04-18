@@ -61,27 +61,7 @@
   --pin-wave: #1472bf;
 
 
-  /* 2 mockup cada lado */
-  --mockup-bg: #4b6554;
-  --mockup-ttl: #000000;
-  --mockup-desc: #2c2a2a;
-
-
-  /* wobble 4 */
-  --wobble-ttl: #000000;
-  --wobble-desc: #2c2a2a;
-
-  --wobble-bg-1: #eeeeee;
-  --wobble-bg-2: #dae5de;
-  --wobble-bg-3: #dae5de;
-  --wobble-bg-4: #eeeeee;
-
-  --wobble-ttl-5: #000000;
-  --wobble-desc-6: #2c2a2a;
-  --wobble-dmas-7: #ffffff;
-
-
-    /* --carrusel 2 */
+  /* --carrusel 2 */
   --carrusel2-bg: #ffffff;
   --carrusel2-mini-bg: #0866b3;
   --carrusel2-mini-txt: #fefefe;
@@ -90,6 +70,79 @@
   --carrusel2-desc: #2c2a2a;
   --carrusel2-sig: #000000;
   --carrusel2-sig-txt: #ffffff;
+
+
+/* 3 secciones*/
+--tres-bg: #ffffff;
+--tres-ttl: #020202;
+--tres-desc: #2c2a2a;
+
+--tres-01-num: #dbdbdb;
+--tres-01-mini-bg: #f1f1f1;
+--tres-01-mini-borde: #bfbfbf;
+--tres-01-mini-txt: #000000;
+
+--tres-01-ttl: #000000;
+--tres-01-desc: #2c2a2a;
+
+--tres-01-marcos: #f5f5f5;
+--tres-01-marcos-txt: #000000;
+--tres-01-cursor: #008cff;
+
+/**/
+--tres-02-num: #dbdbdb;
+--tres-02-mini-bg: #f1f1f1;
+--tres-02-mini-borde: #bfbfbf;
+--tres-02-mini-txt: #000000;
+--tres-02-ttl: #000000;
+--tres-02-desc: #2c2a2a;
+--tres-02-marcos: #f5f5f5;
+--tres-02-marcos-txt: #000000;
+--tres-02-cursor: #00ff7b;
+
+/**/
+--tres-03-num: #dbdbdb;
+--tres-03-mini-bg: #f1f1f1;
+--tres-03-mini-borde: #bfbfbf;
+--tres-03-mini-txt: #000000;
+--tres-03-ttl: #000000;
+--tres-03-desc: #2c2a2a;
+--tres-03-marcos: #f5f5f5;
+--tres-03-marcos-txt: #000000;
+--tres-03-cursor: #ffb700;
+
+
+/* Imagen al pasar el cursor*/
+--imgcursor-bg: #ffffff;
+--imgcursor-ttl: #000000;
+--imgcursor-desc: #2c2a2a;
+
+--imgcursor-izq-borde: #afafaf;
+--imgcursor-izq-bg: #ffffff;
+
+--imgcursor-izq-ttl: #393939;
+--imgcursor-izq-desc: #4b4b4b;
+--imgcursor-izq-hvr: #000000;
+
+
+
+--imgcursor-der-borde: #afafaf;
+--imgcursor-der-bg: #ffffff;
+
+--imgcursor-der-des: #2c2a2a;
+--imgcursor-der-cursor1: #11afe4;
+--imgcursor-der-cursor2: #ff4100;
+--imgcursor-der-cursor3: #ff9d00;
+--imgcursor-der-cursor4: #138a00;
+--imgcursor-der-cursor5: #ffd500;
+
+--imgcursor-der-linea: #d9d9d9;
+
+--imgcursor-der-c-bg: #ffffff;
+--imgcursor-der-c: #000000;
+--imgcursor-der-ttl: #000000;
+--imgcursor-der-desc: #2c2a2a;
+
 
 
   /* Preguntas frecuentes */
@@ -217,6 +270,26 @@
   --sidebar-accent-foreground: #1e293b;
   --sidebar-border: #e2e8f0;
   --sidebar-ring: #3b82f6;
+
+    /* 2 mockup cada lado
+  --mockup-bg: #4b6554;
+  --mockup-ttl: #000000;
+  --mockup-desc: #2c2a2a;
+
+
+  /* wobble 4 */
+  /* --wobble-ttl: #000000;
+  --wobble-desc: #2c2a2a;
+
+  --wobble-bg-1: #eeeeee;
+  --wobble-bg-2: #dae5de;
+  --wobble-bg-3: #dae5de;
+  --wobble-bg-4: #eeeeee;
+
+  --wobble-ttl-5: #000000;
+  --wobble-desc-6: #2c2a2a;
+  --wobble-dmas-7: #ffffff;  */
+
 }
 
 .dark  {
@@ -2893,23 +2966,72 @@
   --color-carrusel2-sig: var(--carrusel2-sig);
   --color-carrusel2-sig-txt: var(--carrusel2-sig-txt);
 
-  /* wobble 4 */
-  --color-wobble-ttl: var(--wobble-ttl);
-  --color-wobble-desc: var(--wobble-desc);
 
-  --color-wobble-bg-1: var(--wobble-bg-1);
-  --color-wobble-bg-2: var(--wobble-bg-2);
-  --color-wobble-bg-3: var(--wobble-bg-3);
-  --color-wobble-bg-4: var(--wobble-bg-4);
+  /*3 secciones*/
+  --color-tres-bg: var(--tres-bg);
+  --color-tres-ttl: var(--tres-ttl);
+  --color-tres-desc: var(--tres-desc);
 
-  --color-wobble-ttl-5: var(--wobble-ttl-5);
-  --color-wobble-desc-6: var(--wobble-desc-6);
-  --color-wobble-dmas-7: var(--wobble-dmas-7);
+  --color-tres-01-num: var(--tres-01-num);
+  --color-tres-01-mini-bg: var(--tres-01-mini-bg);
+  --color-tres-01-mini-borde: var(--tres-01-mini-borde);
+  --color-tres-01-mini-txt: var(--tres-01-mini-txt);
+  --color-tres-01-ttl: var(--tres-01-ttl);
+  --color-tres-01-desc: var(--tres-01-desc);
+  --color-tres-01-marcos: var(--tres-01-marcos);
+  --color-tres-01-marcos-txt: var(--tres-01-marcos-txt);
+  --color-tres-01-cursor: var(--tres-01-cursor);
 
-  /* 2 mockup cada lado */
-  --color-mockup-bg: var(--mockup-bg);
-  --color-mockup-ttl: var(--mockup-ttl);
-  --color-mockup-desc: var(--mockup-desc);
+  --color-tres-02-num: var(--tres-02-num);
+  --color-tres-02-mini-bg: var(--tres-02-mini-bg);
+  --color-tres-02-mini-txt: var(--tres-02-mini-txt);
+  --color-tres-02-ttl: var(--tres-02-ttl);
+  --color-tres-02-desc: var(--tres-02-desc);
+  --color-tres-02-marcos: var(--tres-02-marcos);
+  --color-tres-02-marcos-txt: var(--tres-02-marcos-txt);
+  --color-tres-02-cursor: var(--tres-02-cursor);
+
+  --color-tres-03-num: var(--tres-03-num);
+  --color-tres-03-mini-bg: var(--tres-03-mini-bg);
+  --color-tres-03-mini-txt: var(--tres-03-mini-txt);
+  --color-tres-03-ttl: var(--tres-03-ttl);
+  --color-tres-03-desc: var(--tres-03-desc);
+  --color-tres-03-marcos: var(--tres-03-marcos);
+  --color-tres-03-marcos-txt: var(--tres-03-marcos-txt);
+  --color-tres-03-cursor: var(--tres-03-cursor);
+
+
+  /*Imagen al pasar el cursor*/
+  --color-imgcursor-bg: var(--imgcursor-bg);
+  --color-imgcursor-ttl: var(--imgcursor-ttl);
+  --color-imgcursor-desc: var(--imgcursor-desc);
+
+  --color-imgcursor-izq-borde: var(--imgcursor-izq-borde);
+  --color-imgcursor-izq-bg: var(--imgcursor-izq-bg);
+  --color-imgcursor-izq-ttl: var(--imgcursor-izq-ttl);
+  --color-imgcursor-izq-desc: var(--imgcursor-izq-desc);
+  --color-imgcursor-izq-hvr: var(--imgcursor-izq-hvr);
+
+  --color-imgcursor-der-borde: var(--imgcursor-der-borde);
+  --color-imgcursor-der-bg: var(--imgcursor-der-bg);
+  --color-imgcursor-der-des: var(--imgcursor-der-des);
+  --color-imgcursor-der-cursor1: var(--imgcursor-der-cursor1);
+  --color-imgcursor-der-cursor2: var(--imgcursor-der-cursor2);
+  --color-imgcursor-der-cursor3: var(--imgcursor-der-cursor3);
+  --color-imgcursor-der-cursor4: var(--imgcursor-der-cursor4);
+  --color-imgcursor-der-cursor5: var(--imgcursor-der-cursor5);
+
+  --color-imgcursor-der-linea: var(--imgcursor-der-linea);
+
+  --color-imgcursor-der-c-bg: var(--imgcursor-der-bg);
+  --color-imgcursor-der-c: var(--imgcursor-der-c);
+  --color-imgcursor-der-ttl: var(--imgcursor-der-ttl);
+  --color-imgcursor-der-desc: var(--imgcursor-der-desc);
+  
+
+
+
+
 
   /* Preguntas frecuentes */
   --color-preg-bg: var(--preg-bg);
@@ -2986,6 +3108,26 @@
 
   --color-ayuda-link: var(--ayuda-link);
   --color-ayuda-link-hvr: var(--ayuda-link-hvr);
+
+
+
+    /* wobble 4 */
+  /* --color-wobble-ttl: var(--wobble-ttl);
+  --color-wobble-desc: var(--wobble-desc);
+
+  --color-wobble-bg-1: var(--wobble-bg-1);
+  --color-wobble-bg-2: var(--wobble-bg-2);
+  --color-wobble-bg-3: var(--wobble-bg-3);
+  --color-wobble-bg-4: var(--wobble-bg-4);
+
+  --color-wobble-ttl-5: var(--wobble-ttl-5);
+  --color-wobble-desc-6: var(--wobble-desc-6);
+  --color-wobble-dmas-7: var(--wobble-dmas-7); */
+
+  /* 2 mockup cada lado */
+  /* --color-mockup-bg: var(--mockup-bg);
+  --color-mockup-ttl: var(--mockup-ttl);
+  --color-mockup-desc: var(--mockup-desc); */
 }
 
 @layer base {

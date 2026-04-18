@@ -7,10 +7,10 @@ import { Beaker, Atom, FlaskConical } from "lucide-react";
 
 export default function PinCardsSection() {
   return (
-    <section className="py-7.5 lg:py-10 overflow-hidden">
+    <section className="py-7.5 lg:py-8 overflow-hidden">
       <div className="container mx-auto px-1 md:px-8">
         <ScrollAnimation direction="up" delay={0.1}>
-          <div className="text-center mb-0 relative -top-8 md:top-0">
+          <div className="text-center mb-0 relative -top-8 md:top-3">
             <h2 className="text-tarjetas-ttl1 text-3xl md:text-4xl lg:text-6xl font-semibold tracking-tight text-balance">
               Áreas de Exploración Científica
             </h2>
@@ -22,7 +22,7 @@ export default function PinCardsSection() {
           </div>
         </ScrollAnimation>
 
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-24 lg:gap-32 will-change-transform">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-24 lg:gap-38 will-change-transform">
           {/* Pin 1 */}
           <ScrollAnimation
             direction="up"

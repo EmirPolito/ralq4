@@ -23,7 +23,7 @@ export default function ImgCursorDemo() {
   return (
     <section
       id="resources"
-      className="relative bg-background px-4 py-16 md:px-8 md:py-33"
+      className="relative bg-imgcursor-bg px-4 py-20 md:px-8 md:py-20"
     >
       <div className="mx-auto max-w-[1400px]">
         {/* Two-col layout: left = heading + tech pills, right = editorial paragraph */}
@@ -37,12 +37,12 @@ export default function ImgCursorDemo() {
               viewport={{ once: true }}
               className="flex flex-col items-center lg:items-start"
             >
-              <h2 className="text-balance text-3xl font-bold leading-[1.1] tracking-tight text-foreground md:text-6xl">
+              <h2 className="text-balance text-3xl font-bold leading-[1.1] tracking-tight text-imgcursor-ttl md:text-6xl">
                 Construido sobre
                 <br />
                 los mejores.
               </h2>
-              <p className="mt-5 text-base leading-relaxed text-muted-foreground max-w-lg">
+              <p className="mt-5 text-base leading-relaxed text-imgcursor-desc max-w-lg">
                 Cada tecnología fue elegida con un criterio claro: ofrecer la
                 mejor experiencia científica y visual para el estudiante.
               </p>
@@ -59,12 +59,12 @@ export default function ImgCursorDemo() {
                   >
                     <LinkPreview
                       url={t.url}
-                      className="group inline-flex flex-col rounded-xl border border-border bg-card px-4 py-3 transition-all hover:border-primary/25 hover:shadow-sm cursor-pointer no-underline"
+                      className="group inline-flex flex-col rounded-xl border border-imgcursor-izq-borde bg-imgcursor-izq-bg px-4 py-3 transition-all hover:border-primary/25 hover:shadow-sm cursor-pointer no-underline"
                     >
-                      <span className="text-sm font-bold text-foreground group-hover:text-primary transition-colors">
+                      <span className="text-sm font-bold text-imgcursor-izq-ttl group-hover:text-imgcursor-izq-hvr transition-colors">
                         {t.name}
                       </span>
-                      <span className="text-[10px] text-muted-foreground">
+                      <span className="text-[10px] text-imgcursor-izq-desc">
                         {t.role}
                       </span>
                     </LinkPreview>
@@ -87,12 +87,12 @@ export default function ImgCursorDemo() {
               "
             </div>
 
-            <div className="relative rounded-3xl border border-border bg-card p-8 md:p-11">
-              <p className="text-base leading-[1.9] text-foreground md:text-lg">
+            <div className="relative rounded-3xl border border-imgcursor-der-borde bg-imgcursor-der-bg p-8 md:p-11">
+              <p className="text-base leading-[1.9] text-imgcursor-der-des md:text-lg">
                 {"ChemAR usa "}
                 <LinkPreview
                   url="https://threejs.org"
-                  className="font-bold text-primary underline-offset-2 decoration-primary/30 underline"
+                  className="font-bold text-imgcursor-der-cursor1 underline-offset-2 decoration-current/30 underline"
                 >
                   Three.js
                 </LinkPreview>
@@ -101,14 +101,14 @@ export default function ImgCursorDemo() {
                 }
                 <LinkPreview
                   url="https://aframe.io"
-                  className="font-bold text-teal-600 underline-offset-2 decoration-teal-300 underline"
+                  className="font-bold text-imgcursor-der-cursor2 underline-offset-2 decoration-current/30 underline"
                 >
                   A-Frame
                 </LinkPreview>
                 {" para proyectarlos en el mundo real a través de RA, y "}
                 <LinkPreview
                   url="https://nextjs.org"
-                  className="font-bold text-slate-700 underline-offset-2 decoration-slate-300 underline"
+                  className="font-bold text-imgcursor-der-cursor3 underline-offset-2 decoration-current/30 underline"
                 >
                   Next.js
                 </LinkPreview>
@@ -117,14 +117,14 @@ export default function ImgCursorDemo() {
                 }
                 <LinkPreview
                   url="https://pubchem.ncbi.nlm.nih.gov"
-                  className="font-bold text-sky-600 underline-offset-2 decoration-sky-300 underline"
+                  className="font-bold text-imgcursor-der-cursor4 underline-offset-2 decoration-current/30 underline"
                 >
                   PubChem
                 </LinkPreview>
                 {", respaldado por contenido educativo de "}
                 <LinkPreview
                   url="https://www.khanacademy.org/science/chemistry"
-                  className="font-bold text-emerald-600 underline-offset-2 decoration-emerald-300 underline"
+                  className="font-bold text-imgcursor-der-cursor5 underline-offset-2 decoration-current/30 underline"
                 >
                   Khan Academy
                 </LinkPreview>
@@ -132,15 +132,15 @@ export default function ImgCursorDemo() {
               </p>
 
               {/* Attribution */}
-              <div className="mt-6 flex items-center gap-3 border-t border-border pt-5">
-                <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10">
-                  <span className="text-xs font-black text-primary">C</span>
+              <div className="mt-6 flex items-center gap-3 border-t border-imgcursor-der-linea pt-5">
+                <div className="flex h-8 w-8 items-center justify-center rounded-full bg-imgcursor-der-c-bg">
+                  <span className="text-xs font-black text-imgcursor-der-c">C</span>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-foreground">
+                  <p className="text-xs font-semibold text-imgcursor-der-ttl">
                     Equipo RALQ
                   </p>
-                  <p className="text-[10px] text-muted-foreground">
+                  <p className="text-[10px] text-imgcursor-der-desc">
                     Decisiones de arquitectura técnica
                   </p>
                 </div>
