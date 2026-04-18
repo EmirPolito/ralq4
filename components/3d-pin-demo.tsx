@@ -7,7 +7,7 @@ import { Beaker, Atom, FlaskConical } from "lucide-react";
 
 export default function PinCardsSection() {
   return (
-    <section className="py-5 lg:py-10 overflow-hidden">
+    <section className="py-7.5 lg:py-10 overflow-hidden">
       <div className="container mx-auto px-1 md:px-8">
         <ScrollAnimation direction="up" delay={0.1}>
           <div className="text-center mb-0 relative -top-8 md:top-0">
@@ -34,14 +34,14 @@ export default function PinCardsSection() {
                 title="Ir a procesos industriales"
                 href="#laboratorios"
               >
-                <div className="bg-tarjetas-bg border border-border flex flex-col p-4 tracking-tight w-[19rem] h-[19rem] sm:w-[22rem] sm:h-[22rem] from-card to-card/50 backdrop-blur-sm rounded-2xl">
+                <div className="bg-tarjetas-bg border border-border flex flex-col p-4 tracking-tight w-[18.5rem] h-[18.5rem] sm:w-[22rem] sm:h-[22rem] from-card to-card/50 backdrop-blur-sm rounded-2xl">
                   <div className="flex items-center gap-2">
                     <div className="text-tarjetas-txt3 text-xs">
                       Entorno industrial
                     </div>
                   </div>
 
-                  <div className="flex-1 mt-8 sm:mt-4 space-y-2 sm:space-y-4">
+                  <div className="flex-1 mt-7 sm:mt-4 space-y-2 sm:space-y-4">
                     <div className="flex items-center gap-2">
                       <Beaker className="text-tarjetas-1txt6 h-6 w-6 sm:h-8 sm:w-8" />
                       <div className="text-tarjetas-ttl4 text-lg sm:text-xl font-bold">
@@ -106,14 +106,14 @@ export default function PinCardsSection() {
                 title="Ir a instrumentación científica"
                 href="#laboratorios"
               >
-                <div className="bg-tarjetas-bg border border-border flex flex-col p-4 tracking-tight w-[19rem] h-[19rem] sm:w-[22rem] sm:h-[22rem] from-card to-card/50 backdrop-blur-sm rounded-2xl">
+                <div className="bg-tarjetas-bg border border-border flex flex-col p-4 tracking-tight w-[18.5rem] h-[18.5rem] sm:w-[22rem] sm:h-[22rem] from-card to-card/50 backdrop-blur-sm rounded-2xl">
                   <div className="flex items-center gap-2">
                     <div className="text-tarjetas-txt3 text-xs">
                       Tecnología analítica
                     </div>
                   </div>
 
-                  <div className="flex-1 mt-8 sm:mt-4 space-y-2 sm:space-y-4">
+                  <div className="flex-1 mt-7 sm:mt-4 space-y-2 sm:space-y-4">
                     <div className="flex items-center gap-2">
                       <Atom className="text-tarjetas-2txt6 h-6 w-6 sm:h-8 sm:w-8" />
                       <div className="text-tarjetas-ttl4 text-lg sm:text-xl font-bold">
@@ -178,14 +178,14 @@ export default function PinCardsSection() {
                 title="Ir a fundamentos de laboratorio"
                 href="#laboratorios"
               >
-                <div className="bg-tarjetas-bg border border-border flex flex-col p-4 tracking-tight w-[19rem] h-[19rem] sm:w-[22rem] sm:h-[22rem] from-card to-card/50 backdrop-blur-sm rounded-2xl">
+                <div className="bg-tarjetas-bg border border-border flex flex-col p-4 tracking-tight w-[18.5rem] h-[18.5rem] sm:w-[22rem] sm:h-[22rem] from-card to-card/50 backdrop-blur-sm rounded-2xl">
                   <div className="flex items-center gap-2">
                     <div className="text-tarjetas-txt3 text-xs">
                       Laboratorio educativo
                     </div>
                   </div>
 
-                  <div className="flex-1 mt-8 sm:mt-4 space-y-2 sm:space-y-4">
+                  <div className="flex-1 mt-7 sm:mt-4 space-y-2 sm:space-y-4">
                     <div className="flex items-center gap-2">
                       <FlaskConical className="text-tarjetas-3txt6 h-6 w-6 sm:h-8 sm:w-8" />
                       <div className="text-tarjetas-ttl4 text-lg sm:text-xl font-bold">

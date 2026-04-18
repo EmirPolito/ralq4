@@ -49,7 +49,7 @@ const faqItems = [
   },
 ];
 
-export default function Preguntas1() {
+export default function Preguntas2() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -59,53 +59,55 @@ export default function Preguntas1() {
   if (!mounted) return null;
 
   return (
-    <section className="bg-background @container py-15 md:py-24 lg:py-22">
-      <div className="mx-auto max-w-8xl px-5 md:px-12 lg:px-15">
-        <div className="@xl:flex-row @xl:items-start lg:gap-5 flex flex-col gap-7">
-          {/* LADO IZQUIERDO */}
-          <ScrollAnimation
-            direction="up"
-            delay={0.1}
-            className="@xl:sticky @xl:top-24 lg:w-96 shrink-0"
-          >
-            <h2 className="text-preg-ttl font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight text-center @xl:text-left">
-              Preguntas Frecuentes
-            </h2>
+    <section className="bg-background py-15 md:py-24 lg:py-22">
+      <div className="mx-auto max-w-8xl px-6 md:px-12 lg:px-15">
+        {/* HEADER CENTRADO */}
+        <ScrollAnimation
+          direction="up"
+          delay={0.1}
+          className="text-center mb-9"
+        >
+          <h2 className="text-preg-ttl font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight">
+            Preguntas Frecuentes
+          </h2>
 
-            <p className="text-preg-desc mt-2 text-base text-center @xl:text-left">
-              ¿Necesitas más ayuda?{" "}
-              <Link
-                href="/contacto"
-                className="text-preg-link font-medium hover:underline"
+          <p className="text-preg-desc mt-2 text-base">
+            ¿Necesitas más ayuda?{" "}
+            <Link
+              href="/contacto"
+              className="text-preg-link font-medium hover:underline"
+            >
+              Contáctanos
+            </Link>
+          </p>
+        </ScrollAnimation>
+
+        {/* ACORDEÓN CENTRADO */}
+        <ScrollAnimation
+          direction="up"
+          delay={0.2}
+          className="mx-auto max-w-5xl"
+        >
+          <Accordion type="single" collapsible className="w-full">
+            {faqItems.map((item) => (
+              <AccordionItem
+                key={item.id}
+                value={item.id}
+                className="border-dashed"
               >
-                Contáctanos
-              </Link>
-            </p>
-          </ScrollAnimation>
+                <AccordionTrigger className="text-preg-preg cursor-pointer py-7 text-base hover:no-underline text-left">
+                  {item.question}
+                </AccordionTrigger>
 
-          {/* LADO DERECHO */}
-          <ScrollAnimation direction="up" delay={0.2} className="flex-1">
-            <Accordion type="single" collapsible>
-              {faqItems.map((item) => (
-                <AccordionItem
-                  key={item.id}
-                  value={item.id}
-                  className="border-dashed"
-                >
-                  <AccordionTrigger className="text-preg-preg cursor-pointer py-8 text-base hover:no-underline">
-                    {item.question}
-                  </AccordionTrigger>
-
-                  <AccordionContent>
-                    <p className="text-preg-txt pb-2 text-base leading-relaxed">
-                      {item.answer}
-                    </p>
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-          </ScrollAnimation>
-        </div>
+                <AccordionContent>
+                  <p className="text-preg-txt pb-2 text-base leading-relaxed">
+                    {item.answer}
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </ScrollAnimation>
       </div>
     </section>
   );

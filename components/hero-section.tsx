@@ -9,7 +9,7 @@ import PinCardsSection from "@/components/3d-pin-demo";
 import TresPasosLaboratorio from "@/components/tres-secciones";
 import { Feature } from "@/components/carrusel-2";
 import ImgCursorDemo from "@/components/img-cursor";
-import FAQs from "@/components/preguntas-frecuentes";
+import Preguntas1 from "@/components/preguntas-frecuentes";
 import Footer from "@/components/footer";
 
 export default function HeroSection() {
@@ -36,8 +36,8 @@ export default function HeroSection() {
         {/* Comentario*/}
         <ImgCursorDemo />
 
-        {/*Preguntas frecuentes*/}
-        <FAQs />
+        {/*Preguntas frecuentes 2*/}
+        <Preguntas1 />
 
         {/* Footer*/}
         <Footer />
@@ -65,3 +65,9 @@ export default function HeroSection() {
 // import SeccionesDemo from "@/components/secciones";
 // {/* 4 secciones */}
 // <SeccionesDemo />
+
+// import Preguntas2 from "@/components/preguntas-frecuentes copy";
+{
+  /*Preguntas frecuentes*/
+}
+// <Preguntas2 />

@@ -63,21 +63,21 @@ export default function TresPasosLaboratorio() {
   return (
     <section
       id="how-it-works"
-      className="relative overflow-hidden bg-background px-4 py-20 md:px-8 md:py-30"
+      className="relative overflow-hidden bg-background px-6 py-16 md:px-12 md:py-24 lg:py-32"
     >
       {/* Section heading — left-anchored, not centered */}
-      <div className="mx-auto max-w-7xl">
-        <div className="mb-12 mx-auto max-w-3xl text-center">
-          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-            Proceso
-          </p>
-          <h2 className="text-balance text-4xl font-bold leading-[1.1] tracking-tight text-foreground md:text-5xl">
+      <div className="mx-auto max-w-[1400px]">
+        <div className="mb-12 mx-auto max-w-4xl text-center md:mb-20">
+          <h2 className="text-balance text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.1] tracking-tight text-foreground">
             Tres pasos.
             <br />
             <span className="text-muted-foreground/60">
               Un laboratorio completo.
             </span>
           </h2>
+          <p className="text-tarjetas-desc2 mt-4 max-w-2xl mx-auto text-base md:text-lg text-center leading-relaxed">
+            Paso a paso para explorar la química de manera interactiva.
+          </p>
         </div>
 
         {/* Alternating steps */}
@@ -89,7 +89,7 @@ export default function TresPasosLaboratorio() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.05 }}
               viewport={{ once: true, margin: "-80px" }}
-              className={`group relative grid grid-cols-1 gap-12 border-t border-border py-12 lg:py-24 lg:grid-cols-2 lg:gap-16 lg:gap-y-0 will-change-transform ${
+              className={`group relative grid grid-cols-1 gap-12 border-t border-border py-12 md:py-16 lg:py-24 lg:grid-cols-2 lg:gap-24 lg:gap-y-0 will-change-transform ${
                 step.align === "right"
                   ? "lg:[&>*:first-child]:order-2 lg:[&>*:last-child]:order-1"
                   : ""
@@ -110,7 +110,7 @@ export default function TresPasosLaboratorio() {
                     >
                       {step.tag}
                     </span>
-                    <h3 className="text-2xl font-bold tracking-tight text-foreground md:text-3xl">
+                    <h3 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-foreground">
                       {step.title}
                     </h3>
                     <p className="mt-4 text-base leading-relaxed text-muted-foreground">
@@ -146,7 +146,7 @@ export default function TresPasosLaboratorio() {
                 containerClassName="w-full"
               >
                 <div
-                  className={`relative overflow-hidden rounded-2xl bg-gradient-to-br ${step.color} border border-border aspect-[16/10] w-[92%] mx-auto lg:w-full`}
+                  className={`relative overflow-hidden rounded-2xl bg-gradient-to-br ${step.color} border border-border aspect-[16/10] w-full`}
                 >
                   <img
                     src={step.image}

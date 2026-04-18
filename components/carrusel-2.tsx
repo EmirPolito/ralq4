@@ -18,7 +18,6 @@ import { ChevronRight, ArrowLeft, ArrowRight } from "lucide-react";
 import { useTheme } from "next-themes";
 
 import { useReducedMotion } from "@/hooks/use-reduced-motion";
-import { PointerHighlight } from "@/components/ui/pointer-highlight";
 
 const carouselImages = [
   {
@@ -89,40 +88,25 @@ function Feature() {
       <div className="container mx-auto px-5 md:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 min-h-[400px]">
           {/* Texto */}
-          <div className="flex gap-2 flex-col items-start">
+          <div className="flex gap-2 flex-col items-center text-center lg:items-start lg:text-left">
             <div>
               <Badge className="bg-carrusel2-mini-bg text-carrusel2-mini-txt rounded-2xl px-2 py-1">
                 Plataforma educativa interactiva
               </Badge>
             </div>
 
-            <div className="flex gap-5 flex-col">
-              <h2 className="text-carrusel2-ttl text-xl md:text-3xl lg:text-6xl tracking-tighter lg:max-w-xl font-semibold text-left">
+            <div className="flex gap-5 flex-col items-center lg:items-start">
+              <h2 className="text-carrusel2-ttl text-balance text-3xl font-bold leading-[1.1] tracking-tight md:text-4xl lg:text-6xl">
                 Sumérgete en la
                 <br />
-                <PointerHighlight
-                  rectangleClassName="rounded-md border border-primary/20 -inset-0.5"
-                  pointerClassName="text-primary"
-                  containerClassName="inline-block mt-2"
-                  bgOpacity={0.06}
-                >
-                  Realidad Aumentada
-                </PointerHighlight>
+                Realidad Aumentada
               </h2>
 
-              <div className="text-carrusel2-desc lg:max-w-xl text-lg max-w-xl leading-relaxed tracking-tight text-left">
+              <div className="text-carrusel2-desc lg:max-w-xl text-lg max-w-xl leading-relaxed tracking-tight text-center lg:text-left">
                 RALQ reúne instrumentos, materiales y recursos de laboratorio
                 dentro de un entorno digital diseñado para facilitar la
-                comprensión de la química mediante{" "}
-                <PointerHighlight
-                  rectangleClassName="rounded-sm border border-primary/20 -inset-0.5"
-                  pointerClassName="text-primary"
-                  containerClassName="inline-block"
-                  bgOpacity={0.06}
-                >
-                  exploración visual e interacción directa
-                </PointerHighlight>{" "}
-                con los modelos.
+                comprensión de la química mediante exploración visual e
+                interacción directa con los modelos.
               </div>
             </div>
 
@@ -130,7 +114,7 @@ function Feature() {
             <Button
               asChild
               size="sm"
-              className="-mx-2 h-10 rounded-full px-4 text-sm bg-background hover:bg-background text-titulos mt-3"
+              className="h-10 rounded-full px-4 text-sm bg-background hover:bg-background text-titulos mt-3 lg:-mx-2"
             >
               <Link href="/demo" className="flex items-center gap-1">
                 <span>Explorar la experiencia</span>

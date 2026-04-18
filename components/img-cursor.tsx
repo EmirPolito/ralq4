@@ -23,34 +23,32 @@ export default function ImgCursorDemo() {
   return (
     <section
       id="resources"
-      className="relative bg-background px-4 py-16 md:px-8 md:py-25"
+      className="relative bg-background px-4 py-16 md:px-8 md:py-33"
     >
       <div className="mx-auto max-w-[1400px]">
         {/* Two-col layout: left = heading + tech pills, right = editorial paragraph */}
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-[1fr_1.6fr] lg:gap-24">
           {/* Left */}
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col justify-center items-center text-center lg:items-start lg:text-left">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
+              className="flex flex-col items-center lg:items-start"
             >
-              <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-                Stack tecnológico
-              </p>
-              <h2 className="text-balance text-4xl font-bold leading-[1.1] tracking-tight text-foreground md:text-5xl">
+              <h2 className="text-balance text-3xl font-bold leading-[1.1] tracking-tight text-foreground md:text-6xl">
                 Construido sobre
                 <br />
                 los mejores.
               </h2>
-              <p className="mt-5 text-base leading-relaxed text-muted-foreground">
+              <p className="mt-5 text-base leading-relaxed text-muted-foreground max-w-lg">
                 Cada tecnología fue elegida con un criterio claro: ofrecer la
                 mejor experiencia científica y visual para el estudiante.
               </p>
 
               {/* Tech pills — irregular sizing */}
-              <div className="mt-8 flex flex-wrap gap-2">
+              <div className="mt-6 flex flex-wrap gap-3 justify-center lg:justify-start">
                 {tech.map((t, i) => (
                   <motion.div
                     key={t.name}
@@ -89,7 +87,7 @@ export default function ImgCursorDemo() {
               "
             </div>
 
-            <div className="relative rounded-3xl border border-border bg-card p-8 md:p-10">
+            <div className="relative rounded-3xl border border-border bg-card p-8 md:p-11">
               <p className="text-base leading-[1.9] text-foreground md:text-lg">
                 {"ChemAR usa "}
                 <LinkPreview
@@ -140,7 +138,7 @@ export default function ImgCursorDemo() {
                 </div>
                 <div>
                   <p className="text-xs font-semibold text-foreground">
-                    Equipo ChemAR
+                    Equipo RALQ
                   </p>
                   <p className="text-[10px] text-muted-foreground">
                     Decisiones de arquitectura técnica

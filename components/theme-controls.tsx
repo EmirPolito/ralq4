@@ -214,7 +214,7 @@ export function ThemeControls({
                 className="w-35 p-1 rounded-xl bg-popover/95 backdrop-blur-md border-border/50 text-xs shadow-xl z-[200]"
               >
                 <p className="font-medium text-foreground leading-relaxed text-center">
-                  Cambia el modo a: claro/oscuro/daltonico
+                  Cambia el modo: claro/oscuro/daltónico
                 </p>
               </PopoverContent>
             </Popover>
@@ -361,7 +361,7 @@ export function ThemeControls({
                 className="w-35 p-1 rounded-xl bg-popover/95 backdrop-blur-md border-border/50 text-xs shadow-xl z-[200]"
               >
                 <p className="font-medium text-foreground leading-relaxed text-center">
-                  Cambia los colores a: original/azul/etc.
+                  Cambia los colores: original/azul/etc.
                 </p>
               </PopoverContent>
             </Popover>
@@ -473,7 +473,7 @@ export function ThemeControls({
                 className="w-35 p-1 rounded-xl bg-popover/95 backdrop-blur-md border-border/50 text-xs shadow-xl z-[200]"
               >
                 <p className="font-medium text-foreground leading-relaxed text-center">
-                  Activar/Desactivar animaciones.
+                  Activa/Desactiva animaciones
                 </p>
               </PopoverContent>
             </Popover>
