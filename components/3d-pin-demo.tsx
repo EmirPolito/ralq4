@@ -7,7 +7,7 @@ import { Beaker, Atom, FlaskConical } from "lucide-react";
 
 export default function PinCardsSection() {
   return (
-    <section className="py-20 lg:py-10 overflow-hidden">
+    <section className="py-5 lg:py-10 overflow-hidden">
       <div className="container mx-auto px-1 md:px-8">
         <ScrollAnimation direction="up" delay={0.1}>
           <div className="text-center mb-0 relative -top-8 md:top-0">
@@ -30,7 +30,10 @@ export default function PinCardsSection() {
             className="w-full lg:w-[22rem]"
           >
             <div className="h-[22rem] sm:h-[27rem] flex items-center justify-center">
-              <PinContainer title="Procesos Industriales" href="#laboratorios">
+              <PinContainer
+                title="Ir a procesos industriales"
+                href="#laboratorios"
+              >
                 <div className="bg-tarjetas-bg border border-border flex flex-col p-4 tracking-tight w-[19rem] h-[19rem] sm:w-[22rem] sm:h-[22rem] from-card to-card/50 backdrop-blur-sm rounded-2xl">
                   <div className="flex items-center gap-2">
                     <div className="text-tarjetas-txt3 text-xs">
@@ -100,7 +103,7 @@ export default function PinCardsSection() {
           >
             <div className="h-[22rem] sm:h-[27rem] flex items-center justify-center">
               <PinContainer
-                title="Instrumentación Científica"
+                title="Ir a instrumentación científica"
                 href="#laboratorios"
               >
                 <div className="bg-tarjetas-bg border border-border flex flex-col p-4 tracking-tight w-[19rem] h-[19rem] sm:w-[22rem] sm:h-[22rem] from-card to-card/50 backdrop-blur-sm rounded-2xl">
@@ -172,7 +175,7 @@ export default function PinCardsSection() {
           >
             <div className="h-[22rem] sm:h-[27rem] flex items-center justify-center">
               <PinContainer
-                title="Fundamentos de Laboratorio"
+                title="Ir a fundamentos de laboratorio"
                 href="#laboratorios"
               >
                 <div className="bg-tarjetas-bg border border-border flex flex-col p-4 tracking-tight w-[19rem] h-[19rem] sm:w-[22rem] sm:h-[22rem] from-card to-card/50 backdrop-blur-sm rounded-2xl">

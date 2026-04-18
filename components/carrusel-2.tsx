@@ -101,10 +101,10 @@ function Feature() {
                 Sumérgete en la
                 <br />
                 <PointerHighlight
-                  rectangleClassName="rounded-lg border border-primary/20"
+                  rectangleClassName="rounded-md border border-primary/20 -inset-0.5"
                   pointerClassName="text-primary"
                   containerClassName="inline-block mt-2"
-                  bgOpacity={0.1}
+                  bgOpacity={0.06}
                 >
                   Realidad Aumentada
                 </PointerHighlight>
@@ -115,10 +115,10 @@ function Feature() {
                 dentro de un entorno digital diseñado para facilitar la
                 comprensión de la química mediante{" "}
                 <PointerHighlight
-                  rectangleClassName="rounded-md border border-primary/20"
+                  rectangleClassName="rounded-sm border border-primary/20 -inset-0.5"
                   pointerClassName="text-primary"
                   containerClassName="inline-block"
-                  bgOpacity={0.1}
+                  bgOpacity={0.06}
                 >
                   exploración visual e interacción directa
                 </PointerHighlight>{" "}

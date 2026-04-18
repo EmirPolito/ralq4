@@ -23,7 +23,7 @@ export default function ImgCursorDemo() {
   return (
     <section
       id="resources"
-      className="relative bg-background px-4 py-16 md:px-8 md:py-20"
+      className="relative bg-background px-4 py-16 md:px-8 md:py-25"
     >
       <div className="mx-auto max-w-[1400px]">
         {/* Two-col layout: left = heading + tech pills, right = editorial paragraph */}

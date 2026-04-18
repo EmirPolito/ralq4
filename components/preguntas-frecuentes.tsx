@@ -59,7 +59,7 @@ export default function FAQs() {
   if (!mounted) return null;
 
   return (
-    <section className="bg-background @container py-16 md:py-24 lg:py-32">
+    <section className="bg-background @container py-16 md:py-24 lg:py-22">
       <div className="mx-auto max-w-8xl px-6 md:px-12 lg:px-15">
         <div className="@xl:flex-row @xl:items-start lg:gap-5 flex flex-col gap-12">
           {/* LADO IZQUIERDO */}
