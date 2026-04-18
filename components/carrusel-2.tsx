@@ -18,6 +18,7 @@ import { ChevronRight, ArrowLeft, ArrowRight } from "lucide-react";
 import { useTheme } from "next-themes";
 
 import { useReducedMotion } from "@/hooks/use-reduced-motion";
+import { PointerHighlight } from "@/components/ui/pointer-highlight";
 
 const carouselImages = [
   {
@@ -84,7 +85,7 @@ function Feature() {
   const bgColor = resolvedTheme === "light" ? "#dff4e5" : "var(--background)";
 
   return (
-    <div className="w-full py-20 lg:py-10">
+    <div className="w-full py-20 lg:py-5">
       <div className="container mx-auto px-5 md:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 min-h-[400px]">
           {/* Texto */}
@@ -99,15 +100,30 @@ function Feature() {
               <h2 className="text-carrusel2-ttl text-xl md:text-3xl lg:text-6xl tracking-tighter lg:max-w-xl font-semibold text-left">
                 Sumérgete en la
                 <br />
-                Realidad Aumentada
+                <PointerHighlight
+                  rectangleClassName="rounded-lg border border-primary/20"
+                  pointerClassName="text-primary"
+                  containerClassName="inline-block mt-2"
+                  bgOpacity={0.1}
+                >
+                  Realidad Aumentada
+                </PointerHighlight>
               </h2>
 
-              <p className="text-carrusel2-desc lg:max-w-xl text-lg max-w-xl leading-relaxed tracking-tight text-left">
+              <div className="text-carrusel2-desc lg:max-w-xl text-lg max-w-xl leading-relaxed tracking-tight text-left">
                 RALQ reúne instrumentos, materiales y recursos de laboratorio
                 dentro de un entorno digital diseñado para facilitar la
-                comprensión de la química mediante exploración visual e
-                interacción directa con los modelos.
-              </p>
+                comprensión de la química mediante{" "}
+                <PointerHighlight
+                  rectangleClassName="rounded-md border border-primary/20"
+                  pointerClassName="text-primary"
+                  containerClassName="inline-block"
+                  bgOpacity={0.1}
+                >
+                  exploración visual e interacción directa
+                </PointerHighlight>{" "}
+                con los modelos.
+              </div>
             </div>
 
             {/* Botón opcional */}
@@ -144,14 +160,14 @@ function Feature() {
             >
               <CarouselContent>
                 {carouselImages.map((image, index) => (
-                  <CarouselItem key={index}>
+                  <CarouselItem key={index} className="will-change-transform">
                     <div className="flex rounded-xl aspect-video items-center justify-center overflow-hidden">
                       <Image
                         src={image.src}
                         alt={image.alt}
                         width={800}
                         height={450}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover will-change-transform"
                         draggable={false}
                       />
                     </div>

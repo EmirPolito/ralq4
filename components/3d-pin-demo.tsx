@@ -7,25 +7,22 @@ import { Beaker, Atom, FlaskConical } from "lucide-react";
 
 export default function PinCardsSection() {
   return (
-    <section className="py-20 lg:py-15 overflow-hidden">
-      <div className="container mx-auto px-8">
+    <section className="py-20 lg:py-10 overflow-hidden">
+      <div className="container mx-auto px-1 md:px-8">
         <ScrollAnimation direction="up" delay={0.1}>
-          <div className="text-center mb-5">
+          <div className="text-center mb-0 relative -top-8 md:top-0">
             <h2 className="text-tarjetas-ttl1 text-3xl md:text-4xl lg:text-6xl font-semibold tracking-tight text-balance">
               Áreas de Exploración Científica
             </h2>
 
-            <p className="text-tarjetas-desc2 mt-2 max-w-3xl mx-auto text-lg text-center">
-              La plataforma organiza el contenido en distintos entornos de
-              aprendizaje
-              <br />
-              que representan cómo se utiliza la química en contextos
-              educativos, analíticos e industriales.
+            <p className="text-tarjetas-desc2 mt-2 max-w-2xl md:max-w-none mx-auto text-base md:text-lg text-center leading-relaxed">
+              La plataforma organiza el contenido en entornos que muestran el
+              uso de la química.
             </p>
           </div>
         </ScrollAnimation>
 
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-24 lg:gap-32 lg:-ml-10">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-24 lg:gap-32 will-change-transform">
           {/* Pin 1 */}
           <ScrollAnimation
             direction="up"

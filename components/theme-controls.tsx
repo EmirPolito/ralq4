@@ -211,7 +211,7 @@ export function ThemeControls({
               </PopoverTrigger>
               <PopoverContent
                 side="top"
-                className="w-35 p-1 rounded-xl bg-popover/95 backdrop-blur-md border-border/50 text-xs shadow-xl z-[150]"
+                className="w-35 p-1 rounded-xl bg-popover/95 backdrop-blur-md border-border/50 text-xs shadow-xl z-[200]"
               >
                 <p className="font-medium text-foreground leading-relaxed text-center">
                   Cambia el modo a: claro/oscuro/daltonico
@@ -277,13 +277,14 @@ export function ThemeControls({
                 side="top"
                 sideOffset={-6}
                 avoidCollisions={false}
+                className="z-[200]"
               >
                 <p>Cambiar modo de visualización</p>
               </TooltipContent>
             </Tooltip>
             <DropdownMenuContent
               align="end"
-              className="z-[100] rounded-2xl w-56 md:w-auto md:bg-popover md:backdrop-blur-none md:shadow-md md:border-border border-border/50 bg-popover/95 backdrop-blur-xl shadow-2xl"
+              className="z-[200] rounded-2xl w-56 md:w-auto md:bg-popover md:backdrop-blur-none md:shadow-md md:border-border border-border/50 bg-popover/95 backdrop-blur-xl shadow-2xl"
             >
               <DropdownMenuLabel>Modos</DropdownMenuLabel>
               <DropdownMenuSeparator />
@@ -357,7 +358,7 @@ export function ThemeControls({
               </PopoverTrigger>
               <PopoverContent
                 side="top"
-                className="w-35 p-1 rounded-xl bg-popover/95 backdrop-blur-md border-border/50 text-xs shadow-xl z-[150]"
+                className="w-35 p-1 rounded-xl bg-popover/95 backdrop-blur-md border-border/50 text-xs shadow-xl z-[200]"
               >
                 <p className="font-medium text-foreground leading-relaxed text-center">
                   Cambia los colores a: original/azul/etc.
@@ -402,12 +403,13 @@ export function ThemeControls({
                 side="top"
                 sideOffset={-6}
                 avoidCollisions={false}
+                className="z-[200]"
               >
                 <p>Personalizar colores del sitio</p>
               </TooltipContent>
             </Tooltip>
             <PopoverContent
-              className="rounded-2xl w-56 md:w-44 z-[100] p-0 overflow-hidden border-border/50 bg-popover/95 backdrop-blur-xl shadow-2xl"
+              className="rounded-2xl w-56 md:w-44 z-[200] p-0 overflow-hidden border-border/50 bg-popover/95 backdrop-blur-xl shadow-2xl"
               align="end"
               sideOffset={8}
             >
@@ -468,7 +470,7 @@ export function ThemeControls({
               </PopoverTrigger>
               <PopoverContent
                 side="top"
-                className="w-35 p-1 rounded-xl bg-popover/95 backdrop-blur-md border-border/50 text-xs shadow-xl z-[150]"
+                className="w-35 p-1 rounded-xl bg-popover/95 backdrop-blur-md border-border/50 text-xs shadow-xl z-[200]"
               >
                 <p className="font-medium text-foreground leading-relaxed text-center">
                   Activar/Desactivar animaciones.
@@ -500,7 +502,12 @@ export function ThemeControls({
                 />
               </button>
             </TooltipTrigger>
-            <TooltipContent side="top" sideOffset={2} avoidCollisions={false}>
+            <TooltipContent
+              side="top"
+              sideOffset={2}
+              avoidCollisions={false}
+              className="z-[200]"
+            >
               <p>Activar/Desactivar animaciones</p>
             </TooltipContent>
           </Tooltip>
