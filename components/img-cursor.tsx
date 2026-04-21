@@ -2,6 +2,8 @@
 
 import { motion } from "motion/react";
 import { LinkPreview } from "@/components/ui/link-preview";
+import { useReducedMotion } from "@/hooks/use-reduced-motion";
+import { cn } from "@/lib/utils";
 
 const tech = [
   { name: "Three.js", url: "https://threejs.org", role: "3D Engine" },
@@ -20,6 +22,8 @@ const tech = [
 ];
 
 export default function ImgCursorDemo() {
+  const reducedMotion = useReducedMotion();
+
   return (
     <section
       id="resources"
@@ -31,9 +35,14 @@ export default function ImgCursorDemo() {
           {/* Left */}
           <div className="flex flex-col justify-center items-center text-center lg:items-start lg:text-left">
             <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
+              key={`img-cursor-left-${reducedMotion}`}
+              initial={reducedMotion ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
+              whileInView={reducedMotion ? { opacity: 1, x: 0 } : { opacity: 1, x: 0 }}
+              transition={
+                reducedMotion
+                  ? { duration: 0 }
+                  : { duration: 0.8, ease: [0.21, 0.47, 0.32, 0.98] }
+              }
               viewport={{ once: true }}
               className="flex flex-col items-center lg:items-start"
             >
@@ -51,15 +60,23 @@ export default function ImgCursorDemo() {
               <div className="mt-6 flex flex-wrap gap-3 justify-center lg:justify-start">
                 {tech.map((t, i) => (
                   <motion.div
-                    key={t.name}
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.3, delay: i * 0.07 }}
+                    key={`${t.name}-${reducedMotion}`}
+                    initial={reducedMotion ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.92 }}
+                    whileInView={reducedMotion ? { opacity: 1, scale: 1 } : { opacity: 1, scale: 1 }}
+                    transition={
+                      reducedMotion
+                        ? { duration: 0 }
+                        : { duration: 0.5, delay: i * 0.08, ease: "easeOut" }
+                    }
                     viewport={{ once: true }}
                   >
                     <LinkPreview
                       url={t.url}
-                      className="group inline-flex flex-col rounded-xl border border-imgcursor-izq-borde bg-imgcursor-izq-bg px-4 py-3 transition-all hover:border-primary/25 hover:shadow-sm cursor-pointer no-underline"
+                      disabled={reducedMotion}
+                      className={cn(
+                        "group inline-flex flex-col rounded-xl border border-imgcursor-izq-borde bg-imgcursor-izq-bg px-4 py-3 transition-all cursor-pointer no-underline",
+                        !reducedMotion && "hover:border-primary/25 hover:shadow-sm"
+                      )}
                     >
                       <span className="text-sm font-bold text-imgcursor-izq-ttl group-hover:text-imgcursor-izq-hvr transition-colors">
                         {t.name}
@@ -76,9 +93,14 @@ export default function ImgCursorDemo() {
 
           {/* Right — big editorial pull quote */}
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
+            key={`img-cursor-right-${reducedMotion}`}
+            initial={reducedMotion ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
+            whileInView={reducedMotion ? { opacity: 1, x: 0 } : { opacity: 1, x: 0 }}
+            transition={
+              reducedMotion
+                ? { duration: 0 }
+                : { duration: 0.8, delay: 0.15, ease: [0.21, 0.47, 0.32, 0.98] }
+            }
             viewport={{ once: true }}
             className="relative flex flex-col justify-center"
           >
@@ -92,6 +114,7 @@ export default function ImgCursorDemo() {
                 {"ChemAR usa "}
                 <LinkPreview
                   url="https://threejs.org"
+                  disabled={reducedMotion}
                   className="font-bold text-imgcursor-der-cursor1 underline-offset-2 decoration-current/30 underline"
                 >
                   Three.js
@@ -101,6 +124,7 @@ export default function ImgCursorDemo() {
                 }
                 <LinkPreview
                   url="https://aframe.io"
+                  disabled={reducedMotion}
                   className="font-bold text-imgcursor-der-cursor2 underline-offset-2 decoration-current/30 underline"
                 >
                   A-Frame
@@ -108,6 +132,7 @@ export default function ImgCursorDemo() {
                 {" para proyectarlos en el mundo real a través de RA, y "}
                 <LinkPreview
                   url="https://nextjs.org"
+                  disabled={reducedMotion}
                   className="font-bold text-imgcursor-der-cursor3 underline-offset-2 decoration-current/30 underline"
                 >
                   Next.js
@@ -117,6 +142,7 @@ export default function ImgCursorDemo() {
                 }
                 <LinkPreview
                   url="https://pubchem.ncbi.nlm.nih.gov"
+                  disabled={reducedMotion}
                   className="font-bold text-imgcursor-der-cursor4 underline-offset-2 decoration-current/30 underline"
                 >
                   PubChem
@@ -124,6 +150,7 @@ export default function ImgCursorDemo() {
                 {", respaldado por contenido educativo de "}
                 <LinkPreview
                   url="https://www.khanacademy.org/science/chemistry"
+                  disabled={reducedMotion}
                   className="font-bold text-imgcursor-der-cursor5 underline-offset-2 decoration-current/30 underline"
                 >
                   Khan Academy

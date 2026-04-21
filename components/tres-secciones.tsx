@@ -2,8 +2,10 @@
 
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
+import Image from "next/image";
 import { PointerHighlight } from "@/components/ui/pointer-highlight";
 import { cn } from "@/lib/utils";
+import { useReducedMotion } from "@/hooks/use-reduced-motion";
 
 const steps = [
   {
@@ -87,6 +89,8 @@ const steps = [
 ];
 
 export default function TresPasosLaboratorio() {
+  const reducedMotion = useReducedMotion();
+
   return (
     <section
       id="how-it-works"
@@ -111,12 +115,16 @@ export default function TresPasosLaboratorio() {
         <div className="flex flex-col gap-0">
           {steps.map((step, index) => (
             <motion.div
-              key={step.step}
-              initial={{ opacity: 0, y: 32 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.05 }}
-              viewport={{ once: true, margin: "-80px" }}
-              className={`group relative grid grid-cols-1 gap-12 py-12 md:py-16 lg:py-24 lg:grid-cols-2 lg:gap-24 lg:gap-y-0 will-change-transform ${
+              key={`${step.step}-${reducedMotion}`}
+              initial={reducedMotion ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
+              whileInView={reducedMotion ? { opacity: 1, y: 0 } : { opacity: 1, y: 0 }}
+              transition={
+                reducedMotion
+                  ? { duration: 0 }
+                  : { duration: 0.6, ease: [0.21, 0.47, 0.32, 0.98] }
+              }
+              viewport={{ once: true, margin: "0px" }}
+              className={`group relative grid grid-cols-1 gap-12 py-12 md:py-16 lg:py-24 lg:grid-cols-2 lg:gap-24 lg:gap-y-0 ${
                 step.align === "right"
                   ? "lg:[&>*:first-child]:order-2 lg:[&>*:last-child]:order-1"
                   : ""
@@ -165,20 +173,27 @@ export default function TresPasosLaboratorio() {
               {/* Visual side */}
               <PointerHighlight
                 rectangleClassName={cn(
-                  "rounded-2xl border border-current",
+                  "rounded-2xl border border-current/10",
                   step.textColor,
                 )}
                 bgOpacity={0.03}
                 pointerClassName={step.varCursor}
                 containerClassName="w-full"
+                disabled={reducedMotion}
               >
                 <div
-                  className={`relative overflow-hidden rounded-2xl bg-gradient-to-br ${step.color} border border-border aspect-[16/10] w-full`}
+                  className={`relative overflow-hidden rounded-2xl bg-neutral-100 dark:bg-neutral-900 border border-border aspect-[16/10] w-full`}
                 >
-                  <img
+                  <Image
                     src={step.image}
                     alt={step.title}
-                    className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03] will-change-transform"
+                    width={800}
+                    height={500}
+                    quality={75}
+                    className={cn(
+                      "h-full w-full object-cover transition duration-500 will-change-transform dark:opacity-90 [transform:translateZ(0)] [backface-visibility:hidden]",
+                      !reducedMotion && "group-hover:scale-[1.03]"
+                    )}
                   />
                   {/* Step badge overlay */}
                   <div

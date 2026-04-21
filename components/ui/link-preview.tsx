@@ -17,6 +17,7 @@ type LinkPreviewProps = {
   height?: number;
   quality?: number;
   layout?: string;
+  disabled?: boolean;
 } & (
   | { isStatic: true; imageSrc: string }
   | { isStatic?: false; imageSrc?: never }
@@ -31,7 +32,16 @@ export const LinkPreview = ({
   quality = 50,
   isStatic = false,
   imageSrc = "",
+  disabled = false,
 }: LinkPreviewProps) => {
+  if (disabled) {
+    return (
+      <a href={url} className={cn("text-foreground", className)}>
+        {children}
+      </a>
+    );
+  }
+
   let src;
   if (!isStatic) {
     const params = new URLSearchParams({

@@ -9,12 +9,16 @@ export function PointerHighlight({
   pointerClassName,
   containerClassName,
   bgOpacity = 0,
+  disabled = false,
+  animationDelay = 0,
 }: {
   children: React.ReactNode;
   rectangleClassName?: string;
   pointerClassName?: string;
   containerClassName?: string;
   bgOpacity?: number;
+  disabled?: boolean;
+  animationDelay?: number;
 }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
@@ -49,7 +53,7 @@ export function PointerHighlight({
       ref={containerRef}
     >
       {children}
-      {dimensions.width > 0 && dimensions.height > 0 && (
+      {!disabled && dimensions.width > 0 && dimensions.height > 0 && (
         <motion.div
           className="pointer-events-none absolute inset-0 z-0"
           initial={{ opacity: 0, scale: 0.95, originX: 0, originY: 0 }}
@@ -75,6 +79,7 @@ export function PointerHighlight({
             transition={{
               duration: 1,
               ease: "easeInOut",
+              delay: animationDelay,
             }}
           />
           <motion.div
@@ -89,9 +94,10 @@ export function PointerHighlight({
               rotate: -90,
             }}
             transition={{
-              opacity: { duration: 0.1, ease: "easeInOut" },
+              opacity: { duration: 0.1, ease: "easeInOut", delay: animationDelay },
               duration: 1,
               ease: "easeInOut",
+              delay: animationDelay,
             }}
           >
             <Pointer
