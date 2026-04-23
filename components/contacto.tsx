@@ -86,16 +86,16 @@ export default function ContactForm() {
 
   return (
     <motion.section
-      className="relative min-h-screen font-inter px-6 pt-30 pb-32"
+      className="relative min-h-screen font-inter px-6 pt-32 md:pt-32 pb-32"
       initial="hidden"
       animate="visible"
     >
       <motion.div className="text-center mb-30" variants={fadeInUp} custom={0}>
-        <h1 className="text-contact-ttl text-5xl md:text-6xl font-semibold mb-2 text-balance">
+        <h1 className="text-contact-ttl text-4xl md:text-6xl font-semibold mb-2 text-balance">
           Contáctanos
         </h1>
 
-        <p className="text-contact-desc text-lg text-balance max-w-1xl mx-auto">
+        <p className="text-contact-desc text-base text-balance max-w-1xl mx-auto">
           Si necesitas soporte, deseas colaborar o tienes preguntas sobre la
           plataforma, estámos disponible para ayudarte.
         </p>
