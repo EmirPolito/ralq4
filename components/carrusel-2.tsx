@@ -96,7 +96,7 @@ function Feature() {
             </div>
 
             <div className="flex gap-3 flex-col items-center lg:items-start">
-              <h2 className="text-carrusel2-ttl text-balance text-3xl font-bold leading-[1.1] tracking-tight md:text-4xl lg:text-6xl">
+              <h2 className="text-carrusel2-ttl text-balance text-3xl font-semibold leading-[1.1] tracking-tight md:text-4xl lg:text-6xl">
                 Sumérgete en la
                 <br />
                 Realidad Aumentada

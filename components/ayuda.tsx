@@ -99,7 +99,7 @@ export default function ContenidoBlog() {
           transition={{ duration: 0.7, ease: "easeOut" }}
           className="text-center mb-30"
         >
-          <h1 className="text-ayuda-ttl text-5xl md:text-6xl font-bold  mb-3 text-balance">
+          <h1 className="text-ayuda-ttl text-5xl md:text-6xl font-semibold mb-3 text-balance">
             Centro de Ayuda
           </h1>
 

@@ -68,7 +68,7 @@ export default function Preguntas1() {
             delay={0.1}
             className="@xl:sticky @xl:top-24 lg:w-96 shrink-0"
           >
-            <h2 className="text-preg-ttl font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight text-center @xl:text-left">
+            <h2 className="text-preg-ttl font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight text-center @xl:text-left">
               Preguntas Frecuentes
             </h2>
 

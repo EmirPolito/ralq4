@@ -57,7 +57,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           whileInView={staticAnimate}
           transition={staticTransition}
           viewport={{ once: true }}
-          className="text-nos-ttl text-5xl md:text-6xl font-bold mb-3 text-balance"
+          className="text-nos-ttl text-5xl md:text-6xl font-semibold mb-3 text-balance"
         >
           Sobre Nosotros
         </motion.h1>
@@ -81,12 +81,20 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       {/* TIMELINE */}
       <div
         ref={ref}
-        className="relative max-w-7xl mx-auto pb-20 space-y-16 md:space-y-27"
+        className="relative max-w-7xl mx-auto pb-20 space-y-20 md:space-y-44"
       >
         {data.map((item, index) => (
-          <div
+          <motion.div
             key={index}
-            className="flex justify-start pt-10 md:pt-0 md:gap-10"
+            initial={reducedMotion ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+            whileInView={reducedMotion ? { opacity: 1, y: 0 } : { opacity: 1, y: 0 }}
+            transition={
+              reducedMotion
+                ? { duration: 0 }
+                : { duration: 0.7, ease: "easeOut", delay: index * 0.05 }
+            }
+            viewport={{ once: true, margin: "-80px" }}
+            className="flex justify-start pt-14 md:pt-12 md:gap-10"
           >
             {/* FECHA */}
             <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
@@ -107,7 +115,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
               <div className="font-normal">{item.content}</div>
             </div>
-          </div>
+          </motion.div>
         ))}
 
         {/* LÍNEA */}

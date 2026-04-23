@@ -8,7 +8,6 @@ import { Carousel } from "@/components/carrusel-1";
 import PinCardsSection from "@/components/3d-pin-demo";
 import TresPasosLaboratorio from "@/components/tres-secciones";
 import { Feature } from "@/components/carrusel-2";
-import ImgCursorDemo from "@/components/img-cursor";
 import ImgCursorDemo2 from "@/components/img-cursor-2";
 import Preguntas1 from "@/components/preguntas-frecuentes";
 import Footer from "@/components/footer";
@@ -20,7 +19,7 @@ export default function HeroSection() {
         {/* HERO */}
         <Hero />
 
-        {/* Carrusel */}
+        {/* Carrusel 1*/}
         <Carousel />
 
         {/* 3 tarjetas pin */}
@@ -34,9 +33,7 @@ export default function HeroSection() {
         {/* 3 pasos para laboratorio completo*/}
         <TresPasosLaboratorio />
 
-        {/* Comentario*/}
-        <ImgCursorDemo />
-
+        {/* Tecnologias utilizadas*/}
         <ImgCursorDemo2 />
 
         {/*Preguntas frecuentes 2*/}
@@ -49,28 +46,30 @@ export default function HeroSection() {
   );
 }
 
-// import { LandingAccordionItem } from "@/components/despliegue-img";
+// import { LandingAccordionItem } from "@/components/descartados/despliegue-img";
 // {/* Despliegue de imagen  */}
 // {/* <LandingAccordionItem /> */}
 
-//import GalleryHoverCarousel from "@/components/img-carrusel";
+//import GalleryHoverCarousel from "@/components/descartados/img-carrusel";
 // {/* Carrete de imagenes*/}
 // {/* <GalleryHoverCarousel /> */}
 
-// import { IzquierdaDerecha } from "@/components/izquierda-derecha";
+// import { IzquierdaDerecha } from "@/components/descartados/izquierda-derecha";
 // {/* Izquierda y derecha */}
 // {/* <IzquierdaDerecha /> */}
 
-// import WobbleCardSection from "@/components/wobble-card";
+// import WobbleCardSection from "@/components/descartados/wobble-card";
 // {/* Rectangulo y cuadro 2*/}
 // <WobbleCardSection />;
 
-// import SeccionesDemo from "@/components/secciones";
+// import SeccionesDemo from "@/components/descartados/secciones";
 // {/* 4 secciones */}
 // <SeccionesDemo />
 
-// import Preguntas2 from "@/components/preguntas-frecuentes copy";
-{
-  /*Preguntas frecuentes*/
-}
+// import Preguntas2 from "@/components/descartados/preguntas-frecuentes copy";
+// {/*Preguntas frecuentes*/}
 // <Preguntas2 />
+
+//import ImgCursorDemo from "@/components/descartados/img-cursor";
+// {/* Comentario*/}
+// <ImgCursorDemo />

@@ -125,7 +125,7 @@ export default function Footer() {
               <ul className="space-y-2">
                 <li>
                   <Link
-                    href="/privacy-policy"
+                    href="/politica-privacidad"
                     className="text-footer-pag hover:text-footer-pag-hov"
                   >
                     Politica de privacidad
@@ -133,10 +133,10 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/tos"
+                    href="/terminos-condiciones"
                     className="text-footer-pag hover:text-footer-pag-hov"
                   >
-                    Terminos y servicios
+                    Terminos y condiciones
                   </Link>
                 </li>
               </ul>

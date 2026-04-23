@@ -28,7 +28,7 @@ export function Hero() {
           <div className="mx-auto w-full max-w-7xl pb-4 lg:pb-40 sm:pb-20 md:pb-32">
             <ScrollAnimation direction="up" delay={0.2}>
               <div className="flex flex-col items-start text-left lg:items-start lg:text-left">
-                <h1 className="text-hero-ttl text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold leading-tight tracking-tight">
+                <h1 className="text-hero-ttl text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-semibold leading-tight tracking-tight">
                   Instrumentos al
                   <br />
                   alcance de tus manos
