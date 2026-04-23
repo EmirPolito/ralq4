@@ -1,11 +1,21 @@
-# RALQ — Realidad Aumentada para Laboratorios de Química
+<div align="center">
+ <h1> RALQ — Realidad Aumentada para Laboratorios de Química</h1>
+ </div>
+
+
+<div align="center">
 
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)](https://nextjs.org/) [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38bdf8?logo=tailwindcss)](https://tailwindcss.com/) [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/) [![Clerk](https://img.shields.io/badge/Clerk-Auth-6c47ff?logo=clerk&logoColor=white)](https://clerk.com/) [![Framer Motion](https://img.shields.io/badge/Framer_Motion-latest-ff0055?logo=framer&logoColor=white)](https://www.framer.com/motion/) [![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?logo=vercel)](https://vercel.com/) [![Three.js](https://img.shields.io/badge/Three.js-3D_Engine-black?logo=three.js)](https://threejs.org/) [![A-Frame](https://img.shields.io/badge/A--Frame-AR_Framework-ef2d5e)](https://aframe.io/) [![PubChem](https://img.shields.io/badge/PubChem-Molecular_Data-0066cc)](https://pubchem.ncbi.nlm.nih.gov/) [![Khan Academy](https://img.shields.io/badge/Khan_Academy-Recursos_Educativos-14bf96)](https://www.khanacademy.org/)
+
+</div>
+  <br />
 
 Una plataforma educativa de vanguardia construida con **Next.js**, diseñada para transformar la enseñanza de la química mediante experiencias visuales inmersivas, modelos 3D interactivos y realidad aumentada.
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/3a812062-6e7c-4ab6-98b8-fd33d02eb491" alt="RALQ Hero Section" width="800" />
+  <img width="1600" height="728" alt="da2b2c7e-595d-4e05-953f-6292c4adf612" src="https://github.com/user-attachments/assets/3611f1a9-df49-425c-84fe-79c41c34f6f0"/>
+    <br />
+  <img width="1600" height="724" alt="9011083d-3ada-4fe1-baf9-13cbd26565a6" src="https://github.com/user-attachments/assets/b059f6f5-3b02-45c5-ac82-e8096a215d90"/>
   <br />
   <p><i>https://ralq-4-next-js.vercel.app/</i></p>
 </div>
@@ -34,47 +44,6 @@ Una plataforma educativa de vanguardia construida con **Next.js**, diseñada par
 - **App Router + Turbopack**: Arquitectura de Next.js 16 para máxima velocidad de carga.
 - **Optimización de Imágenes**: `next/image` con carga diferida para recursos de alta resolución.
 - **Vercel Analytics**: Métricas de rendimiento anónimas integradas.
-
----
-
-## ⚙️ Configuración del Proyecto
-
-### 1. Requisitos Previos
-
-- Node.js 18+
-- pnpm / npm / yarn
-
-### 2. Instalación
-
-```bash
-git clone https://github.com/EmirPolito/RALQ-4-Next.js.git
-cd RALQ-4-Next.js
-pnpm install
-```
-
-### 3. Variables de Entorno
-
-Crea un archivo `.env.local` en la raíz con las siguientes claves:
-
-| Variable                            | Descripción                                  |
-| :---------------------------------- | :------------------------------------------- |
-| `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` | Clave pública de tu proyecto en Clerk        |
-| `CLERK_SECRET_KEY`                  | Clave secreta de Clerk (solo servidor)       |
-| `NEXT_PUBLIC_CLERK_SIGN_IN_URL`     | `/login`                                     |
-| `NEXT_PUBLIC_CLERK_SIGN_UP_URL`     | `/registro`                                  |
-| `EMAIL_USER` / `EMAIL_PASS`         | Configuración para el formulario de contacto |
-
-### 4. Desarrollo local
-
-```bash
-pnpm run dev
-```
-
----
-
-## ☁️ Despliegue
-
-El proyecto está desplegado en **Vercel**. Si deseas desplegarlo en otro servidor, configura las variables de entorno mencionadas arriba en el panel de control de Vercel antes del despliegue para evitar errores en los componentes de autenticación.
 
 ---
 
