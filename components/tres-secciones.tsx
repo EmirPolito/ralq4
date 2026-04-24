@@ -30,7 +30,8 @@ export default function TresPasosLaboratorio() {
       varMiniTxt: "text-tres-mini-txt",
       varTtl: "text-tres-ttl",
       varDesc: "text-tres-desc",
-      varMarcos: "bg-tres-caracteristicas-bg border-tres-caracteristicas-border",
+      varMarcos:
+        "bg-tres-caracteristicas-bg border-tres-caracteristicas-border",
       varMarcosTxt: "text-tres-caracteristicas-txt",
       varPuntos: "bg-tres-caracteristicas-puntos",
       varCursor: "text-tres-01-cursor",
@@ -52,7 +53,8 @@ export default function TresPasosLaboratorio() {
       varMiniTxt: "text-tres-mini-txt",
       varTtl: "text-tres-ttl",
       varDesc: "text-tres-desc",
-      varMarcos: "bg-tres-caracteristicas-bg border-tres-caracteristicas-border",
+      varMarcos:
+        "bg-tres-caracteristicas-bg border-tres-caracteristicas-border",
       varMarcosTxt: "text-tres-caracteristicas-txt",
       varPuntos: "bg-tres-caracteristicas-puntos",
       varCursor: "text-tres-02-cursor",
@@ -74,7 +76,8 @@ export default function TresPasosLaboratorio() {
       varMiniTxt: "text-tres-mini-txt",
       varTtl: "text-tres-ttl",
       varDesc: "text-tres-desc",
-      varMarcos: "bg-tres-caracteristicas-bg border-tres-caracteristicas-border",
+      varMarcos:
+        "bg-tres-caracteristicas-bg border-tres-caracteristicas-border",
       varMarcosTxt: "text-tres-caracteristicas-txt",
       varPuntos: "bg-tres-caracteristicas-puntos",
       varCursor: "text-tres-03-cursor",
@@ -193,14 +196,6 @@ export default function TresPasosLaboratorio() {
                       !reducedMotion && "group-hover:scale-[1.03]",
                     )}
                   />
-                  {/* Step badge overlay */}
-                  <div
-                    className={`absolute top-4 left-4 rounded-xl ${step.accentColor} px-3 py-1.5 shadow-sm`}
-                  >
-                    <p className="text-[10px] font-bold uppercase tracking-widest text-white">
-                      {step.tag}
-                    </p>
-                  </div>
                 </div>
               </PointerHighlight>
             </motion.div>

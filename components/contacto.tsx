@@ -5,8 +5,10 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useTheme } from "next-themes";
-import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import { CheckCircle2, AlertCircle, X, Loader2 } from "lucide-react";
+import { AnimatePresence, motion } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 export default function ContactForm() {
   const t = useTranslations("contacto");
@@ -15,8 +17,20 @@ export default function ContactForm() {
   const [message, setMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [loadingText, setLoadingText] = useState(t("sending"));
-
   const { resolvedTheme } = useTheme();
+  const [notification, setNotification] = useState<{
+    show: boolean;
+    type: "success" | "error";
+    message: string;
+  }>({ show: false, type: "success", message: "" });
+
+  const showNotification = (type: "success" | "error", message: string) => {
+    setNotification({ show: true, type, message });
+    // Auto hide after 5 seconds
+    setTimeout(() => {
+      setNotification((prev) => ({ ...prev, show: false }));
+    }, 5000);
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -38,16 +52,16 @@ export default function ContactForm() {
       const data = await res.json();
 
       if (data.ok) {
-        alert(t("successMsg"));
+        showNotification("success", t("successMsg"));
         setName("");
         setEmail("");
         setMessage("");
       } else {
-        alert(t("errorMsg"));
+        showNotification("error", t("errorMsg"));
       }
     } catch (error) {
       console.log(error);
-      alert(t("connectionError"));
+      showNotification("error", t("connectionError"));
     }
 
     setIsLoading(false);
@@ -91,6 +105,74 @@ export default function ContactForm() {
       initial="hidden"
       animate="visible"
     >
+      <AnimatePresence>
+        {notification.show && (
+          <motion.div
+            initial={{ opacity: 0, y: -20, x: "-50%", scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, x: "-50%", scale: 1 }}
+            exit={{ opacity: 0, y: -20, x: "-50%", scale: 0.95 }}
+            className="fixed top-24 left-1/2 z-[200] w-[90%] max-w-md"
+          >
+            <div
+              className={cn(
+                "relative overflow-hidden rounded-2xl border p-4 shadow-2xl backdrop-blur-xl",
+                notification.type === "success"
+                  ? "bg-emerald-500/10 border-emerald-500/20 text-emerald-500"
+                  : "bg-red-500/10 border-red-500/20 text-red-500"
+              )}
+            >
+              {/* Progress Bar */}
+              <motion.div
+                initial={{ width: "100%" }}
+                animate={{ width: "0%" }}
+                transition={{ duration: 5, ease: "linear" }}
+                className={cn(
+                  "absolute bottom-0 left-0 h-1",
+                  notification.type === "success"
+                    ? "bg-emerald-500"
+                    : "bg-red-500"
+                )}
+              />
+
+              <div className="flex items-start gap-4">
+                <div
+                  className={cn(
+                    "flex h-10 w-10 shrink-0 items-center justify-center rounded-xl",
+                    notification.type === "success"
+                      ? "bg-emerald-500/20"
+                      : "bg-red-500/20"
+                  )}
+                >
+                  {notification.type === "success" ? (
+                    <CheckCircle2 className="h-6 w-6" />
+                  ) : (
+                    <AlertCircle className="h-6 w-6" />
+                  )}
+                </div>
+                <div className="flex-1 pt-1">
+                  <p className="text-sm font-semibold text-foreground">
+                    {notification.type === "success"
+                      ? "¡Éxito!"
+                      : "Hubo un problema"}
+                  </p>
+                  <p className="mt-1 text-xs text-foreground/70 leading-relaxed">
+                    {notification.message}
+                  </p>
+                </div>
+                <button
+                  onClick={() =>
+                    setNotification((prev) => ({ ...prev, show: false }))
+                  }
+                  className="group -mr-1 rounded-lg p-1.5 transition-colors hover:bg-foreground/10 cursor-pointer"
+                >
+                  <X className="h-4 w-4 text-foreground/50 transition-colors group-hover:text-foreground" />
+                </button>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       <motion.div className="text-center mb-30" variants={fadeInUp} custom={0}>
         <h1 className="text-contact-ttl text-4xl md:text-6xl font-semibold mb-2 text-balance">
           {t("title")}
@@ -196,7 +278,14 @@ export default function ContactForm() {
                   transition-none
                   flex items-center justify-center"
               >
-                {isLoading ? loadingText : t("send")}
+                {isLoading ? (
+                  <div className="flex items-center gap-2">
+                    <Loader2 className="h-4 w-4 animate-spin" />
+                    <span>{loadingText}</span>
+                  </div>
+                ) : (
+                  t("send")
+                )}
               </Button>
             </motion.div>
           </form>
