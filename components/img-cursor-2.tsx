@@ -61,10 +61,11 @@ export default function ImgCursorDemo2() {
           viewport={{ once: true }}
           className="mb-12 text-center"
         >
-          <h2 className="text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-imgcursor-ttl md:text-5xl lg:text-6xl">
-            {t("titleLine1")}
+          {/* Título — "Construido sobre / las mejores tecnologías" */}
+          <h2 className="text-balance text-4xl font-semibold leading-[1.1] tracking-tight md:text-5xl lg:text-6xl">
+            <span className="text-titulos">{t("titleLine1")}</span>
             <br />
-            {t("titleLine2")}
+            <span className="text-imgcursor-ttl">{t("titleLine2")}</span>
           </h2>
         </motion.div>
 

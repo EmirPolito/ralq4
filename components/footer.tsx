@@ -11,6 +11,7 @@ export default function Footer() {
     <footer className="py-17 px-5 md:px-10 z-50 bg-[var(--footer-bg)] border-t border-border">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between">
+          {/* Logo + tagline + copyright */}
           <div className="mb-12 md:mb-13">
             <Link href="/" className="mr-4 flex items-center gap-2 lg:mr-6">
               <span className="bg font-bold lg:inline-block">
@@ -38,6 +39,7 @@ export default function Footer() {
               © {new Date().getFullYear()} {t("copyright")}
             </p>
           </div>
+          {/* Columnas de links — Páginas / Redes / Legales */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div>
               <h3 className="text-footer-ttl font-semibold mb-4">{t("sections.pages")}</h3>
@@ -121,6 +123,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
+        {/* Wordmark grande RALQ con degradado (solo desktop) */}
         <div className="w-full flex flex-col mt-10 md:mt-9.5 items-center justify-center">
           <h1
             className="hidden md:block bg-clip-text text-center text-3xl md:text-5xl lg:text-[14rem] font-bold tracking-widest text-transparent bg-gradient-to-b from-footer-ralq to-footer-ralq select-none"

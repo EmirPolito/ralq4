@@ -64,7 +64,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     : { duration: 0.7, ease: "easeOut" };
 
   return (
-    <div className="w-full md:px-10" ref={containerRef}>
+    <div className="w-full md:px-10 pb-18.5" ref={containerRef}>
       {/* TÍTULO */}
       <div className="max-w-7xl mx-auto pt-32 pb-12 md:pt-32 md:pb-12 px-4 md:px-8 lg:px-10 text-center">
         <motion.h1

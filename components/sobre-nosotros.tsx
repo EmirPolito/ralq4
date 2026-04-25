@@ -3,6 +3,7 @@
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
 import { useTranslations } from "next-intl";
+import Footer from "@/components/footer";
 
 export function SobreNosotros() {
   const t = useTranslations("nosotros");
@@ -97,6 +98,7 @@ export function SobreNosotros() {
   return (
     <div className="w-full">
       <Timeline data={data} />
+      <Footer />
     </div>
   );
 }

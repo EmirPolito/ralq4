@@ -101,7 +101,7 @@ export default function ContactForm() {
 
   return (
     <motion.section
-      className="relative min-h-screen font-inter px-6 pt-32 md:pt-32 pb-32"
+      className="relative min-h-screen font-inter px-5 pt-32 md:pt-32 pb-20"
       initial="hidden"
       animate="visible"
     >
@@ -118,7 +118,7 @@ export default function ContactForm() {
                 "relative overflow-hidden rounded-2xl border p-4 shadow-2xl backdrop-blur-xl",
                 notification.type === "success"
                   ? "bg-emerald-500/10 border-emerald-500/20 text-emerald-500"
-                  : "bg-red-500/10 border-red-500/20 text-red-500"
+                  : "bg-red-500/10 border-red-500/20 text-red-500",
               )}
             >
               {/* Progress Bar */}
@@ -130,7 +130,7 @@ export default function ContactForm() {
                   "absolute bottom-0 left-0 h-1",
                   notification.type === "success"
                     ? "bg-emerald-500"
-                    : "bg-red-500"
+                    : "bg-red-500",
                 )}
               />
 
@@ -140,7 +140,7 @@ export default function ContactForm() {
                     "flex h-10 w-10 shrink-0 items-center justify-center rounded-xl",
                     notification.type === "success"
                       ? "bg-emerald-500/20"
-                      : "bg-red-500/20"
+                      : "bg-red-500/20",
                   )}
                 >
                   {notification.type === "success" ? (
@@ -173,6 +173,7 @@ export default function ContactForm() {
         )}
       </AnimatePresence>
 
+      {/* Título de sección — contacto.title + contacto.description */}
       <motion.div className="text-center mb-30" variants={fadeInUp} custom={0}>
         <h1 className="text-contact-ttl text-4xl md:text-6xl font-semibold mb-2 text-balance">
           {t("title")}
@@ -197,13 +198,12 @@ export default function ContactForm() {
           variants={fadeInUp}
           custom={0.1}
         >
+          {/* Título del formulario — contacto.formTitle + contacto.formSubtitle */}
           <h1 className="text-contact-ttl text-2xl font-semibold mb-0">
             {t("formTitle")}
           </h1>
 
-          <p className="text-contact-desc mb-7">
-            {t("formSubtitle")}
-          </p>
+          <p className="text-contact-desc mb-7.5">{t("formSubtitle")}</p>
 
           <form onSubmit={handleSubmit} className=" space-y-6">
             <motion.div variants={fadeInUp} custom={0.2}>

@@ -34,13 +34,13 @@ export default function ContenidoBlog() {
     estado: "/estado",
   };
 
-  const rows: (typeof itemIds[number])[][] = [];
+  const rows: (typeof itemIds)[number][][] = [];
   for (let i = 0; i < itemIds.length; i += 3) {
-    rows.push(itemIds.slice(i, i + 3) as unknown as (typeof itemIds[number])[]);
+    rows.push(itemIds.slice(i, i + 3) as unknown as (typeof itemIds)[number][]);
   }
 
   return (
-    <div className="w-full bg-background pt-32 md:pt-32 pb-29.5 px-4 transition-colors">
+    <div className="w-full bg-background pt-32 md:pt-32 pb-28.5 px-4 transition-colors">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <motion.div
@@ -49,10 +49,12 @@ export default function ContenidoBlog() {
           transition={{ duration: 0.7, ease: "easeOut" }}
           className="text-center mb-20 md:mb-30"
         >
+          {/* Título — ayuda.title */}
           <h1 className="text-ayuda-ttl text-4xl md:text-6xl font-semibold mb-3 text-balance">
             {t("title")}
           </h1>
 
+          {/* Descripción — ayuda.description */}
           <p className="text-ayuda-desc text-base text-balance max-w-1xl mx-auto">
             {t("description")}
           </p>
@@ -82,6 +84,7 @@ export default function ContenidoBlog() {
                   onMouseLeave={() => setHoveredId(null)}
                 >
                   <div className="mb-2 md:mb-8">
+                  {/* Título de cada item — ayuda.items.[id].title */}
                     <h2 className="text-ayuda-preg-ttl text-2xl font-semibold mb-3">
                       {t(`items.${id}.title`)}
                     </h2>

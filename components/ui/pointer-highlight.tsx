@@ -62,7 +62,7 @@ export function PointerHighlight({
         >
           <motion.div
             className={cn(
-              "absolute inset-0 border border-neutral-800 dark:border-neutral-200 bg-current will-change-transform",
+              "absolute inset-0 border border-neutral-800 dark:border-neutral-200 bg-current",
               rectangleClassName,
             )}
             style={{ opacity: bgOpacity }}

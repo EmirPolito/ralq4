@@ -33,16 +33,19 @@ export function Hero() {
                 className="flex flex-col items-start text-left lg:items-start lg:text-left"
                 style={{ willChange: "transform, opacity" }}
               >
+                {/* Título principal — hero.titleLine1 + hero.titleLine2 */}
                 <h1 className="text-hero-ttl text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-semibold leading-tight tracking-tight">
                   {t("titleLine1")}
                   <br />
                   {t("titleLine2")}
                 </h1>
 
+                {/* Descripción — hero.description */}
                 <p className="text-hero-desc w-full sm:max-w-md md:max-w-2xl text-sm sm:text-lg md:text-xl mt-2 leading-relaxed">
                   {t("description")}
                 </p>
 
+                {/* Botón CTA — hero.cta → /demo */}
                 <div className="mt-8 flex items-center justify-start gap-4">
                   <Button
                     asChild

@@ -1,7 +1,6 @@
 "use client";
 
-import { useRef } from "react";
-import { motion, useScroll, useTransform } from "motion/react";
+import { motion } from "motion/react";
 import Image from "next/image";
 import { PointerHighlight } from "@/components/ui/pointer-highlight";
 import { cn } from "@/lib/utils";
@@ -91,17 +90,12 @@ export default function TresPasosLaboratorio() {
     >
       {/* Section heading — left-anchored, not centered */}
       <div className="mx-auto max-w-[1400px]">
-        <div className="mb-7 mx-auto max-w-4xl text-center md:mb-5">
-          {/* <h2 className="text-balance text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.1] tracking-tight text-foreground">
-            Tres pasos.
-            <br />
-            <span className="text-muted-foreground/60">
-              Un laboratorio completo.
-            </span>
-          </h2> */}
-          {/* <p className="text-tarjetas-desc2 mt-4 max-w-2xl mx-auto text-base md:text-lg text-center leading-relaxed">
-            Paso a paso para explorar la química de manera interactiva.
-          </p> */}
+        <div className="mb-3 mx-auto max-w-4xl text-center md:mb-0">
+          {/* Título — tresPasos.titleLine1 + tresPasos.titleLine2 */}
+          <h2 className="text-titulos font-semibold leading-[1.15] tracking-tight text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+            <span className="block">{t("titleLine1")}</span>
+            <span className="block text-hero-ttl">{t("titleLine2")}</span>
+          </h2>
         </div>
 
         {/* Alternating steps */}
@@ -109,29 +103,26 @@ export default function TresPasosLaboratorio() {
           {steps.map((step, index) => (
             <motion.div
               key={`${step.step}-${reducedMotion}`}
-              initial={
-                reducedMotion ? { opacity: 1 } : { opacity: 0 }
-              }
-              whileInView={
-                reducedMotion ? { opacity: 1 } : { opacity: 1 }
-              }
+              initial={reducedMotion ? { y: 0 } : { y: 30 }}
+              whileInView={reducedMotion ? { y: 0 } : { y: 0 }}
               transition={
                 reducedMotion
                   ? { duration: 0 }
                   : {
-                      duration: 0.6,
+                      duration: 0.7,
                       ease: [0.16, 1, 0.3, 1],
-                      delay: index * 0.1,
+                      delay: index * 0.08,
                     }
               }
-              viewport={{ once: true, margin: "-50px" }}
+              viewport={{ once: true, margin: "-80px" }}
               className={cn(
-                "group relative grid grid-cols-1 gap-12 py-12 md:py-16 lg:py-24 lg:grid-cols-2 lg:gap-24 lg:gap-y-0 will-change-[transform,opacity]",
+                "group relative grid grid-cols-1 gap-12 py-12 md:py-16 lg:pt-10 lg:pb-24 lg:grid-cols-2 lg:gap-24 lg:gap-y-0",
                 step.align === "right" &&
                   "lg:[&>*:first-child]:order-2 lg:[&>*:last-child]:order-1",
               )}
             >
               {/* Text side */}
+              {/* Texto lado izquierdo: número, tag, título, descripción, pills */}
               <div className="flex flex-col justify-center">
                 <div className="flex items-start gap-6">
                   {/* Step number — large */}
@@ -176,6 +167,7 @@ export default function TresPasosLaboratorio() {
               </div>
 
               {/* Visual side */}
+              {/* Imagen lado derecho con PointerHighlight y hover scale */}
               <PointerHighlight
                 rectangleClassName={cn(
                   "rounded-2xl border",
@@ -195,7 +187,8 @@ export default function TresPasosLaboratorio() {
                     width={800}
                     height={500}
                     quality={85}
-                    priority={index === 0}
+                    priority={index <= 1}
+                    loading={index <= 1 ? "eager" : "lazy"}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
                     className={cn(
                       "h-full w-full object-cover transition duration-700 will-change-transform dark:opacity-90 [transform:translateZ(0)] [backface-visibility:hidden]",

@@ -13,6 +13,8 @@
     "cta": "Ver demo"
   },
   "tresPasos": {
+    "titleLine1": "Tres pasos.",
+    "titleLine2": "Un laboratorio completo.",
     "step1": {
       "tag": "Catálogo",
       "title": "Elige tu molécula",
@@ -242,6 +244,8 @@
     ]
   },
   "pinCards": {
+    "sectionLine1": "Áreas de",
+    "sectionLine2": "Exploración Científica",
     "sectionTitle": "Áreas de Exploración Científica",
     "sectionDesc": "La plataforma organiza el contenido en entornos que muestran el uso de la química.",
     "pin1": {
