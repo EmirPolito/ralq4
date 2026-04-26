@@ -55,15 +55,15 @@ Una plataforma educativa de vanguardia construida con **Next.js**, diseñada par
 
 ## 👨‍💻 Desarrolladores
 
-**Emir Polito** — \_Desarrollador full stack
+**Emir Polito** - Desarrollador full stack.
 
 - GitHub: [@EmirPolito](https://github.com/EmirPolito)
 - LinkedIn: [Emir Polito](https://www.linkedin.com/in/emir-polito-g/)
 
-**Irving Esteban Méndez** — \_Diseñador UI/UX designer
+**Irving Esteban Méndez** - Diseñador UI/UX designer.
 
 - GitHub: [@IrvingEsteban](https://github.com/1RV1N6-M3ND3Z)
 
-**Cristian Daniel Barraza** — \_Diseñador de experiencia de usuario.
+**Cristian Daniel Barraza** - Diseñador de experiencia de usuario.
 
 - GitHub: [@CristianDanielBarraza](https://github.com/CristianDanielBarraza)
