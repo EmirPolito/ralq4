@@ -4,11 +4,13 @@
 @custom-variant dark (&:is(.dark *));
 @custom-variant colorblind (&:is(.colorblind *));
 
+
 :root {
   /* General */
   --bg-fondo: #ffffff;
   --titulos: #000000;
   --descripciones: #2c2a2a;
+  --clerk-input-border: #d1d1d1;
 
   /* Header */
   --header-login-bg: transparent;
@@ -442,6 +444,8 @@
    Contacto
 ========================= */
   --contact-ttl: #ffffff;
+  --clerk-input-border: #1a1a1a;
+  --clerk-border-fixed: #262626;
   --contact-desc: #dddddd;
 
   --contact-card-bg: #0a0a0a;
@@ -779,6 +783,7 @@
   --bg-fondo: #ffffff;
   --titulos: #155dfc;
   --descripciones: #616161;
+  --clerk-input-border: rgba(21, 93, 252, 0.6);
 
   /* Content Properties */
   --ttl: #155dfc;
@@ -961,7 +966,9 @@
   --contact-input-text: #155dfc;
   --contact-input-desc: #2c2a2a;
   --contact-input-bg: #ffffff;
-  --contact-input-border: #e2e8e3;
+  --contact-input-border: #e1e1e1;
+  --clerk-input-border: #e1e1e1;
+  --clerk-border-fixed: #e1e1e1;
   --contact-input-border-hover: #155dfc;
 
   --contact-btn-bg: #155dfc;
@@ -1001,6 +1008,7 @@
   --bg-fondo: #000000;
   --titulos: #155dfc;
   --descripciones: #dddddd;
+  --clerk-input-border: rgba(21, 93, 252, 0.6);
 
   /* Content Properties */
   --ttl: #155dfc;
@@ -1223,6 +1231,7 @@
   --bg-fondo: #ffffff;
   --titulos: #8a0194;
   --descripciones: #2c2a2a;
+  --clerk-input-border: rgba(138, 1, 148, 0.6);
 
   /* Content Properties */
   --ttl: #8a0194;
@@ -1446,6 +1455,7 @@
   --bg-fondo: #000000;
   --titulos: #a800b7;
   --descripciones: #dddddd;
+  --clerk-input-border: rgba(138, 1, 148, 0.6);
 
   /* Content Properties */
   --ttl: #a800b7;
@@ -1669,6 +1679,7 @@
   --bg-fondo: #ffffff;
   --titulos: #fdc700;
   --descripciones: #2c2a2a;
+  --clerk-input-border: rgba(253, 199, 0, 0.6);
 
   /* Content Properties */
   --ttl: #fdc700;
@@ -1892,6 +1903,7 @@
   --bg-fondo: #000000;
   --titulos: #fdc700;
   --descripciones: #dddddd;
+  --clerk-input-border: rgba(253, 199, 0, 0.6);
 
   /* Content Properties */
   --ttl: #fdc700;
@@ -2116,6 +2128,7 @@
   --titulos: #f77817;
   --descripciones: #2c2a2a;
   --primary: #f77817;
+  --clerk-input-border: rgba(247, 120, 23, 0.6);
 
   /* Content Properties */
   --ttl: #f77817;
@@ -2340,6 +2353,7 @@
   --titulos: #ff8400;
   --descripciones: #dddddd;
   --primary: #ff8400;
+  --clerk-input-border: rgba(247, 120, 23, 0.6);
 
   /* Content Properties */
   --ttl: #ff8400;
@@ -2523,6 +2537,7 @@
   --contact-input-desc: #ffffff;
   --contact-input-bg: #100f0f;
   --contact-input-border: #333333;
+  --clerk-input-border: #333333;
   --contact-input-border-hover: #ff8400;
 
   --contact-btn-bg: #e17100;
@@ -2563,6 +2578,7 @@
   --titulos: #ec003f;
   --descripciones: #616161;
   --primary: #ec003f;
+  --clerk-input-border: rgba(236, 0, 63, 0.6);
 
   /* Content Properties */
   --ttl: #ec003f;
@@ -2786,6 +2802,7 @@
   --titulos: #ec003f;
   --descripciones: #dddddd;
   --primary: #ec003f;
+  --clerk-input-border: rgba(236, 0, 63, 0.6);
 
   /* Content Properties */
   --ttl: #ec003f;
@@ -2969,6 +2986,7 @@
   --contact-input-desc: #ffffff;
   --contact-input-bg: #100f0f;
   --contact-input-border: #333333;
+  --clerk-input-border: #333333;
   --contact-input-border-hover: #ec003f;
 
   --contact-btn-bg: #ec003f;
@@ -3009,6 +3027,7 @@
   --titulos: #5ea500;
   --descripciones: #2c2a2a;
   --primary: #5ea500;
+  --clerk-input-border: rgba(94, 165, 0, 0.6);
 
   /* Content Properties */
   --ttl: #5ea500;
@@ -3232,6 +3251,7 @@
   --titulos: #7ccf00;
   --descripciones: #dddddd;
   --primary: #7ccf00;
+  --clerk-input-border: rgba(124, 207, 0, 0.6);
 
   /* Content Properties */
   --ttl: #7ccf00;
@@ -3695,4 +3715,14 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Fix for browser autofill background color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: inherit !important;
+  transition: background-color 5000s ease-in-out 0s;
+  caret-color: currentColor;
 }

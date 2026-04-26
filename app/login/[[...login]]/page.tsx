@@ -12,10 +12,13 @@ export default function LoginPage() {
             colorText: "var(--foreground)",
           },
           elements: {
-            card: "w-full max-w-[600px] border border-[color:var(--ttl)] shadow-2xl",
+            card: "w-full max-w-[600px] border-[color:var(--ttl)] dark:border-none shadow-2xl",
             rootBox: "w-full flex justify-center",
             formFieldInput:
-              "!bg-[var(--input)] !border-[color:var(--ttl)] focus:!ring-[color:var(--ttl)] focus:!border-[color:var(--ttl)] text-foreground",
+              "!bg-[var(--contact-input-bg)] dark:!bg-[#050505] !border-[0.5px] !border-solid !border-[#d1d1d1] dark:!border-[#262626] focus:!border-[#d1d1d1] dark:focus:!border-[#262626] !shadow-none transition-all duration-300 rounded-[8px] text-foreground",
+            formButtonPrimary:
+              "!bg-[var(--contact-btn-bg)] !text-[var(--contact-btn-text)] hover:!bg-[var(--contact-btn-hover)] !border-0 !shadow-none !outline-none transition-all duration-300",
+            badge: "!text-foreground",
           },
         }}
       />
