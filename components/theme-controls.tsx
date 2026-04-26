@@ -491,7 +491,7 @@ export function ThemeControls({
                 className="w-35 p-1 rounded-xl bg-popover/95 backdrop-blur-md border-border/50 text-xs shadow-xl z-[200]"
               >
                 <p className="font-medium text-foreground leading-relaxed text-center">
-                  Activa/Desactiva animaciones
+                  Activa/Desactiva animaciones.
                 </p>
               </PopoverContent>
             </Popover>
@@ -526,7 +526,7 @@ export function ThemeControls({
               avoidCollisions={false}
               className="z-[200]"
             >
-              <p>Activar/Desactivar animaciones</p>
+              <p>Activar/Desactivar animaciones.</p>
             </TooltipContent>
           </Tooltip>
         </div>

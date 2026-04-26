@@ -34,7 +34,7 @@ export function Hero() {
                 style={{ willChange: "transform, opacity" }}
               >
                 {/* Título principal — hero.titleLine1 + hero.titleLine2 */}
-                <h1 className="text-hero-ttl text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-semibold leading-tight tracking-tight">
+                <h1 className="text-hero-ttl text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-medium leading-tight tracking-tight">
                   {t("titleLine1")}
                   <br />
                   {t("titleLine2")}
