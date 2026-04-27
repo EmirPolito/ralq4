@@ -72,7 +72,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           whileInView={staticAnimate}
           transition={staticTransition}
           viewport={{ once: true }}
-          className="text-nos-ttl text-4xl md:text-6xl font-semibold mb-3 text-balance"
+          className="text-nos-ttl text-2xl lg:text-6xl font-semibold mb-3 text-balance"
         >
           {t("title")}
         </motion.h1>
@@ -86,7 +86,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               : { duration: 0.7, ease: "easeOut", delay: 0.15 }
           }
           viewport={{ once: true }}
-          className="text-nos-desc text-base md:text-lg text-balance max-w-1xl mx-auto font-normal"
+          className="text-nos-desc text-sm lg:text-base text-balance max-w-1xl mx-auto font-normal px-2 lg:px-0 lg:text-center"
         >
           {t("description")}
         </motion.p>

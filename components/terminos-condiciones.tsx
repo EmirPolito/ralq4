@@ -10,13 +10,13 @@ export default function TerminosCondiciones() {
   return (
     <div className="min-h-screen bg-background text-foreground flex flex-col">
       <main className="pb-20 flex-1 max-w-4xl mx-auto w-full px-4 md:px-5 py-35 text-left">
-        <h1 className="text-4xl md:text-5xl font-bold text-ttl mb-4 tracking-tight">
+        <h1 className="text-2xl lg:text-5xl font-semibold text-ttl mb-4 tracking-tight px-2 lg:px-0">
           {t("title")}
         </h1>
-        <div className="space-y-6 text-base text-desc leading-relaxed">
+        <div className="space-y-6 text-sm lg:text-base text-desc leading-relaxed px-2 lg:px-0">
           <p>{t("intro")}</p>
 
-          <h2 className="text-xl font-semibold text-ttl mt-10 mb-2">
+          <h2 className="text-lg lg:text-xl font-semibold text-ttl mt-10 mb-2">
             {t("s1Title")}
           </h2>
           <p>{t("s1")}</p>

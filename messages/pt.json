@@ -291,5 +291,30 @@
     "titleLine2": "as melhores tecnologias",
     "description": "Cada tecnologia foi escolhida com um critério claro: oferecer a melhor experiência científica e visual para o estudante, garantindo um ambiente interativo, intuitivo e fácil de usar.",
     "techRole": "Recursos Educacionais"
+  },
+  "themeControls": {
+    "modes": {
+      "title": "Modos",
+      "light": "Claro",
+      "dark": "Escuro",
+      "colorblind": "Daltônico",
+      "tooltip": "Mudar modo de visualização",
+      "mobileDesc": "Mudar modo: claro/escuro/daltônico"
+    },
+    "colors": {
+      "title": "Selecione uma cor",
+      "tooltip": "Personalizar cores do site",
+      "mobileDesc": "Mudar cores: original/azul/etc.",
+      "default": "Por padrão",
+      "blue": "Azul",
+      "purple": "Roxo",
+      "yellow": "Amarelo",
+      "orange": "Laranja",
+      "pink": "Rosa",
+      "green": "Verde"
+    },
+    "motion": {
+      "tooltip": "Ativar/Desativar animações."
+    }
   }
 }

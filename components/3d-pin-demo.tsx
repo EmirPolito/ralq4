@@ -11,17 +11,19 @@ export default function PinCardsSection() {
 
   return (
     <section className="py-7.5 lg:py-8 overflow-hidden">
-      <div className="container mx-auto px-5 md:px-8">
+      <div className="container mx-auto px-6 md:px-8">
         <ScrollAnimation direction="up" delay={0.1}>
           <div className="text-center mb-0 relative -top-8 md:top-3">
             {/* Título — pinCards.sectionLine1 (blanco) + pinCards.sectionLine2 (color) */}
-            <h2 className="text-3xl md:text-4xl lg:text-6xl font-semibold tracking-tight">
+            <h2 className="text-2xl md:text-4xl lg:text-6xl font-semibold tracking-tight">
               <span className="block text-titulos">{t("sectionLine1")}</span>
-              <span className="block text-tarjetas-ttl1">{t("sectionLine2")}</span>
+              <span className="block text-tarjetas-ttl1">
+                {t("sectionLine2")}
+              </span>
             </h2>
 
             {/* Descripción — pinCards.sectionDesc */}
-            <p className="text-tarjetas-desc2 mt-2 max-w-2xl md:max-w-none mx-auto text-base md:text-lg text-center leading-relaxed">
+            <p className="text-tarjetas-desc2 mt-1.5 max-w-2xl md:max-w-none mx-auto text-sm lg:text-base text-center leading-relaxed">
               {t("sectionDesc")}
             </p>
           </div>

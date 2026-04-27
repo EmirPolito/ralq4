@@ -291,5 +291,30 @@
     "titleLine2": "the best technologies",
     "description": "Each technology was chosen with a clear purpose: to offer the best scientific and visual experience for the student, ensuring an interactive, intuitive and easy-to-use environment.",
     "techRole": "Educational Resources"
+  },
+  "themeControls": {
+    "modes": {
+      "title": "Modes",
+      "light": "Light",
+      "dark": "Dark",
+      "colorblind": "Colorblind",
+      "tooltip": "Change display mode",
+      "mobileDesc": "Change mode: light/dark/colorblind"
+    },
+    "colors": {
+      "title": "Select a color",
+      "tooltip": "Customize site colors",
+      "mobileDesc": "Change colors: original/blue/etc.",
+      "default": "Default",
+      "blue": "Blue",
+      "purple": "Purple",
+      "yellow": "Yellow",
+      "orange": "Orange",
+      "pink": "Pink",
+      "green": "Green"
+    },
+    "motion": {
+      "tooltip": "Enable/Disable animations."
+    }
   }
 }

@@ -4,7 +4,6 @@
 @custom-variant dark (&:is(.dark *));
 @custom-variant colorblind (&:is(.colorblind *));
 
-
 :root {
   /* General */
   --bg-fondo: #ffffff;
@@ -85,10 +84,6 @@
   --tres-caracteristicas-border: #e1e1e1;
   --tres-caracteristicas-puntos: #000000;
   --tres-caracteristicas-txt: #000000;
-
-  --tres-01-cursor: #008cff;
-  --tres-02-cursor: #01ff38;
-  --tres-03-cursor: #ffb700;
 
   /* Imagen al pasar el cursor*/
   --imgcursor-bg: #ffffff;
@@ -362,10 +357,6 @@
   --tres-caracteristicas-puntos: #333333;
   --tres-caracteristicas-txt: #ffffff;
 
-  --tres-01-cursor: #008cff;
-  --tres-02-cursor: #00ff7b;
-  --tres-03-cursor: #ffb700;
-
   /* Imagen al pasar el cursor*/
   --imgcursor-bg: #000000;
   --imgcursor-ttl: #ffffff;
@@ -561,7 +552,7 @@
   --carrusel-desc: #333333;
 
   /* Tarjetas pin3d */
-  --tarjetas-ttl1: #000000;
+  --tarjetas-ttl1: #0072b2;
   --tarjetas-desc2: #333333;
 
   --tarjetas-bg: #ffffff;
@@ -624,13 +615,9 @@
   --tres-caracteristicas-puntos: #000000;
   --tres-caracteristicas-txt: #000000;
 
-  --tres-01-cursor: #0072b2;
-  --tres-02-cursor: #d55e00;
-  --tres-03-cursor: #009e73;
-
   /* Imagen al pasar el cursor*/
   --imgcursor-bg: #ffffff;
-  --imgcursor-ttl: #000000;
+  --imgcursor-ttl: #0072b2;
   --imgcursor-desc: #333333;
 
   --imgcursor-izq-borde: #cccccc;
@@ -661,7 +648,7 @@
   --preg-bg: #ffffff;
   --preg-ttl: #000000;
   --preg-desc: #333333;
-  --preg-link: #d55e00;
+  --preg-link: #0072b2;
 
   --preg-preg: #000000;
   --preg-txt: #333333;
@@ -674,7 +661,7 @@
 
   --footer-ttl: #000000;
   --footer-pag: #333333;
-  --footer-pag-hov: #000000;
+  --footer-pag-hov: #d55e00;
 
   --footer-ralq: #0072b2;
 
@@ -717,7 +704,7 @@
   --contact-input-desc: #464646;
   --contact-input-bg: #ffffff;
   --contact-input-border: #cccccc;
-  --contact-input-border-hover: #0072b2;
+  --contact-input-border-hover: #d55e00;
 
   --contact-btn-bg: #0072b2;
   --contact-btn-text: #ffffff;
@@ -772,7 +759,7 @@
   --dash-card-3: #fff9e6;
 
   /* RALQ Content Properties */
-  --ttl: var(--titulos);
+  --ttl: #0072b2;
   --desc: #333333;
   --link: var(--ttl);
 }
@@ -875,10 +862,6 @@
   --tres-caracteristicas-border: #e1e1e1;
   --tres-caracteristicas-puntos: #155dfc;
   --tres-caracteristicas-txt: #155dfc;
-
-  --tres-01-cursor: #155dfc;
-  --tres-02-cursor: #00ff7b;
-  --tres-03-cursor: #ffb700;
 
   /* Imagen al pasar el cursor*/
   --imgcursor-bg: #ffffff;
@@ -1101,10 +1084,6 @@
   --tres-caracteristicas-puntos: #155dfc;
   --tres-caracteristicas-txt: #155dfc;
 
-  --tres-01-cursor: #155dfc;
-  --tres-02-cursor: #00ff7b;
-  --tres-03-cursor: #ffb700;
-
   /* Imagen al pasar el cursor*/
   --imgcursor-bg: #000000;
   --imgcursor-ttl: #155dfc;
@@ -1324,10 +1303,6 @@
   --tres-caracteristicas-border: #e1e1e1;
   --tres-caracteristicas-puntos: #8a0194;
   --tres-caracteristicas-txt: #8a0194;
-
-  --tres-01-cursor: #8a0194;
-  --tres-02-cursor: #00ff7b;
-  --tres-03-cursor: #ffb700;
 
   /* Imagen al pasar el cursor*/
   --imgcursor-bg: #ffffff;
@@ -1549,10 +1524,6 @@
   --tres-caracteristicas-puntos: #a800b7;
   --tres-caracteristicas-txt: #a800b7;
 
-  --tres-01-cursor: #a800b7;
-  --tres-02-cursor: #00ff7b;
-  --tres-03-cursor: #ffb700;
-
   /* Imagen al pasar el cursor*/
   --imgcursor-bg: #000000;
   --imgcursor-ttl: #a800b7;
@@ -1773,10 +1744,6 @@
   --tres-caracteristicas-puntos: #fdc700;
   --tres-caracteristicas-txt: #fdc700;
 
-  --tres-01-cursor: #fdc700;
-  --tres-02-cursor: #00ff7b;
-  --tres-03-cursor: #ffb700;
-
   /* Imagen al pasar el cursor*/
   --imgcursor-bg: #ffffff;
   --imgcursor-ttl: #fdc700;
@@ -1996,10 +1963,6 @@
   --tres-caracteristicas-border: #303030;
   --tres-caracteristicas-puntos: #fdc700;
   --tres-caracteristicas-txt: #fdc700;
-
-  --tres-01-cursor: #fdc700;
-  --tres-02-cursor: #00ff7b;
-  --tres-03-cursor: #ffb700;
 
   /* Imagen al pasar el cursor*/
   --imgcursor-bg: #000000;
@@ -2222,10 +2185,6 @@
   --tres-caracteristicas-puntos: #f77817;
   --tres-caracteristicas-txt: #f77817;
 
-  --tres-01-cursor: #f77817;
-  --tres-02-cursor: #00ff7b;
-  --tres-03-cursor: #ffb700;
-
   /* Imagen al pasar el cursor*/
   --imgcursor-bg: #ffffff;
   --imgcursor-ttl: #f77817;
@@ -2445,10 +2404,6 @@
   --tres-caracteristicas-border: #303030;
   --tres-caracteristicas-puntos: #ff8400;
   --tres-caracteristicas-txt: #ff8400;
-
-  --tres-01-cursor: #ff8400;
-  --tres-02-cursor: #00ff7b;
-  --tres-03-cursor: #ffb700;
 
   /* Imagen al pasar el cursor*/
   --imgcursor-bg: #000000;
@@ -2671,10 +2626,6 @@
   --tres-caracteristicas-puntos: #ec003f;
   --tres-caracteristicas-txt: #ec003f;
 
-  --tres-01-cursor: #ec003f;
-  --tres-02-cursor: #00ff7b;
-  --tres-03-cursor: #ffb700;
-
   /* Imagen al pasar el cursor*/
   --imgcursor-bg: #ffffff;
   --imgcursor-ttl: #ec003f;
@@ -2894,10 +2845,6 @@
   --tres-caracteristicas-border: #303030;
   --tres-caracteristicas-puntos: #ec003f;
   --tres-caracteristicas-txt: #ec003f;
-
-  --tres-01-cursor: #ec003f;
-  --tres-02-cursor: #00ff7b;
-  --tres-03-cursor: #ffb700;
 
   /* Imagen al pasar el cursor*/
   --imgcursor-bg: #000000;
@@ -3120,10 +3067,6 @@
   --tres-caracteristicas-puntos: #5ea500;
   --tres-caracteristicas-txt: #5ea500;
 
-  --tres-01-cursor: #5ea500;
-  --tres-02-cursor: #00ff7b;
-  --tres-03-cursor: #ffb700;
-
   /* Imagen al pasar el cursor*/
   --imgcursor-bg: #ffffff;
   --imgcursor-ttl: #5ea500;
@@ -3343,10 +3286,6 @@
   --tres-caracteristicas-border: #303030;
   --tres-caracteristicas-puntos: #7ccf00;
   --tres-caracteristicas-txt: #7ccf00;
-
-  --tres-01-cursor: #7ccf00;
-  --tres-02-cursor: #00ff7b;
-  --tres-03-cursor: #ffb700;
 
   /* Imagen al pasar el cursor*/
   --imgcursor-bg: #000000;
@@ -3582,10 +3521,6 @@
   --color-tres-caracteristicas-puntos: var(--tres-caracteristicas-puntos);
   --color-tres-caracteristicas-txt: var(--tres-caracteristicas-txt);
 
-  --color-tres-01-cursor: var(--tres-01-cursor);
-  --color-tres-02-cursor: var(--tres-02-cursor);
-  --color-tres-03-cursor: var(--tres-03-cursor);
-
   /*Imagen al pasar el cursor*/
   --color-imgcursor-bg: var(--imgcursor-bg);
   --color-imgcursor-ttl: var(--imgcursor-ttl);
@@ -3719,8 +3654,8 @@
 
 /* Fix for browser autofill background color */
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   -webkit-text-fill-color: inherit !important;
   transition: background-color 5000s ease-in-out 0s;

@@ -2,7 +2,6 @@
 
 import { motion } from "motion/react";
 import Image from "next/image";
-import { PointerHighlight } from "@/components/ui/pointer-highlight";
 import { cn } from "@/lib/utils";
 import { useReducedMotion } from "@/hooks/use-reduced-motion";
 import { useTranslations } from "next-intl";
@@ -33,7 +32,6 @@ export default function TresPasosLaboratorio() {
         "bg-tres-caracteristicas-bg border-tres-caracteristicas-border",
       varMarcosTxt: "text-tres-caracteristicas-txt",
       varPuntos: "bg-tres-caracteristicas-puntos",
-      varCursor: "text-tres-01-cursor",
     },
     {
       step: "02",
@@ -56,7 +54,6 @@ export default function TresPasosLaboratorio() {
         "bg-tres-caracteristicas-bg border-tres-caracteristicas-border",
       varMarcosTxt: "text-tres-caracteristicas-txt",
       varPuntos: "bg-tres-caracteristicas-puntos",
-      varCursor: "text-tres-02-cursor",
     },
     {
       step: "03",
@@ -79,7 +76,6 @@ export default function TresPasosLaboratorio() {
         "bg-tres-caracteristicas-bg border-tres-caracteristicas-border",
       varMarcosTxt: "text-tres-caracteristicas-txt",
       varPuntos: "bg-tres-caracteristicas-puntos",
-      varCursor: "text-tres-03-cursor",
     },
   ];
 
@@ -90,9 +86,9 @@ export default function TresPasosLaboratorio() {
     >
       {/* Section heading — left-anchored, not centered */}
       <div className="mx-auto max-w-[1400px]">
-        <div className="mb-3 mx-auto max-w-4xl text-center md:mb-0">
+        <div className="mb-1.5 mx-auto max-w-4xl text-center md:mb-0">
           {/* Título — tresPasos.titleLine1 + tresPasos.titleLine2 */}
-          <h2 className="text-titulos font-semibold leading-[1.15] tracking-tight text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+          <h2 className="text-titulos font-semibold leading-[1.15] tracking-tight text-2xl sm:text-4xl md:text-5xl lg:text-6xl">
             <span className="block">{t("titleLine1")}</span>
             <span className="block text-hero-ttl">{t("titleLine2")}</span>
           </h2>
@@ -138,12 +134,12 @@ export default function TresPasosLaboratorio() {
                       {step.tag}
                     </span>
                     <h3
-                      className={`text-xl sm:text-2xl md:text-3xl font-bold tracking-tight ${step.varTtl}`}
+                      className={`text-2xl font-semibold tracking-tight ${step.varTtl}`}
                     >
                       {step.title}
                     </h3>
                     <p
-                      className={`mt-4 text-base leading-relaxed ${step.varDesc}`}
+                      className={`mt-4 text-sm lg:text-base leading-relaxed ${step.varDesc}`}
                     >
                       {step.description}
                     </p>
@@ -167,19 +163,13 @@ export default function TresPasosLaboratorio() {
               </div>
 
               {/* Visual side */}
-              {/* Imagen lado derecho con PointerHighlight y hover scale */}
-              <PointerHighlight
-                rectangleClassName={cn(
-                  "rounded-2xl border",
-                  step.varMiniBorder,
-                )}
-                bgOpacity={0.03}
-                pointerClassName={step.varCursor}
-                containerClassName="w-full"
-                disabled={reducedMotion}
-              >
+              {/* Imagen lado derecho */}
+              <div className="w-full relative">
                 <div
-                  className={`relative overflow-hidden rounded-2xl bg-neutral-100 dark:bg-neutral-900 border border-border aspect-[16/10] w-full`}
+                  className={cn(
+                    "relative overflow-hidden rounded-2xl bg-neutral-100 dark:bg-neutral-900 border aspect-[16/10] w-full",
+                    step.varMiniBorder,
+                  )}
                 >
                   <Image
                     src={step.image}
@@ -196,7 +186,7 @@ export default function TresPasosLaboratorio() {
                     )}
                   />
                 </div>
-              </PointerHighlight>
+              </div>
             </motion.div>
           ))}
         </div>

@@ -54,10 +54,10 @@ export default function ImgCursorDemo2() {
               : { duration: 0.8, ease: [0.21, 0.47, 0.32, 0.98] }
           }
           viewport={{ once: true }}
-          className="mb-12 text-center"
+          className="mb-1.5 md:mb-12 text-center"
         >
           {/* Título — "Construido sobre / las mejores tecnologías" */}
-          <h2 className="text-balance text-4xl font-semibold leading-[1.1] tracking-tight md:text-5xl lg:text-6xl">
+          <h2 className="text-balance text-2xl font-semibold leading-[1.1] tracking-tight md:text-5xl lg:text-6xl">
             <span className="text-titulos">{t("titleLine1")}</span>
             <br />
             <span className="text-imgcursor-ttl">{t("titleLine2")}</span>
@@ -84,7 +84,7 @@ export default function ImgCursorDemo2() {
               viewport={{ once: true }}
               className="flex flex-col items-center lg:items-start"
             >
-              <p className="mb-11 text-center text-[16px] leading-relaxed text-imgcursor-desc lg:text-left max-w-[510px]">
+              <p className=" px-5 text-justify md:px-0 mb-11 text-center text-sm lg:text-base leading-relaxed text-imgcursor-desc lg:text-left max-w-[510px]">
                 {t("description")}
               </p>
 
@@ -201,7 +201,7 @@ export default function ImgCursorDemo2() {
                 "
               </div>
 
-              <p className="relative z-10 text-[17px] leading-[1.8] text-imgcursor-der-des md:text-lg lg:text-[18px] font-medium tracking-tight">
+              <p className="relative z-10 text-sm lg:text-base leading-[1.8] text-imgcursor-der-des font-semibold tracking-tight">
                 {"ChemAR usa "}
                 <LinkPreview
                   url="https://threejs.org"

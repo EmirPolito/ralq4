@@ -3,6 +3,7 @@
 import * as React from "react";
 import { Moon, Sun, Eye, Palette, HelpCircle } from "lucide-react";
 import { useTheme } from "next-themes";
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import {
@@ -53,6 +54,7 @@ export function ThemeControls({
   const [colorblind, setColorblind] = React.useState(false);
   const [reducedMotion, setReducedMotion] = React.useState(false);
   const [primaryColor, setPrimaryColor] = React.useState("default");
+  const t = useTranslations("themeControls");
 
   React.useEffect(() => {
     setMounted(true);
@@ -214,7 +216,7 @@ export function ThemeControls({
                 className="w-35 p-1 rounded-xl bg-popover/95 backdrop-blur-md border-border/50 text-xs shadow-xl z-[200]"
               >
                 <p className="font-medium text-foreground leading-relaxed text-center">
-                  Cambia el modo: claro/oscuro/daltónico
+                  {t("modes.mobileDesc")}
                 </p>
               </PopoverContent>
             </Popover>
@@ -279,14 +281,14 @@ export function ThemeControls({
                 avoidCollisions={false}
                 className="z-[200]"
               >
-                <p>Cambiar modo de visualización</p>
+                <p>{t("modes.tooltip")}</p>
               </TooltipContent>
             </Tooltip>
             <DropdownMenuContent
               align="end"
               className="z-[200] rounded-2xl w-56 md:w-auto md:bg-popover md:backdrop-blur-none md:shadow-md md:border-border border-border/50 bg-popover/95 backdrop-blur-xl shadow-2xl"
             >
-              <DropdownMenuLabel>Modos</DropdownMenuLabel>
+              <DropdownMenuLabel>{t("modes.title")}</DropdownMenuLabel>
               <DropdownMenuSeparator />
 
               <DropdownMenuItem
@@ -299,7 +301,7 @@ export function ThemeControls({
                 className="cursor-pointer hover:bg-muted/50 focus:bg-muted/50 py-3 md:py-1.5 md:hover:bg-transparent md:focus:bg-transparent md:hover:text-foreground md:focus:text-foreground"
               >
                 <Sun className="mr-2 h-5 w-5" />
-                <span>Claro</span>
+                <span>{t("modes.light")}</span>
                 {resolvedTheme === "light" && !colorblind && (
                   <span
                     className="ml-auto text-xs"
@@ -320,7 +322,7 @@ export function ThemeControls({
                 className="cursor-pointer hover:bg-muted/50 focus:bg-muted/50 py-3 md:py-1.5 md:hover:bg-transparent md:focus:bg-transparent md:hover:text-foreground md:focus:text-foreground"
               >
                 <Moon className="mr-2 h-5 w-5" />
-                <span>Oscuro</span>
+                <span>{t("modes.dark")}</span>
                 {resolvedTheme === "dark" && (
                   <span
                     className="ml-auto text-xs"
@@ -347,7 +349,7 @@ export function ThemeControls({
                 className="cursor-pointer hover:bg-muted/50 focus:bg-muted/50 py-3 md:py-1.5 md:hover:bg-transparent md:focus:bg-transparent md:hover:text-foreground md:focus:text-foreground"
               >
                 <Eye className="mr-2 h-5 w-5" />
-                <span>Daltonico</span>
+                <span>{t("modes.colorblind")}</span>
                 {colorblind && (
                   <span
                     className="ml-auto text-xs"
@@ -378,7 +380,7 @@ export function ThemeControls({
                 className="w-35 p-1 rounded-xl bg-popover/95 backdrop-blur-md border-border/50 text-xs shadow-xl z-[200]"
               >
                 <p className="font-medium text-foreground leading-relaxed text-center">
-                  Cambia los colores: original/azul/etc.
+                  {t("colors.mobileDesc")}
                 </p>
               </PopoverContent>
             </Popover>
@@ -422,7 +424,7 @@ export function ThemeControls({
                 avoidCollisions={false}
                 className="z-[200]"
               >
-                <p>Personalizar colores del sitio</p>
+                <p>{t("colors.tooltip")}</p>
               </TooltipContent>
             </Tooltip>
             <PopoverContent
@@ -432,7 +434,7 @@ export function ThemeControls({
             >
               <div className="px-4 py-3 pb-0">
                 <p className="text-sm font-medium text-foreground mb-2">
-                  Selecciona un color
+                  {t("colors.title")}
                 </p>
               </div>
               <Separator />
@@ -445,14 +447,14 @@ export function ThemeControls({
                       className={`flex items-center gap-3 w-full px-3 py-2.5 md:py-1.5 rounded-md cursor-pointer hover:bg-muted/50 focus:bg-muted/50 md:hover:bg-transparent md:focus:bg-transparent focus:outline-none outline-none ${
                         primaryColor === option.value ? "" : ""
                       }`}
-                      aria-label={`Color ${option.name}`}
+                      aria-label={`Color ${t(`colors.${option.value}`)}`}
                     >
                       <div
                         className="h-3 w-3 rounded-full shrink-0"
                         style={{ backgroundColor: option.color }}
                       />
                       <span className="text-sm text-foreground">
-                        {option.name}
+                        {t(`colors.${option.value}`)}
                       </span>
                       {primaryColor === option.value && (
                         <span
@@ -491,7 +493,7 @@ export function ThemeControls({
                 className="w-35 p-1 rounded-xl bg-popover/95 backdrop-blur-md border-border/50 text-xs shadow-xl z-[200]"
               >
                 <p className="font-medium text-foreground leading-relaxed text-center">
-                  Activa/Desactiva animaciones.
+                  {t("motion.tooltip")}
                 </p>
               </PopoverContent>
             </Popover>
@@ -526,7 +528,7 @@ export function ThemeControls({
               avoidCollisions={false}
               className="z-[200]"
             >
-              <p>Activar/Desactivar animaciones.</p>
+              <p>{t("motion.tooltip")}</p>
             </TooltipContent>
           </Tooltip>
         </div>

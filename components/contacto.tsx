@@ -178,11 +178,11 @@ export default function ContactForm() {
 
       {/* Título de sección — contacto.title + contacto.description */}
       <motion.div className="text-center mb-30" variants={fadeInUp} custom={0}>
-        <h1 className="text-contact-ttl text-4xl md:text-6xl font-semibold mb-2 text-balance">
+        <h1 className="text-contact-ttl text-2xl lg:text-6xl font-semibold mb-2 text-balance">
           {t("title")}
         </h1>
 
-        <p className="text-contact-desc text-base text-balance max-w-1xl mx-auto">
+        <p className="text-contact-desc text-sm lg:text-base text-balance max-w-1xl mx-auto px-2 lg:px-0">
           {t("description")}
         </p>
       </motion.div>
@@ -206,7 +206,7 @@ export default function ContactForm() {
             {t("formTitle")}
           </h1>
 
-          <p className="text-contact-desc mb-8">{t("formSubtitle")}</p>
+          <p className="text-contact-desc text-sm lg:text-base mb-8">{t("formSubtitle")}</p>
 
           <form onSubmit={handleSubmit} className=" space-y-6.5">
             <motion.div variants={fadeInUp} custom={0.2}>

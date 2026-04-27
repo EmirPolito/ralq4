@@ -40,7 +40,7 @@ export default function ContenidoBlog() {
   }
 
   return (
-    <div className="w-full bg-background pt-32 md:pt-32 pb-20 px-4  transition-colors">
+    <div className="w-full bg-background pt-32 md:pt-32 pb-20 px-0  transition-colors">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <motion.div
@@ -50,12 +50,12 @@ export default function ContenidoBlog() {
           className="text-center mb-18 md:mb-30"
         >
           {/* Título — ayuda.title */}
-          <h1 className="text-ayuda-ttl text-4xl md:text-6xl font-semibold mb-3 text-balance">
+          <h1 className="text-ayuda-ttl text-2xl lg:text-6xl font-semibold mb-3 text-balance">
             {t("title")}
           </h1>
 
           {/* Descripción — ayuda.description */}
-          <p className="text-ayuda-desc text-base text-balance max-w-1xl mx-auto">
+          <p className="text-ayuda-desc text-sm lg:text-base text-balance max-w-1xl mx-auto px-2 lg:px-0">
             {t("description")}
           </p>
         </motion.div>
@@ -88,7 +88,7 @@ export default function ContenidoBlog() {
                     <h2 className="text-ayuda-preg-ttl text-2xl font-semibold mb-3">
                       {t(`items.${id}.title`)}
                     </h2>
-                    <p className="text-ayuda-preg-txt text-base leading-relaxed text-pretty md:text-left">
+                    <p className="text-ayuda-preg-txt text-sm lg:text-base leading-relaxed md:text-left">
                       {t(`items.${id}.description`)}
                     </p>
                   </div>

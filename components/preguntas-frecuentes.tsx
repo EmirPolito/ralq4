@@ -26,7 +26,7 @@ export default function Preguntas1() {
   return (
     <section className="bg-background @container py-15 md:py-24 lg:py-22">
       <div className="mx-auto max-w-8xl px-5 md:px-12 lg:px-15">
-        <div className="@xl:flex-row @xl:items-start lg:gap-5 flex flex-col gap-7">
+        <div className="@xl:flex-row @xl:items-start lg:gap-5 flex flex-col gap-5">
           {/* LADO IZQUIERDO */}
           <ScrollAnimation
             direction="up"
@@ -34,12 +34,12 @@ export default function Preguntas1() {
             className="@xl:sticky @xl:top-24 lg:w-96 shrink-0"
           >
             {/* Título — faq.title */}
-            <h2 className="text-preg-ttl font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight text-center @xl:text-left">
+            <h2 className="text-preg-ttl font-semibold text-2xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight text-center @xl:text-left">
               {t("title")}
             </h2>
 
             {/* Subtítulo + link a contacto — faq.subtitle + faq.contactLink */}
-            <p className="text-preg-desc mt-2 text-base text-center @xl:text-left">
+            <p className="text-preg-desc mt-2 text-sm lg:text-base text-center @xl:text-left">
               {t("subtitle")}{" "}
               <Link
                 href="/contacto"
@@ -53,19 +53,19 @@ export default function Preguntas1() {
           {/* LADO DERECHO */}
           <ScrollAnimation direction="up" delay={0.2} className="flex-1">
             <Accordion type="single" collapsible>
-            {/* Preguntas acordeón — faq.items[].question + faq.items[].answer */}
+              {/* Preguntas acordeón — faq.items[].question + faq.items[].answer */}
               {items.map((item, index) => (
                 <AccordionItem
                   key={index}
                   value={`item-${index + 1}`}
                   className="border-dashed"
                 >
-                  <AccordionTrigger className="text-preg-preg cursor-pointer py-8 text-base hover:no-underline">
+                  <AccordionTrigger className="text-preg-preg cursor-pointer py-7.5 text-sm lg:text-base hover:no-underline">
                     {item.question}
                   </AccordionTrigger>
 
                   <AccordionContent>
-                    <p className="text-preg-txt pb-2 text-base leading-relaxed">
+                    <p className="text-preg-txt pb-2 text-sm lg:text-base leading-relaxed">
                       {item.answer}
                     </p>
                   </AccordionContent>

@@ -31,11 +31,11 @@ export default function Footer() {
               </span>
             </Link>
 
-            <h1 className="text-footer-txt mt-1 md:mt-1.5 px-1">
+            <h1 className="text-footer-txt text-sm lg:text-base mt-1 md:mt-1.5 px-1">
               {t("tagline")}
             </h1>
 
-            <p className="hidden md:block text-footer-derechos mt-1 px-1">
+            <p className="hidden md:block text-footer-derechos text-sm mt-1 px-1">
               © {new Date().getFullYear()} {t("copyright")}
             </p>
           </div>
@@ -47,7 +47,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/nosotros"
-                    className="text-footer-pag hover:text-footer-pag-hov"
+                    className="text-footer-pag text-sm lg:text-base hover:text-footer-pag-hov"
                   >
                     {t("links.nosotros")}
                   </Link>
@@ -55,7 +55,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/contacto"
-                    className="text-footer-pag hover:text-footer-pag-hov"
+                    className="text-footer-pag text-sm lg:text-base hover:text-footer-pag-hov"
                   >
                     {t("links.contacto")}
                   </Link>
@@ -63,7 +63,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/ayuda"
-                    className="text-footer-pag hover:text-footer-pag-hov"
+                    className="text-footer-pag text-sm lg:text-base hover:text-footer-pag-hov"
                   >
                     {t("links.ayuda")}
                   </Link>
@@ -77,7 +77,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="https://www.facebook.com/profile.php?id=61563746413453"
-                    className="text-footer-pag hover:text-footer-pag-hov"
+                    className="text-footer-pag text-sm lg:text-base hover:text-footer-pag-hov"
                   >
                     {t("links.facebook")}
                   </Link>
@@ -85,7 +85,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="https://www.instagram.com/ralq.utsv?igsh=Z256dmRoOXY3ZDg2"
-                    className="text-footer-pag hover:text-footer-pag-hov"
+                    className="text-footer-pag text-sm lg:text-base hover:text-footer-pag-hov"
                   >
                     {t("links.instagram")}
                   </Link>
@@ -93,7 +93,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="https://x.com/arihantcodes"
-                    className="text-footer-pag hover:text-footer-pag-hov"
+                    className="text-footer-pag text-sm lg:text-base hover:text-footer-pag-hov"
                   >
                     {t("links.linkedin")}
                   </Link>
@@ -106,7 +106,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/politica-privacidad"
-                    className="text-footer-pag hover:text-footer-pag-hov"
+                    className="text-footer-pag text-sm lg:text-base hover:text-footer-pag-hov"
                   >
                     {t("links.privacidad")}
                   </Link>
@@ -114,7 +114,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/terminos-condiciones"
-                    className="text-footer-pag hover:text-footer-pag-hov"
+                    className="text-footer-pag text-sm lg:text-base hover:text-footer-pag-hov"
                   >
                     {t("links.terminos")}
                   </Link>
@@ -135,7 +135,7 @@ export default function Footer() {
           >
             RALQ
           </h1>
-          <p className="md:hidden text-footer-derechos mt-6 text-center px-1">
+          <p className="md:hidden text-footer-derechos text-sm mt-6 text-center px-1">
             © {new Date().getFullYear()} {t("copyright")}
           </p>
         </div>

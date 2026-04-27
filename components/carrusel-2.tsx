@@ -97,14 +97,14 @@ function Feature() {
               </Badge>
             </div>
 
-            <div className="flex gap-3 flex-col items-center lg:items-start">
-              <h2 className="text-carrusel2-ttl text-balance text-3xl font-semibold leading-[1.1] tracking-tight md:text-4xl lg:text-6xl">
+            <div className="flex gap-1.5 flex-col items-center lg:items-start">
+              <h2 className="text-carrusel2-ttl text-balance text-2xl font-semibold leading-[1.1] tracking-tight md:text-4xl lg:text-6xl">
                 {t("titleLine1")}
                 <br />
                 {t("titleLine2")}
               </h2>
 
-              <div className="text-carrusel2-desc lg:max-w-xl text-lg max-w-xl leading-relaxed tracking-tight text-justify mx-auto lg:mx-0 lg:text-left [text-align-last:center] lg:[text-align-last:left]">
+              <div className="text-carrusel2-desc text-sm lg:text-base px-3.5 md:px-0 lg:max-w-xl max-w-xl leading-relaxed tracking-tight text-justify mx-auto lg:mx-0 lg:text-left [text-align-last:center] lg:[text-align-last:left]">
                 {t("description")}
               </div>
             </div>

@@ -13,8 +13,8 @@ export function SobreNosotros() {
       title: t("y2023.title"),
       content: (
         <div>
-          <p className="text-nos-txt mb-2 text-base">{t("y2023.p1")}</p>
-          <p className="text-nos-txt mb-8 text-base">{t("y2023.p2")}</p>
+          <p className="text-nos-txt mb-2 text-sm lg:text-base px-2 lg:px-0">{t("y2023.p1")}</p>
+          <p className="text-nos-txt mb-8 text-sm lg:text-base px-2 lg:px-0">{t("y2023.p2")}</p>
           <div className="grid grid-cols-2 gap-4">
             <img
               src="https://assets.aceternity.com/templates/startup-1.webp"

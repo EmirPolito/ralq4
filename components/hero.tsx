@@ -27,7 +27,7 @@ export function Hero() {
     <section>
       <div>
         <div className="relative z-10 flex min-h-[85vh] lg:min-h-screen flex-col justify-end pt-20 pb-4 lg:pt-0 lg:pb-0 px-5 sm:px-6 md:px-12 lg:px-20">
-          <div className="mx-auto w-full max-w-8xl pb-4 lg:pb-34 sm:pb-20 md:pb-32">
+          <div className="mx-auto w-full max-w-8xl pb-4 lg:pb-33 sm:pb-20 md:pb-32">
             <ScrollAnimation direction="up" delay={0.2}>
               <div
                 className="flex flex-col items-start text-left lg:items-start lg:text-left"
@@ -46,15 +46,15 @@ export function Hero() {
                 </p>
 
                 {/* Botón CTA — hero.cta → /demo */}
-                <div className="mt-8 flex items-center justify-start gap-4">
+                <div className="mt-9 flex items-center justify-start gap-4">
                   <Button
                     asChild
                     size="lg"
-                    className="h-10 lg:h-12 rounded-full px-6 lg:px-8 text-sm lg:text-base font-medium shadow-lg transition-all hover:scale-100 active:scale-95 bg-hero-bg-demo text-hero-txt-demo hover:bg-hero-hvr-demo"
+                    className="h-10 lg:h-11.5 rounded-full px-6 lg:px-8 text-sm lg:text-base font-medium shadow-lg transition-all hover:scale-100 active:scale-95 bg-hero-bg-demo text-hero-txt-demo hover:bg-hero-hvr-demo"
                   >
                     <Link href="/demo">
                       <span className="text-nowrap">{t("cta")}</span>
-                      <ChevronRight className="ml-2 size-4 lg:size-5" />
+                      <ChevronRight className="ml-0 size-4 lg:size-4.5" />
                     </Link>
                   </Button>
                 </div>
@@ -78,7 +78,7 @@ export function Hero() {
             invert contrast-115 
             brightness-90
             dark:invert-0 
-            dark:brightness-65"
+            dark:brightness-64"
             src="https://videos.pexels.com/video-files/35968183/15249566_1920_1080_30fps.mp4"
           />
         </div>

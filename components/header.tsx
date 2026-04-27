@@ -14,7 +14,7 @@ export const HeroHeader = () => {
   const t = useTranslations("nav");
   const [menuState, setMenuState] = React.useState(false);
   const [scrolled, setScrolled] = React.useState(false);
-  const { scrollYProgress } = useScroll();
+  const { scrollY } = useScroll();
 
   const menuItems = [
     { name: t("nosotros"), href: "/nosotros" },
@@ -23,11 +23,11 @@ export const HeroHeader = () => {
   ];
 
   React.useEffect(() => {
-    const unsubscribe = scrollYProgress.on("change", (latest) => {
-      setScrolled(latest > 0.05);
+    const unsubscribe = scrollY.on("change", (latest) => {
+      setScrolled(latest > 10);
     });
     return () => unsubscribe();
-  }, [scrollYProgress]);
+  }, [scrollY]);
 
   // Bloquear scroll cuando el menú está abierto
   React.useEffect(() => {
