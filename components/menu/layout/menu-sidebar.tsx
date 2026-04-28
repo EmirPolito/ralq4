@@ -35,9 +35,9 @@ export function MenuSidebar() {
   return (
     <Sidebar
       collapsible="icon"
-      className="border-r border-sidebar-border bg-sidebar"
+      className="border-r border-menu-lineas bg-menu-bg"
     >
-      <SidebarHeader className="h-20 flex justify-center items-center relative pt-4 pb-2">
+      <SidebarHeader className="h-21 flex justify-center items-center relative pt-3.5 pb-2">
         <Link
           href="/menu"
           className="flex items-center justify-center w-full group-data-[state=collapsed]:hidden"
@@ -56,7 +56,7 @@ export function MenuSidebar() {
             <div className="h-12" />
           )}
         </Link>
-        <SidebarTrigger className="absolute -right-3 top-1/2 -translate-y-1/2 z-50 w-6 h-6 rounded-full border-2 border-border bg-sidebar shrink-0 flex items-center justify-center opacity-100 hover:bg-accent hover:scale-110 transition-all shadow-sm" />
+        <SidebarTrigger className="absolute -right-3 top-[60%] -translate-y-1/2 z-50 w-6 h-6 shrink-0 flex items-center justify-center opacity-100 transition-all text-menu-mostrador hover:bg-transparent cursor-pointer" />
       </SidebarHeader>
 
       <SidebarContent className="py-4 px-2">
@@ -69,19 +69,23 @@ export function MenuSidebar() {
                   asChild
                   isActive={isActive}
                   tooltip={item.name}
-                  className={`h-18 px-5 transition-all ${
+                  className={`h-18 px-5 transition-colors duration-200 hover:bg-menu-paginas-hover data-[active=true]:bg-menu-paginas-hover ${
                     isActive
-                      ? "bg-accent/50 text-foreground font-bold hover:bg-accent/60 relative"
-                      : "text-muted-foreground hover:bg-accent/30 font-medium"
+                      ? "text-menu-paginas font-bold relative"
+                      : "text-menu-paginas font-medium"
                   }`}
                 >
-                  <Link href={item.href} className="flex items-center gap-4">
+                  <Link
+                    href={item.href}
+                    prefetch={true}
+                    className="flex items-center gap-4"
+                  >
                     {/* Indicador lateral vinculado a la variable Primary */}
                     {isActive && (
-                      <div className="absolute left-0 top-0 bottom-0 w-1.5 rounded-r-full bg-primary group-data-[state=collapsed]:w-1" />
+                      <div className="absolute left-0 top-0 bottom-0 w-1.5 rounded-r-full bg-menu-apartados group-data-[state=collapsed]:w-1" />
                     )}
                     <item.icon
-                      className={`w-6 h-6 shrink-0 ${isActive ? "text-primary" : "text-muted-foreground group-hover:text-foreground"}`}
+                      className={`w-6 h-6 shrink-0 ${isActive ? "text-menu-apartados" : "text-menu-iconos"}`}
                       strokeWidth={isActive ? 2.5 : 2}
                     />
                     <span className="text-[15px]">{item.name}</span>
@@ -93,7 +97,7 @@ export function MenuSidebar() {
         </SidebarMenu>
       </SidebarContent>
 
-      <SidebarFooter className="p-4 border-t border-sidebar-border flex flex-col gap-5">
+      <SidebarFooter className="p-4 border-t border-menu-lineas flex flex-col gap-5">
         {/* Controles de Animación/Color/Tema (escondidos cuando colapsa) */}
         <div className="w-full flex justify-center group-data-[state=collapsed]:hidden">
           <ThemeControls />

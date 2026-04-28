@@ -193,11 +193,20 @@
 ========================= */
   --ayuda-ttl: #000000;
   --ayuda-desc: #2c2a2a;
-
   --ayuda-preg-ttl: #000000;
   --ayuda-preg-txt: #2c2a2a;
-
   --ayuda-link: #000000;
+
+  /* =========================
+   Menu Izquierdo
+========================= */
+  --menu-bg: #ffffff;
+  --menu-apartados: #4a4a4a;
+  --menu-paginas: #2c2a2a;
+  --menu-paginas-hvr: #f1f1f1;
+  --menu-iconos: #4a4a4a;
+  --menu-lineas: #eaeaea;
+  --menu-mostrador: #4a4a4a;
 
   /* UI */
   --background: #ffffff;
@@ -225,7 +234,7 @@
   --chart-4: #eab308;
   --chart-5: #ef4444;
   --radius: 0.5rem;
-  --sidebar: #f8fafc;
+  --sidebar: var(--menu-bg);
   --sidebar-foreground: #334155;
   --sidebar-primary: #1e293b;
   --sidebar-primary-foreground: #f8fafc;
@@ -466,11 +475,20 @@
 ========================= */
   --ayuda-ttl: #ffffff;
   --ayuda-desc: #dad9d9;
-
   --ayuda-preg-ttl: #ffffff;
   --ayuda-preg-txt: #dad9d9;
-
   --ayuda-link: #ffffff;
+
+  /* =========================
+   Menu Izquierdo
+========================= */
+  --menu-bg: #000000;
+  --menu-apartados: #ffffff;
+  --menu-paginas: #ffffff;
+  --menu-paginas-hvr: #0f0f0f;
+  --menu-iconos: #ffffff;
+  --menu-lineas: #212121;
+  --menu-mostrador: #ffffff;
 
   /* UI */
   --background: #000000;
@@ -497,13 +515,13 @@
   --chart-3: #f97316;
   --chart-4: #eab308;
   --chart-5: #ef4444;
-  --sidebar: #0f172a;
+  --sidebar: var(--menu-bg);
   --sidebar-foreground: #94a3b8;
   --sidebar-primary: #ffffff;
   --sidebar-primary-foreground: #0f172a;
   --sidebar-accent: #1e293b;
   --sidebar-accent-foreground: #f8fafc;
-  --sidebar-border: #1e293b;
+  --sidebar-border: var(--menu-lineas);
   --sidebar-ring: #3b82f6;
 
   /* Dashboard Custom Properties */
@@ -728,6 +746,17 @@
 
   --ayuda-link: #0072b2;
   --ayuda-link-hvr: #d55e00;
+
+  /* =========================
+   Menu Izquierdo
+========================= */
+  --menu-bg: #ffffff;
+  --menu-apartados: #0072b2;
+  --menu-paginas: #2c2a2a;
+  --menu-paginas-hvr: #f1f1f1;
+  --menu-iconos: #0072b2;
+  --menu-lineas: #eaeaea;
+  --menu-mostrador: #000000;
 
   /* UI */
   --background: #ffffff;
@@ -970,11 +999,20 @@
 ========================= */
   --ayuda-ttl: #155dfc;
   --ayuda-desc: #616161;
-
   --ayuda-preg-ttl: #155dfc;
   --ayuda-preg-txt: #616161;
-
   --ayuda-link: #155dfc;
+
+  /* =========================
+   Menu Izquierdo
+========================= */
+  --menu-bg: #ffffff;
+  --menu-apartados: #155dfc;
+  --menu-paginas: #2c2a2a;
+  --menu-paginas-hvr: #f1f1f1;
+  --menu-iconos: #155dfc;
+  --menu-lineas: #eaeaea;
+  --menu-mostrador: #000000;
 
   /* Dashboard Custom Properties */
   --dash-bg: #fefcf8;
@@ -1189,11 +1227,20 @@
 ========================= */
   --ayuda-ttl: #155dfc;
   --ayuda-desc: #dddddd;
-
   --ayuda-preg-ttl: #155dfc;
   --ayuda-preg-txt: #dddddd;
-
   --ayuda-link: #155dfc;
+
+  /* =========================
+   Menu Izquierdo
+========================= */
+  --menu-bg: #000000;
+  --menu-apartados: #155dfc;
+  --menu-paginas: #ffffff;
+  --menu-paginas-hvr: #0f0f0f;
+  --menu-iconos: #155dfc;
+  --menu-lineas: #212121;
+  --menu-mostrador: #000000;
 
   /* Dashboard Custom Properties */
   --dash-bg: #121318;
@@ -1415,6 +1462,17 @@
 
   --ayuda-link: #8a0194;
 
+  /* =========================
+   Menu Izquierdo
+========================= */
+  --menu-bg: #ffffff;
+  --menu-apartados: #8a0194;
+  --menu-paginas: #2c2a2a;
+  --menu-paginas-hvr: #f1f1f1;
+  --menu-iconos: #8a0194;
+  --menu-lineas: #eaeaea;
+  --menu-mostrador: #000000;
+
   /* Dashboard Custom Properties */
   --dash-bg: #fefcf8;
   --dash-banner: #fce04b;
@@ -1634,6 +1692,17 @@
   --ayuda-preg-txt: #dddddd;
 
   --ayuda-link: #a800b7;
+
+  /* =========================
+   Menu Izquierdo
+========================= */
+  --menu-bg: #000000;
+  --menu-apartados: #a800b7;
+  --menu-paginas: #ffffff;
+  --menu-paginas-hvr: #0f0f0f;
+  --menu-iconos: #a800b7;
+  --menu-lineas: #212121;
+  --menu-mostrador: #000000;
 
   /* Dashboard Custom Properties */
   --dash-bg: #121318;
@@ -1855,6 +1924,17 @@
 
   --ayuda-link: #fdc700;
 
+  /* =========================
+   Menu Izquierdo
+========================= */
+  --menu-bg: #ffffff;
+  --menu-apartados: #fdc700;
+  --menu-paginas: #2c2a2a;
+  --menu-paginas-hvr: #f1f1f1;
+  --menu-iconos: #fdc700;
+  --menu-lineas: #eaeaea;
+  --menu-mostrador: #000000;
+
   /* Dashboard Custom Properties */
   --dash-bg: #fefcf8;
   --dash-banner: #fce04b;
@@ -2074,6 +2154,17 @@
   --ayuda-preg-txt: #dddddd;
 
   --ayuda-link: #fdc700;
+
+  /* =========================
+   Menu Izquierdo
+========================= */
+  --menu-bg: #000000;
+  --menu-apartados: #fdc700;
+  --menu-paginas: #ffffff;
+  --menu-paginas-hvr: #0f0f0f;
+  --menu-iconos: #fdc700;
+  --menu-lineas: #212121;
+  --menu-mostrador: #000000;
 
   /* Dashboard Custom Properties */
   --dash-bg: #121318;
@@ -2296,6 +2387,17 @@
 
   --ayuda-link: #f77817;
 
+  /* =========================
+   Menu Izquierdo
+========================= */
+  --menu-bg: #ffffff;
+  --menu-apartados: #f77817;
+  --menu-paginas: #2c2a2a;
+  --menu-paginas-hvr: #f1f1f1;
+  --menu-iconos: #f77817;
+  --menu-lineas: #eaeaea;
+  --menu-mostrador: #000000;
+
   /* Dashboard Custom Properties */
   --dash-bg: #fefcf8;
   --dash-banner: #fce04b;
@@ -2517,6 +2619,17 @@
 
   --ayuda-link: #ff8400;
 
+  /* =========================
+   Menu Izquierdo
+========================= */
+  --menu-bg: #000000;
+  --menu-apartados: #ff8400;
+  --menu-paginas: #ffffff;
+  --menu-paginas-hvr: #0f0f0f;
+  --menu-iconos: #ff8400;
+  --menu-lineas: #212121;
+  --menu-mostrador: #000000;
+
   /* Dashboard Custom Properties */
   --dash-bg: #121318;
   --dash-banner: #4b6554;
@@ -2736,6 +2849,17 @@
   --ayuda-preg-txt: #616161;
 
   --ayuda-link: #ec003f;
+
+  /* =========================
+   Menu Izquierdo
+========================= */
+  --menu-bg: #ffffff;
+  --menu-apartados: #ec003f;
+  --menu-paginas: #2c2a2a;
+  --menu-paginas-hvr: #f1f1f1;
+  --menu-iconos: #ec003f;
+  --menu-lineas: #eaeaea;
+  --menu-mostrador: #000000;
 
   /* Dashboard Custom Properties */
   --dash-bg: #fefcf8;
@@ -2958,6 +3082,17 @@
 
   --ayuda-link: #ec003f;
 
+  /* =========================
+   Menu Izquierdo
+========================= */
+  --menu-bg: #000000;
+  --menu-apartados: #ec003f;
+  --menu-paginas: #ffffff;
+  --menu-paginas-hvr: #0f0f0f;
+  --menu-iconos: #ec003f;
+  --menu-lineas: #212121;
+  --menu-mostrador: #000000;
+
   /* Dashboard Custom Properties */
   --dash-bg: #121318;
   --dash-banner: #4b6554;
@@ -3178,6 +3313,17 @@
 
   --ayuda-link: #5ea500;
 
+  /* =========================
+   Menu Izquierdo
+========================= */
+  --menu-bg: #ffffff;
+  --menu-apartados: #5ea500;
+  --menu-paginas: #2c2a2a;
+  --menu-paginas-hvr: #f1f1f1;
+  --menu-iconos: #5ea500;
+  --menu-lineas: #eaeaea;
+  --menu-mostrador: #000000;
+
   /* Dashboard Custom Properties */
   --dash-bg: #fefcf8;
   --dash-banner: #fce04b;
@@ -3397,6 +3543,17 @@
   --ayuda-preg-txt: #dddddd;
 
   --ayuda-link: #7ccf00;
+
+  /* =========================
+   Menu Izquierdo
+========================= */
+  --menu-bg: #000000;
+  --menu-apartados: #7ccf00;
+  --menu-paginas: #ffffff;
+  --menu-paginas-hvr: #0f0f0f;
+  --menu-iconos: #7ccf00;
+  --menu-lineas: #212121;
+  --menu-mostrador: #000000;
 
   /* Dashboard Custom Properties */
   --dash-bg: #121318;
@@ -3623,6 +3780,15 @@
 
   --color-ayuda-link: var(--ayuda-link);
   --color-ayuda-link-hvr: var(--ayuda-link-hvr);
+
+  /* Menu Izquierdo */
+  --color-menu-bg: var(--menu-bg);
+  --color-menu-apartados: var(--menu-apartados);
+  --color-menu-paginas: var(--menu-paginas);
+  --color-menu-paginas-hover: var(--menu-paginas-hvr);
+  --color-menu-iconos: var(--menu-iconos);
+  --color-menu-lineas: var(--menu-lineas);
+  --color-menu-mostrador: var(--menu-mostrador);
 
   /* wobble 4 */
   /* --color-wobble-ttl: var(--wobble-ttl);
