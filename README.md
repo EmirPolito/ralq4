@@ -24,7 +24,7 @@ Una plataforma educativa de vanguardia construida con **Next.js**, diseñada par
 
 ## 🌟 Características principales
 
-### 🔬 Química Interactiva en 3D y RA
+### 🔬 Química Interactiva en 3D con RA
 
 - **Modelos Moleculares 3D**: Explora estructuras químicas con detalle atómico gracias a **Three.js** — rota, acerca y analiza cada enlace en tiempo real.
 - **Realidad Aumentada**: Proyecta instrumentos y moléculas en tu entorno real con **A-Frame** desde la cámara de tu dispositivo.
