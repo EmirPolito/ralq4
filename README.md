@@ -22,13 +22,7 @@ Una plataforma educativa de vanguardia construida con **Next.js**, diseñada par
 
 ---
 
-## 🌟 Características Destacadas
-
-### 🌎 Internacionalización Completa (i18n)
-
-- **Selector de idiomas**: `Español`, `Portugués` e `Inglés`.
-- **Persistencia de Idioma**: El idioma seleccionado se guarda automáticamente en `localStorage` para futuras visitas.
-- **Localización Dinámica**: Todos los componentes, desde el Hero hasta los documentos legales, están completamente traducidos.
+## 🌟 Características principales
 
 ### 🔬 Química Interactiva en 3D y RA
 
@@ -36,6 +30,12 @@ Una plataforma educativa de vanguardia construida con **Next.js**, diseñada par
 - **Realidad Aumentada**: Proyecta instrumentos y moléculas en tu entorno real con **A-Frame** desde la cámara de tu dispositivo.
 - **80+ Instrumentos de Laboratorio**: Desde matraces Erlenmeyer hasta espectrofotómetros, con anotaciones técnicas y guías de uso.
 - **Datos Científicos Verificados**: Información molecular proviente de **PubChem** y contenido educativo de **Khan Academy**.
+
+### 🌎 Internacionalización Completa (i18n)
+
+- **Selector de idiomas**: `Español`, `Portugués` e `Inglés`.
+- **Persistencia de Idioma**: El idioma seleccionado se guarda automáticamente en `localStorage` para futuras visitas.
+- **Localización Dinámica**: Todos los componentes, desde el Hero hasta los documentos legales, están completamente traducidos.
 
 ### 🎨 Diseño Premium & UX
 
