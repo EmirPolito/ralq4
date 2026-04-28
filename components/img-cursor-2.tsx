@@ -26,10 +26,30 @@ const tech = [
     imageSrc: "https://assets.aceternity.com/templates/startup-1.webp",
   },
 
-  { name: "Three.js", url: "https://threejs.org", role: "3D Engine", imageSrc: "https://assets.aceternity.com/templates/startup-2.webp" },
-  { name: "A-Frame", url: "https://aframe.io", role: "AR Framework", imageSrc: "https://assets.aceternity.com/templates/startup-3.webp" },
-  { name: "Next.js", url: "https://nextjs.org", role: "Web Framework", imageSrc: "https://assets.aceternity.com/templates/startup-4.webp" },
-  { name: "OpenAI", url: "https://openai.com", role: "IA ", imageSrc: "https://assets.aceternity.com/macbook.png" },
+  {
+    name: "Three.js",
+    url: "https://threejs.org",
+    role: "3D Engine",
+    imageSrc: "https://assets.aceternity.com/templates/startup-2.webp",
+  },
+  {
+    name: "A-Frame",
+    url: "https://aframe.io",
+    role: "AR Framework",
+    imageSrc: "https://assets.aceternity.com/templates/startup-3.webp",
+  },
+  {
+    name: "Next.js",
+    url: "https://nextjs.org",
+    role: "Web Framework",
+    imageSrc: "https://assets.aceternity.com/templates/startup-4.webp",
+  },
+  {
+    name: "OpenAI",
+    url: "https://openai.com",
+    role: "IA ",
+    imageSrc: "https://assets.aceternity.com/macbook.png",
+  },
 ];
 
 export default function ImgCursorDemo2() {
@@ -39,7 +59,7 @@ export default function ImgCursorDemo2() {
   return (
     <section
       id="resources"
-      className="relative bg-imgcursor-bg px-4 py-20 md:px-8 md:py-18"
+      className="relative bg-imgcursor-bg px-4 py-8 md:px-8 md:py-1"
     >
       <div className="mx-auto max-w-[1400px]">
         {/* Centered Title */}

@@ -62,7 +62,7 @@
   --carrusel2-mini-bg: #0866b3;
   --carrusel2-mini-txt: #fefefe;
 
-  --carrusel2-ttl: #020202;
+  --carrusel2-ttl: #000000;
   --carrusel2-desc: #2c2a2a;
   --carrusel2-sig: #000000;
   --carrusel2-sig-txt: #ffffff;
@@ -72,12 +72,12 @@
   --tres-ttl: #000000;
   --tres-desc: #333333;
 
-  --tres-num: #cccccc;
+  --tres-num: #000000;
   --tres-mini-bg: #f5f5f5;
   --tres-mini-borde: #e1e1e1;
   --tres-mini-txt: #000000;
 
-  --tres-ttl: #020202;
+  --tres-ttl: #000000;
   --tres-desc: #2c2a2a;
 
   --tres-caracteristicas-bg: #f5f5f5;
@@ -344,7 +344,7 @@
   --tres-ttl: #ffffff;
   --tres-desc: #dad9d9;
 
-  --tres-num: #333333;
+  --tres-num: #ffffff;
   --tres-mini-bg: #1a1a1a;
   --tres-mini-borde: #303030;
   --tres-mini-txt: #ffffff;
@@ -850,7 +850,7 @@
   --tres-ttl: #155dfc;
   --tres-desc: #616161;
 
-  --tres-num: #dbdbdb;
+  --tres-num: #155dfc;
   --tres-mini-bg: #f1f1f1;
   --tres-mini-borde: #bfbfbf;
   --tres-mini-txt: #155dfc;
@@ -1071,7 +1071,7 @@
   --tres-ttl: #155dfc;
   --tres-desc: #dddddd;
 
-  --tres-num: #333333;
+  --tres-num: #155dfc;
   --tres-mini-bg: #1a1a1a;
   --tres-mini-borde: #303030;
   --tres-mini-txt: #155dfc;
@@ -1291,7 +1291,7 @@
   --tres-ttl: #8a0194;
   --tres-desc: #2c2a2a;
 
-  --tres-num: #dbdbdb;
+  --tres-num: #8a0194;
   --tres-mini-bg: #f1f1f1;
   --tres-mini-borde: #bfbfbf;
   --tres-mini-txt: #8a0194;
@@ -1511,7 +1511,7 @@
   --tres-ttl: #a800b7;
   --tres-desc: #dddddd;
 
-  --tres-num: #333333;
+  --tres-num: #a800b7;
   --tres-mini-bg: #1a1a1a;
   --tres-mini-borde: #303030;
   --tres-mini-txt: #a800b7;
@@ -1731,7 +1731,7 @@
   --tres-ttl: #fdc700;
   --tres-desc: #2c2a2a;
 
-  --tres-num: #dbdbdb;
+  --tres-num: #fdc700;
   --tres-mini-bg: #f1f1f1;
   --tres-mini-borde: #bfbfbf;
   --tres-mini-txt: #fdc700;
@@ -1951,7 +1951,7 @@
   --tres-ttl: #fdc700;
   --tres-desc: #dddddd;
 
-  --tres-num: #333333;
+  --tres-num: #fdc700;
   --tres-mini-bg: #1a1a1a;
   --tres-mini-borde: #303030;
   --tres-mini-txt: #fdc700;
@@ -2172,7 +2172,7 @@
   --tres-ttl: #f77817;
   --tres-desc: #2c2a2a;
 
-  --tres-num: #dbdbdb;
+  --tres-num: #f77817;
   --tres-mini-bg: #f1f1f1;
   --tres-mini-borde: #bfbfbf;
   --tres-mini-txt: #f77817;
@@ -2392,7 +2392,7 @@
   --tres-ttl: #ff8400;
   --tres-desc: #dddddd;
 
-  --tres-num: #333333;
+  --tres-num: #ff8400;
   --tres-mini-bg: #1a1a1a;
   --tres-mini-borde: #303030;
   --tres-mini-txt: #ff8400;
@@ -2613,7 +2613,7 @@
   --tres-ttl: #ec003f;
   --tres-desc: #2c2a2a;
 
-  --tres-num: #dbdbdb;
+  --tres-num: #ec003f;
   --tres-mini-bg: #f1f1f1;
   --tres-mini-borde: #bfbfbf;
   --tres-mini-txt: #ec003f;
@@ -2833,7 +2833,7 @@
   --tres-ttl: #ec003f;
   --tres-desc: #dddddd;
 
-  --tres-num: #333333;
+  --tres-num: #ec003f;
   --tres-mini-bg: #1a1a1a;
   --tres-mini-borde: #303030;
   --tres-mini-txt: #ec003f;
@@ -3054,7 +3054,7 @@
   --tres-ttl: #5ea500;
   --tres-desc: #2c2a2a;
 
-  --tres-num: #dbdbdb;
+  --tres-num: #5ea500;
   --tres-mini-bg: #f1f1f1;
   --tres-mini-borde: #bfbfbf;
   --tres-mini-txt: #5ea500;
@@ -3274,7 +3274,7 @@
   --tres-ttl: #7ccf00;
   --tres-desc: #dddddd;
 
-  --tres-num: #333333;
+  --tres-num: #7ccf00;
   --tres-mini-bg: #1a1a1a;
   --tres-mini-borde: #303030;
   --tres-mini-txt: #7ccf00;

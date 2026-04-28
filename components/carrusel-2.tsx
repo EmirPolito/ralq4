@@ -86,8 +86,8 @@ function Feature() {
   const bgColor = resolvedTheme === "light" ? "#dff4e5" : "var(--background)";
 
   return (
-    <div className="w-full py-20 lg:py-22">
-      <div className="container mx-auto px-5 md:px-18">
+    <div className="w-full py-0 lg:py-0">
+      <div className="container mx-auto px-5 md:px-14">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 min-h-[400px]">
           {/* Texto */}
           <div className="flex gap-2 flex-col items-center text-center lg:items-start lg:text-left">
@@ -98,10 +98,9 @@ function Feature() {
             </div>
 
             <div className="flex gap-1.5 flex-col items-center lg:items-start">
-              <h2 className="text-carrusel2-ttl text-balance text-2xl font-semibold leading-[1.1] tracking-tight md:text-4xl lg:text-6xl">
-                {t("titleLine1")}
-                <br />
-                {t("titleLine2")}
+              <h2 className="text-balance text-2xl font-semibold leading-[1.1] tracking-tight md:text-4xl lg:text-6xl">
+                <span className="block text-titulos">{t("titleLine1")}</span>
+                <span className="block text-carrusel2-ttl">{t("titleLine2")}</span>
               </h2>
 
               <div className="text-carrusel2-desc text-sm lg:text-base px-3.5 md:px-0 lg:max-w-xl max-w-xl leading-relaxed tracking-tight text-justify mx-auto lg:mx-0 lg:text-left [text-align-last:center] lg:[text-align-last:left]">

@@ -24,7 +24,7 @@ export default function Preguntas1() {
   const items = t.raw("items") as { question: string; answer: string }[];
 
   return (
-    <section className="bg-background @container py-15 md:py-24 lg:py-22">
+    <section className="bg-background @container py-18 md:py-24 lg:py-22">
       <div className="mx-auto max-w-8xl px-5 md:px-12 lg:px-15">
         <div className="@xl:flex-row @xl:items-start lg:gap-5 flex flex-col gap-5">
           {/* LADO IZQUIERDO */}

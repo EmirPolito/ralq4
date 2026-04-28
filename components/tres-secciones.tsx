@@ -6,6 +6,10 @@ import { cn } from "@/lib/utils";
 import { useReducedMotion } from "@/hooks/use-reduced-motion";
 import { useTranslations } from "next-intl";
 
+import img1 from "../public/img/quimica/img1.jpg";
+import img2 from "../public/img/quimica/img2.jpg";
+import img3 from "../public/img/quimica/img3.jpg";
+
 export default function TresPasosLaboratorio() {
   const t = useTranslations("tresPasos");
   const reducedMotion = useReducedMotion();
@@ -15,7 +19,7 @@ export default function TresPasosLaboratorio() {
       step: "01",
       title: t("step1.title"),
       description: t("step1.description"),
-      image: "/img/quimica/img1.jpg",
+      image: img1,
       tag: t("step1.tag"),
       details: [t("step1.detail1"), t("step1.detail2"), t("step1.detail3")],
       align: "left",
@@ -37,7 +41,7 @@ export default function TresPasosLaboratorio() {
       step: "02",
       title: t("step2.title"),
       description: t("step2.description"),
-      image: "/img/quimica/img2.jpg",
+      image: img2,
       tag: t("step2.tag"),
       details: [t("step2.detail1"), t("step2.detail2"), t("step2.detail3")],
       align: "right",
@@ -59,7 +63,7 @@ export default function TresPasosLaboratorio() {
       step: "03",
       title: t("step3.title"),
       description: t("step3.description"),
-      image: "/img/quimica/img3.jpg",
+      image: img3,
       tag: t("step3.tag"),
       details: [t("step3.detail1"), t("step3.detail2"), t("step3.detail3")],
       align: "left",
@@ -82,7 +86,7 @@ export default function TresPasosLaboratorio() {
   return (
     <section
       id="how-it-works"
-      className="relative overflow-hidden bg-tres-bg px-5 py-[1px] md:px-12 md:py-24 lg:py-5"
+      className="relative overflow-hidden bg-tres-bg px-5 py-[27px] md:px-12 md:py-24 lg:py-20"
     >
       {/* Section heading — left-anchored, not centered */}
       <div className="mx-auto max-w-[1400px]">
@@ -90,7 +94,7 @@ export default function TresPasosLaboratorio() {
           {/* Título — tresPasos.titleLine1 + tresPasos.titleLine2 */}
           <h2 className="text-titulos font-semibold leading-[1.15] tracking-tight text-2xl sm:text-4xl md:text-5xl lg:text-6xl">
             <span className="block">{t("titleLine1")}</span>
-            <span className="block text-hero-ttl">{t("titleLine2")}</span>
+            <span className="block text-tres-ttl">{t("titleLine2")}</span>
           </h2>
         </div>
 
@@ -174,14 +178,15 @@ export default function TresPasosLaboratorio() {
                   <Image
                     src={step.image}
                     alt={step.title}
+                    placeholder="blur"
                     width={800}
                     height={500}
-                    quality={85}
-                    priority={index <= 1}
-                    loading={index <= 1 ? "eager" : "lazy"}
+                    quality={75}
+                    loading="lazy"
+                    decoding="async"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
                     className={cn(
-                      "h-full w-full object-cover transition duration-700 will-change-transform dark:opacity-90 [transform:translateZ(0)] [backface-visibility:hidden]",
+                      "h-full w-full object-cover transition duration-700 dark:opacity-90 [transform:translateZ(0)] [backface-visibility:hidden]",
                       !reducedMotion && "group-hover:scale-[1.03]",
                     )}
                   />

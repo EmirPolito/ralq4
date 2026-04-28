@@ -20,13 +20,13 @@ export default function Page() {
       {/* Carrusel 1*/}
       <Carousel />
 
-      {/* 3 tarjetas pin */}
-      <PinCardsSection />
-
       {/* imagene automatico*/}
       <ScrollAnimation direction="up" delay={0.1}>
         <Feature />
       </ScrollAnimation>
+
+      {/* 3 tarjetas pin */}
+      <PinCardsSection />
 
       {/* 3 pasos para laboratorio completo*/}
       <TresPasosLaboratorio />
