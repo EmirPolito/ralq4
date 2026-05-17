@@ -1,6 +1,6 @@
 "use client";
 
-import React, { Suspense } from "react";
+import React, { Suspense, useState, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Environment, AdaptiveDpr, AdaptiveEvents } from "@react-three/drei";
 import { Controls } from "./Controls";
@@ -15,7 +15,21 @@ export function Scene({
   showBackground = true,
   resetTrigger,
   onReady,
-}: SceneProps) {
+  shouldRenderModel = true,
+}: SceneProps & { shouldRenderModel?: boolean }) {
+  const [renderedPaths, setRenderedPaths] = useState<string[]>([]);
+
+  // Add the current glbPath to the rendered paths pool when it is active and should render
+  useEffect(() => {
+    if (glbPath && shouldRenderModel) {
+      setRenderedPaths((prev) => {
+        if (prev.includes(glbPath)) {
+          return prev; // Return same reference to prevent duplicate keys and unnecessary renders
+        }
+        return [...prev, glbPath];
+      });
+    }
+  }, [glbPath, shouldRenderModel]);
   return (
     <Canvas
       gl={{
@@ -47,10 +61,17 @@ export function Scene({
         <Environment preset="studio" />
       </Suspense>
 
-      {/* Model with Suspense fallback */}
-      <Suspense fallback={null}>
-        <GLBModel key={glbPath} glbPath={glbPath} viewMode={viewMode} onReady={onReady} />
-      </Suspense>
+      {/* Render all loaded models from the cache pool, but only make the active one visible */}
+      {renderedPaths.map((path) => (
+        <Suspense fallback={null} key={path}>
+          <GLBModel
+            glbPath={path}
+            viewMode={viewMode}
+            onReady={path === glbPath ? onReady : undefined}
+            visible={path === glbPath && shouldRenderModel}
+          />
+        </Suspense>
+      ))}
 
       {/* Orbit controls */}
       <Controls 

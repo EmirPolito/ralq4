@@ -21,6 +21,7 @@ export interface GLBModelProps {
   glbPath: string;
   viewMode?: string;
   onReady?: () => void;
+  visible?: boolean;
 }
 
 export interface SceneProps {

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useRef, useEffect, useMemo, memo } from "react";
+import React, { useState, useRef, useEffect, useLayoutEffect, useMemo, memo } from "react";
 import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
@@ -12,12 +12,19 @@ useGLTF.setDecoderPath("https://www.gstatic.com/draco/versioned/decoders/1.5.5/"
 /**
  * GLBModel — loads and renders a .glb file via useGLTF.
  */
-const GLBModel = memo(function GLBModel({ glbPath, viewMode, onReady }: GLBModelProps) {
+const GLBModel = memo(function GLBModel({ glbPath, viewMode, onReady, visible = true }: GLBModelProps) {
   const groupRef = useRef<THREE.Group>(null);
   const { scene } = useGLTF(glbPath);
 
-  const initialY = useRef(0);
+  const [lastGlbPath, setLastGlbPath] = useState(glbPath);
   const [isReady, setIsReady] = useState(false);
+  const initialY = useRef(0);
+
+  // Instantly hide the model during render phase when glbPath changes to completely eliminate 1-frame snapping glitches!
+  if (glbPath !== lastGlbPath) {
+    setLastGlbPath(glbPath);
+    setIsReady(false);
+  }
 
   // Keep a stable ref of onReady to prevent any React hook dependency array issues
   const onReadyRef = useRef(onReady);
@@ -25,13 +32,8 @@ const GLBModel = memo(function GLBModel({ glbPath, viewMode, onReady }: GLBModel
     onReadyRef.current = onReady;
   }, [onReady]);
 
-  // Reset ready state when model changes to prevent snapping glitches
-  useEffect(() => {
-    setIsReady(false);
-  }, [scene]);
-
   // Center and scale the model automatically to a target bounding box of 2.5
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!groupRef.current) return;
 
     // Reset parent group transform completely
@@ -75,7 +77,7 @@ const GLBModel = memo(function GLBModel({ glbPath, viewMode, onReady }: GLBModel
   });
 
   return (
-    <group ref={groupRef} visible={isReady}>
+    <group ref={groupRef} visible={isReady && visible}>
       <primitive object={scene} />
     </group>
   );
