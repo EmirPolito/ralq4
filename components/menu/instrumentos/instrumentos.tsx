@@ -25,7 +25,7 @@ export default function InstrumentosPage() {
         <div
           className="flex items-center gap-3 rounded-3xl px-4 py-3 border w-full"
           style={{
-            background: "var(--menu2-izq-tarjeta-bg)",
+            background: "var(--menu2-header-bg)",
             borderColor: "var(--menu2-izq-buscador-borde)",
           }}
         >
