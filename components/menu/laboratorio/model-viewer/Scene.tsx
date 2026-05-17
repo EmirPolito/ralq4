@@ -14,6 +14,7 @@ export function Scene({
   autoRotate = false,
   showBackground = true,
   resetTrigger,
+  onReady,
 }: SceneProps) {
   return (
     <Canvas
@@ -37,7 +38,6 @@ export function Scene({
       <directionalLight
         position={[5, 8, 5]}
         intensity={viewMode === "anatomy" ? 0.5 : 1.2}
-        castShadow
       />
       <directionalLight position={[-5, 2, -5]} intensity={0.3} />
       <pointLight position={[0, 5, 0]} intensity={0.4} />
@@ -49,7 +49,7 @@ export function Scene({
 
       {/* Model with Suspense fallback */}
       <Suspense fallback={null}>
-        <GLBModel glbPath={glbPath} viewMode={viewMode} />
+        <GLBModel key={glbPath} glbPath={glbPath} viewMode={viewMode} onReady={onReady} />
       </Suspense>
 
       {/* Orbit controls */}

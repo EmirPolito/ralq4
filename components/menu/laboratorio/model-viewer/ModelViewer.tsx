@@ -1,17 +1,10 @@
 "use client";
 
-import React, { useState, useEffect, useCallback, Component, ErrorInfo, ReactNode } from "react";
+import React, { useState, useEffect, useCallback, Component, ErrorInfo, ReactNode, Suspense } from "react";
 import { ModelLoader, ModelError } from "./Loader";
 import { ModelViewerProps } from "./types";
-import dynamic from "next/dynamic";
-
-const Scene = dynamic(
-  () => import("./Scene").then((mod) => ({ default: mod.Scene })),
-  {
-    ssr: false,
-    loading: () => <ModelLoader />,
-  }
-);
+import { Scene } from "./Scene";
+import { cn } from "@/lib/utils";
 
 // --- Simple robust React Error Boundary ---
 interface ErrorBoundaryProps {
@@ -65,6 +58,7 @@ export function ModelViewer({
   const [hasError, setHasError] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [imageError, setImageError] = useState(false);
+  const [is3DReady, setIs3DReady] = useState(false);
 
   // Avoid hydration mismatch
   useEffect(() => {
@@ -75,6 +69,7 @@ export function ModelViewer({
   useEffect(() => {
     setHasError(false);
     setImageError(false);
+    setIs3DReady(false);
   }, [glbPath]);
 
   const handleSceneError = useCallback(() => {
@@ -105,18 +100,38 @@ export function ModelViewer({
   }
 
   return (
-    <div className="absolute inset-0 w-full h-full" aria-label={name}>
+    <div className="absolute inset-0 w-full h-full relative" aria-label={name}>
+      {/* 2D Fallback Image as an Instant-feedback Overlay — crossfades seamlessly to 3D when ready */}
+      {fallbackImage && !imageError && (
+        <div
+          className={cn(
+            "absolute inset-0 flex items-center justify-center p-4 transition-opacity duration-700 pointer-events-none bg-menu2-izq-bg",
+            is3DReady ? "opacity-0 z-0" : "opacity-100 z-20"
+          )}
+        >
+          <img
+            src={fallbackImage}
+            alt={name}
+            onError={() => setImageError(true)}
+            className="w-48 h-48 object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.4)]"
+          />
+        </div>
+      )}
+
       <ErrorBoundary
         fallback={renderFallback()}
         onError={handleSceneError}
       >
-        <Scene
-          glbPath={glbPath}
-          viewMode={viewMode}
-          autoRotate={autoRotate}
-          showBackground={showBackground}
-          resetTrigger={resetTrigger}
-        />
+        <Suspense fallback={renderFallback()}>
+          <Scene
+            glbPath={glbPath}
+            viewMode={viewMode}
+            autoRotate={autoRotate}
+            showBackground={showBackground}
+            resetTrigger={resetTrigger}
+            onReady={() => setIs3DReady(true)}
+          />
+        </Suspense>
       </ErrorBoundary>
     </div>
   );

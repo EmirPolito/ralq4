@@ -1,10 +1,10 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import { cn } from "@/lib/utils";
-import { motion } from "framer-motion";
 import { Search } from "lucide-react";
 import { ItemData } from "../data";
+import { useGLTF } from "@react-three/drei";
 
 export function InstrumentSidebar({
   activeId,
@@ -19,10 +19,10 @@ export function InstrumentSidebar({
 }) {
   const [searchQuery, setSearchQuery] = useState("");
 
-  const filteredData = data.filter((item) => {
+  const filteredData = useMemo(() => {
     const query = searchQuery.toLowerCase();
-    return item.name.toLowerCase().startsWith(query);
-  });
+    return data.filter((item) => item.name.toLowerCase().startsWith(query));
+  }, [data, searchQuery]);
 
   return (
     <div className="flex flex-col h-full min-h-0 w-full">
@@ -49,12 +49,17 @@ export function InstrumentSidebar({
           filteredData.map((item) => {
             const isActive = activeId === item.id;
             return (
-              <motion.button
+              <button
                 key={item.id}
                 onClick={() => onSelect(item.id)}
+                onMouseEnter={() => {
+                  if (item.glbPath) {
+                    useGLTF.preload(item.glbPath);
+                  }
+                }}
                 className={cn(
                   /**tarjeta rectagular*/
-                  "cursor-pointer w-full flex items-center gap-2.5 p-2.5 rounded-lg transition-all duration-200",
+                  "cursor-pointer w-full flex items-center gap-2.5 p-2.5 rounded-lg transition-all duration-200 outline-none border-none",
                   isActive ? "bg-menu2-izq-tarjeta-bg shadow-lg" : "",
                 )}
               >
@@ -94,7 +99,7 @@ export function InstrumentSidebar({
                     {item.subtitle}
                   </span>
                 </div>
-              </motion.button>
+              </button>
             );
           })
         ) : (

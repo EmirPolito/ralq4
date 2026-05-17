@@ -19,86 +19,17 @@ import {
 } from "lucide-react";
 
 import { Canvas, useFrame } from "@react-three/fiber";
-import { useGLTF } from "@react-three/drei";
+import { useGLTF, OrbitControls } from "@react-three/drei";
 import * as THREE from "three";
 
 import { ItemData } from "../data";
 import { ModelViewer } from "./model-viewer/ModelViewer";
 
 // Set up Google's hosted Draco decoders globally for Drei's useGLTF
-useGLTF.setDecoderPath("https://www.gstatic.com/draco/versioned/decoders/1.5.5/");
+useGLTF.setDecoderPath(
+  "https://www.gstatic.com/draco/versioned/decoders/1.5.5/",
+);
 
-function MiniModel({ glbPath, shouldRotate }: { glbPath: string; shouldRotate: boolean }) {
-  const groupRef = useRef<THREE.Group>(null);
-  const { scene } = useGLTF(glbPath);
-  const clonedScene = useMemo(() => scene.clone(true), [scene]);
-  const [isReady, setIsReady] = useState(false);
-
-  // Reset ready state when model changes to prevent any popping glitches
-  useEffect(() => {
-    setIsReady(false);
-  }, [clonedScene]);
-
-  useEffect(() => {
-    if (!groupRef.current) return;
-    
-    // Reset group transforms first so box calculation is completely clean and accurate!
-    groupRef.current.rotation.set(0, 0, 0);
-    groupRef.current.scale.set(1, 1, 1);
-    groupRef.current.position.set(0, 0, 0);
-    groupRef.current.updateMatrixWorld(true);
-
-    const box = new THREE.Box3().setFromObject(clonedScene);
-    const center = box.getCenter(new THREE.Vector3());
-    const size = box.getSize(new THREE.Vector3());
-    const maxDim = Math.max(size.x, size.y, size.z);
-    
-    const targetSize = 1.4; 
-    const scale = maxDim > 0 ? targetSize / maxDim : 1;
-    groupRef.current.scale.setScalar(scale);
-    
-    const pos = center.clone().multiplyScalar(-scale);
-    // Shift slightly down in Y so the model is perfectly centered visually
-    pos.y -= 0.05;
-    groupRef.current.position.copy(pos);
-    
-    setIsReady(true);
-  }, [clonedScene]);
-
-  useFrame((state, delta) => {
-    if (groupRef.current && shouldRotate && isReady) {
-      groupRef.current.rotation.y += delta * 0.32;
-    }
-  });
-
-  return (
-    <group ref={groupRef} visible={isReady}>
-      <primitive object={clonedScene} />
-    </group>
-  );
-}
-
-const MiniModelViewer = memo(function MiniModelViewer({
-  glbPath,
-  shouldRotate = true,
-}: {
-  glbPath: string;
-  shouldRotate?: boolean;
-}) {
-  return (
-    <div className="w-full h-full pointer-events-none select-none flex items-center justify-center">
-      <Canvas
-        camera={{ position: [0, 0.15, 2.5], fov: 45 }}
-        gl={{ antialias: true, alpha: true }}
-        style={{ background: "transparent", width: "100%", height: "100%" }}
-      >
-        <ambientLight intensity={1.6} />
-        <directionalLight position={[2, 5, 2]} intensity={2.0} />
-        <MiniModel glbPath={glbPath} shouldRotate={shouldRotate} />
-      </Canvas>
-    </div>
-  );
-});
 
 
 export function InstrumentViewer({
@@ -188,7 +119,7 @@ export function InstrumentViewer({
       */}
 
       {/* Visualizador de modelo 3D — Ocupa toda la pantalla del centro */}
-      <div 
+      <div
         ref={containerRef}
         className="relative w-full h-full flex-1 rounded-xl overflow-hidden group bg-menu2-izq-bg"
       >
@@ -200,7 +131,7 @@ export function InstrumentViewer({
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             className={cn(
-              "absolute inset-0 transition-colors duration-700 bg-menu2-izq-bg"
+              "absolute inset-0 transition-colors duration-700 bg-menu2-izq-bg",
             )}
           >
             {/* Anatomy Grid Effect */}
@@ -211,7 +142,7 @@ export function InstrumentViewer({
         </AnimatePresence>
 
         {/* Central Model — GLB Viewer or PNG Fallback */}
-        <div className="absolute inset-0 flex items-center justify-center">
+        <div className="absolute inset-0 flex items-center justify-center -translate-x-4">
           <ModelViewer
             glbPath={activeItem.glbPath ?? ""}
             fallbackImage={activeItem.image}
@@ -222,8 +153,6 @@ export function InstrumentViewer({
             resetTrigger={resetTrigger}
           />
         </div>
-
-
 
         {/* Botones de Control de Cámara y Pantalla Completa — Ubicados en la esquina superior derecha */}
         <div className="absolute top-4 right-4 z-30 flex flex-col gap-2">
@@ -285,6 +214,26 @@ export function BottomSections({
   const itemA = data.find((i) => i.id === compareA) ?? data[0];
   const itemB = data.find((i) => i.id === compareB) ?? data[1];
 
+  // Stagger model preloading in the background to keep the main thread completely lag-free
+  useEffect(() => {
+    const modelsToPreload = data.filter((item) => item.glbPath);
+    let index = 0;
+
+    const interval = setInterval(() => {
+      if (index < modelsToPreload.length) {
+        const item = modelsToPreload[index];
+        if (item.glbPath) {
+          useGLTF.preload(item.glbPath);
+        }
+        index++;
+      } else {
+        clearInterval(interval);
+      }
+    }, 1500); // Stagger preloading: 1 model every 1.5s in the background
+
+    return () => clearInterval(interval);
+  }, [data]);
+
   if (isInstrument) {
     const modes = [
       { id: "normal", label: "Vista General", emoji: "📦", bg: "bg-blue-50" },
@@ -320,31 +269,18 @@ export function BottomSections({
                   "bg-menu2-abajo-bg-bgtarjeta",
                 )}
               >
-                {activeItem.glbPath ? (
-                  <div
+                <div className="p-4 flex items-center justify-center absolute inset-0">
+                  <img
+                    src={activeItem.image}
+                    alt={mode.label}
                     className={cn(
-                      "absolute inset-0 transition-all duration-500 flex items-center justify-center",
+                      "w-31 h-31 object-contain transition-all duration-500",
                       viewMode !== mode.id
                         ? "opacity-40 grayscale"
-                        : "opacity-100",
+                        : "opacity-100 drop-shadow-md",
                     )}
-                  >
-                    <MiniModelViewer key={`${activeItem.glbPath}-${mode.id}`} glbPath={activeItem.glbPath} shouldRotate={mode.id !== "normal"} />
-                  </div>
-                ) : (
-                  <div className="p-4 flex items-center justify-center">
-                    <img
-                      src={activeItem.image}
-                      alt={mode.label}
-                      className={cn(
-                        "w-12 h-12 object-contain transition-all duration-500",
-                        viewMode !== mode.id
-                          ? "opacity-40 grayscale"
-                          : "opacity-100",
-                      )}
-                    />
-                  </div>
-                )}
+                  />
+                </div>
                 {viewMode === mode.id && (
                   <div className="bg-white/5 absolute inset-0 pointer-events-none" />
                 )}

@@ -12,20 +12,23 @@ useGLTF.setDecoderPath("https://www.gstatic.com/draco/versioned/decoders/1.5.5/"
 /**
  * GLBModel — loads and renders a .glb file via useGLTF.
  */
-const GLBModel = memo(function GLBModel({ glbPath, viewMode }: GLBModelProps) {
+const GLBModel = memo(function GLBModel({ glbPath, viewMode, onReady }: GLBModelProps) {
   const groupRef = useRef<THREE.Group>(null);
   const { scene } = useGLTF(glbPath);
 
-  // Clone the scene to avoid mutation issues when switching models
-  const clonedScene = useMemo(() => scene.clone(true), [scene]);
-
-  const [initialY, setInitialY] = useState(0);
+  const initialY = useRef(0);
   const [isReady, setIsReady] = useState(false);
+
+  // Keep a stable ref of onReady to prevent any React hook dependency array issues
+  const onReadyRef = useRef(onReady);
+  useEffect(() => {
+    onReadyRef.current = onReady;
+  }, [onReady]);
 
   // Reset ready state when model changes to prevent snapping glitches
   useEffect(() => {
     setIsReady(false);
-  }, [clonedScene]);
+  }, [scene]);
 
   // Center and scale the model automatically to a target bounding box of 2.5
   useEffect(() => {
@@ -37,7 +40,7 @@ const GLBModel = memo(function GLBModel({ glbPath, viewMode }: GLBModelProps) {
     groupRef.current.rotation.set(0, 0, 0);
     groupRef.current.updateMatrixWorld(true);
 
-    const box = new THREE.Box3().setFromObject(clonedScene);
+    const box = new THREE.Box3().setFromObject(scene);
     const center = box.getCenter(new THREE.Vector3());
     const size = box.getSize(new THREE.Vector3());
     const maxDim = Math.max(size.x, size.y, size.z);
@@ -49,11 +52,12 @@ const GLBModel = memo(function GLBModel({ glbPath, viewMode }: GLBModelProps) {
     groupRef.current.scale.setScalar(scale);
     const pos = center.clone().multiplyScalar(-scale);
     groupRef.current.position.copy(pos);
-    setInitialY(pos.y);
+    initialY.current = pos.y;
 
     // Mark as ready once the centering layout math has settled
     setIsReady(true);
-  }, [clonedScene]);
+    onReadyRef.current?.();
+  }, [scene]);
 
   // Animate parts dynamically
   useFrame(({ clock }, delta) => {
@@ -63,16 +67,16 @@ const GLBModel = memo(function GLBModel({ glbPath, viewMode }: GLBModelProps) {
     if (groupRef.current) {
       if (viewMode !== "normal") {
         groupRef.current.rotation.y += delta * 0.45; // a little bit faster auto-rotation as requested!
-        groupRef.current.position.y = Math.sin(time * 0.8) * 0.05 + initialY;
+        groupRef.current.position.y = Math.sin(time * 0.8) * 0.05 + initialY.current;
       } else {
-        groupRef.current.position.y = initialY;
+        groupRef.current.position.y = initialY.current;
       }
     }
   });
 
   return (
     <group ref={groupRef} visible={isReady}>
-      <primitive object={clonedScene} />
+      <primitive object={scene} />
     </group>
   );
 });

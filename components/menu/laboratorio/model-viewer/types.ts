@@ -20,6 +20,7 @@ export interface ModelViewerProps {
 export interface GLBModelProps {
   glbPath: string;
   viewMode?: string;
+  onReady?: () => void;
 }
 
 export interface SceneProps {
@@ -28,6 +29,7 @@ export interface SceneProps {
   autoRotate?: boolean;
   showBackground?: boolean;
   resetTrigger?: number;
+  onReady?: () => void;
 }
 
 export type ViewerState = "loading" | "loaded" | "error" | "fallback";
