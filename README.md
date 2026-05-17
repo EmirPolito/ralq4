@@ -34,6 +34,7 @@ RALQ 2 es una plataforma educativa de vanguardia construida con **Next.js**, dis
 - **Ayuda**: Preguntas frecuentes y guías para el uso de la plataforma.
 - **Políticas de Privacidad**: Documento legal sobre el tratamiento y protección de los datos de los usuarios.
 - **Términos y Condiciones**: Documento legal con las condiciones de uso de la plataforma.
+- **Laboratorio**: Pagina donde se muestran los modelos 3D de los elementos químicos y compuestos, con información detallada.
 
 #### Accesibilidad y Experiencia de Usuario
 
