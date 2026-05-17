@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useRef, useMemo, memo } from "react";
+import React, { useState, useEffect, useRef, useMemo } from "react";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -10,17 +10,9 @@ import {
   ChevronDown,
   ChevronRight,
   BarChart2,
-  Box,
-  Eye,
-  Camera,
-  Download,
-  SwitchCamera,
-  Info,
 } from "lucide-react";
 
-import { Canvas, useFrame } from "@react-three/fiber";
-import { useGLTF, OrbitControls } from "@react-three/drei";
-import * as THREE from "three";
+import { useGLTF } from "@react-three/drei";
 
 import { ItemData } from "../data";
 import { ModelViewer } from "./model-viewer/ModelViewer";
@@ -29,8 +21,6 @@ import { ModelViewer } from "./model-viewer/ModelViewer";
 useGLTF.setDecoderPath(
   "https://www.gstatic.com/draco/versioned/decoders/1.5.5/",
 );
-
-
 
 export function InstrumentViewer({
   activeItem,
@@ -63,61 +53,6 @@ export function InstrumentViewer({
 
   return (
     <div className="flex flex-col h-full gap-0 px-0 w-full">
-      {/* Header Info - Comentado temporalmente por petición del usuario
-      <div className="flex justify-between items-end px-3.5">
-        <div className="flex flex-col mt-3">
-          <h1 className="text-2xl md:text-xl font-bold text-menu2-centro-txt">
-            {activeItem.name}
-          </h1>
-
-          <span className="text-sm md:text-sm font-normal text-menu2-centro-desc">
-            {activeItem.subtitle}
-          </span>
-        </div>
-
-        <div className="bg-menu2-centro-bgderecha flex items-center gap-6 p-1.5 rounded-xl shadow-sm border border-menu2-izq-buscador-borde">
-          <div className="flex items-center">
-            <div className="flex bg-menu2-centro-bgbg rounded-xl p-0.5">
-              {(["3D", "AR"] as const).map((mode) => (
-                <button
-                  key={mode}
-                  onClick={() => setViewType(mode)}
-                  className={cn(
-                    "cursor-pointer px-3.5 py-1.5 text-xs font-medium rounded-lg",
-                    viewType === mode
-                      ? "bg-menu2-centro-bg-boton text-menu2-centro-3D shadow-md"
-                      : "text-menu2-centro-AR",
-                  )}
-                >
-                  {mode}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          <div className="flex items-center gap-3 pr-2">
-            <button
-              onClick={() => setShowHabitat(!showHabitat)}
-              className={cn(
-                "cursor-pointer relative w-10 h-5 rounded-full transition-colors duration-300 focus:outline-none",
-                showHabitat ? "bg-menu2-centro-bg-boton" : "bg-menu2-centro-AR",
-              )}
-            >
-              <div
-                className={cn(
-                  "absolute top-0.5 left-0.5 w-4 h-4 bg-menu2-centro-bolita-bg rounded-full transition-transform duration-300 shadow-sm",
-                  showHabitat ? "translate-x-5" : "translate-x-0",
-                )}
-              />
-            </button>
-            <span className="text-xs md:text-xs font-medium text-menu2-centro-AR uppercase">
-              Fondo
-            </span>
-          </div>
-        </div>
-      </div>
-      */}
-
       {/* Visualizador de modelo 3D — Ocupa toda la pantalla del centro */}
       <div
         ref={containerRef}

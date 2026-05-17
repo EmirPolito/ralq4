@@ -2,18 +2,10 @@
 
 import React, { useMemo } from "react";
 import {
-  Tag,
   Activity,
-  LayoutGrid,
   Gauge,
   ShieldCheck,
-  MapPin,
   Settings,
-  Beaker,
-  ShieldAlert,
-  HardDrive,
-  Zap,
-  Info,
   FlaskConical,
   Microscope,
   Pill,

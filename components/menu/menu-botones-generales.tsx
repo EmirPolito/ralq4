@@ -1,30 +1,12 @@
 "use client";
 
 import * as React from "react";
-import { Moon, Sun, Eye, Palette, HelpCircle } from "lucide-react";
+import { Moon, Sun, Eye, Palette } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useTranslations } from "next-intl";
-import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-  DropdownMenuSeparator,
-  DropdownMenuLabel,
-} from "@/components/ui/dropdown-menu";
-import { Separator } from "@/components/ui/separator";
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
-import {
-  Tooltip,
-  TooltipContent,
   TooltipProvider,
-  TooltipTrigger,
 } from "@/components/ui/tooltip";
 
 const colorOptions = [
@@ -39,7 +21,6 @@ const colorOptions = [
 
 import {
   REDUCED_MOTION_EVENT,
-  useReducedMotion,
 } from "@/hooks/use-reduced-motion";
 
 export function MenuThemeControls({
