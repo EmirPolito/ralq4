@@ -23,7 +23,7 @@ export function MenuHeader() {
   }, []);
 
   return (
-    <header className="bg-menu2-header-bg h-[77px] flex-shrink-0 flex items-center px-4 backdrop-blur-md rounded-xl border border-menu2-izq-buscador-borde shadow-sm">
+    <header className="bg-menu2-header-bg h-[77px] flex-shrink-0 flex items-center px-4 backdrop-blur-md rounded-xl border border-menu2-header-borde shadow-sm">
       <Link href="/" className="mr-4 flex items-center gap-2 lg:mr-6">
         <span className="bg font-bold lg:inline-block">
           {/* Logo claro */}
@@ -74,14 +74,14 @@ export function MenuHeader() {
       <div className="flex items-center gap-8">
         <Popover>
           <PopoverTrigger asChild>
-            <button className="text-slate-500 hover:text-slate-900 dark:text-menu2-header-paginas dark:hover:text-menu2-header-paginas-hvr cursor-pointer transition-colors p-0">
+            <button className="text-menu2-header-paginas hover:text-menu2-header-paginas-hvr cursor-pointer transition-colors p-0">
               <MoreVertical className="w-5 h-5" />
             </button>
           </PopoverTrigger>
           <PopoverContent
             align="end"
             sideOffset={8}
-            className="w-auto p-4 rounded-xl shadow-xl border border-slate-200 dark:border-menu2-izq-buscador-borde bg-white/95 dark:bg-[#1a1a1a]/95 backdrop-blur-xl flex flex-col gap-4 z-[200]"
+            className="w-auto p-4 rounded-xl shadow-xl border border-slate-200 dark:border-menu2-header-borde bg-white/95 dark:bg-[#1a1a1a]/95 backdrop-blur-xl flex flex-col gap-4 z-[200]"
           >
             <h3 className="font-medium text-sm text-slate-800 dark:text-white">
               Ajustes Generales
@@ -152,8 +152,8 @@ function NavItem({ icon, label, href, active }: any) {
         className={cn(
           "flex items-center gap-2 px-3 py-1.5 transition-all text-[13px] cursor-pointer rounded-lg relative",
           active
-            ? "text-slate-900 dark:text-white"
-            : "text-slate-500 hover:text-slate-900 dark:text-white/40 dark:hover:text-white/70",
+            ? "text-menu2-header-paginas-hvr"
+            : "text-menu2-header-paginas hover:text-menu2-header-paginas-hvr",
         )}
       >
         {icon}

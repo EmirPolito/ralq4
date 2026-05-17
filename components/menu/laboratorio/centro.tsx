@@ -96,7 +96,7 @@ export function InstrumentViewer({
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             onClick={toggleFullscreen}
-            className="flex items-center justify-center cursor-pointer text-white/70 hover:text-white bg-black/40 hover:bg-black/60 p-2 rounded-lg backdrop-blur-md transition-all duration-300 shadow-md border border-white/10"
+            className="flex items-center justify-center cursor-pointer text-menu2-centro-iconos hover:text-white bg-menu2-centro-bg-iconos hover:bg-menu2-centro-hvr-iconos p-2 rounded-lg transition-all duration-300 shadow-md border border-menu2-centro-borde"
             title="Pantalla Completa"
           >
             <Maximize className="w-4 h-4" />
@@ -107,7 +107,7 @@ export function InstrumentViewer({
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             onClick={() => setResetTrigger((prev) => prev + 1)}
-            className="flex items-center justify-center cursor-pointer text-white/70 hover:text-white bg-black/40 hover:bg-black/60 p-2 rounded-lg backdrop-blur-md transition-all duration-300 shadow-md border border-white/10"
+            className="flex items-center justify-center cursor-pointer text-menu2-centro-iconos hover:text-white bg-menu2-centro-bg-iconos hover:bg-menu2-centro-hvr-iconos p-2 rounded-lg transition-all duration-300 shadow-md border border-menu2-centro-borde"
             title="Reiniciar Posición"
           >
             <RotateCcw className="w-4 h-4" />
@@ -176,11 +176,10 @@ export function BottomSections({
     ];
 
     return (
-      <div className="bg-menu2-abajo-bg w-full h-full backdrop-blur-md border border-menu2-izq-buscador-borde rounded-xl p-3 shadow-xl flex flex-col gap-2 min-h-0 animate-in fade-in slide-in-from-bottom-2 duration-500">
+      <div className="bg-menu2-abajo-bg w-full h-full backdrop-blur-md border border-menu2-abajo-borde rounded-xl p-3 shadow-xl flex flex-col gap-2 min-h-0 animate-in fade-in slide-in-from-bottom-2 duration-500">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-1.5">
-            <BookOpen className="w-3 h-3 text-menu2-abajo-txt" />
-            <h2 className="text-menu2-derecha-txt-mayusculas text-[10px] font-medium tracking-[0.1em] uppercase">
+            <h2 className="text-menu2-abajo-txt text-[10px] font-bold tracking-[0.1em] uppercase px-0.5">
               Opciones de Visualización
             </h2>
           </div>
@@ -194,14 +193,14 @@ export function BottomSections({
               className={cn(
                 "flex-1 flex flex-col rounded-xl overflow-hidden border transition-all cursor-pointer relative",
                 viewMode === mode.id
-                  ? "border-black/10 dark:border-white/30 shadow-lg"
-                  : "border-slate-200/60 dark:border-menu2-abajo-borde shadow-sm",
+                  ? "border-menu2-abajo-borde-minitarjeta dark:border-white/30 shadow-lg"
+                  : "border-menu2-abajo-borde-minitarjeta hover:bg-menu2-abajo-hvr-minitarjeta shadow-sm",
               )}
             >
               <div
                 className={cn(
                   "flex-1 flex items-center justify-center relative min-h-[110px]",
-                  "bg-menu2-abajo-bg-bgtarjeta",
+                  "bg-menu2-abajo-bg-minitarjeta",
                 )}
               >
                 <div className="p-4 flex items-center justify-center absolute inset-0">
@@ -224,16 +223,16 @@ export function BottomSections({
                 className={cn(
                   "py-1.5 flex items-center justify-center border-t",
                   viewMode === mode.id
-                    ? "bg-black border-black dark:bg-white dark:border-white"
-                    : "bg-menu2-abajo-borde border-menu2-abajo-borde",
+                    ? "bg-menu2-abajo-bg-active border-menu2-abajo-bg-active"
+                    : "bg-menu2-abajo-bg-minitarjeta-chica border-menu2-abajo-borde-minitarjeta",
                 )}
               >
                 <span
                   className={cn(
                     "text-[10px] font-bold uppercase tracking-wider",
                     viewMode === mode.id
-                      ? "text-white dark:text-black"
-                      : "text-menu2-abajo-txt-tarjeta",
+                      ? "text-menu2-abajo-txt-active"
+                      : "text-menu2-abajo-txt-minitarjeta-chica",
                   )}
                 >
                   {mode.label}

@@ -70,7 +70,7 @@ export function InstrumentDetails({ activeItem }: { activeItem: ItemData }) {
       <div className="flex-1 flex flex-col min-h-0 transform-gpu">
         {/* Cabecera Horizontal - Icono a la izquierda, Texto a la derecha */}
         <div className="flex flex-row items-center gap-4 mb-8 mt-0 flex-shrink-0">
-          <div className="w-15 h-15 rounded-xl bg-menu2-derecha-bg-iconos flex items-center justify-center flex-shrink-0 overflow-hidden shadow-lg">
+          <div className="w-15 h-15 rounded-xl bg-menu2-derecha-bg-img flex items-center justify-center flex-shrink-0 overflow-hidden shadow-lg">
             <img
               src={activeItem.image}
               alt={activeItem.name}
@@ -91,7 +91,7 @@ export function InstrumentDetails({ activeItem }: { activeItem: ItemData }) {
 
         {/* Contenedor de Scroll */}
         <div className="flex-1 overflow-y-auto pr-3 custom-scrollbar overscroll-contain will-change-transform scrolling-touch">
-          <div className="flex flex-col divide-y divide-menu2-izq-buscador-borde pb-6" style={{ contentVisibility: "auto" }}>
+          <div className="flex flex-col divide-y divide-menu2-derecha-borde pb-6" style={{ contentVisibility: "auto" }}>
             
             {/* SECCIÓN ¿QUÉ ES? */}
             {activeItem.whatIsIt && (
@@ -126,7 +126,7 @@ export function InstrumentDetails({ activeItem }: { activeItem: ItemData }) {
                     </div>
                   </div>
                   {i < detailEntries.length - 1 && (
-                    <div className="border-t border-dashed border-menu2-izq-buscador-borde ml-14" />
+                    <div className="border-t border-dashed border-menu2-derecha-borde ml-14" />
                   )}
                 </div>
               ))}
@@ -158,7 +158,7 @@ export function InstrumentDetails({ activeItem }: { activeItem: ItemData }) {
                 </p>
                 <div className="grid grid-cols-4 gap-2 px-1">
                   {activeItem.whatIsItFor.uses.map((use, idx) => (
-                    <div key={idx} className="flex flex-col items-center justify-start p-2 rounded-xl bg-transparent text-menu2-derecha-mini-ttl shadow-sm text-center gap-1.5 border border-menu2-izq-buscador-borde">
+                    <div key={idx} className="flex flex-col items-center justify-start p-2 rounded-xl bg-transparent text-menu2-derecha-mini-ttl shadow-sm text-center gap-1.5 border border-menu2-derecha-borde">
                       <div className="text-menu2-centro-txt mb-1">
                          {getIcon(use.icon)}
                       </div>
@@ -177,7 +177,7 @@ export function InstrumentDetails({ activeItem }: { activeItem: ItemData }) {
                 <h2 className="text-menu2-derecha-txt-mayusculas text-[10px] font-medium tracking-[0.1em] mb-1.5">
                   DATO EDUCATIVO
                 </h2>
-                <div className="p-4 rounded-xl border border-menu2-izq-buscador-borde bg-transparent">
+                <div className="p-4 rounded-xl border border-menu2-derecha-borde bg-transparent">
                   <p className="text-menu2-derecha-mini-ttl text-xs font-normal leading-relaxed">
                     {activeItem.educationalFact}
                   </p>

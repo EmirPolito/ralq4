@@ -26,7 +26,7 @@ export function InstrumentSidebar({
 
   return (
     <div className="flex flex-col h-full min-h-0 w-full">
-      <h2 className="text-menu2-derecha-txt-mayusculas text-[10px] font-medium tracking-[0.1em] uppercase mb-4 px-1.5 pt-2">
+      <h2 className="text-menu2-izq-ttl text-[10px] font-medium tracking-[0.1em] uppercase mb-4 px-1.5 pt-2">
         {title}
       </h2>
 
@@ -79,12 +79,7 @@ export function InstrumentSidebar({
                 </div>
                 <div className="flex flex-col items-start text-left overflow-hidden">
                   <span
-                    className={cn(
-                      "text-sm font-semibold truncate w-full",
-                      isActive
-                        ? "text-menu2-izq-tarjeta-txt" /*texto cuando esta el cursor en la tarjeta*/
-                        : "text-menu2-izq-tarjeta-mini-txt" /*texto cuando no esta el cursor en la tarjeta*/,
-                    )}
+                    className="text-sm font-semibold truncate w-full text-menu2-izq-tarjeta-txt"
                   >
                     {item.name}
                   </span>
@@ -105,7 +100,7 @@ export function InstrumentSidebar({
         ) : (
           <div className="flex flex-col items-center justify-center py-8 text-menu2-izq-buscador-contenido text-center">
             <Search className="w-8 h-8 mb-2 text-menu2-izq-buscador-contenido" />
-            <span className="text-menu2-derecha-txt-mayusculas text-[10px] font-medium tracking-[0.1em] uppercase">
+            <span className="text-menu2-izq-ttl text-[10px] font-medium tracking-[0.1em] uppercase">
               Sin instrumentos
             </span>
           </div>

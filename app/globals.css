@@ -202,13 +202,14 @@
 
   --menu2-header-bg: #ffffff;
   --menu2-header-paginas-bg: #eaeaea;
-  --menu2-header-paginas: #2c2a2a;
-  --menu2-header-paginas-hvr: #524e4e;
+  --menu2-header-paginas: #525252;
+  --menu2-header-paginas-hvr: #155dfc;
   --menu2-header-extra: #ffffff;
+  --menu2-header-borde: #ebebeb;
 
   /* Menu 2 izquierda  */
   --menu2-izq-bg: #ffffff; /*fondo de la tarjeta general*/
-  --menu2-izq-ttl: #676767; /*titulo instrumentos*/
+  --menu2-izq-ttl: #a1a1a1; /*titulo instrumentos*/
 
   --menu2-izq-buscador-borde: #ebebeb; /*borde del intut y de la tarjeta general*/
   --menu2-izq-buscador-bg: #ffffff; /*bg del input*/
@@ -223,48 +224,40 @@
   --menu2-izq-tarjeta-mini-txt: #3e3939;
 
   /* Menu 2 centro  */
-  --menu2-centro-bg: #ffffff; /**/
-  --menu2-centro-bg-imagen: #000000;
-  --menu2-centro-txt: #676767; /**/
-  --menu2-centro-desc: #a1a1a1; /*descripcion*/
-
-  --menu2-centro-bgderecha: #ffffff; /**/
-  --menu2-centro-bgbg: #efefef; /**/
-  --menu2-centro-bg-boton: #000000; /**/
-  --menu2-centro-bolita-bg: #ffffff; /**/
-  --menu2-centro-3D: #ffffff; /**/
-  --menu2-centro-AR: #a1a1a1; /**/
-  --menu2-centro-expansor: #ffffff; /**/
-
-  --menu2-centro-mini-bg: #dddddd; /**/
-  --menu2-centro-mini-borde: #ebebeb; /**/
-  --menu2-centro-mini-ttl: #ffffff; /**/
-  --menu2-centro-mini-txt: #ffffff; /**/
-  --menu2-centro-mini-bg-icono: #ffffff; /**/
-  --menu2-centro-mini-icono: #6d6d6d; /**/
+  --menu2-centro-borde: #ebebeb; /*borde de todo el menu central*/
+  --menu2-centro-iconos: #6d6d6d; /*iconos de las opciones*/
+  --menu2-centro-bg-iconos: #ffffff; /*bg de los iconos de las opciones*/
+  --menu2-centro-hvr-iconos: #000000; /*hvr de los iconos de las opciones*/
 
   /*Abajo*/
-  --menu2-abajo-bg: #ffffff; /**/
-  --menu2-abajo-txt: #5c5c5c; /**/
+  --menu2-abajo-borde: #ebebeb; /* borde de toda la tarjeta*/
+  --menu2-abajo-bg: #ffffff; /*bg de toda la tarjeta*/
+  --menu2-abajo-txt: #5c5c5c; /*texto de Opciones de Visualización*/
 
-  --menu2-abajo-borde: #ebebeb; /**/
-  --menu2-abajo-bg-bgtarjeta: #ffffff; /**/
-  --menu2-abajo-txt-tarjeta: #393939; /**/
-  --menu2-abajo-hvr-tarjeta: #ffffff; /**/
+  --menu2-abajo-bg-minitarjeta: #ffffff; /*bg de la minitarjeta donde esta la imagen del modelo*/
+  --menu2-abajo-borde-minitarjeta: #ebebeb; /*borde de la minitarjeta*/
+  --menu2-abajo-hvr-minitarjeta: #f3f3f3; /*hvr de la minitarjeta*/
+  --menu2-abajo-bg-minitarjeta-chica: #f3f3f3; /*bg de la minitarjeta chica*/
+  --menu2-abajo-txt-minitarjeta-chica: #393939; /*txt de la minitarjeta chica*/
+
+  --menu2-abajo-bg-active: #000000; /*bg activo*/
+  --menu2-abajo-txt-active: #ffffff; /*txt activo*/
 
   /*--------------------------derecha ------------------------------------*/
   --menu2-derecha-bg: #ffffff; /*bg de la tarjeta grande*/
+  --menu2-derecha-borde: #ebebeb; /*borde de las tarjetas*/
+
+  --menu2-derecha-bg-img: #000000; /*bg de la imagen*/
   --menu2-derecha-ttl: #676767; /*titulo del la imagen*/
-  --menu2-derecha-desc: #a1a1a1; /*descripcion de la imagen*/
+  --menu2-derecha-desc: #525252; /*descripcion de la imagen*/
 
   --menu2-derecha-txt-mayusculas: #a1a1a1; /*texto en mayusculas*/
 
   --menu2-derecha-bg-iconos: #000000; /*Color de fondo del icono circular*/
   --menu2-derecha-iconos: #ffffff; /*Color del icono*/
 
-  --menu2-derecha-mini-ttl: #a1a1a1; /*mini texto arriba*/
+  --menu2-derecha-mini-ttl: #525252; /*mini texto arriba*/
   --menu2-derecha-mini-txt: #676767; /*textos abajo de los minitextos*/
-  --menu2-derecha-borde: #ebebeb; /*borde de las tarjetas*/
 
   /* UI */
   --background: #ffffff;
@@ -523,13 +516,14 @@
   --menu2-bg-general: #000000;
   --menu2-header-bg: #0a0a0a;
   --menu2-header-paginas-bg: #1a1a1a;
-  --menu2-header-paginas: #e5e5e5;
+  --menu2-header-paginas: #a3a3a3;
   --menu2-header-paginas-hvr: #ffffff;
   --menu2-header-extra: #0a0a0a;
+  --menu2-header-borde: #262626;
 
   /* Menu 2 izquierda  */
   --menu2-izq-bg: #0a0a0a;
-  --menu2-izq-ttl: #e7e7e7;
+  --menu2-izq-ttl: #ededed;
 
   --menu2-izq-buscador-borde: #262626;
   --menu2-izq-buscador-bg: #0d0d0d;
@@ -544,48 +538,40 @@
   --menu2-izq-tarjeta-mini-txt: #a3a3a3;
 
   /* Menu 2 centro  */
-  --menu2-centro-bg: #0a0a0a;
-  --menu2-centro-bg-imagen: #ffffff;
-  --menu2-centro-txt: #d1d1d1;
-  --menu2-centro-desc: #737373;
-
-  --menu2-centro-bgderecha: #0a0a0a;
-  --menu2-centro-bgbg: #161616;
-  --menu2-centro-bg-boton: #ffffff;
-  --menu2-centro-bolita-bg: #000000;
-  --menu2-centro-3D: #000000;
-  --menu2-centro-AR: #737373;
-  --menu2-centro-expansor: #0a0a0a;
-
-  --menu2-centro-mini-bg: #262626;
-  --menu2-centro-mini-borde: #333333;
-  --menu2-centro-mini-ttl: #ffffff;
-  --menu2-centro-mini-txt: #d1d1d1;
-  --menu2-centro-mini-bg-icono: #ffffff;
-  --menu2-centro-mini-icono: #1a1a1a;
+  --menu2-centro-borde: #262626; /*borde de todo el menu central*/
+  --menu2-centro-iconos: #ffffff; /*iconos de las opciones*/
+  --menu2-centro-bg-iconos: #000000; /*bg de los iconos de las opciones*/
+  --menu2-centro-hvr-iconos: #ffffff; /*hvr de los iconos de las opciones*/
 
   /*Abajo*/
-  --menu2-abajo-bg: #0a0a0a;
-  --menu2-abajo-txt: #a3a3a3;
+  --menu2-abajo-borde: #262626; /* borde de toda la tarjeta*/
+  --menu2-abajo-bg: #0a0a0a; /*bg de toda la tarjeta*/
+  --menu2-abajo-txt: #a3a3a3; /*texto de Opciones de Visualización*/
 
-  --menu2-abajo-borde: #262626;
-  --menu2-abajo-bg-bgtarjeta: #111111;
-  --menu2-abajo-txt-tarjeta: #e5e5e5;
-  --menu2-abajo-hvr-tarjeta: #1a1a1a;
+  --menu2-abajo-bg-minitarjeta: #111111; /*bg de la minitarjeta donde esta la imagen del modelo*/
+  --menu2-abajo-borde-minitarjeta: #262626; /*borde de la minitarjeta*/
+  --menu2-abajo-hvr-minitarjeta: #1a1a1a; /*hvr de la minitarjeta*/
+  --menu2-abajo-bg-minitarjeta-chica: #1a1a1a; /*bg de la minitarjeta chica*/
+  --menu2-abajo-txt-minitarjeta-chica: #e5e5e5; /*txt de la minitarjeta chica*/
+
+  --menu2-abajo-bg-active: #ffffff; /*bg activo*/
+  --menu2-abajo-txt-active: #000000; /*txt activo*/
 
   /*derecha*/
   --menu2-derecha-bg: #0a0a0a;
-  --menu2-derecha-ttl: #d1d1d1;
-  --menu2-derecha-desc: #737373;
+  --menu2-derecha-borde: #262626;
 
-  --menu2-derecha-txt-mayusculas: #737373;
+  --menu2-derecha-bg-img: #ffffff; /*bg de la imagen*/
+  --menu2-derecha-ttl: #ededed;
+  --menu2-derecha-desc: #bcbcbc;
+
+  --menu2-derecha-txt-mayusculas: #ededed;
 
   --menu2-derecha-bg-iconos: #ffffff;
   --menu2-derecha-iconos: #000000;
 
-  --menu2-derecha-mini-ttl: #737373;
-  --menu2-derecha-mini-txt: #d1d1d1;
-  --menu2-derecha-borde: #262626;
+  --menu2-derecha-mini-ttl: #bcbcbc;
+  --menu2-derecha-mini-txt: #ededed;
 
   /* UI */
   --background: #000000;
@@ -820,17 +806,6 @@
   --ayuda-link: #0072b2;
   --ayuda-link-hvr: #d55e00;
 
-  /* =========================
-   Menu Izquierdo
-========================= */
-  --menu-bg: #ffffff;
-  --menu-apartados: #0072b2;
-  --menu-paginas: #2c2a2a;
-  --menu-paginas-hvr: #f1f1f1;
-  --menu-iconos: #0072b2;
-  --menu-lineas: #eaeaea;
-  --menu-mostrador: #000000;
-
   /* UI */
   --background: #ffffff;
   --foreground: #000000;
@@ -857,7 +832,7 @@
   --chart-4: #eab308;
   --chart-5: #ef4444;
   --radius: 0.5rem;
-  --sidebar: var(--menu-bg);
+  --sidebar: #ffffff;
   --sidebar-foreground: #334155;
   --sidebar-primary: #0072b2;
   --sidebar-primary-foreground: #ffffff;
@@ -865,41 +840,6 @@
   --sidebar-accent-foreground: #0072b2;
   --sidebar-border: #e2e8f0;
   --sidebar-ring: #0072b2;
-
-  /* =========================
-   Menu Derecho
-========================= */
-  --menu-d-bg: #ffffff; /*bg general*/
-
-  --menu-d-ttl1: #0072b2; /*Quimica general - Nivel 1 y el numero de la racha*/
-  --menu-d-nivel1: #333333; /*Al nivel 2  y 72/100*/
-  --menu-d-progreso1: #f0f0f0; /*Color del la linea del progreso*/
-  --menu-d-progreso-llenado: #0072b2; /*Color del llenado del progreso*/
-
-  --menu-d-racha1: #d55e00; /*icono del fuego de la racha*/
-  --menu-d-nivel-bg: #0072b2; /*BG del numero del nivel*/
-  --menu-d-racha-num: #000000;
-
-  /**/
-  --menu-d-bg-tarjeta2: #e9e9e9; /*para el bg de la tarjeta general y el de las 3 tarjetas */
-  --menu-d-bordes2: #d1cfcf; /*bordes de la tarjeta y de las 3 subtarjetas*/
-  --menu-d-ttl2: #000000; /*Mi puntuacion y Aprende, Visualiza, Evalua y los puntos 72pts,0pts,0pts*/
-  --menu-d-iconos2: #0072b2;
-  --menu-d-desc2: #333333; /* para la descripcioens de las 3 tarjetas*/
-
-  /**/
-  --menu-d-bg3: #e9e9e9; /*para el bg de las tarjetas y para el bg del boton*/
-  --menu-d-bordes3: #cccccc; /*bordes de las tarjetas y del boton*/
-  --menu-d-ttl3: #000000; /*titulos de las tarjetas */
-  --menu-d-desc3: #333333; /*descripciones de las tarjetas*/
-
-  /**/
-  --menu-d-bg4: #000000; /*Para el bg de la barra de abajo*/
-  --menu-d-borde4: #ffffff; /*Para los bordes de la tarjeta*/
-  --menu-d-iconos4: #ffffff; /*para  <, matraz, los puntos .. y >*/
-  --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
-  --menu-d-desc4: #e0e0e0; /*para la descripcion, reconoce...*/
-  --menu-d-bg-boton4: #0072b2; /*para el bg del boton*/
 
   /* RALQ Content Properties */
   --ttl: #0072b2;
@@ -912,69 +852,63 @@
   --menu2-bg-general: #ffffff;
 
   --menu2-header-bg: #ffffff;
-  --menu2-header-paginas-bg: #0072b2;
-  --menu2-header-paginas: #ffffff;
+  --menu2-header-paginas-bg: #eaeaea;
+  --menu2-header-paginas: #525252;
   --menu2-header-paginas-hvr: #d55e00;
   --menu2-header-extra: #ffffff;
+  --menu2-header-borde: #ebebeb;
 
   /* Menu 2 izquierda  */
   --menu2-izq-bg: #ffffff;
-  --menu2-izq-ttl: #0072b2;
+  --menu2-izq-ttl: #333333;
 
-  --menu2-izq-buscador-borde: #0072b2;
+  --menu2-izq-buscador-borde: #ebebeb;
   --menu2-izq-buscador-bg: #ffffff;
-  --menu2-izq-buscador-contenido: #333333;
+  --menu2-izq-buscador-contenido: #d55e00;
 
   --menu2-izq-tarjeta-bg: #f5f5f5;
 
-  --menu2-izq-bg-icono: #0072b2;
+  --menu2-izq-bg-icono: #d55e00;
   --menu2-izq-contenido-icono: #ffffff;
 
   --menu2-izq-tarjeta-txt: #000000;
   --menu2-izq-tarjeta-mini-txt: #333333;
 
   /* Menu 2 centro  */
-  --menu2-centro-bg: #ffffff;
-  --menu2-centro-bg-imagen: #000000;
-  --menu2-centro-txt: #0072b2;
-  --menu2-centro-desc: #333333;
-
-  --menu2-centro-bgderecha: #f5f5f5;
-  --menu2-centro-bgbg: #ffffff;
-  --menu2-centro-bg-boton: #d55e00;
-  --menu2-centro-3D: #ffffff;
-  --menu2-centro-AR: #0072b2;
-  --menu2-centro-expansor: #ffffff;
-
-  --menu2-centro-mini-bg: #e1e1e1;
-  --menu2-centro-mini-borde: #0072b2;
-  --menu2-centro-mini-ttl: #000000;
-  --menu2-centro-mini-txt: #333333;
-  --menu2-centro-mini-bg-icono: #0072b2;
-  --menu2-centro-mini-icono: #ffffff;
+  --menu2-centro-borde: #ebebeb; /*borde de todo el menu central*/
+  --menu2-centro-iconos: #000000; /*iconos de las opciones*/
+  --menu2-centro-bg-iconos: #ffffff; /*bg de los iconos de las opciones*/
+  --menu2-centro-hvr-iconos: #d55e00; /*hvr de los iconos de las opciones*/
 
   /*Abajo*/
-  --menu2-abajo-bg: #ffffff;
-  --menu2-abajo-txt: #333333;
+  --menu2-abajo-borde: #ebebeb; /* borde de toda la tarjeta*/
+  --menu2-abajo-bg: #ffffff; /*bg de toda la tarjeta*/
+  --menu2-abajo-txt: #333333; /*texto de Opciones de Visualización*/
 
-  --menu2-abajo-borde: #0072b2;
-  --menu2-abajo-bg-bgtarjeta: #ffffff;
-  --menu2-abajo-txt-tarjeta: #000000;
-  --menu2-abajo-hvr-tarjeta: #f5f5f5;
+  --menu2-abajo-bg-minitarjeta: #ffffff; /*bg de la minitarjeta donde esta la imagen del modelo*/
+  --menu2-abajo-borde-minitarjeta: #ebebeb; /*borde de la minitarjeta*/
+  --menu2-abajo-hvr-minitarjeta: #e1e1e1; /*hvr de la minitarjeta*/
+  --menu2-abajo-bg-minitarjeta-chica: #e1e1e1; /*bg de la minitarjeta chica*/
+  --menu2-abajo-txt-minitarjeta-chica: #000000; /*txt de la minitarjeta chica*/
+
+  --menu2-abajo-bg-active: #d55e00; /*bg activo*/
+  --menu2-abajo-txt-active: #ffffff; /*txt activo*/
 
   /*--------------------------derecha ------------------------------------*/
   --menu2-derecha-bg: #ffffff;
-  --menu2-derecha-ttl: #0072b2;
+  --menu2-derecha-borde: #ebebeb;
+
+  --menu2-derecha-bg-img: #d55e00; /*bg de la imagen*/
+  --menu2-derecha-ttl: #000000;
   --menu2-derecha-desc: #333333;
 
   --menu2-derecha-txt-mayusculas: #333333;
 
-  --menu2-derecha-bg-iconos: #0072b2;
+  --menu2-derecha-bg-iconos: #d55e00;
   --menu2-derecha-iconos: #ffffff;
 
   --menu2-derecha-mini-ttl: #333333;
-  --menu2-derecha-mini-txt: #0072b2;
-  --menu2-derecha-borde: #0072b2;
+  --menu2-derecha-mini-txt: #000000;
 }
 
 /* Azul */
@@ -1175,50 +1109,66 @@
   --ayuda-preg-txt: #616161;
   --ayuda-link: #155dfc;
 
-  /* =========================
-   Menu Izquierdo
-========================= */
-  --menu-bg: #ffffff;
-  --menu-apartados: #155dfc;
-  --menu-paginas: #2c2a2a;
-  --menu-paginas-hvr: #f0f5ff;
-  --menu-iconos: #155dfc;
-  --menu-lineas: #eaeaea;
-  --menu-mostrador: #000000;
+  /* ===================================
+   Menu 
+========================================*/
+  --menu2-bg-general: #ffffff;
 
-  /* =========================
-   Menu Derecho
-========================= */
-  --menu-d-bg: #ffffff; /*bg general*/
+  --menu2-header-bg: #ffffff;
+  --menu2-header-paginas: #525252;
+  --menu2-header-paginas-hvr: #155dfc;
+  --menu2-header-extra: #0a0a0a;
+  --menu2-header-borde: #dbeafe;
 
-  --menu-d-ttl1: #155dfc; /*Quimica general - Nivel 1 y el numero de la racha*/
-  --menu-d-nivel1: #2c2a2a; /*Al nivel 2  y 72/100*/
-  --menu-d-nivel-bg: #155dfc; /*BG del numero del nivel*/
-  --menu-d-progreso1: #e9e9e9; /*Color del la linea del progreso*/
-  --menu-d-progreso-llenado: #155dfc; /*Color del llenado del progreso*/
-  --menu-d-racha1: #155dfc; /*icono del fuego de la racha*/
-  --menu-d-racha-num: #000000;
+  /* Menu 2 izquierda  */
+  --menu2-izq-bg: #ffffff; /*bg de la tarjeta izquierda*/
+  --menu2-izq-ttl: #155dfc; /*ttl de la tarjeta izquierda*/
 
-  /**/
-  --menu-d-bg-tarjeta2: #e9e9e9; /*para el bg de la tarjeta general y el de las 3 tarjetas */
-  --menu-d-bordes2: #e1e1e1; /*bordes de la tarjeta y de las 3 subtarjetas*/
-  --menu-d-ttl2: #155dfc; /*Mi puntuacion y Aprende, Visualiza, Evalua y los puntos 72pts,0pts,0pts*/
-  --menu-d-iconos2: #155dfc;
-  --menu-d-desc2: #2c2a2a; /* para la descripcioens de las 3 tarjetas*/
+  --menu2-izq-buscador-borde: #dbeafe; /*borde del buscador*/
+  --menu2-izq-buscador-bg: #ffffff; /*bg del buscador*/
+  --menu2-izq-buscador-contenido: #155dfc; /*contenido del buscador*/
 
-  /**/
-  --menu-d-bg3: #e9e9e9; /*para el bg de las tarjetas y para el bg del boton*/
-  --menu-d-bordes3: #ffffff; /*bordes de las tarjetas y del boton*/
-  --menu-d-ttl3: #155dfc; /*titulos de las tarjetas */
-  --menu-d-desc3: #2c2a2a; /*descripciones de las tarjetas*/
+  --menu2-izq-tarjeta-bg: #ffffff; /*bg de la tarjeta*/
+  --menu2-izq-bg-icono: #ffffff; /*bg del icono*/
 
-  /**/
-  --menu-d-bg4: #000000; /*Para el bg de la barra de abajo*/
-  --menu-d-borde4: #0f0f0f; /*Para los bordes de la tarjeta*/
-  --menu-d-iconos4: #f8f8f8; /*para  <, matraz, los puntos .. y >*/
-  --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
-  --menu-d-desc4: #d6d6d6; /*para la descripcion, reconoce...*/
-  --menu-d-bg-boton4: #155dfc; /*para el bg del boton*/
+  --menu2-izq-tarjeta-txt: #155dfc; /*texto de la tarjeta*/
+  --menu2-izq-tarjeta-mini-txt: #525252; /*texto mini de la tarjeta*/
+
+  /* Menu 2 centro  */
+  --menu2-centro-borde: #dbeafe; /*borde de todo el menu central*/
+  --menu2-centro-iconos: #155dfc; /*iconos de las opciones*/
+  --menu2-centro-bg-iconos: #ffffff; /*bg de los iconos de las opciones*/
+  --menu2-centro-hvr-iconos: #155df1; /*hvr de los iconos de las opciones*/
+
+  /*Abajo*/
+  --menu2-abajo-borde: #dbeafe; /* borde de toda la tarjeta*/
+  --menu2-abajo-bg: #ffffff; /*bg de toda la tarjeta*/
+  --menu2-abajo-txt: #155dfc; /*texto de Opciones de Visualización*/
+
+  --menu2-abajo-bg-minitarjeta: #ffffff; /*bg de la minitarjeta donde esta la imagen del modelo*/
+  --menu2-abajo-borde-minitarjeta: #dbeafe; /*borde de la minitarjeta*/
+  --menu2-abajo-hvr-minitarjeta: #dbeafe; /*hvr de la minitarjeta*/
+  --menu2-abajo-bg-minitarjeta-chica: #ffffff; /*bg de la minitarjeta chica*/
+  --menu2-abajo-txt-minitarjeta-chica: #155dfc; /*txt de la minitarjeta chica el que dice vista general y rotacion*/
+
+  --menu2-abajo-bg-active: #155dfc; /*bg activo*/
+  --menu2-abajo-txt-active: #ffffff; /*txt activo*/
+
+  /*derecha*/
+  --menu2-derecha-bg: #ffffff; /*bg de la tarjeta derecha*/
+  --menu2-derecha-borde: #dbeafe; /*borde de la tarjeta derecha*/
+
+  --menu2-derecha-bg-img: #ffffff; /*bg de la imagen*/
+  --menu2-derecha-ttl: #155dfc; /*ttl de arriba de la tarjeta derecha*/
+  --menu2-derecha-desc: #525252; /*desc de arriba de la tarjeta derecha*/
+
+  --menu2-derecha-txt-mayusculas: #155dfc; /*txt mayusculas*/
+
+  --menu2-derecha-bg-iconos: #155dfc; /*bg iconos circulares*/
+  --menu2-derecha-iconos: #ffffff; /*iconos circulares*/
+
+  --menu2-derecha-mini-ttl: #525252; /*mini textos*/
+  --menu2-derecha-mini-txt: #155dfc; /*textos grandes de abajo de los minitextos*/
 
   /* UI */
   --background: #ffffff;
@@ -1452,50 +1402,68 @@
   --ayuda-preg-txt: #dddddd;
   --ayuda-link: #155dfc;
 
-  /* =========================
-   Menu Izquierdo
-========================= */
-  --menu-bg: #000000;
-  --menu-apartados: #155dfc;
-  --menu-paginas: #ffffff;
-  --menu-paginas-hvr: #050a1f;
-  --menu-iconos: #155dfc;
-  --menu-lineas: #212121;
-  --menu-mostrador: #ffffff;
+  /* ===================================
+   Menu 
+========================================*/
+  --menu2-bg-general: #000000;
+  --menu2-header-bg: #0a0a0a;
+  --menu2-header-paginas-bg: #1a1a1a;
+  --menu2-header-paginas: #e5e5e5;
+  --menu2-header-paginas-hvr: #155dfc;
+  --menu2-header-extra: #0a0a00;
+  --menu2-header-borde: #0f172b;
 
-  /* =========================
-   Menu Derecho
-========================= */
-  --menu-d-bg: #000000; /*bg general*/
+  /* Menu 2 izquierda  */
+  --menu2-izq-bg: #0a0a0a; /*bg de toda la tarjeta*/
+  --menu2-izq-ttl: #155dfc; /*titulo*/
 
-  --menu-d-ttl1: #155dfc; /*Quimica general - Nivel 1 y el numero de la racha*/
-  --menu-d-nivel1: #bbbbbb; /*Al nivel 2  y 72/100*/
-  --menu-d-nivel-bg: #155dfc; /*BG del numero del nivel*/
-  --menu-d-progreso1: #212121; /*Color del la linea del progreso*/
-  --menu-d-progreso-llenado: #155dfc; /*Color del llenado del progreso*/
-  --menu-d-racha1: #155dfc; /*icono del fuego de la racha*/
-  --menu-d-racha-num: #ffffff;
+  --menu2-izq-buscador-borde: #0f172b; /*borde del buscador y de la tarjeta general*/
+  --menu2-izq-buscador-bg: #0d0d0d; /*bg del buscador*/
+  --menu2-izq-buscador-contenido: #155dfc; /*contenido del buscador*/
 
-  /**/
-  --menu-d-bg-tarjeta2: #121212; /*para el bg de la tarjeta general y el de las 3 tarjetas */
-  --menu-d-bordes2: #1f1f1f; /*bordes de la tarjeta y de las 3 subtarjetas*/
-  --menu-d-ttl2: #155dfc; /*Mi puntuacion y Aprende, Visualiza, Evalua y los puntos 72pts,0pts,0pts*/
-  --menu-d-iconos2: #155dfc;
-  --menu-d-desc2: #bbbbbb; /* para la descripcioens de las 3 tarjetas*/
+  --menu2-izq-tarjeta-bg: #171717; /*bg de la tarjeta*/
 
-  /**/
-  --menu-d-bg3: #121212; /*para el bg de las tarjetas y para el bg del boton*/
-  --menu-d-bordes3: #1a1a1a; /*bordes de las tarjetas y del boton*/
-  --menu-d-ttl3: #155dfc; /*titulos de las tarjetas */
-  --menu-d-desc3: #bbbbbb; /*descripciones de las tarjetas*/
+  --menu2-izq-bg-icono: #171717; /*bg del icono*/
+  --menu2-izq-contenido-icono: #000000; /*contenido del icono*/
 
-  /**/
-  --menu-d-bg4: #111111; /*Para el bg de la barra de abajo*/
-  --menu-d-borde4: #222222; /*Para los bordes de la tarjeta*/
-  --menu-d-iconos4: #ffffff; /*para  <, matraz, los puntos .. y >*/
-  --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
-  --menu-d-desc4: #bbbbbb; /*para la descripcion, reconoce...*/
-  --menu-d-bg-boton4: #155dfc; /*para el bg del boton*/
+  --menu2-izq-tarjeta-txt: #155dfc; /*texto de la tarjeta*/
+  --menu2-izq-tarjeta-mini-txt: #a3a3a3; /*texto mini de la tarjeta*/
+
+  /* Menu 2 centro  */
+  --menu2-centro-borde: #0f172b; /*borde de todo el menu central*/
+  --menu2-centro-iconos: #155dfc; /*iconos de las opciones*/
+  --menu2-centro-bg-iconos: #0a0a0a; /*bg de los iconos de las opciones*/
+  --menu2-centro-hvr-iconos: #155dfc; /*hvr de los iconos de las opciones*/
+
+  /*Abajo*/
+  --menu2-abajo-borde: #0f172b; /* borde de toda la tarjeta*/
+  --menu2-abajo-bg: #0a0a0a; /*bg de toda la tarjeta*/
+  --menu2-abajo-txt: #155dfc; /*texto de Opciones de Visualización*/
+
+  --menu2-abajo-bg-minitarjeta: #111111; /*bg de la minitarjeta donde esta la imagen del modelo*/
+  --menu2-abajo-borde-minitarjeta: #0f172b; /*borde de la minitarjeta*/
+  --menu2-abajo-hvr-minitarjeta: #1a1a1a; /*hvr de la minitarjeta*/
+  --menu2-abajo-bg-minitarjeta-chica: #262626; /*bg de la minitarjeta chica*/
+  --menu2-abajo-txt-minitarjeta-chica: #a3a3a3; /*txt de la minitarjeta chica el que dice vista general y rotacion*/
+
+  --menu2-abajo-bg-active: #155dfc; /*bg activo*/
+  --menu2-abajo-txt-active: #ffffff; /*txt activo*/
+
+  /*derecha*/
+  --menu2-derecha-bg: #0a0a0a; /*bg de la tarjeta derecha*/
+  --menu2-derecha-borde: #0f172b; /*borde de la tarjeta derecha*/
+
+  --menu2-derecha-bg-img: #171717; /*bg de la imagen*/
+  --menu2-derecha-ttl: #155dfc; /*ttl de arriba de la tarjeta derecha*/
+  --menu2-derecha-desc: #bcbcbc; /*desc de arriba de la tarjeta derecha*/
+
+  --menu2-derecha-txt-mayusculas: #155dfc; /*txt mayusculas*/
+
+  --menu2-derecha-bg-iconos: #155dfc; /*bg iconos circulares*/
+  --menu2-derecha-iconos: #ffffff; /*iconos circulares*/
+
+  --menu2-derecha-mini-ttl: #bcbcbc; /*mini textos*/
+  --menu2-derecha-mini-txt: #155dfc; /*textos grandes de abajo de los minitextos*/
 
   /* UI */
   --background: #000000;
@@ -1731,51 +1699,6 @@
   --ayuda-preg-txt: #2c2a2a;
   --ayuda-link: #8a0194;
 
-  /* =========================
-   Menu Izquierdo
-========================= */
-  --menu-bg: #ffffff;
-  --menu-apartados: #8a0194;
-  --menu-paginas: #2c2a2a;
-  --menu-paginas-hvr: #fdf2ff;
-  --menu-iconos: #8a0194;
-  --menu-lineas: #eaeaea;
-  --menu-mostrador: #000000;
-
-  /* =========================
-   Menu Derecho
-========================= */
-  --menu-d-bg: #ffffff; /*bg general*/
-
-  --menu-d-ttl1: #8a0194; /*Quimica general - Nivel 1 y el numero de la racha*/
-  --menu-d-nivel1: #2c2a2a; /*Al nivel 2  y 72/100*/
-  --menu-d-nivel-bg: #8a0194; /*BG del numero del nivel*/
-  --menu-d-progreso1: #e9e9e9; /*Color del la linea del progreso*/
-  --menu-d-progreso-llenado: #8a0194; /*Color del llenado del progreso*/
-  --menu-d-racha1: #8a0194; /*icono del fuego de la racha*/
-  --menu-d-racha-num: #000000;
-
-  /**/
-  --menu-d-bg-tarjeta2: #e9e9e9; /*para el bg de la tarjeta general y el de las 3 tarjetas */
-  --menu-d-bordes2: #e1e1e1; /*bordes de la tarjeta y de las 3 subtarjetas*/
-  --menu-d-ttl2: #8a0194; /*Mi puntuacion y Aprende, Visualiza, Evalua y los puntos 72pts,0pts,0pts*/
-  --menu-d-iconos2: #8a0194;
-  --menu-d-desc2: #2c2a2a; /* para la descripcioens de las 3 tarjetas*/
-
-  /**/
-  --menu-d-bg3: #e9e9e9; /*para el bg de las tarjetas y para el bg del boton*/
-  --menu-d-bordes3: #ffffff; /*bordes de las tarjetas y del boton*/
-  --menu-d-ttl3: #8a0194; /*titulos de las tarjetas */
-  --menu-d-desc3: #2c2a2a; /*descripciones de las tarjetas*/
-
-  /**/
-  --menu-d-bg4: #000000; /*Para el bg de la barra de abajo*/
-  --menu-d-borde4: #0f0f0f; /*Para los bordes de la tarjeta*/
-  --menu-d-iconos4: #f8f8f8; /*para  <, matraz, los puntos .. y >*/
-  --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
-  --menu-d-desc4: #d6d6d6; /*para la descripcion, reconoce...*/
-  --menu-d-bg-boton4: #8a0194; /*para el bg del boton*/
-
   /* UI */
   --background: #ffffff;
   --muted: #e6e6e6;
@@ -1802,7 +1725,7 @@
   --chart-4: #eab308;
   --chart-5: #ef4444;
   --radius: 0.5rem;
-  --sidebar: var(--menu-bg);
+  --sidebar: #ffffff;
   --sidebar-foreground: #334155;
   --sidebar-primary: #1e293b;
   --sidebar-primary-foreground: #f8fafc;
@@ -1810,6 +1733,67 @@
   --sidebar-accent-foreground: #1e293b;
   --sidebar-border: #e2e8f0;
   --sidebar-ring: #8a0194;
+
+  /* ===================================
+   Menu 
+========================================*/
+  --menu2-bg-general: #ffffff;
+
+  --menu2-header-bg: #ffffff;
+  --menu2-header-paginas: #525252;
+  --menu2-header-paginas-hvr: #8a0194;
+  --menu2-header-extra: #0a0a0a;
+  --menu2-header-borde: #fae8ff;
+
+  /* Menu 2 izquierda  */
+  --menu2-izq-bg: #ffffff; /*bg de la tarjeta izquierda*/
+  --menu2-izq-ttl: #8a0194; /*ttl de la tarjeta izquierda*/
+
+  --menu2-izq-buscador-borde: #fae8ff; /*borde del buscador*/
+  --menu2-izq-buscador-bg: #ffffff; /*bg del buscador*/
+  --menu2-izq-buscador-contenido: #8a0194; /*contenido del buscador*/
+
+  --menu2-izq-tarjeta-bg: #ffffff; /*bg de la tarjeta*/
+  --menu2-izq-bg-icono: #ffffff; /*bg del icono*/
+
+  --menu2-izq-tarjeta-txt: #8a0194; /*texto de la tarjeta*/
+  --menu2-izq-tarjeta-mini-txt: #525252; /*texto mini de la tarjeta*/
+
+  /* Menu 2 centro  */
+  --menu2-centro-borde: #fae8ff; /*borde de todo el menu central*/
+  --menu2-centro-iconos: #8a0194; /*iconos de las opciones*/
+  --menu2-centro-bg-iconos: #ffffff; /*bg de los iconos de las opciones*/
+  --menu2-centro-hvr-iconos: #8a0194; /*hvr de los iconos de las opciones*/
+
+  /*Abajo*/
+  --menu2-abajo-borde: #fae8ff; /* borde de toda la tarjeta*/
+  --menu2-abajo-bg: #ffffff; /*bg de toda la tarjeta*/
+  --menu2-abajo-txt: #8a0194; /*texto de Opciones de Visualización*/
+
+  --menu2-abajo-bg-minitarjeta: #ffffff; /*bg de la minitarjeta donde esta la imagen del modelo*/
+  --menu2-abajo-borde-minitarjeta: #fae8ff; /*borde de la minitarjeta*/
+  --menu2-abajo-hvr-minitarjeta: #fae8ff; /*hvr de la minitarjeta*/
+  --menu2-abajo-bg-minitarjeta-chica: #ffffff; /*bg de la minitarjeta chica*/
+  --menu2-abajo-txt-minitarjeta-chica: #8a0194; /*txt de la minitarjeta chica el que dice vista general y rotacion*/
+
+  --menu2-abajo-bg-active: #8a0194; /*bg activo*/
+  --menu2-abajo-txt-active: #ffffff; /*txt activo*/
+
+  /*derecha*/
+  --menu2-derecha-bg: #ffffff; /*bg de la tarjeta derecha*/
+  --menu2-derecha-borde: #fae8ff; /*borde de la tarjeta derecha*/
+
+  --menu2-derecha-bg-img: #ffffff; /*bg de la imagen*/
+  --menu2-derecha-ttl: #8a0194; /*ttl de arriba de la tarjeta derecha*/
+  --menu2-derecha-desc: #525252; /*desc de arriba de la tarjeta derecha*/
+
+  --menu2-derecha-txt-mayusculas: #8a0194; /*txt mayusculas*/
+
+  --menu2-derecha-bg-iconos: #8a0194; /*bg iconos circulares*/
+  --menu2-derecha-iconos: #ffffff; /*iconos circulares*/
+
+  --menu2-derecha-mini-ttl: #525252; /*mini textos*/
+  --menu2-derecha-mini-txt: #8a0194; /*textos grandes de abajo de los minitextos*/
 }
 
 [data-color="purple"].dark,
@@ -2011,51 +1995,6 @@
   --ayuda-preg-txt: #dddddd;
   --ayuda-link: #a800b7;
 
-  /* =========================
-   Menu Izquierdo
-========================= */
-  --menu-bg: #000000;
-  --menu-apartados: #8a0194;
-  --menu-paginas: #ffffff;
-  --menu-paginas-hvr: #1a011a;
-  --menu-iconos: #8a0194;
-  --menu-lineas: #212121;
-  --menu-mostrador: #ffffff;
-
-  /* =========================
-   Menu Derecho
-========================= */
-  --menu-d-bg: #000000; /*bg general*/
-
-  --menu-d-ttl1: #a800b7; /*Quimica general - Nivel 1 y el numero de la racha*/
-  --menu-d-nivel1: #bbbbbb; /*Al nivel 2  y 72/100*/
-  --menu-d-nivel-bg: #8a0194; /*BG del numero del nivel*/
-  --menu-d-progreso1: #212121; /*Color del la linea del progreso*/
-  --menu-d-progreso-llenado: #a800b7; /*Color del llenado del progreso*/
-  --menu-d-racha1: #a800b7; /*icono del fuego de la racha*/
-  --menu-d-racha-num: #ffffff;
-
-  /**/
-  --menu-d-bg-tarjeta2: #121212; /*para el bg de la tarjeta general y el de las 3 tarjetas */
-  --menu-d-bordes2: #1f1f1f; /*bordes de la tarjeta y de las 3 subtarjetas*/
-  --menu-d-ttl2: #a800b7; /*Mi puntuacion y Aprende, Visualiza, Evalua y los puntos 72pts,0pts,0pts*/
-  --menu-d-iconos2: #a800b7;
-  --menu-d-desc2: #bbbbbb; /* para la descripcioens de las 3 tarjetas*/
-
-  /**/
-  --menu-d-bg3: #121212; /*para el bg de las tarjetas y para el bg del boton*/
-  --menu-d-bordes3: #1a1a1a; /*bordes de las tarjetas y del boton*/
-  --menu-d-ttl3: #a800b7; /*titulos de las tarjetas */
-  --menu-d-desc3: #bbbbbb; /*descripciones de las tarjetas*/
-
-  /**/
-  --menu-d-bg4: #111111; /*Para el bg de la barra de abajo*/
-  --menu-d-borde4: #222222; /*Para los bordes de la tarjeta*/
-  --menu-d-iconos4: #ffffff; /*para  <, matraz, los puntos .. y >*/
-  --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
-  --menu-d-desc4: #bbbbbb; /*para la descripcion, reconoce...*/
-  --menu-d-bg-boton4: #a800b7; /*para el bg del boton*/
-
   /* UI */
   --background: #000000;
   --muted: #27272a;
@@ -2082,14 +2021,77 @@
   --chart-4: #eab308;
   --chart-5: #ef4444;
   --radius: 0.5rem;
-  --sidebar: var(--menu-bg);
+  --sidebar: #000000;
   --sidebar-foreground: #94a3b8;
   --sidebar-primary: #a800b7;
   --sidebar-primary-foreground: #ffffff;
   --sidebar-accent: #1e293b;
   --sidebar-accent-foreground: #f8fafc;
-  --sidebar-border: var(--menu-lineas);
+  --sidebar-border: #1a1a1a;
   --sidebar-ring: #a800b7;
+
+  /* ===================================
+   Menu 
+========================================*/
+  --menu2-bg-general: #000000;
+  --menu2-header-bg: #0a0a0a;
+  --menu2-header-paginas-bg: #1a1a1a;
+  --menu2-header-paginas: #e5e5e5;
+  --menu2-header-paginas-hvr: #a800b7;
+  --menu2-header-extra: #0a0a00;
+  --menu2-header-borde: #250035;
+
+  /* Menu 2 izquierda  */
+  --menu2-izq-bg: #0a0a0a; /*bg de toda la tarjeta*/
+  --menu2-izq-ttl: #a800b7; /*titulo*/
+
+  --menu2-izq-buscador-borde: #250035; /*borde del buscador y de la tarjeta general*/
+  --menu2-izq-buscador-bg: #0d0d0d; /*bg del buscador*/
+  --menu2-izq-buscador-contenido: #a800b7; /*contenido del buscador*/
+
+  --menu2-izq-tarjeta-bg: #171717; /*bg de la tarjeta*/
+
+  --menu2-izq-bg-icono: #171717; /*bg del icono*/
+  --menu2-izq-contenido-icono: #000000; /*contenido del icono*/
+
+  --menu2-izq-tarjeta-txt: #a800b7; /*texto de la tarjeta*/
+  --menu2-izq-tarjeta-mini-txt: #a3a3a3; /*texto mini de la tarjeta*/
+
+  /* Menu 2 centro  */
+  --menu2-centro-borde: #250035; /*borde de todo el menu central*/
+  --menu2-centro-iconos: #a800b7; /*iconos de las opciones*/
+  --menu2-centro-bg-iconos: #0a0a0a; /*bg de los iconos de las opciones*/
+  --menu2-centro-hvr-iconos: #a800b7; /*hvr de los iconos de las opciones*/
+
+  /*Abajo*/
+  --menu2-abajo-borde: #250035; /* borde de toda la tarjeta*/
+  --menu2-abajo-bg: #0a0a0a; /*bg de toda la tarjeta*/
+  --menu2-abajo-txt: #a800b7; /*texto de Opciones de Visualización*/
+
+  --menu2-abajo-bg-minitarjeta: #111111; /*bg de la minitarjeta donde esta la imagen del modelo*/
+  --menu2-abajo-borde-minitarjeta: #250035; /*borde de la minitarjeta*/
+  --menu2-abajo-hvr-minitarjeta: #1a1a1a; /*hvr de la minitarjeta*/
+  --menu2-abajo-bg-minitarjeta-chica: #262626; /*bg de la minitarjeta chica*/
+  --menu2-abajo-txt-minitarjeta-chica: #a3a3a3; /*txt de la minitarjeta chica el que dice vista general y rotacion*/
+
+  --menu2-abajo-bg-active: #a800b7; /*bg activo*/
+  --menu2-abajo-txt-active: #ffffff; /*txt activo*/
+
+  /*derecha*/
+  --menu2-derecha-bg: #0a0a0a; /*bg de la tarjeta derecha*/
+  --menu2-derecha-borde: #250035; /*borde de la tarjeta derecha*/
+
+  --menu2-derecha-bg-img: #171717; /*bg de la imagen*/
+  --menu2-derecha-ttl: #a800b7; /*ttl de arriba de la tarjeta derecha*/
+  --menu2-derecha-desc: #bcbcbc; /*desc de arriba de la tarjeta derecha*/
+
+  --menu2-derecha-txt-mayusculas: #a800b7; /*txt mayusculas*/
+
+  --menu2-derecha-bg-iconos: #a800b7; /*bg iconos circulares*/
+  --menu2-derecha-iconos: #ffffff; /*iconos circulares*/
+
+  --menu2-derecha-mini-ttl: #bcbcbc; /*mini textos*/
+  --menu2-derecha-mini-txt: #a800b7; /*textos grandes de abajo de los minitextos*/
 }
 
 /* Amarillo */
@@ -2291,51 +2293,6 @@
 
   --ayuda-link: #fdc700;
 
-  /* =========================
-   Menu Izquierdo
-========================= */
-  --menu-bg: #ffffff;
-  --menu-apartados: #fdc700;
-  --menu-paginas: #2c2a2a;
-  --menu-paginas-hvr: #fffbeb;
-  --menu-iconos: #fdc700;
-  --menu-lineas: #eaeaea;
-  --menu-mostrador: #000000;
-
-  /* =========================
-   Menu Derecho
-========================= */
-  --menu-d-bg: #ffffff; /*bg general*/
-
-  --menu-d-ttl1: #fdc700; /*Quimica general - Nivel 1 y el numero de la racha*/
-  --menu-d-nivel1: #2c2a2a; /*Al nivel 2  y 72/100*/
-  --menu-d-nivel-bg: #fdc700; /*BG del numero del nivel*/
-  --menu-d-progreso1: #e9e9e9; /*Color del la linea del progreso*/
-  --menu-d-progreso-llenado: #fdc700; /*Color del llenado del progreso*/
-  --menu-d-racha1: #fdc700; /*icono del fuego de la racha*/
-  --menu-d-racha-num: #000000;
-
-  /**/
-  --menu-d-bg-tarjeta2: #e9e9e9; /*para el bg de la tarjeta general y el de las 3 tarjetas */
-  --menu-d-bordes2: #e1e1e1; /*bordes de la tarjeta y de las 3 subtarjetas*/
-  --menu-d-ttl2: #fdc700; /*Mi puntuacion y Aprende, Visualiza, Evalua y los puntos 72pts,0pts,0pts*/
-  --menu-d-iconos2: #fdc700;
-  --menu-d-desc2: #2c2a2a; /* para la descripcioens de las 3 tarjetas*/
-
-  /**/
-  --menu-d-bg3: #e9e9e9; /*para el bg de las tarjetas y para el bg del boton*/
-  --menu-d-bordes3: #ffffff; /*bordes de las tarjetas y del boton*/
-  --menu-d-ttl3: #fdc700; /*titulos de las tarjetas */
-  --menu-d-desc3: #2c2a2a; /*descripciones de las tarjetas*/
-
-  /**/
-  --menu-d-bg4: #000000; /*Para el bg de la barra de abajo*/
-  --menu-d-borde4: #0f0f0f; /*Para los bordes de la tarjeta*/
-  --menu-d-iconos4: #f8f8f8; /*para  <, matraz, los puntos .. y >*/
-  --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
-  --menu-d-desc4: #d6d6d6; /*para la descripcion, reconoce...*/
-  --menu-d-bg-boton4: #fdc700; /*para el bg del boton*/
-
   /* UI */
   --background: #ffffff;
   --muted: #e6e6e6;
@@ -2362,7 +2319,7 @@
   --chart-4: #eab308;
   --chart-5: #ef4444;
   --radius: 0.5rem;
-  --sidebar: var(--menu-bg);
+  --sidebar: #ffffff;
   --sidebar-foreground: #334155;
   --sidebar-primary: #1e293b;
   --sidebar-primary-foreground: #f8fafc;
@@ -2370,6 +2327,67 @@
   --sidebar-accent-foreground: #1e293b;
   --sidebar-border: #e2e8f0;
   --sidebar-ring: #fdc700;
+
+  /* ===================================
+   Menu 
+========================================*/
+  --menu2-bg-general: #ffffff;
+
+  --menu2-header-bg: #ffffff;
+  --menu2-header-paginas: #525252;
+  --menu2-header-paginas-hvr: #fdc700;
+  --menu2-header-extra: #0a0a0a;
+  --menu2-header-borde: #fef9c3;
+
+  /* Menu 2 izquierda  */
+  --menu2-izq-bg: #ffffff; /*bg de la tarjeta izquierda*/
+  --menu2-izq-ttl: #fdc700; /*ttl de la tarjeta izquierda*/
+
+  --menu2-izq-buscador-borde: #fef9c3; /*borde del buscador*/
+  --menu2-izq-buscador-bg: #ffffff; /*bg del buscador*/
+  --menu2-izq-buscador-contenido: #fdc700; /*contenido del buscador*/
+
+  --menu2-izq-tarjeta-bg: #ffffff; /*bg de la tarjeta*/
+  --menu2-izq-bg-icono: #ffffff; /*bg del icono*/
+
+  --menu2-izq-tarjeta-txt: #fdc700; /*texto de la tarjeta*/
+  --menu2-izq-tarjeta-mini-txt: #525252; /*texto mini de la tarjeta*/
+
+  /* Menu 2 centro  */
+  --menu2-centro-borde: #fef9c3; /*borde de todo el menu central*/
+  --menu2-centro-iconos: #fdc700; /*iconos de las opciones*/
+  --menu2-centro-bg-iconos: #ffffff; /*bg de los iconos de las opciones*/
+  --menu2-centro-hvr-iconos: #fdc700; /*hvr de los iconos de las opciones*/
+
+  /*Abajo*/
+  --menu2-abajo-borde: #fef9c3; /* borde de toda la tarjeta*/
+  --menu2-abajo-bg: #ffffff; /*bg de toda la tarjeta*/
+  --menu2-abajo-txt: #fdc700; /*texto de Opciones de Visualización*/
+
+  --menu2-abajo-bg-minitarjeta: #ffffff; /*bg de la minitarjeta donde esta la imagen del modelo*/
+  --menu2-abajo-borde-minitarjeta: #fef9c3; /*borde de la minitarjeta*/
+  --menu2-abajo-hvr-minitarjeta: #fef9c3; /*hvr de la minitarjeta*/
+  --menu2-abajo-bg-minitarjeta-chica: #ffffff; /*bg de la minitarjeta chica*/
+  --menu2-abajo-txt-minitarjeta-chica: #fdc700; /*txt de la minitarjeta chica el que dice vista general y rotacion*/
+
+  --menu2-abajo-bg-active: #fdc700; /*bg activo*/
+  --menu2-abajo-txt-active: #ffffff; /*txt activo*/
+
+  /*derecha*/
+  --menu2-derecha-bg: #ffffff; /*bg de la tarjeta derecha*/
+  --menu2-derecha-borde: #fef9c3; /*borde de la tarjeta derecha*/
+
+  --menu2-derecha-bg-img: #ffffff; /*bg de la imagen*/
+  --menu2-derecha-ttl: #fdc700; /*ttl de arriba de la tarjeta derecha*/
+  --menu2-derecha-desc: #525252; /*desc de arriba de la tarjeta derecha*/
+
+  --menu2-derecha-txt-mayusculas: #fdc700; /*txt mayusculas*/
+
+  --menu2-derecha-bg-iconos: #fdc700; /*bg iconos circulares*/
+  --menu2-derecha-iconos: #ffffff; /*iconos circulares*/
+
+  --menu2-derecha-mini-ttl: #525252; /*mini textos*/
+  --menu2-derecha-mini-txt: #fdc700; /*textos grandes de abajo de los minitextos*/
 }
 
 [data-color="yellow"].dark,
@@ -2569,51 +2587,6 @@
   --ayuda-preg-txt: #dddddd;
   --ayuda-link: #fdc700;
 
-  /* =========================
-   Menu Izquierdo
-========================= */
-  --menu-bg: #000000;
-  --menu-apartados: #fdc700;
-  --menu-paginas: #ffffff;
-  --menu-paginas-hvr: #1a1601;
-  --menu-iconos: #fdc700;
-  --menu-lineas: #212121;
-  --menu-mostrador: #ffffff;
-
-  /* =========================
-   Menu Derecho
-========================= */
-  --menu-d-bg: #000000; /*bg general*/
-
-  --menu-d-ttl1: #fdc700; /*Quimica general - Nivel 1 y el numero de la racha*/
-  --menu-d-nivel1: #bbbbbb; /*Al nivel 2  y 72/100*/
-  --menu-d-nivel-bg: #fdc700; /*BG del numero del nivel*/
-  --menu-d-progreso1: #212121; /*Color del la linea del progreso*/
-  --menu-d-progreso-llenado: #fdc700; /*Color del llenado del progreso*/
-  --menu-d-racha1: #fdc700; /*icono del fuego de la racha*/
-  --menu-d-racha-num: #ffffff;
-
-  /**/
-  --menu-d-bg-tarjeta2: #121212; /*para el bg de la tarjeta general y el de las 3 tarjetas */
-  --menu-d-bordes2: #1f1f1f; /*bordes de la tarjeta y de las 3 subtarjetas*/
-  --menu-d-ttl2: #fdc700; /*Mi puntuacion y Aprende, Visualiza, Evalua y los puntos 72pts,0pts,0pts*/
-  --menu-d-iconos2: #fdc700;
-  --menu-d-desc2: #bbbbbb; /* para la descripcioens de las 3 tarjetas*/
-
-  /**/
-  --menu-d-bg3: #121212; /*para el bg de las tarjetas y para el bg del boton*/
-  --menu-d-bordes3: #1a1a1a; /*bordes de las tarjetas y del boton*/
-  --menu-d-ttl3: #fdc700; /*titulos de las tarjetas */
-  --menu-d-desc3: #bbbbbb; /*descripciones de las tarjetas*/
-
-  /**/
-  --menu-d-bg4: #111111; /*Para el bg de la barra de abajo*/
-  --menu-d-borde4: #222222; /*Para los bordes de la tarjeta*/
-  --menu-d-iconos4: #ffffff; /*para  <, matraz, los puntos .. y >*/
-  --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
-  --menu-d-desc4: #bbbbbb; /*para la descripcion, reconoce...*/
-  --menu-d-bg-boton4: #fdc700; /*para el bg del boton*/
-
   /* UI */
   --background: #000000;
   --muted: #27272a;
@@ -2640,14 +2613,77 @@
   --chart-3: #f97316;
   --chart-4: #eab308;
   --chart-5: #ef4444;
-  --sidebar: var(--menu-bg);
+  --sidebar: #000000;
   --sidebar-foreground: #94a3b8;
   --sidebar-primary: #fdc700;
   --sidebar-primary-foreground: #000000;
   --sidebar-accent: #1e293b;
   --sidebar-accent-foreground: #f8fafc;
-  --sidebar-border: var(--menu-lineas);
+  --sidebar-border: #1a1a1a;
   --sidebar-ring: #fdc700;
+
+  /* ===================================
+   Menu 
+========================================*/
+  --menu2-bg-general: #000000;
+  --menu2-header-bg: #0a0a0a;
+  --menu2-header-paginas-bg: #1a1a1a;
+  --menu2-header-paginas: #e5e5e5;
+  --menu2-header-paginas-hvr: #fdc700;
+  --menu2-header-extra: #0a0a00;
+  --menu2-header-borde: #3f2d00;
+
+  /* Menu 2 izquierda  */
+  --menu2-izq-bg: #0a0a0a; /*bg de toda la tarjeta*/
+  --menu2-izq-ttl: #fdc700; /*titulo*/
+
+  --menu2-izq-buscador-borde: #3f2d00; /*borde del buscador y de la tarjeta general*/
+  --menu2-izq-buscador-bg: #0d0d0d; /*bg del buscador*/
+  --menu2-izq-buscador-contenido: #fdc700; /*contenido del buscador*/
+
+  --menu2-izq-tarjeta-bg: #171717; /*bg de la tarjeta*/
+
+  --menu2-izq-bg-icono: #171717; /*bg del icono*/
+  --menu2-izq-contenido-icono: #000000; /*contenido del icono*/
+
+  --menu2-izq-tarjeta-txt: #fdc700; /*texto de la tarjeta*/
+  --menu2-izq-tarjeta-mini-txt: #a3a3a3; /*texto mini de la tarjeta*/
+
+  /* Menu 2 centro  */
+  --menu2-centro-borde: #3f2d00; /*borde de todo el menu central*/
+  --menu2-centro-iconos: #fdc700; /*iconos de las opciones*/
+  --menu2-centro-bg-iconos: #0a0a0a; /*bg de los iconos de las opciones*/
+  --menu2-centro-hvr-iconos: #fdc700; /*hvr de los iconos de las opciones*/
+
+  /*Abajo*/
+  --menu2-abajo-borde: #3f2d00; /* borde de toda la tarjeta*/
+  --menu2-abajo-bg: #0a0a0a; /*bg de toda la tarjeta*/
+  --menu2-abajo-txt: #fdc700; /*texto de Opciones de Visualización*/
+
+  --menu2-abajo-bg-minitarjeta: #111111; /*bg de la minitarjeta donde esta la imagen del modelo*/
+  --menu2-abajo-borde-minitarjeta: #3f2d00; /*borde de la minitarjeta*/
+  --menu2-abajo-hvr-minitarjeta: #1a1a1a; /*hvr de la minitarjeta*/
+  --menu2-abajo-bg-minitarjeta-chica: #262626; /*bg de la minitarjeta chica*/
+  --menu2-abajo-txt-minitarjeta-chica: #a3a3a3; /*txt de la minitarjeta chica el que dice vista general y rotacion*/
+
+  --menu2-abajo-bg-active: #fdc700; /*bg activo*/
+  --menu2-abajo-txt-active: #ffffff; /*txt activo*/
+
+  /*derecha*/
+  --menu2-derecha-bg: #0a0a0a; /*bg de la tarjeta derecha*/
+  --menu2-derecha-borde: #3f2d00; /*borde de la tarjeta derecha*/
+
+  --menu2-derecha-bg-img: #171717; /*bg de la imagen*/
+  --menu2-derecha-ttl: #fdc700; /*ttl de arriba de la tarjeta derecha*/
+  --menu2-derecha-desc: #bcbcbc; /*desc de arriba de la tarjeta derecha*/
+
+  --menu2-derecha-txt-mayusculas: #fdc700; /*txt mayusculas*/
+
+  --menu2-derecha-bg-iconos: #fdc700; /*bg iconos circulares*/
+  --menu2-derecha-iconos: #ffffff; /*iconos circulares*/
+
+  --menu2-derecha-mini-ttl: #bcbcbc; /*mini textos*/
+  --menu2-derecha-mini-txt: #fdc700; /*textos grandes de abajo de los minitextos*/
 }
 
 /* Naranja */
@@ -2849,51 +2885,6 @@
   --ayuda-preg-txt: #2c2a2a;
   --ayuda-link: #f77817;
 
-  /* =========================
-   Menu Izquierdo
-========================= */
-  --menu-bg: #ffffff;
-  --menu-apartados: #f77817;
-  --menu-paginas: #2c2a2a;
-  --menu-paginas-hvr: #fff7ed;
-  --menu-iconos: #f77817;
-  --menu-lineas: #eaeaea;
-  --menu-mostrador: #000000;
-
-  /* =========================
-   Menu Derecho
-========================= */
-  --menu-d-bg: #ffffff; /*bg general*/
-
-  --menu-d-ttl1: #f77817; /*Quimica general - Nivel 1 y el numero de la racha*/
-  --menu-d-nivel1: #2c2a2a; /*Al nivel 2  y 72/100*/
-  --menu-d-nivel-bg: #f77817; /*BG del numero del nivel*/
-  --menu-d-progreso1: #e9e9e9; /*Color del la linea del progreso*/
-  --menu-d-progreso-llenado: #f77817; /*Color del llenado del progreso*/
-  --menu-d-racha1: #f77817; /*icono del fuego de la racha*/
-  --menu-d-racha-num: #000000;
-
-  /**/
-  --menu-d-bg-tarjeta2: #e9e9e9; /*para el bg de la tarjeta general y el de las 3 tarjetas */
-  --menu-d-bordes2: #e1e1e1; /*bordes de la tarjeta y de las 3 subtarjetas*/
-  --menu-d-ttl2: #f77817; /*Mi puntuacion y Aprende, Visualiza, Evalua y los puntos 72pts,0pts,0pts*/
-  --menu-d-iconos2: #f77817;
-  --menu-d-desc2: #2c2a2a; /* para la descripcioens de las 3 tarjetas*/
-
-  /**/
-  --menu-d-bg3: #e9e9e9; /*para el bg de las tarjetas y para el bg del boton*/
-  --menu-d-bordes3: #ffffff; /*bordes de las tarjetas y del boton*/
-  --menu-d-ttl3: #f77817; /*titulos de las tarjetas */
-  --menu-d-desc3: #2c2a2a; /*descripciones de las tarjetas*/
-
-  /**/
-  --menu-d-bg4: #000000; /*Para el bg de la barra de abajo*/
-  --menu-d-borde4: #0f0f0f; /*Para los bordes de la tarjeta*/
-  --menu-d-iconos4: #f8f8f8; /*para  <, matraz, los puntos .. y >*/
-  --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
-  --menu-d-desc4: #d6d6d6; /*para la descripcion, reconoce...*/
-  --menu-d-bg-boton4: #f77817; /*para el bg del boton*/
-
   /* UI */
   --background: #ffffff;
   --muted: #e6e6e6;
@@ -2920,7 +2911,7 @@
   --chart-4: #eab308;
   --chart-5: #ef4444;
   --radius: 0.5rem;
-  --sidebar: var(--menu-bg);
+  --sidebar: #ffffff;
   --sidebar-foreground: #334155;
   --sidebar-primary: #1e293b;
   --sidebar-primary-foreground: #f8fafc;
@@ -2928,6 +2919,67 @@
   --sidebar-accent-foreground: #1e293b;
   --sidebar-border: #e2e8f0;
   --sidebar-ring: #f77817;
+
+  /* ===================================
+   Menu 
+========================================*/
+  --menu2-bg-general: #ffffff;
+
+  --menu2-header-bg: #ffffff;
+  --menu2-header-paginas: #525252;
+  --menu2-header-paginas-hvr: #f77817;
+  --menu2-header-extra: #0a0a0a;
+  --menu2-header-borde: #ffedd5;
+
+  /* Menu 2 izquierda  */
+  --menu2-izq-bg: #ffffff; /*bg de la tarjeta izquierda*/
+  --menu2-izq-ttl: #f77817; /*ttl de la tarjeta izquierda*/
+
+  --menu2-izq-buscador-borde: #ffedd5; /*borde del buscador*/
+  --menu2-izq-buscador-bg: #ffffff; /*bg del buscador*/
+  --menu2-izq-buscador-contenido: #f77817; /*contenido del buscador*/
+
+  --menu2-izq-tarjeta-bg: #ffffff; /*bg de la tarjeta*/
+  --menu2-izq-bg-icono: #ffffff; /*bg del icono*/
+
+  --menu2-izq-tarjeta-txt: #f77817; /*texto de la tarjeta*/
+  --menu2-izq-tarjeta-mini-txt: #525252; /*texto mini de la tarjeta*/
+
+  /* Menu 2 centro  */
+  --menu2-centro-borde: #ffedd5; /*borde de todo el menu central*/
+  --menu2-centro-iconos: #f77817; /*iconos de las opciones*/
+  --menu2-centro-bg-iconos: #ffffff; /*bg de los iconos de las opciones*/
+  --menu2-centro-hvr-iconos: #f77817; /*hvr de los iconos de las opciones*/
+
+  /*Abajo*/
+  --menu2-abajo-borde: #ffedd5; /* borde de toda la tarjeta*/
+  --menu2-abajo-bg: #ffffff; /*bg de toda la tarjeta*/
+  --menu2-abajo-txt: #f77817; /*texto de Opciones de Visualización*/
+
+  --menu2-abajo-bg-minitarjeta: #ffffff; /*bg de la minitarjeta donde esta la imagen del modelo*/
+  --menu2-abajo-borde-minitarjeta: #ffedd5; /*borde de la minitarjeta*/
+  --menu2-abajo-hvr-minitarjeta: #ffedd5; /*hvr de la minitarjeta*/
+  --menu2-abajo-bg-minitarjeta-chica: #ffffff; /*bg de la minitarjeta chica*/
+  --menu2-abajo-txt-minitarjeta-chica: #f77817; /*txt de la minitarjeta chica el que dice vista general y rotacion*/
+
+  --menu2-abajo-bg-active: #f77817; /*bg activo*/
+  --menu2-abajo-txt-active: #ffffff; /*txt activo*/
+
+  /*derecha*/
+  --menu2-derecha-bg: #ffffff; /*bg de la tarjeta derecha*/
+  --menu2-derecha-borde: #ffedd5; /*borde de la tarjeta derecha*/
+
+  --menu2-derecha-bg-img: #ffffff; /*bg de la imagen*/
+  --menu2-derecha-ttl: #f77817; /*ttl de arriba de la tarjeta derecha*/
+  --menu2-derecha-desc: #525252; /*desc de arriba de la tarjeta derecha*/
+
+  --menu2-derecha-txt-mayusculas: #f77817; /*txt mayusculas*/
+
+  --menu2-derecha-bg-iconos: #f77817; /*bg iconos circulares*/
+  --menu2-derecha-iconos: #ffffff; /*iconos circulares*/
+
+  --menu2-derecha-mini-ttl: #525252; /*mini textos*/
+  --menu2-derecha-mini-txt: #f77817; /*textos grandes de abajo de los minitextos*/
 }
 
 [data-color="orange"].dark,
@@ -3130,51 +3182,6 @@
   --ayuda-preg-txt: #dddddd;
   --ayuda-link: #ff8400;
 
-  /* =========================
-   Menu Izquierdo
-========================= */
-  --menu-bg: #000000;
-  --menu-apartados: #ff8400;
-  --menu-paginas: #ffffff;
-  --menu-paginas-hvr: #1a0a01;
-  --menu-iconos: #ff8400;
-  --menu-lineas: #212121;
-  --menu-mostrador: #ffffff;
-
-  /* =========================
-   Menu Derecho
-========================= */
-  --menu-d-bg: #000000; /*bg general*/
-
-  --menu-d-ttl1: #ff8400; /*Quimica general - Nivel 1 y el numero de la racha*/
-  --menu-d-nivel1: #bbbbbb; /*Al nivel 2  y 72/100*/
-  --menu-d-nivel-bg: #ff8400; /*BG del numero del nivel*/
-  --menu-d-progreso1: #212121; /*Color del la linea del progreso*/
-  --menu-d-progreso-llenado: #ff8400; /*Color del llenado del progreso*/
-  --menu-d-racha1: #ff8400; /*icono del fuego de la racha*/
-  --menu-d-racha-num: #ffffff;
-
-  /**/
-  --menu-d-bg-tarjeta2: #121212; /*para el bg de la tarjeta general y el de las 3 tarjetas */
-  --menu-d-bordes2: #1f1f1f; /*bordes de la tarjeta y de las 3 subtarjetas*/
-  --menu-d-ttl2: #ff8400; /*Mi puntuacion y Aprende, Visualiza, Evalua y los puntos 72pts,0pts,0pts*/
-  --menu-d-iconos2: #ff8400;
-  --menu-d-desc2: #bbbbbb; /* para la descripcioens de las 3 tarjetas*/
-
-  /**/
-  --menu-d-bg3: #121212; /*para el bg de las tarjetas y para el bg del boton*/
-  --menu-d-bordes3: #1a1a1a; /*bordes de las tarjetas y del boton*/
-  --menu-d-ttl3: #ff8400; /*titulos de las tarjetas */
-  --menu-d-desc3: #bbbbbb; /*descripciones de las tarjetas*/
-
-  /**/
-  --menu-d-bg4: #111111; /*Para el bg de la barra de abajo*/
-  --menu-d-borde4: #222222; /*Para los bordes de la tarjeta*/
-  --menu-d-iconos4: #ffffff; /*para  <, matraz, los puntos .. y >*/
-  --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
-  --menu-d-desc4: #bbbbbb; /*para la descripcion, reconoce...*/
-  --menu-d-bg-boton4: #ff8400; /*para el bg del boton*/
-
   /* UI */
   --background: #000000;
   --muted: #27272a;
@@ -3201,14 +3208,77 @@
   --chart-4: #eab308;
   --chart-5: #ef4444;
   --radius: 0.5rem;
-  --sidebar: var(--menu-bg);
+  --sidebar: #000000;
   --sidebar-foreground: #94a3b8;
   --sidebar-primary: #ff8400;
   --sidebar-primary-foreground: #ffffff;
   --sidebar-accent: #1e293b;
   --sidebar-accent-foreground: #f8fafc;
-  --sidebar-border: var(--menu-lineas);
+  --sidebar-border: #1a1a1a;
   --sidebar-ring: #ff8400;
+
+  /* ===================================
+   Menu 
+========================================*/
+  --menu2-bg-general: #000000;
+  --menu2-header-bg: #0a0a0a;
+  --menu2-header-paginas-bg: #1a1a1a;
+  --menu2-header-paginas: #e5e5e5;
+  --menu2-header-paginas-hvr: #ff8400;
+  --menu2-header-extra: #0a0a00;
+  --menu2-header-borde: #3d1a00;
+
+  /* Menu 2 izquierda  */
+  --menu2-izq-bg: #0a0a0a; /*bg de toda la tarjeta*/
+  --menu2-izq-ttl: #ff8400; /*titulo*/
+
+  --menu2-izq-buscador-borde: #3d1a00; /*borde del buscador y de la tarjeta general*/
+  --menu2-izq-buscador-bg: #0d0d0d; /*bg del buscador*/
+  --menu2-izq-buscador-contenido: #ff8400; /*contenido del buscador*/
+
+  --menu2-izq-tarjeta-bg: #171717; /*bg de la tarjeta*/
+
+  --menu2-izq-bg-icono: #171717; /*bg del icono*/
+  --menu2-izq-contenido-icono: #000000; /*contenido del icono*/
+
+  --menu2-izq-tarjeta-txt: #ff8400; /*texto de la tarjeta*/
+  --menu2-izq-tarjeta-mini-txt: #a3a3a3; /*texto mini de la tarjeta*/
+
+  /* Menu 2 centro  */
+  --menu2-centro-borde: #3d1a00; /*borde de todo el menu central*/
+  --menu2-centro-iconos: #ff8400; /*iconos de las opciones*/
+  --menu2-centro-bg-iconos: #0a0a0a; /*bg de los iconos de las opciones*/
+  --menu2-centro-hvr-iconos: #ff8400; /*hvr de los iconos de las opciones*/
+
+  /*Abajo*/
+  --menu2-abajo-borde: #3d1a00; /* borde de toda la tarjeta*/
+  --menu2-abajo-bg: #0a0a0a; /*bg de toda la tarjeta*/
+  --menu2-abajo-txt: #ff8400; /*texto de Opciones de Visualización*/
+
+  --menu2-abajo-bg-minitarjeta: #111111; /*bg de la minitarjeta donde esta la imagen del modelo*/
+  --menu2-abajo-borde-minitarjeta: #3d1a00; /*borde de la minitarjeta*/
+  --menu2-abajo-hvr-minitarjeta: #1a1a1a; /*hvr de la minitarjeta*/
+  --menu2-abajo-bg-minitarjeta-chica: #262626; /*bg de la minitarjeta chica*/
+  --menu2-abajo-txt-minitarjeta-chica: #a3a3a3; /*txt de la minitarjeta chica el que dice vista general y rotacion*/
+
+  --menu2-abajo-bg-active: #ff8400; /*bg activo*/
+  --menu2-abajo-txt-active: #ffffff; /*txt activo*/
+
+  /*derecha*/
+  --menu2-derecha-bg: #0a0a0a; /*bg de la tarjeta derecha*/
+  --menu2-derecha-borde: #3d1a00; /*borde de la tarjeta derecha*/
+
+  --menu2-derecha-bg-img: #171717; /*bg de la imagen*/
+  --menu2-derecha-ttl: #ff8400; /*ttl de arriba de la tarjeta derecha*/
+  --menu2-derecha-desc: #bcbcbc; /*desc de arriba de la tarjeta derecha*/
+
+  --menu2-derecha-txt-mayusculas: #ff8400; /*txt mayusculas*/
+
+  --menu2-derecha-bg-iconos: #ff8400; /*bg iconos circulares*/
+  --menu2-derecha-iconos: #ffffff; /*iconos circulares*/
+
+  --menu2-derecha-mini-ttl: #bcbcbc; /*mini textos*/
+  --menu2-derecha-mini-txt: #ff8400; /*textos grandes de abajo de los minitextos*/
 }
 
 /* Rosa */
@@ -3409,51 +3479,6 @@
   --ayuda-preg-txt: #616161;
   --ayuda-link: #ec003f;
 
-  /* =========================
-   Menu Izquierdo
-========================= */
-  --menu-bg: #ffffff;
-  --menu-apartados: #ec003f;
-  --menu-paginas: #2c2a2a;
-  --menu-paginas-hvr: #fff1f2;
-  --menu-iconos: #ec003f;
-  --menu-lineas: #eaeaea;
-  --menu-mostrador: #000000;
-
-  /* =========================
-   Menu Derecho
-========================= */
-  --menu-d-bg: #ffffff; /*bg general*/
-
-  --menu-d-ttl1: #ec003f; /*Quimica general - Nivel 1 y el numero de la racha*/
-  --menu-d-nivel1: #2c2a2a; /*Al nivel 2  y 72/100*/
-  --menu-d-nivel-bg: #ec003f; /*BG del numero del nivel*/
-  --menu-d-progreso1: #e9e9e9; /*Color del la linea del progreso*/
-  --menu-d-progreso-llenado: #ec003f; /*Color del llenado del progreso*/
-  --menu-d-racha1: #ec003f; /*icono del fuego de la racha*/
-  --menu-d-racha-num: #000000;
-
-  /**/
-  --menu-d-bg-tarjeta2: #e9e9e9; /*para el bg de la tarjeta general y el de las 3 tarjetas */
-  --menu-d-bordes2: #e1e1e1; /*bordes de la tarjeta y de las 3 subtarjetas*/
-  --menu-d-ttl2: #ec003f; /*Mi puntuacion y Aprende, Visualiza, Evalua y los puntos 72pts,0pts,0pts*/
-  --menu-d-iconos2: #ec003f;
-  --menu-d-desc2: #2c2a2a; /* para la descripcioens de las 3 tarjetas*/
-
-  /**/
-  --menu-d-bg3: #e9e9e9; /*para el bg de las tarjetas y para el bg del boton*/
-  --menu-d-bordes3: #ffffff; /*bordes de las tarjetas y del boton*/
-  --menu-d-ttl3: #ec003f; /*titulos de las tarjetas */
-  --menu-d-desc3: #2c2a2a; /*descripciones de las tarjetas*/
-
-  /**/
-  --menu-d-bg4: #000000; /*Para el bg de la barra de abajo*/
-  --menu-d-borde4: #0f0f0f; /*Para los bordes de la tarjeta*/
-  --menu-d-iconos4: #f8f8f8; /*para  <, matraz, los puntos .. y >*/
-  --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
-  --menu-d-desc4: #d6d6d6; /*para la descripcion, reconoce...*/
-  --menu-d-bg-boton4: #ec003f; /*para el bg del boton*/
-
   /* UI */
   --background: #ffffff;
   --muted: #e6e6e6;
@@ -3480,7 +3505,7 @@
   --chart-4: #eab308;
   --chart-5: #ef4444;
   --radius: 0.5rem;
-  --sidebar: var(--menu-bg);
+  --sidebar: #ffffff;
   --sidebar-foreground: #334155;
   --sidebar-primary: #1e293b;
   --sidebar-primary-foreground: #f8fafc;
@@ -3488,6 +3513,67 @@
   --sidebar-accent-foreground: #1e293b;
   --sidebar-border: #e2e8f0;
   --sidebar-ring: #ec003f;
+
+  /* ===================================
+   Menu 
+========================================*/
+  --menu2-bg-general: #ffffff;
+
+  --menu2-header-bg: #ffffff;
+  --menu2-header-paginas: #525252;
+  --menu2-header-paginas-hvr: #ec003f;
+  --menu2-header-extra: #0a0a0a;
+  --menu2-header-borde: #fce7f3;
+
+  /* Menu 2 izquierda  */
+  --menu2-izq-bg: #ffffff; /*bg de la tarjeta izquierda*/
+  --menu2-izq-ttl: #ec003f; /*ttl de la tarjeta izquierda*/
+
+  --menu2-izq-buscador-borde: #fce7f3; /*borde del buscador*/
+  --menu2-izq-buscador-bg: #ffffff; /*bg del buscador*/
+  --menu2-izq-buscador-contenido: #ec003f; /*contenido del buscador*/
+
+  --menu2-izq-tarjeta-bg: #ffffff; /*bg de la tarjeta*/
+  --menu2-izq-bg-icono: #ffffff; /*bg del icono*/
+
+  --menu2-izq-tarjeta-txt: #ec003f; /*texto de la tarjeta*/
+  --menu2-izq-tarjeta-mini-txt: #525252; /*texto mini de la tarjeta*/
+
+  /* Menu 2 centro  */
+  --menu2-centro-borde: #fce7f3; /*borde de todo el menu central*/
+  --menu2-centro-iconos: #ec003f; /*iconos de las opciones*/
+  --menu2-centro-bg-iconos: #ffffff; /*bg de los iconos de las opciones*/
+  --menu2-centro-hvr-iconos: #ec003f; /*hvr de los iconos de las opciones*/
+
+  /*Abajo*/
+  --menu2-abajo-borde: #fce7f3; /* borde de toda la tarjeta*/
+  --menu2-abajo-bg: #ffffff; /*bg de toda la tarjeta*/
+  --menu2-abajo-txt: #ec003f; /*texto de Opciones de Visualización*/
+
+  --menu2-abajo-bg-minitarjeta: #ffffff; /*bg de la minitarjeta donde esta la imagen del modelo*/
+  --menu2-abajo-borde-minitarjeta: #fce7f3; /*borde de la minitarjeta*/
+  --menu2-abajo-hvr-minitarjeta: #fce7f3; /*hvr de la minitarjeta*/
+  --menu2-abajo-bg-minitarjeta-chica: #ffffff; /*bg de la minitarjeta chica*/
+  --menu2-abajo-txt-minitarjeta-chica: #ec003f; /*txt de la minitarjeta chica el que dice vista general y rotacion*/
+
+  --menu2-abajo-bg-active: #ec003f; /*bg activo*/
+  --menu2-abajo-txt-active: #ffffff; /*txt activo*/
+
+  /*derecha*/
+  --menu2-derecha-bg: #ffffff; /*bg de la tarjeta derecha*/
+  --menu2-derecha-borde: #fce7f3; /*borde de la tarjeta derecha*/
+
+  --menu2-derecha-bg-img: #ffffff; /*bg de la imagen*/
+  --menu2-derecha-ttl: #ec003f; /*ttl de arriba de la tarjeta derecha*/
+  --menu2-derecha-desc: #525252; /*desc de arriba de la tarjeta derecha*/
+
+  --menu2-derecha-txt-mayusculas: #ec003f; /*txt mayusculas*/
+
+  --menu2-derecha-bg-iconos: #ec003f; /*bg iconos circulares*/
+  --menu2-derecha-iconos: #ffffff; /*iconos circulares*/
+
+  --menu2-derecha-mini-ttl: #525252; /*mini textos*/
+  --menu2-derecha-mini-txt: #ec003f; /*textos grandes de abajo de los minitextos*/
 }
 
 [data-color="pink"].dark,
@@ -3689,51 +3775,6 @@
   --ayuda-preg-txt: #dddddd;
   --ayuda-link: #ec003f;
 
-  /* =========================
-   Menu Izquierdo
-========================= */
-  --menu-bg: #000000;
-  --menu-apartados: #ec003f;
-  --menu-paginas: #ffffff;
-  --menu-paginas-hvr: #1a0105;
-  --menu-iconos: #ec003f;
-  --menu-lineas: #212121;
-  --menu-mostrador: #ffffff;
-
-  /* =========================
-   Menu Derecho
-========================= */
-  --menu-d-bg: #000000; /*bg general*/
-
-  --menu-d-ttl1: #ec003f; /*Quimica general - Nivel 1 y el numero de la racha*/
-  --menu-d-nivel1: #bbbbbb; /*Al nivel 2  y 72/100*/
-  --menu-d-nivel-bg: #ec003f; /*BG del numero del nivel*/
-  --menu-d-progreso1: #212121; /*Color del la linea del progreso*/
-  --menu-d-progreso-llenado: #ec003f; /*Color del llenado del progreso*/
-  --menu-d-racha1: #ec003f; /*icono del fuego de la racha*/
-  --menu-d-racha-num: #ffffff;
-
-  /**/
-  --menu-d-bg-tarjeta2: #121212; /*para el bg de la tarjeta general y el de las 3 tarjetas */
-  --menu-d-bordes2: #1f1f1f; /*bordes de la tarjeta y de las 3 subtarjetas*/
-  --menu-d-ttl2: #ec003f; /*Mi puntuacion y Aprende, Visualiza, Evalua y los puntos 72pts,0pts,0pts*/
-  --menu-d-iconos2: #ec003f;
-  --menu-d-desc2: #bbbbbb; /* para la descripcioens de las 3 tarjetas*/
-
-  /**/
-  --menu-d-bg3: #121212; /*para el bg de las tarjetas y para el bg del boton*/
-  --menu-d-bordes3: #1a1a1a; /*bordes de las tarjetas y del boton*/
-  --menu-d-ttl3: #ec003f; /*titulos de las tarjetas */
-  --menu-d-desc3: #bbbbbb; /*descripciones de las tarjetas*/
-
-  /**/
-  --menu-d-bg4: #111111; /*Para el bg de la barra de abajo*/
-  --menu-d-borde4: #222222; /*Para los bordes de la tarjeta*/
-  --menu-d-iconos4: #ffffff; /*para  <, matraz, los puntos .. y >*/
-  --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
-  --menu-d-desc4: #bbbbbb; /*para la descripcion, reconoce...*/
-  --menu-d-bg-boton4: #ec003f; /*para el bg del boton*/
-
   /* UI */
   --background: #000000;
   --muted: #27272a;
@@ -3760,14 +3801,75 @@
   --chart-4: #eab308;
   --chart-5: #ef4444;
   --radius: 0.5rem;
-  --sidebar: var(--menu-bg);
+  --sidebar: #000000;
   --sidebar-foreground: #94a3b8;
   --sidebar-primary: #ec003f;
   --sidebar-primary-foreground: #ffffff;
   --sidebar-accent: #1e293b;
   --sidebar-accent-foreground: #f8fafc;
-  --sidebar-border: var(--menu-lineas);
+  --sidebar-border: #1a1a1a;
   --sidebar-ring: #ec003f;
+
+  /* ===================================
+   Menu
+ ========================================*/
+  --menu2-bg-general: #000000;
+  --menu2-header-bg: #0a0a0a;
+  --menu2-header-paginas-bg: #1a1a1a;
+  --menu2-header-paginas: #e5e5e5;
+  --menu2-header-paginas-hvr: #ec003f;
+  --menu2-header-extra: #0a0a0a;
+  --menu2-header-borde: #2c000f;
+
+  /* Menu 2 izquierda  */
+  --menu2-izq-bg: #0a0a0a; /*bg de toda la tarjeta*/
+  --menu2-izq-ttl: #ec003f; /*titulo*/
+
+  --menu2-izq-buscador-borde: #2c000f; /*borde del buscador y de la tarjeta general*/
+  --menu2-izq-buscador-bg: #0d0d0d; /*bg del buscador*/
+  --menu2-izq-buscador-contenido: #ec003f; /*contenido del buscador*/
+
+  --menu2-izq-tarjeta-bg: #0d0d0d; /*bg de la tarjeta*/
+  --menu2-izq-bg-icono: #1a1a1a; /*bg del icono*/
+
+  --menu2-izq-tarjeta-txt: #ec003f; /*texto de la tarjeta*/
+  --menu2-izq-tarjeta-mini-txt: #aaaaaa; /*texto mini de la tarjeta*/
+
+  /* Menu 2 centro  */
+  --menu2-centro-borde: #2c000f; /*borde de todo el menu central*/
+  --menu2-centro-iconos: #ec003f; /*iconos de las opciones*/
+  --menu2-centro-bg-iconos: #1a1a1a; /*bg de los iconos de las opciones*/
+  --menu2-centro-hvr-iconos: #ec003f; /*hvr de los iconos de las opciones*/
+
+  /*Abajo*/
+  --menu2-abajo-borde: #2c000f; /* borde de toda la tarjeta*/
+  --menu2-abajo-bg: #0a0a0a; /*bg de toda la tarjeta*/
+  --menu2-abajo-txt: #ec003f; /*texto de Opciones de Visualización*/
+
+  --menu2-abajo-bg-minitarjeta: #0d0d0d; /*bg de la minitarjeta donde esta la imagen del modelo*/
+  --menu2-abajo-borde-minitarjeta: #2c000f; /*borde de la minitarjeta*/
+  --menu2-abajo-hvr-minitarjeta: #1a0105; /*hvr de la minitarjeta*/
+  --menu2-abajo-bg-minitarjeta-chica: #1a1a1a; /*bg de la minitarjeta chica*/
+  --menu2-abajo-txt-minitarjeta-chica: #ec003f; /*txt de la minitarjeta chica el que dice vista general y rotacion*/
+
+  --menu2-abajo-bg-active: #ec003f; /*bg activo*/
+  --menu2-abajo-txt-active: #ffffff; /*txt activo*/
+
+  /*derecha*/
+  --menu2-derecha-bg: #0a0a0a; /*bg de la tarjeta derecha*/
+  --menu2-derecha-borde: #2c000f; /*borde de la tarjeta derecha*/
+
+  --menu2-derecha-bg-img: #ec003f; /*bg de la imagen*/
+  --menu2-derecha-ttl: #ec003f; /*ttl de arriba de la tarjeta derecha*/
+  --menu2-derecha-desc: #bcbcbc; /*desc de arriba de la tarjeta derecha*/
+
+  --menu2-derecha-txt-mayusculas: #ec003f; /*txt mayusculas*/
+
+  --menu2-derecha-bg-iconos: #ec003f; /*bg iconos circulares*/
+  --menu2-derecha-iconos: #ffffff; /*iconos circulares*/
+
+  --menu2-derecha-mini-ttl: #bcbcbc; /*mini textos*/
+  --menu2-derecha-mini-txt: #ffffff; /*textos grandes de abajo de los minitextos*/
 }
 
 /* Verde  */
@@ -3969,51 +4071,6 @@
   --ayuda-preg-txt: #2c2a2a;
   --ayuda-link: #5ea500;
 
-  /* =========================
-   Menu Izquierdo
-========================= */
-  --menu-bg: #ffffff;
-  --menu-apartados: #5ea500;
-  --menu-paginas: #2c2a2a;
-  --menu-paginas-hvr: #f0fdf4;
-  --menu-iconos: #5ea500;
-  --menu-lineas: #eaeaea;
-  --menu-mostrador: #000000;
-
-  /* =========================
-   Menu Derecho
-========================= */
-  --menu-d-bg: #ffffff; /*bg general*/
-
-  --menu-d-ttl1: #5ea500; /*Quimica general - Nivel 1 y el numero de la racha*/
-  --menu-d-nivel1: #2c2a2a; /*Al nivel 2  y 72/100*/
-  --menu-d-nivel-bg: #5ea500; /*BG del numero del nivel*/
-  --menu-d-progreso1: #e9e9e9; /*Color del la linea del progreso*/
-  --menu-d-progreso-llenado: #5ea500; /*Color del llenado del progreso*/
-  --menu-d-racha1: #5ea500; /*icono del fuego de la racha*/
-  --menu-d-racha-num: #000000;
-
-  /**/
-  --menu-d-bg-tarjeta2: #e9e9e9; /*para el bg de la tarjeta general y el de las 3 tarjetas */
-  --menu-d-bordes2: #e1e1e1; /*bordes de la tarjeta y de las 3 subtarjetas*/
-  --menu-d-ttl2: #5ea500; /*Mi puntuacion y Aprende, Visualiza, Evalua y los puntos 72pts,0pts,0pts*/
-  --menu-d-iconos2: #5ea500;
-  --menu-d-desc2: #2c2a2a; /* para la descripcioens de las 3 tarjetas*/
-
-  /**/
-  --menu-d-bg3: #e9e9e9; /*para el bg de las tarjetas y para el bg del boton*/
-  --menu-d-bordes3: #ffffff; /*bordes de las tarjetas y del boton*/
-  --menu-d-ttl3: #5ea500; /*titulos de las tarjetas */
-  --menu-d-desc3: #2c2a2a; /*descripciones de las tarjetas*/
-
-  /**/
-  --menu-d-bg4: #000000; /*Para el bg de la barra de abajo*/
-  --menu-d-borde4: #0f0f0f; /*Para los bordes de la tarjeta*/
-  --menu-d-iconos4: #f8f8f8; /*para  <, matraz, los puntos .. y >*/
-  --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
-  --menu-d-desc4: #d6d6d6; /*para la descripcion, reconoce...*/
-  --menu-d-bg-boton4: #5ea500; /*para el bg del boton*/
-
   /* UI */
   --background: #ffffff;
   --muted: #e6e6e6;
@@ -4040,7 +4097,7 @@
   --chart-4: #eab308;
   --chart-5: #ef4444;
   --radius: 0.5rem;
-  --sidebar: var(--menu-bg);
+  --sidebar: #ffffff;
   --sidebar-foreground: #334155;
   --sidebar-primary: #1e293b;
   --sidebar-primary-foreground: #f8fafc;
@@ -4048,6 +4105,67 @@
   --sidebar-accent-foreground: #1e293b;
   --sidebar-border: #e2e8f0;
   --sidebar-ring: #5ea500;
+
+  /* ===================================
+   Menu
+ ========================================*/
+  --menu2-bg-general: #ffffff;
+
+  --menu2-header-bg: #ffffff;
+  --menu2-header-paginas: #525252;
+  --menu2-header-paginas-hvr: #5ea500;
+  --menu2-header-extra: #0a0a0a;
+  --menu2-header-borde: #dcfce7;
+
+  /* Menu 2 izquierda  */
+  --menu2-izq-bg: #ffffff; /*bg de la tarjeta izquierda*/
+  --menu2-izq-ttl: #5ea500; /*ttl de la tarjeta izquierda*/
+
+  --menu2-izq-buscador-borde: #dcfce7; /*borde del buscador*/
+  --menu2-izq-buscador-bg: #ffffff; /*bg del buscador*/
+  --menu2-izq-buscador-contenido: #5ea500; /*contenido del buscador*/
+
+  --menu2-izq-tarjeta-bg: #ffffff; /*bg de la tarjeta*/
+  --menu2-izq-bg-icono: #ffffff; /*bg del icono*/
+
+  --menu2-izq-tarjeta-txt: #5ea500; /*texto de la tarjeta*/
+  --menu2-izq-tarjeta-mini-txt: #525252; /*texto mini de la tarjeta*/
+
+  /* Menu 2 centro  */
+  --menu2-centro-borde: #dcfce7; /*borde de todo el menu central*/
+  --menu2-centro-iconos: #5ea500; /*iconos de las opciones*/
+  --menu2-centro-bg-iconos: #ffffff; /*bg de los iconos de las opciones*/
+  --menu2-centro-hvr-iconos: #5ea500; /*hvr de los iconos de las opciones*/
+
+  /*Abajo*/
+  --menu2-abajo-borde: #dcfce7; /* borde de toda la tarjeta*/
+  --menu2-abajo-bg: #ffffff; /*bg de toda la tarjeta*/
+  --menu2-abajo-txt: #5ea500; /*texto de Opciones de Visualización*/
+
+  --menu2-abajo-bg-minitarjeta: #ffffff; /*bg de la minitarjeta donde esta la imagen del modelo*/
+  --menu2-abajo-borde-minitarjeta: #dcfce7; /*borde de la minitarjeta*/
+  --menu2-abajo-hvr-minitarjeta: #dcfce7; /*hvr de la minitarjeta*/
+  --menu2-abajo-bg-minitarjeta-chica: #ffffff; /*bg de la minitarjeta chica*/
+  --menu2-abajo-txt-minitarjeta-chica: #5ea500; /*txt de la minitarjeta chica el que dice vista general y rotacion*/
+
+  --menu2-abajo-bg-active: #5ea500; /*bg activo*/
+  --menu2-abajo-txt-active: #ffffff; /*txt activo*/
+
+  /*derecha*/
+  --menu2-derecha-bg: #ffffff; /*bg de la tarjeta derecha*/
+  --menu2-derecha-borde: #dcfce7; /*borde de la tarjeta derecha*/
+
+  --menu2-derecha-bg-img: #ffffff; /*bg de la imagen*/
+  --menu2-derecha-ttl: #5ea500; /*ttl de arriba de la tarjeta derecha*/
+  --menu2-derecha-desc: #525252; /*desc de arriba de la tarjeta derecha*/
+
+  --menu2-derecha-txt-mayusculas: #5ea500; /*txt mayusculas*/
+
+  --menu2-derecha-bg-iconos: #5ea500; /*bg iconos circulares*/
+  --menu2-derecha-iconos: #ffffff; /*iconos circulares*/
+
+  --menu2-derecha-mini-ttl: #525252; /*mini textos*/
+  --menu2-derecha-mini-txt: #5ea500; /*textos grandes de abajo de los minitextos*/
 }
 
 [data-color="green"].dark,
@@ -4249,51 +4367,6 @@
   --ayuda-preg-txt: #dddddd;
   --ayuda-link: #7ccf00;
 
-  /* =========================
-   Menu Izquierdo
-========================= */
-  --menu-bg: #000000;
-  --menu-apartados: #7ccf00;
-  --menu-paginas: #ffffff;
-  --menu-paginas-hvr: #0a1a01;
-  --menu-iconos: #7ccf00;
-  --menu-lineas: #212121;
-  --menu-mostrador: #ffffff;
-
-  /* =========================
-   Menu Derecho
-========================= */
-  --menu-d-bg: #000000; /*bg general*/
-
-  --menu-d-ttl1: #7ccf00; /*Quimica general - Nivel 1 y el numero de la racha*/
-  --menu-d-nivel1: #bbbbbb; /*Al nivel 2  y 72/100*/
-  --menu-d-nivel-bg: #7ccf00; /*BG del numero del nivel*/
-  --menu-d-progreso1: #212121; /*Color del la linea del progreso*/
-  --menu-d-progreso-llenado: #7ccf00; /*Color del llenado del progreso*/
-  --menu-d-racha1: #7ccf00; /*icono del fuego de la racha*/
-  --menu-d-racha-num: #ffffff;
-
-  /**/
-  --menu-d-bg-tarjeta2: #121212; /*para el bg de la tarjeta general y el de las 3 tarjetas */
-  --menu-d-bordes2: #1f1f1f; /*bordes de la tarjeta y de las 3 subtarjetas*/
-  --menu-d-ttl2: #7ccf00; /*Mi puntuacion y Aprende, Visualiza, Evalua y los puntos 72pts,0pts,0pts*/
-  --menu-d-iconos2: #7ccf00;
-  --menu-d-desc2: #bbbbbb; /* para la descripcioens de las 3 tarjetas*/
-
-  /**/
-  --menu-d-bg3: #121212; /*para el bg de las tarjetas y para el bg del boton*/
-  --menu-d-bordes3: #1a1a1a; /*bordes de las tarjetas y del boton*/
-  --menu-d-ttl3: #7ccf00; /*titulos de las tarjetas */
-  --menu-d-desc3: #bbbbbb; /*descripciones de las tarjetas*/
-
-  /**/
-  --menu-d-bg4: #111111; /*Para el bg de la barra de abajo*/
-  --menu-d-borde4: #222222; /*Para los bordes de la tarjeta*/
-  --menu-d-iconos4: #ffffff; /*para  <, matraz, los puntos .. y >*/
-  --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
-  --menu-d-desc4: #bbbbbb; /*para la descripcion, reconoce...*/
-  --menu-d-bg-boton4: #7ccf00; /*para el bg del boton*/
-
   /* UI */
   --background: #000000;
   --muted: #27272a;
@@ -4320,14 +4393,75 @@
   --chart-4: #eab308;
   --chart-5: #ef4444;
   --radius: 0.5rem;
-  --sidebar: var(--menu-bg);
+  --sidebar: #000000;
   --sidebar-foreground: #94a3b8;
   --sidebar-primary: #7ccf00;
   --sidebar-primary-foreground: #000000;
   --sidebar-accent: #1e293b;
   --sidebar-accent-foreground: #f8fafc;
-  --sidebar-border: var(--menu-lineas);
+  --sidebar-border: #1a1a1a;
   --sidebar-ring: #7ccf00;
+
+  /* ===================================
+   Menu
+ ========================================*/
+  --menu2-bg-general: #000000;
+  --menu2-header-bg: #0a0a0a;
+  --menu2-header-paginas-bg: #1a1a1a;
+  --menu2-header-paginas: #e5e5e5;
+  --menu2-header-paginas-hvr: #7ccf00;
+  --menu2-header-extra: #0a0a0a;
+  --menu2-header-borde: #092205;
+
+  /* Menu 2 izquierda  */
+  --menu2-izq-bg: #0a0a0a; /*bg de toda la tarjeta*/
+  --menu2-izq-ttl: #7ccf00; /*titulo*/
+
+  --menu2-izq-buscador-borde: #092205; /*borde del buscador y de la tarjeta general*/
+  --menu2-izq-buscador-bg: #0d0d0d; /*bg del buscador*/
+  --menu2-izq-buscador-contenido: #7ccf00; /*contenido del buscador*/
+
+  --menu2-izq-tarjeta-bg: #0d0d0d; /*bg de la tarjeta*/
+  --menu2-izq-bg-icono: #1a1a1a; /*bg del icono*/
+
+  --menu2-izq-tarjeta-txt: #7ccf00; /*texto de la tarjeta*/
+  --menu2-izq-tarjeta-mini-txt: #aaaaaa; /*texto mini de la tarjeta*/
+
+  /* Menu 2 centro  */
+  --menu2-centro-borde: #092205; /*borde de todo el menu central*/
+  --menu2-centro-iconos: #7ccf00; /*iconos de las opciones*/
+  --menu2-centro-bg-iconos: #1a1a1a; /*bg de los iconos de las opciones*/
+  --menu2-centro-hvr-iconos: #7ccf00; /*hvr de los iconos de las opciones*/
+
+  /*Abajo*/
+  --menu2-abajo-borde: #092205; /* borde de toda la tarjeta*/
+  --menu2-abajo-bg: #0a0a0a; /*bg de toda la tarjeta*/
+  --menu2-abajo-txt: #7ccf00; /*texto de Opciones de Visualización*/
+
+  --menu2-abajo-bg-minitarjeta: #0d0d0d; /*bg de la minitarjeta donde esta la imagen del modelo*/
+  --menu2-abajo-borde-minitarjeta: #092205; /*borde de la minitarjeta*/
+  --menu2-abajo-hvr-minitarjeta: #0a1a01; /*hvr de la minitarjeta*/
+  --menu2-abajo-bg-minitarjeta-chica: #1a1a1a; /*bg de la minitarjeta chica*/
+  --menu2-abajo-txt-minitarjeta-chica: #7ccf00; /*txt de la minitarjeta chica el que dice vista general y rotacion*/
+
+  --menu2-abajo-bg-active: #7ccf00; /*bg activo*/
+  --menu2-abajo-txt-active: #ffffff; /*txt activo*/
+
+  /*derecha*/
+  --menu2-derecha-bg: #0a0a0a; /*bg de la tarjeta derecha*/
+  --menu2-derecha-borde: #092205; /*borde de la tarjeta derecha*/
+
+  --menu2-derecha-bg-img: #7ccf00; /*bg de la imagen*/
+  --menu2-derecha-ttl: #7ccf00; /*ttl de arriba de la tarjeta derecha*/
+  --menu2-derecha-desc: #bcbcbc; /*desc de arriba de la tarjeta derecha*/
+
+  --menu2-derecha-txt-mayusculas: #7ccf00; /*txt mayusculas*/
+
+  --menu2-derecha-bg-iconos: #7ccf00; /*bg iconos circulares*/
+  --menu2-derecha-iconos: #ffffff; /*iconos circulares*/
+
+  --menu2-derecha-mini-ttl: #bcbcbc; /*mini textos*/
+  --menu2-derecha-mini-txt: #ffffff; /*textos grandes de abajo de los minitextos*/
 }
 
 @theme inline {
@@ -4548,40 +4682,6 @@
   --color-ayuda-link: var(--ayuda-link);
   --color-ayuda-link-hvr: var(--ayuda-link-hvr);
 
-  /* Menu Izquierdo */
-  --color-menu-bg: var(--menu-bg);
-  --color-menu-apartados: var(--menu-apartados);
-  --color-menu-paginas: var(--menu-paginas);
-  --color-menu-paginas-hover: var(--menu-paginas-hvr);
-  --color-menu-iconos: var(--menu-iconos);
-  --color-menu-lineas: var(--menu-lineas);
-  --color-menu-mostrador: var(--menu-mostrador);
-
-  /* Menu Derecho */
-  --color-menu-d-bg: var(--menu-d-bg);
-  --color-menu-d-ttl1: var(--menu-d-ttl1);
-  --color-menu-d-nivel1: var(--menu-d-nivel1);
-  --color-menu-d-progreso1: var(--menu-d-progreso1);
-  --color-menu-d-racha1: var(--menu-d-racha1);
-  --color-menu-d-bg-tarjeta2: var(--menu-d-bg-tarjeta2);
-  --color-menu-d-bordes2: var(--menu-d-bordes2);
-  --color-menu-d-ttl2: var(--menu-d-ttl2);
-  --color-menu-d-iconos2: var(--menu-d-iconos2);
-  --color-menu-d-desc2: var(--menu-d-desc2);
-  --color-menu-d-bg3: var(--menu-d-bg3);
-  --color-menu-d-bordes3: var(--menu-d-bordes3);
-  --color-menu-d-ttl3: var(--menu-d-ttl3);
-  --color-menu-d-desc3: var(--menu-d-desc3);
-  --color-menu-d-bg4: var(--menu-d-bg4);
-  --color-menu-d-borde4: var(--menu-d-borde4);
-  --color-menu-d-iconos4: var(--menu-d-iconos4);
-  --color-menu-d-ttl4: var(--menu-d-ttl4);
-  --color-menu-d-desc4: var(--menu-d-desc4);
-  --color-menu-d-bg-boton4: var(--menu-d-bg-boton4);
-  --color-menu-d-progreso-llenado: var(--menu-d-progreso-llenado);
-  --color-menu-d-nivel-bg: var(--menu-d-nivel-bg);
-  --color-menu-d-racha-num: var(--menu-d-racha-num);
-
   /*--------------------------*/
   /* Menu 2 */
   /*--------------------------*/
@@ -4591,6 +4691,7 @@
   --color-menu2-header-paginas-bg: var(--menu2-header-paginas-bg);
   --color-menu2-header-paginas-hvr: var(--menu2-header-paginas-hvr);
   --color-menu2-header-extra: var(--menu2-header-extra);
+  --color-menu2-header-borde: var(--menu2-header-borde);
 
   /*--------------------------*/
   /* Menu 2 Izquierda */
@@ -4610,41 +4711,35 @@
   --color-menu2-izq-deslizador: var(--menu2-izq-deslizador);
 
   /**/
-  --color-menu2-centro-bg: var(--menu2-centro-bg);
-  --color-menu2-centro-bg-imagen: var(--menu2-centro-bg-imagen);
-  --color-menu2-centro-bgbg: var(--menu2-centro-bgbg);
-  --color-menu2-centro-txt: var(--menu2-centro-txt);
-  --color-menu2-centro-desc: var(--menu2-centro-desc);
-
-  --color-menu2-centro-bgderecha: var(--menu2-centro-bgderecha);
-  --color-menu2-centro-bg-boton: var(--menu2-centro-bg-boton);
-  --color-menu2-centro-3D: var(--menu2-centro-3D);
-  --color-menu2-centro-AR: var(--menu2-centro-AR);
-  --color-menu2-centro-expansor: var(--menu2-centro-expansor);
-  --color-menu2-centro-bolita-bg: var(--menu2-centro-bolita-bg);
-
-  --color-menu2-centro-mini-bg: var(--menu2-centro-mini-bg);
-  --color-menu2-centro-mini-borde: var(--menu2-centro-mini-borde);
-  --color-menu2-centro-mini-ttl: var(--menu2-centro-mini-ttl);
-  --color-menu2-centro-mini-txt: var(--menu2-centro-mini-txt);
-  --color-menu2-centro-mini-bg-icono: var(--menu2-centro-mini-bg-icono);
-  --color-menu2-centro-mini-icono: var(--menu2-centro-mini-icono);
+  --color-menu2-centro-borde: var(--menu2-centro-borde);
+  --color-menu2-centro-iconos: var(--menu2-centro-iconos);
+  --color-menu2-centro-bg-iconos: var(--menu2-centro-bg-iconos);
+  --color-menu2-centro-hvr-iconos: var(--menu2-centro-hvr-iconos);
 
   /*--------------------------*/
   /* Menu 2 Abajo */
   /*--------------------------*/
+  --color-menu2-abajo-borde: var(--menu2-abajo-borde);
   --color-menu2-abajo-bg: var(--menu2-abajo-bg);
   --color-menu2-abajo-txt: var(--menu2-abajo-txt);
-
-  --color-menu2-abajo-borde: var(--menu2-abajo-borde);
-  --color-menu2-abajo-bg-bgtarjeta: var(--menu2-abajo-bg-bgtarjeta);
-  --color-menu2-abajo-txt-tarjeta: var(--menu2-abajo-txt-tarjeta);
-  --color-menu2-abajo-hvr-tarjeta: var(--menu2-abajo-hvr-tarjeta);
+  --color-menu2-abajo-bg-minitarjeta: var(--menu2-abajo-bg-minitarjeta);
+  --color-menu2-abajo-borde-minitarjeta: var(--menu2-abajo-borde-minitarjeta);
+  --color-menu2-abajo-hvr-minitarjeta: var(--menu2-abajo-hvr-minitarjeta);
+  --color-menu2-abajo-bg-minitarjeta-chica: var(
+    --menu2-abajo-bg-minitarjeta-chica
+  );
+  --color-menu2-abajo-txt-minitarjeta-chica: var(
+    --menu2-abajo-txt-minitarjeta-chica
+  );
+  --color-menu2-abajo-bg-active: var(--menu2-abajo-bg-active);
+  --color-menu2-abajo-txt-active: var(--menu2-abajo-txt-active);
 
   /*--------------------------*/
   /* Menu 2 Derecha */
   /*--------------------------*/
   --color-menu2-derecha-bg: var(--menu2-derecha-bg);
+  --color-menu2-derecha-borde: var(--menu2-derecha-borde);
+  --color-menu2-derecha-bg-img: var(--menu2-derecha-bg-img);
   --color-menu2-derecha-ttl: var(--menu2-derecha-ttl);
   --color-menu2-derecha-desc: var(--menu2-derecha-desc);
   --color-menu2-derecha-bg-iconos: var(--menu2-derecha-bg-iconos);
@@ -4652,7 +4747,6 @@
   --color-menu2-derecha-txt-mayusculas: var(--menu2-derecha-txt-mayusculas);
   --color-menu2-derecha-mini-ttl: var(--menu2-derecha-mini-ttl);
   --color-menu2-derecha-mini-txt: var(--menu2-derecha-mini-txt);
-  --color-menu2-derecha-borde: var(--menu2-derecha-borde);
 }
 
 @layer base {
