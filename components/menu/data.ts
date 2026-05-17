@@ -348,8 +348,7 @@ const instruments: ItemData[] = [
       uses: [
         { label: "Pulverización de reactivos", icon: "settings" },
         { label: "Preparación de muestras", icon: "flask" },
-        { label: "Farmacología", icon: "scale" },
-        { label: "Mezcla en seco", icon: "box" }
+        { label: "Farmacología", icon: "scale" }
       ]
     },
     educationalFact: "El mortero de ágata es el más preciso para análisis espectrales, ya que no introduce impurezas metabólicas ni contamina con minerales extraños a la muestra.",
@@ -362,46 +361,46 @@ const instruments: ItemData[] = [
   },
   {
     id: "placa",
-    name: "Placa de Petri",
-    group: "Cultivo",
-    subtitle: "Cultivo de microorganismos",
+    name: "Placa de porcelana",
+    group: "Reacciones",
+    subtitle: "Ensayos a la gota y reacciones cualitativas",
     category: "Instrumentos",
     icon: React.createElement(Box, { className: "w-5 h-5" }),
     image: "/img/menu/miniaturas/instrumentos/Placa.png",
     glbPath: "/Modelos-3D/instrumentos/placas_de_porcelana.glb",
     emoji: "",
     details: {
-      "Material": "Vidrio/Plástico",
-      "Diámetro": "90 mm",
-      "Uso": "Cultivo de microorganismos",
-      "Esterilidad": "Si (Desechable)",
-      "Tapa": "Incluida",
-      "Estado": "Estéril"
+      "Material": "Porcelana esmaltada",
+      "Cavidades": "12 cavidades",
+      "Uso": "Ensayos cualitativos a microescala",
+      "Resistencia térmica": "Alta (soporta calor ligero)",
+      "Reutilizable": "Sí (lavable)",
+      "Color": "Blanco brillante (alto contraste)"
     },
     learningContent: {
-      steps: ["Preparar agar", "Verter en condiciones estériles", "Inocular muestra"],
-      tips: ["Trabajar cerca del mechero", "Invertir para incubar"],
-      fact: "Lleva el nombre del bacteriólogo Julius Petri.",
-      principle: "Superficie de crecimiento para colonias aisladas."
+      steps: ["Colocar reactivo en cavidades", "Añadir muestra gota a gota", "Observar cambio de color o precipitado"],
+      tips: ["Usar el fondo blanco de la porcelana para contrastar cambios cromáticos", "Limpiar minuciosamente para evitar contaminación cruzada"],
+      fact: "El esmalte blanco de la porcelana facilita la visualización de cambios cromáticos y de pH mínimos.",
+      principle: "Observación de reacciones colorimétricas y cualitativas a microescala."
     },
-    whatIsIt: "La placa de Petri es un recipiente circular plano de vidrio o plástico con tapa, utilizado en microbiología para cultivar microorganismos en medio sólido (agar). Es uno de los instrumentos más icónicos y fundamentales del laboratorio biológico.",
+    whatIsIt: "La placa de porcelana para reacciones (también conocida como placa de cavidades o placa de toque) es un instrumento plano de porcelana esmaltada blanca con 12 depresiones circulares. Su material es altamente resistente a reactivos corrosivos, ácidos fuertes y calor ligero.",
     howItWorksTitle: "¿CÓMO FUNCIONA?",
-    howItWorks: "El medio de cultivo (agar) se vierte estérilmente en la placa y se deja solidificar. La muestra se inocula con un asa bacteriológica mediante técnica de estría o por extensión con espátula Drigalski. Las placas se invierten e incuban para promover el crecimiento de colonias visibles.",
+    howItWorks: "Se colocan pequeñas gotas de reactivos y muestras dentro de las cavidades individuales. Al mezclarse, se observan reacciones cualitativas inmediatas como cambios de color, efervescencia o formación de precipitados. Su diseño permite realizar hasta 12 ensayos en paralelo de forma sumamente rápida, organizada y ahorrando reactivos.",
     whatIsItFor: {
-      text: "Esencial para aislar, identificar y cuantificar microorganismos. También se usa en pruebas de antibiograma para determinar sensibilidad a antibióticos.",
+      text: "Esencial en química analítica cualitativa para realizar ensayos a la gota (spot tests), determinar pH con indicadores líquidos, identificar iones metálicos y evaluar la compatibilidad de sustancias a microescala.",
       uses: [
-        { label: "Cultivo microbiano", icon: "flask" },
-        { label: "Antibiograma", icon: "settings" },
-        { label: "Diagnóstico clínico", icon: "microscope" },
-        { label: "Investigación biológica", icon: "dna" }
+        { label: "Ensayos cualitativos", icon: "flask" },
+        { label: "Análisis a la gota", icon: "settings" },
+        { label: "Pruebas de pH", icon: "microscope" },
+        { label: "Identificación de iones", icon: "dna" }
       ]
     },
-    educationalFact: "Julius Richard Petri inventó la placa que lleva su nombre en 1887 mientras trabajaba como asistente de Robert Koch. Esta simple innovación transformó permanentemente la microbiología moderna.",
+    educationalFact: "Las placas de porcelana son pilares de la química a microescala (microchemistry) ya que reducen drásticamente la cantidad de reactivos consumidos y residuos tóxicos generados, lo que las hace seguras, económicas y amigables con el medio ambiente.",
     additionalInfo: {
-      "Categoría": "Instrumento de cultivo microbiano",
-      "Tipo de laboratorio": "Microbiología, Clínico, Ambiental",
-      "Estériles desechables": "Sí (empaque individual)",
-      "Mantenimiento": "Desechar tras uso o autoclavar si es vidrio"
+      "Categoría": "Material de porcelana de laboratorio",
+      "Tipo de laboratorio": "Química Analítica, General y Cualitativa",
+      "Reutilizable": "Sí (lavar con agua destilada y secar)",
+      "Mantenimiento": "Lavar minuciosamente después de cada ensayo"
     }
   }
 ];

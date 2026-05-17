@@ -172,7 +172,7 @@ export function ModelViewer({
         <Suspense fallback={renderFallback()}>
           <div
             className={cn(
-              "w-full h-full transition-opacity duration-300",
+              "w-full h-full transition-opacity duration-300 cursor-pointer",
               is3DReady ? "opacity-100" : "opacity-0"
             )}
           >

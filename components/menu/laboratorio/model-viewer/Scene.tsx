@@ -40,7 +40,7 @@ export function Scene({
       }}
       dpr={[1, 2]}
       camera={{ position: [0, 1.2, 5.5], fov: 45 }}
-      style={{ width: "100%", height: "100%" }}
+      style={{ width: "100%", height: "100%", cursor: "pointer" }}
       aria-label="Visualizador 3D interactivo"
     >
       {/* Adaptive performance */}
