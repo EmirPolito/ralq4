@@ -60,7 +60,7 @@ const instruments: ItemData[] = [
     category: "Instrumentos",
     icon: React.createElement(Flame, { className: "w-5 h-5" }),
     image: "/img/menu/miniaturas/instrumentos/Autoclave.png",
-    glbPath: "/modelos-3D/instrumentos/autoclave.glb",
+    glbPath: "/Modelos-3D/instrumentos/autoclave.glb",
     emoji: "",
     details: {
       "Método de esterilización": "Vapor saturado a presión (calor húmedo)",
@@ -104,7 +104,7 @@ const instruments: ItemData[] = [
     category: "Instrumentos",
     icon: React.createElement(Thermometer, { className: "w-5 h-5" }),
     image: "/img/menu/miniaturas/instrumentos/Calefactora.png",
-    glbPath: "/modelos-3D/instrumentos/placa_calefactora.glb",
+    glbPath: "/Modelos-3D/instrumentos/placa_calefactora.glb",
     emoji: "",
     details: {
       "Temp Max": "350 °C",
@@ -148,7 +148,7 @@ const instruments: ItemData[] = [
     category: "Instrumentos",
     icon: React.createElement(Layers, { className: "w-5 h-5" }),
     image: "/img/menu/miniaturas/instrumentos/Gradilla.png",
-    glbPath: "/modelos-3D/instrumentos/gradilla.glb",
+    glbPath: "/Modelos-3D/instrumentos/gradilla.glb",
     emoji: "",
     details: {
       "Capacidad": "24 tubos",
@@ -192,7 +192,7 @@ const instruments: ItemData[] = [
     category: "Instrumentos",
     icon: React.createElement(Activity, { className: "w-5 h-5" }),
     image: "/img/menu/miniaturas/instrumentos/Incubadora.png",
-    glbPath: "/modelos-3D/instrumentos/incubadora.glb",
+    glbPath: "/Modelos-3D/instrumentos/incubadora.glb",
     emoji: "",
     details: {
       "Rango Temp": "Ambiente a 70°C",
@@ -236,7 +236,7 @@ const instruments: ItemData[] = [
     category: "Instrumentos",
     icon: React.createElement(Beaker, { className: "w-5 h-5" }),
     image: "/img/menu/miniaturas/instrumentos/Matraz.png",
-    glbPath: "/modelos-3D/instrumentos/matraz.glb",
+    glbPath: "/Modelos-3D/instrumentos/matraz.glb",
     emoji: "",
     details: {
       "Volumen": "250 mL",
@@ -280,7 +280,7 @@ const instruments: ItemData[] = [
     category: "Instrumentos",
     icon: React.createElement(Microscope, { className: "w-5 h-5" }),
     image: "/img/menu/miniaturas/instrumentos/Microscopio.png",
-    glbPath: "/modelos-3D/instrumentos/microscopio.glb",
+    glbPath: "/Modelos-3D/instrumentos/microscopio.glb",
     emoji: "",
     details: {
       "Tipo": "Binocular",
@@ -324,7 +324,7 @@ const instruments: ItemData[] = [
     category: "Instrumentos",
     icon: React.createElement(Box, { className: "w-5 h-5" }),
     image: "/img/menu/miniaturas/instrumentos/Mortero.png",
-    glbPath: "/modelos-3D/instrumentos/mortero_con_mano.glb",
+    glbPath: "/Modelos-3D/instrumentos/mortero_con_mano.glb",
     emoji: "",
     details: {
       "Material": "Porcelana",
@@ -368,7 +368,7 @@ const instruments: ItemData[] = [
     category: "Instrumentos",
     icon: React.createElement(Box, { className: "w-5 h-5" }),
     image: "/img/menu/miniaturas/instrumentos/Placa.png",
-    glbPath: "/modelos-3D/instrumentos/placas_de_porcelana.glb",
+    glbPath: "/Modelos-3D/instrumentos/placas_de_porcelana.glb",
     emoji: "",
     details: {
       "Material": "Vidrio/Plástico",
@@ -416,7 +416,7 @@ const molecules: ItemData[] = [
     category: "Moléculas",
     icon: React.createElement(Droplet, { className: "w-5 h-5" }),
     image: "/img/menu/miniaturas/moleculas/AcidoLáctico.png",
-    glbPath: "/modelos-3D/moleculas/acido%20láctico.glb",
+    glbPath: "/Modelos-3D/moleculas/acido%20láctico.glb",
     emoji: "",
     details: {
       "Fórmula química": "C3H6O3",
@@ -456,7 +456,7 @@ const molecules: ItemData[] = [
     category: "Moléculas",
     icon: React.createElement(Droplets, { className: "w-5 h-5" }),
     image: "/img/menu/miniaturas/moleculas/Agua.png",
-    glbPath: "/modelos-3D/moleculas/agua.glb",
+    glbPath: "/Modelos-3D/moleculas/agua.glb",
     emoji: "",
     details: {
       "Fórmula": "H2O",
@@ -495,7 +495,7 @@ const molecules: ItemData[] = [
     category: "Moléculas",
     icon: React.createElement(Atom, { className: "w-5 h-5" }),
     image: "/img/menu/miniaturas/moleculas/Benceno.png",
-    glbPath: "/modelos-3D/moleculas/benceno%20.glb",
+    glbPath: "/Modelos-3D/moleculas/benceno%20.glb",
     emoji: "",
     details: {
       "Fórmula": "C6H6",
@@ -534,7 +534,7 @@ const molecules: ItemData[] = [
     category: "Moléculas",
     icon: React.createElement(Zap, { className: "w-5 h-5" }),
     image: "/img/menu/miniaturas/moleculas/Cafeina.png",
-    glbPath: "/modelos-3D/moleculas/cafeina.glb",
+    glbPath: "/Modelos-3D/moleculas/cafeina.glb",
     emoji: "",
     details: {
       "Fórmula": "C8H10N4O2",
@@ -573,7 +573,7 @@ const molecules: ItemData[] = [
     category: "Moléculas",
     icon: React.createElement(Wind, { className: "w-5 h-5" }),
     image: "/img/menu/miniaturas/moleculas/DioxCarb.png",
-    glbPath: "/modelos-3D/moleculas/dioxiodo%20de%20carbono.glb",
+    glbPath: "/Modelos-3D/moleculas/dioxiodo%20de%20carbono.glb",
     emoji: "",
     details: {
       "Fórmula": "CO2",
@@ -612,7 +612,7 @@ const molecules: ItemData[] = [
     category: "Moléculas",
     icon: React.createElement(Flame, { className: "w-5 h-5" }),
     image: "/img/menu/miniaturas/moleculas/Etanol.png",
-    glbPath: "/modelos-3D/moleculas/etanol%20.glb",
+    glbPath: "/Modelos-3D/moleculas/etanol%20.glb",
     emoji: "",
     details: {
       "Fórmula": "C2H5OH",
@@ -651,7 +651,7 @@ const molecules: ItemData[] = [
     category: "Moléculas",
     icon: React.createElement(Biohazard, { className: "w-5 h-5" }),
     image: "/img/menu/miniaturas/moleculas/Fenol.png",
-    glbPath: "/modelos-3D/moleculas/fenol.glb",
+    glbPath: "/Modelos-3D/moleculas/fenol.glb",
     emoji: "",
     details: {
       "Fórmula": "C6H5OH",
@@ -690,7 +690,7 @@ const molecules: ItemData[] = [
     category: "Moléculas",
     icon: React.createElement(Droplets, { className: "w-5 h-5" }),
     image: "/img/menu/miniaturas/moleculas/Glicerol.png",
-    glbPath: "/modelos-3D/moleculas/glicerol.glb",
+    glbPath: "/Modelos-3D/moleculas/glicerol.glb",
     emoji: "",
     details: {
       "Fórmula": "C3H8O3",
@@ -729,7 +729,7 @@ const molecules: ItemData[] = [
     category: "Moléculas",
     icon: React.createElement(Flame, { className: "w-5 h-5" }),
     image: "/img/menu/miniaturas/moleculas/Propano.png",
-    glbPath: "/modelos-3D/moleculas/propano.glb",
+    glbPath: "/Modelos-3D/moleculas/propano.glb",
     emoji: "",
     details: {
       "Fórmula": "C3H8",
