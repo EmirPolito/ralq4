@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 
 import { ItemData } from "../data";
+import { ModelViewer } from "./model-viewer/ModelViewer";
 
 export function InstrumentViewer({
   activeItem,
@@ -30,14 +31,28 @@ export function InstrumentViewer({
   const [viewType, setViewType] = useState<"3D" | "AR" | "360">("3D");
   const [showHabitat, setShowHabitat] = useState(true);
   const [mounted, setMounted] = useState(false);
+  const [resetTrigger, setResetTrigger] = useState(0);
+
+  const containerRef = React.useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
+  const toggleFullscreen = () => {
+    if (!containerRef.current) return;
+    if (!document.fullscreenElement) {
+      containerRef.current.requestFullscreen().catch((err) => {
+        console.error("Error attempting to enable fullscreen:", err);
+      });
+    } else {
+      document.exitFullscreen();
+    }
+  };
+
   return (
-    <div className="flex flex-col h-full gap-3.5 px-0">
-      {/* Header Info */}
+    <div className="flex flex-col h-full gap-0 px-0 w-full">
+      {/* Header Info - Comentado temporalmente por petición del usuario
       <div className="flex justify-between items-end px-3.5">
         <div className="flex flex-col mt-3">
           <h1 className="text-2xl md:text-xl font-bold text-menu2-centro-txt">
@@ -90,9 +105,13 @@ export function InstrumentViewer({
           </div>
         </div>
       </div>
+      */}
 
-      {/* Visualizador de modelo 3D  */}
-      <div className="relative h-[295px] rounded-xl overflow-hidden shadow-xl border border-menu2-izq-buscador-borde group bg-[var(--menu2-centro-bg-imagen)]">
+      {/* Visualizador de modelo 3D — Ocupa toda la pantalla del centro */}
+      <div 
+        ref={containerRef}
+        className="relative w-full h-full flex-1 rounded-xl overflow-hidden group bg-menu2-izq-bg"
+      >
         {/* Dynamic Background based on mode */}
         <AnimatePresence mode="wait">
           <motion.div
@@ -107,8 +126,8 @@ export function InstrumentViewer({
                 : externalViewMode === "details"
                   ? "bg-slate-900"
                   : showHabitat
-                    ? "bg-menu2-centro-bg"
-                    : "bg-[var(--menu2-centro-bg-imagen)]",
+                    ? "bg-menu2-izq-bg"
+                    : "bg-transparent",
             )}
           >
             {/* Anatomy Grid Effect */}
@@ -118,75 +137,41 @@ export function InstrumentViewer({
           </motion.div>
         </AnimatePresence>
 
-        {/* Central Model */}
+        {/* Central Model — GLB Viewer or PNG Fallback */}
         <div className="absolute inset-0 flex items-center justify-center">
-          <motion.div
-            key={activeItem.id + externalViewMode}
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{
-              scale: externalViewMode === "anatomy" ? 1.4 : 1,
-              opacity: 1,
-              rotateY: externalViewMode === "anatomy" ? [0, 360] : 0,
-              y: [0, -10, 0],
-            }}
-            transition={{
-              rotateY: { duration: 10, repeat: Infinity, ease: "linear" },
-              y: { duration: 4, repeat: Infinity, ease: "easeInOut" },
-              scale: { duration: 0.8, ease: "backOut" },
-            }}
-            className="relative z-10"
-          >
-            <img
-              src={activeItem.image}
-              alt={activeItem.name}
-              className={cn(
-                "w-48 h-48 object-contain filter transition-all duration-700",
-                externalViewMode === "anatomy"
-                  ? "drop-shadow-[0_0_30px_rgba(99,102,241,0.5)] contrast-125 invert brightness-200"
-                  : "drop-shadow-[0_20px_50px_rgba(0,0,0,0.4)]",
-              )}
-            />
-
-            {/* Details Markers */}
-            {externalViewMode === "details" && (
-              <div className="absolute inset-0">
-                {[
-                  { top: "10%", left: "-20%", label: "Óptica" },
-                  { top: "60%", right: "-30%", label: "Ajuste" },
-                  { bottom: "-10%", left: "40%", label: "Base" },
-                ].map((marker, i) => (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, scale: 0 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: i * 0.2 }}
-                    className="absolute flex items-center gap-2"
-                    style={{
-                      top: marker.top,
-                      left: marker.left,
-                      right: marker.right,
-                      bottom: marker.bottom,
-                    }}
-                  >
-                    <div className="w-3 h-3 rounded-full bg-blue-500 border-2 border-white shadow-blue-500/50 shadow-lg animate-pulse" />
-                    <span className="bg-white/10 backdrop-blur-md px-2 py-0.5 rounded text-[8px] font-black text-white uppercase border border-white/20 whitespace-nowrap">
-                      {marker.label}
-                    </span>
-                  </motion.div>
-                ))}
-              </div>
-            )}
-          </motion.div>
+          <ModelViewer
+            glbPath={activeItem.glbPath ?? ""}
+            fallbackImage={activeItem.image}
+            name={activeItem.name}
+            showBackground={showHabitat}
+            viewMode={externalViewMode}
+            autoRotate={externalViewMode === "anatomy"}
+            resetTrigger={resetTrigger}
+          />
         </div>
 
-        {/* Action Bottom Bar */}
-        <div className="absolute bottom-58.5 -right-3 p-6 flex justify-end items-center z-20">
+        {/* Botones de Control de Cámara y Pantalla Completa — Ubicados en la esquina superior derecha */}
+        <div className="absolute top-4 right-4 z-30 flex flex-col gap-2">
+          {/* Botón Maximizar / Pantalla Completa */}
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="flex items-center justify-center cursor-pointer text-white"
+            onClick={toggleFullscreen}
+            className="flex items-center justify-center cursor-pointer text-white/70 hover:text-white bg-black/40 hover:bg-black/60 p-2 rounded-lg backdrop-blur-md transition-all duration-300 shadow-md border border-white/10"
+            title="Pantalla Completa"
           >
             <Maximize className="w-4 h-4" />
+          </motion.button>
+
+          {/* Botón Reiniciar Posición */}
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            onClick={() => setResetTrigger((prev) => prev + 1)}
+            className="flex items-center justify-center cursor-pointer text-white/70 hover:text-white bg-black/40 hover:bg-black/60 p-2 rounded-lg backdrop-blur-md transition-all duration-300 shadow-md border border-white/10"
+            title="Reiniciar Posición"
+          >
+            <RotateCcw className="w-4 h-4" />
           </motion.button>
         </div>
       </div>

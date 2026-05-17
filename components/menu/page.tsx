@@ -36,7 +36,7 @@ export default function LaboratorioPage() {
 
         {/* Centro: Visor 3D y Sección Inferior */}
         <section className="flex flex-col gap-4 min-h-0">
-          <div className="bg-menu2-centro-bg flex-1 backdrop-blur-md rounded-xl border border-slate-200/50 dark:border-menu2-izq-buscador-borde shadow-xl overflow-hidden min-h-0">
+          <div className="bg-menu2-izq-bg flex-1 backdrop-blur-md rounded-xl border border-slate-200/50 dark:border-menu2-izq-buscador-borde shadow-xl overflow-hidden min-h-0">
             <InstrumentViewer activeItem={activeItem} viewMode={viewMode} />
           </div>
 
