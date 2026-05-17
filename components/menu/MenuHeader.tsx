@@ -16,6 +16,11 @@ import { MenuLanguageSelector } from "@/components/menu/menu-boton-lenguage";
 
 export function MenuHeader() {
   const pathname = usePathname();
+  const [mounted, setMounted] = React.useState(false);
+
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
     <header className="bg-menu2-header-bg h-[77px] flex-shrink-0 flex items-center px-4 backdrop-blur-md rounded-xl border border-menu2-izq-buscador-borde shadow-sm">
@@ -100,34 +105,40 @@ export function MenuHeader() {
           </PopoverContent>
         </Popover>
         <div className="mr-2 flex items-center justify-center min-w-[32px] min-h-[32px]">
-          <ClerkLoading>
+          {!mounted ? (
             <div className="w-7 h-7 rounded-full bg-slate-200 dark:bg-white/10 animate-pulse" />
-          </ClerkLoading>
-          <ClerkLoaded>
-            <UserButton
-              appearance={{
-                elements: {
-                  userButtonPopoverCard: {
-                    width: "280px",
-                    minWidth: "341px",
-                    maxWidth: "280px",
-                  },
-                  userPreviewSecondaryIdentifier: {
-                    maxWidth: "170px",
-                    whiteSpace: "nowrap",
-                    overflow: "hidden",
-                    textOverflow: "ellipsis",
-                  },
-                  userPreviewMainIdentifier: {
-                    maxWidth: "170px",
-                    whiteSpace: "nowrap",
-                    overflow: "hidden",
-                    textOverflow: "ellipsis",
-                  },
-                },
-              }}
-            />
-          </ClerkLoaded>
+          ) : (
+            <>
+              <ClerkLoading>
+                <div className="w-7 h-7 rounded-full bg-slate-200 dark:bg-white/10 animate-pulse" />
+              </ClerkLoading>
+              <ClerkLoaded>
+                <UserButton
+                  appearance={{
+                    elements: {
+                      userButtonPopoverCard: {
+                        width: "280px",
+                        minWidth: "341px",
+                        maxWidth: "280px",
+                      },
+                      userPreviewSecondaryIdentifier: {
+                        maxWidth: "170px",
+                        whiteSpace: "nowrap",
+                        overflow: "hidden",
+                        textOverflow: "ellipsis",
+                      },
+                      userPreviewMainIdentifier: {
+                        maxWidth: "170px",
+                        whiteSpace: "nowrap",
+                        overflow: "hidden",
+                        textOverflow: "ellipsis",
+                      },
+                    },
+                  }}
+                />
+              </ClerkLoaded>
+            </>
+          )}
         </div>
       </div>
     </header>

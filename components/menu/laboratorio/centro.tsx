@@ -1,25 +1,105 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef, useMemo, memo } from "react";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Maximize,
   RotateCcw,
+  BookOpen,
+  ChevronDown,
+  ChevronRight,
+  BarChart2,
   Box,
   Eye,
   Camera,
   Download,
   SwitchCamera,
   Info,
-  ChevronDown,
-  ChevronRight,
-  BookOpen,
-  BarChart2,
 } from "lucide-react";
+
+import { Canvas, useFrame } from "@react-three/fiber";
+import { useGLTF } from "@react-three/drei";
+import * as THREE from "three";
 
 import { ItemData } from "../data";
 import { ModelViewer } from "./model-viewer/ModelViewer";
+
+// Set up Google's hosted Draco decoders globally for Drei's useGLTF
+useGLTF.setDecoderPath("https://www.gstatic.com/draco/versioned/decoders/1.5.5/");
+
+function MiniModel({ glbPath, shouldRotate }: { glbPath: string; shouldRotate: boolean }) {
+  const groupRef = useRef<THREE.Group>(null);
+  const { scene } = useGLTF(glbPath);
+  const clonedScene = useMemo(() => scene.clone(true), [scene]);
+  const [isReady, setIsReady] = useState(false);
+
+  // Reset ready state when model changes to prevent any popping glitches
+  useEffect(() => {
+    setIsReady(false);
+  }, [clonedScene]);
+
+  useEffect(() => {
+    if (!groupRef.current) return;
+    
+    // Reset group transforms first so box calculation is completely clean and accurate!
+    groupRef.current.rotation.set(0, 0, 0);
+    groupRef.current.scale.set(1, 1, 1);
+    groupRef.current.position.set(0, 0, 0);
+    groupRef.current.updateMatrixWorld(true);
+
+    const box = new THREE.Box3().setFromObject(clonedScene);
+    const center = box.getCenter(new THREE.Vector3());
+    const size = box.getSize(new THREE.Vector3());
+    const maxDim = Math.max(size.x, size.y, size.z);
+    
+    const targetSize = 1.4; 
+    const scale = maxDim > 0 ? targetSize / maxDim : 1;
+    groupRef.current.scale.setScalar(scale);
+    
+    const pos = center.clone().multiplyScalar(-scale);
+    // Shift slightly down in Y so the model is perfectly centered visually
+    pos.y -= 0.05;
+    groupRef.current.position.copy(pos);
+    
+    setIsReady(true);
+  }, [clonedScene]);
+
+  useFrame((state, delta) => {
+    if (groupRef.current && shouldRotate && isReady) {
+      groupRef.current.rotation.y += delta * 0.32;
+    }
+  });
+
+  return (
+    <group ref={groupRef} visible={isReady}>
+      <primitive object={clonedScene} />
+    </group>
+  );
+}
+
+const MiniModelViewer = memo(function MiniModelViewer({
+  glbPath,
+  shouldRotate = true,
+}: {
+  glbPath: string;
+  shouldRotate?: boolean;
+}) {
+  return (
+    <div className="w-full h-full pointer-events-none select-none flex items-center justify-center">
+      <Canvas
+        camera={{ position: [0, 0.15, 2.5], fov: 45 }}
+        gl={{ antialias: true, alpha: true }}
+        style={{ background: "transparent", width: "100%", height: "100%" }}
+      >
+        <ambientLight intensity={1.6} />
+        <directionalLight position={[2, 5, 2]} intensity={2.0} />
+        <MiniModel glbPath={glbPath} shouldRotate={shouldRotate} />
+      </Canvas>
+    </div>
+  );
+});
+
 
 export function InstrumentViewer({
   activeItem,
@@ -30,8 +110,8 @@ export function InstrumentViewer({
 }) {
   const [viewType, setViewType] = useState<"3D" | "AR" | "360">("3D");
   const [showHabitat, setShowHabitat] = useState(true);
-  const [mounted, setMounted] = useState(false);
   const [resetTrigger, setResetTrigger] = useState(0);
+  const [mounted, setMounted] = useState(false);
 
   const containerRef = React.useRef<HTMLDivElement>(null);
 
@@ -120,14 +200,7 @@ export function InstrumentViewer({
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             className={cn(
-              "absolute inset-0 transition-colors duration-700",
-              externalViewMode === "anatomy"
-                ? "bg-indigo-950/40"
-                : externalViewMode === "details"
-                  ? "bg-slate-900"
-                  : showHabitat
-                    ? "bg-menu2-izq-bg"
-                    : "bg-transparent",
+              "absolute inset-0 transition-colors duration-700 bg-menu2-izq-bg"
             )}
           >
             {/* Anatomy Grid Effect */}
@@ -149,6 +222,8 @@ export function InstrumentViewer({
             resetTrigger={resetTrigger}
           />
         </div>
+
+
 
         {/* Botones de Control de Cámara y Pantalla Completa — Ubicados en la esquina superior derecha */}
         <div className="absolute top-4 right-4 z-30 flex flex-col gap-2">
@@ -212,9 +287,8 @@ export function BottomSections({
 
   if (isInstrument) {
     const modes = [
-      { id: "normal", label: "Vista general", emoji: "📦", bg: "bg-blue-50" },
-      { id: "details", label: "ESTRUCTURA", emoji: "🔍", bg: "bg-emerald-50" },
-      { id: "anatomy", label: "COMPONENTES", emoji: "🧬", bg: "bg-slate-50" },
+      { id: "normal", label: "Vista General", emoji: "📦", bg: "bg-blue-50" },
+      { id: "details", label: "Rotación", emoji: "🔄", bg: "bg-emerald-50" },
     ];
 
     return (
@@ -242,24 +316,35 @@ export function BottomSections({
             >
               <div
                 className={cn(
-                  "flex-1 flex items-center justify-center p-4",
+                  "flex-1 flex items-center justify-center relative min-h-[110px]",
                   "bg-menu2-abajo-bg-bgtarjeta",
                 )}
               >
-                <img
-                  src={activeItem.image}
-                  alt={mode.label}
-                  className={cn(
-                    "w-12 h-12 object-contain transition-all duration-500",
-                    mode.id === "anatomy"
-                      ? "invert brightness-200 contrast-125"
-                      : "",
-                    mode.id === "details" ? "scale-110 brightness-110" : "",
-                    viewMode !== mode.id
-                      ? "opacity-40 grayscale"
-                      : "opacity-100",
-                  )}
-                />
+                {activeItem.glbPath ? (
+                  <div
+                    className={cn(
+                      "absolute inset-0 transition-all duration-500 flex items-center justify-center",
+                      viewMode !== mode.id
+                        ? "opacity-40 grayscale"
+                        : "opacity-100",
+                    )}
+                  >
+                    <MiniModelViewer key={`${activeItem.glbPath}-${mode.id}`} glbPath={activeItem.glbPath} shouldRotate={mode.id !== "normal"} />
+                  </div>
+                ) : (
+                  <div className="p-4 flex items-center justify-center">
+                    <img
+                      src={activeItem.image}
+                      alt={mode.label}
+                      className={cn(
+                        "w-12 h-12 object-contain transition-all duration-500",
+                        viewMode !== mode.id
+                          ? "opacity-40 grayscale"
+                          : "opacity-100",
+                      )}
+                    />
+                  </div>
+                )}
                 {viewMode === mode.id && (
                   <div className="bg-white/5 absolute inset-0 pointer-events-none" />
                 )}

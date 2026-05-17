@@ -21,6 +21,7 @@ export function Scene({
         antialias: true,
         alpha: true, // transparent canvas bg — controlled by parent div
         powerPreference: "high-performance",
+        localClippingEnabled: true, // Enable cutting planes on materials
       }}
       dpr={[1, 2]}
       camera={{ position: [0, 1.2, 5.5], fov: 45 }}
