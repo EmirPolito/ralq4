@@ -209,7 +209,7 @@
 
   /* Menu 2 izquierda  */
   --menu2-izq-bg: #ffffff; /*fondo de la tarjeta general*/
-  --menu2-izq-ttl: #a1a1a1; /*titulo instrumentos*/
+  --menu2-izq-ttl: #5c5c5c; /*titulo instrumentos*/
 
   --menu2-izq-buscador-borde: #ebebeb; /*borde del intut y de la tarjeta general*/
   --menu2-izq-buscador-bg: #ffffff; /*bg del input*/
@@ -221,7 +221,7 @@
   --menu2-izq-contenido-icono: #ffffff; /*color del icono dentro*/
 
   --menu2-izq-tarjeta-txt: #000000; /**/
-  --menu2-izq-tarjeta-mini-txt: #3e3939;
+  --menu2-izq-tarjeta-mini-txt: #333333;
 
   /* Menu 2 centro  */
   --menu2-centro-borde: #ebebeb; /*borde de todo el menu central*/
@@ -248,16 +248,16 @@
   --menu2-derecha-borde: #ebebeb; /*borde de las tarjetas*/
 
   --menu2-derecha-bg-img: #000000; /*bg de la imagen*/
-  --menu2-derecha-ttl: #676767; /*titulo del la imagen*/
-  --menu2-derecha-desc: #525252; /*descripcion de la imagen*/
+  --menu2-derecha-ttl: #000000; /*titulo del la imagen*/
+  --menu2-derecha-desc: #333333; /*descripcion de la imagen*/
 
-  --menu2-derecha-txt-mayusculas: #a1a1a1; /*texto en mayusculas*/
+  --menu2-derecha-txt-mayusculas: #5c5c5c; /*texto en mayusculas*/
 
   --menu2-derecha-bg-iconos: #000000; /*Color de fondo del icono circular*/
   --menu2-derecha-iconos: #ffffff; /*Color del icono*/
 
-  --menu2-derecha-mini-ttl: #525252; /*mini texto arriba*/
-  --menu2-derecha-mini-txt: #676767; /*textos abajo de los minitextos*/
+  --menu2-derecha-mini-ttl: #333333; /*mini texto arriba*/
+  --menu2-derecha-mini-txt: #000000; /*textos abajo de los minitextos*/
 
   /* UI */
   --background: #ffffff;
