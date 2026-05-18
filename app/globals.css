@@ -203,7 +203,7 @@
   --menu2-header-bg: #ffffff;
   --menu2-header-paginas-bg: #eaeaea;
   --menu2-header-paginas: #525252;
-  --menu2-header-paginas-hvr: #155dfc;
+  --menu2-header-paginas-hvr: #000000;
   --menu2-header-extra: #ffffff;
   --menu2-header-borde: #ebebeb;
 
@@ -539,9 +539,9 @@
 
   /* Menu 2 centro  */
   --menu2-centro-borde: #262626; /*borde de todo el menu central*/
-  --menu2-centro-iconos: #ffffff; /*iconos de las opciones*/
-  --menu2-centro-bg-iconos: #000000; /*bg de los iconos de las opciones*/
-  --menu2-centro-hvr-iconos: #ffffff; /*hvr de los iconos de las opciones*/
+  --menu2-centro-iconos: #e5e5e5; /*iconos de las opciones*/
+  --menu2-centro-bg-iconos: #0a0a0a; /*bg de los iconos de las opciones*/
+  --menu2-centro-hvr-iconos: #0a0a0a; /*hvr de los iconos de las opciones*/
 
   /*Abajo*/
   --menu2-abajo-borde: #262626; /* borde de toda la tarjeta*/
@@ -3838,7 +3838,7 @@
   /* Menu 2 centro  */
   --menu2-centro-borde: #2c000f; /*borde de todo el menu central*/
   --menu2-centro-iconos: #ec003f; /*iconos de las opciones*/
-  --menu2-centro-bg-iconos: #1a1a1a; /*bg de los iconos de las opciones*/
+  --menu2-centro-bg-iconos: #0a0a0a; /*bg de los iconos de las opciones*/
   --menu2-centro-hvr-iconos: #ec003f; /*hvr de los iconos de las opciones*/
 
   /*Abajo*/
@@ -3859,7 +3859,7 @@
   --menu2-derecha-bg: #0a0a0a; /*bg de la tarjeta derecha*/
   --menu2-derecha-borde: #2c000f; /*borde de la tarjeta derecha*/
 
-  --menu2-derecha-bg-img: #ec003f; /*bg de la imagen*/
+  --menu2-derecha-bg-img: #171717; /*bg de la imagen*/
   --menu2-derecha-ttl: #ec003f; /*ttl de arriba de la tarjeta derecha*/
   --menu2-derecha-desc: #bcbcbc; /*desc de arriba de la tarjeta derecha*/
 
@@ -4430,7 +4430,7 @@
   /* Menu 2 centro  */
   --menu2-centro-borde: #092205; /*borde de todo el menu central*/
   --menu2-centro-iconos: #7ccf00; /*iconos de las opciones*/
-  --menu2-centro-bg-iconos: #1a1a1a; /*bg de los iconos de las opciones*/
+  --menu2-centro-bg-iconos: #0a0a0a; /*bg de los iconos de las opciones*/
   --menu2-centro-hvr-iconos: #7ccf00; /*hvr de los iconos de las opciones*/
 
   /*Abajo*/
