@@ -26,8 +26,8 @@ export function Hero() {
   return (
     <section>
       <div>
-        <div className="relative z-10 flex min-h-[84.5vh] lg:min-h-screen flex-col justify-end pt-20 pb-4 lg:pt-0 lg:pb-0 px-5 sm:px-6 md:px-12 lg:px-20">
-          <div className="mx-auto max-w-8xl w-full pb-2.5 lg:pb-34.5 sm:pb-20">
+        <div className="relative z-10 flex min-h-[88vh] lg:min-h-screen flex-col justify-end pt-20 pb-4 lg:pt-0 lg:pb-0 px-5 sm:px-6 md:px-12 lg:px-20">
+          <div className="mx-auto max-w-8xl w-full pb-2.5 lg:pb-53 sm:pb-20">
             <ScrollAnimation direction="up" delay={0.2}>
               <div
                 className="flex flex-col items-start text-left lg:items-start lg:text-left"
@@ -46,7 +46,7 @@ export function Hero() {
                 </p>
 
                 {/* Botón demo */}
-                <div className="mt-7.5 sm:mt-7.5">
+                {/* <div className="mt-7.5 sm:mt-7.5">
                   <Button
                     asChild
                     size="lg"
@@ -57,7 +57,7 @@ export function Hero() {
                       <ChevronRight className="ml-0 sm:ml-0 size-4 lg:size-4.5" />
                     </Link>
                   </Button>
-                </div>
+                </div>*/}
               </div>
             </ScrollAnimation>
           </div>
