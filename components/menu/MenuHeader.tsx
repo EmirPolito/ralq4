@@ -2,7 +2,7 @@
 
 import React from "react";
 import { cn } from "@/lib/utils";
-import { Home, Microscope, Dna, LayoutGrid } from "lucide-react";
+import { Home, Microscope, Dna, LayoutGrid, Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { UserButton, ClerkLoading, ClerkLoaded } from "@clerk/nextjs";
@@ -12,6 +12,7 @@ import { LanguageSelector } from "@/components/boton-lenguage";
 export function MenuHeader() {
   const pathname = usePathname();
   const [mounted, setMounted] = React.useState(false);
+  const [isHeaderMenuOpen, setIsHeaderMenuOpen] = React.useState(false);
 
   React.useEffect(() => {
     setMounted(true);
@@ -38,7 +39,7 @@ export function MenuHeader() {
       </Link>
 
       {/* Menu Items - Shifted slightly left from the right edge */}
-      <nav className="flex items-center gap-6 p-1 ml-auto mr-20">
+      <nav className="hidden lg:flex items-center gap-6 p-1 ml-auto mr-20">
         {/* 
         <NavItem
           icon={<Home className="w-4 h-4" />}
@@ -67,20 +68,43 @@ export function MenuHeader() {
       </nav>
 
       {/* Right Actions */}
-      <div className="flex items-center gap-2">
-        <div className="flex items-center gap-6 mr-4">
-          {/* Controles de Apariencia (Modos y Colores) */}
-          <ThemeControls hideMotion={true} isMenu={true} />
+      <div className="ml-auto lg:ml-0 flex items-center gap-1 sm:gap-2">
+        {/* Contenedor relativo para alinear la tarjeta perfectamente con la hamburguesa */}
+        <div className="relative flex items-center">
+          {/* Controles: En desktop se muestran inline; en móvil se muestran en formato vertical debajo de la hamburguesa */}
+          <div className={cn(
+            "lg:flex lg:items-center lg:gap-6 lg:mr-4",
+            isHeaderMenuOpen 
+              ? "flex flex-col absolute right-[-6px] top-[48px] bg-menu2-header-bg py-4 px-3 rounded-xl border border-menu2-header-borde shadow-lg gap-6 items-center scale-90 z-[120]" 
+              : "hidden lg:flex"
+          )}>
+            {/* Controles de Apariencia (Modos y Colores) */}
+            <ThemeControls 
+              hideMotion={true} 
+              isMenu={true} 
+              isMobile={isHeaderMenuOpen}
+              className={isHeaderMenuOpen ? "!flex-col !gap-6" : ""} 
+            />
 
-          {/* Selector de Idioma */}
-          <LanguageSelector />
+            {/* Selector de Idioma */}
+            <LanguageSelector isMobile={isHeaderMenuOpen} />
+          </div>
+
+          {/* Botón de Hamburguesa para pantallas móviles */}
+          <button
+            onClick={() => setIsHeaderMenuOpen(!isHeaderMenuOpen)}
+            className="lg:hidden flex items-center justify-center p-2 rounded-lg text-slate-500 hover:bg-slate-100 dark:hover:bg-white/5 transition-colors mr-2 cursor-pointer z-[120]"
+            title="Menú de opciones"
+          >
+            {isHeaderMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+          </button>
         </div>
 
         {/* Separador vertical | */}
         <div className="h-6 w-px bg-slate-200 dark:bg-white/10" />
 
         {/* Botón de usuario */}
-        <div className="ml-4 mr-2 flex items-center justify-center min-w-[32px] min-h-[32px]">
+        <div className="ml-2 sm:ml-4 mr-1 sm:mr-2 flex items-center justify-center min-w-[32px] min-h-[32px]">
           {!mounted ? (
             <div className="w-7 h-7 rounded-full bg-slate-200 dark:bg-white/10 animate-pulse" />
           ) : (
@@ -94,7 +118,7 @@ export function MenuHeader() {
                     elements: {
                       userButtonPopoverCard: {
                         width: "280px",
-                        minWidth: "341px",
+                        minWidth: "min(341px, 90vw)",
                         maxWidth: "280px",
                       },
                       userPreviewSecondaryIdentifier: {
@@ -117,6 +141,13 @@ export function MenuHeader() {
           )}
         </div>
       </div>
+      <style>{`
+        @media (max-width: 1024px) {
+          .cl-userButtonPopoverCard {
+            margin-right: 28px !important;
+          }
+        }
+      `}</style>
     </header>
   );
 }

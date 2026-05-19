@@ -90,7 +90,7 @@ export function InstrumentViewer({
         </AnimatePresence>
 
         {/* Central Model — GLB Viewer or PNG Fallback */}
-        <div className="absolute inset-0 flex items-center justify-center">
+        <div className="absolute inset-x-0 bottom-0 top-12 lg:top-0 flex items-center justify-center">
           <ModelViewer
             glbPath={activeItem.glbPath ?? ""}
             fallbackImage={activeItem.image}
@@ -102,45 +102,45 @@ export function InstrumentViewer({
           />
         </div>
 
-        {/* Botones de Control de Cámara y Pantalla Completa — Ubicados en la esquina superior derecha */}
-        <div className="absolute top-4 right-4 z-30 flex flex-col gap-5">
-          {/* Botón Maximizar / Pantalla Completa */}
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            onClick={toggleFullscreen}
-            className="flex items-center justify-center cursor-pointer text-menu2-centro-iconos hover:text-white bg-menu2-centro-bg-iconos hover:bg-menu2-centro-hvr-iconos p-2 rounded-lg transition-all duration-300 shadow-md border border-menu2-centro-borde"
-            title="Pantalla Completa"
-          >
-            <Maximize className="w-4.5 h-4.5" />
-          </motion.button>
-
-          {/* Botón Reiniciar Posición */}
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            onClick={() => setResetTrigger((prev) => prev + 1)}
-            className="flex items-center justify-center cursor-pointer text-menu2-centro-iconos hover:text-white bg-menu2-centro-bg-iconos hover:bg-menu2-centro-hvr-iconos p-2 rounded-lg transition-all duration-300 shadow-md border border-menu2-centro-borde"
-            title="Reiniciar Posición"
-          >
-            <RotateCcw className="w-4.5 h-4.5" />
-          </motion.button>
-
+        {/* Botones de Control de Cámara y Pantalla Completa — Ubicados en las esquinas y en medio */}
+        <div className="absolute top-4 left-0 right-0 px-6 z-30 flex flex-row justify-between items-center lg:left-auto lg:right-4 lg:w-auto lg:flex-col lg:gap-5 lg:justify-start lg:px-0">
           {/* Botón Descargar Modelo 3D */}
           {activeItem.glbPath && (
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               onClick={handleDownload}
-              className="flex flex-col items-center justify-center cursor-pointer text-menu2-centro-iconos hover:text-white bg-menu2-centro-bg-iconos hover:bg-menu2-centro-hvr-iconos p-2 rounded-lg transition-all duration-300 shadow-md border border-menu2-centro-borde gap-0.5"
+              className="flex flex-col items-center justify-center cursor-pointer text-menu2-centro-iconos hover:text-white bg-menu2-centro-bg-iconos hover:bg-menu2-centro-hvr-iconos p-1.5 lg:p-2 rounded-lg transition-all duration-300 shadow-md border border-menu2-centro-borde gap-0.5 order-1 lg:order-3"
               title="Descargar Modelo 3D"
             >
-              <Download className="w-5 h-2.5" />
-              <span className="text-[8px] font-medium tracking-wider leading-none">
+              <Download className="w-4 h-2 lg:w-5 lg:h-2.5" />
+              <span className="text-[7px] lg:text-[8px] font-medium tracking-wider leading-none">
                 GLB
               </span>
             </motion.button>
           )}
+
+          {/* Botón Reiniciar Posición */}
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            onClick={() => setResetTrigger((prev) => prev + 1)}
+            className="flex items-center justify-center cursor-pointer text-menu2-centro-iconos hover:text-white bg-menu2-centro-bg-iconos hover:bg-menu2-centro-hvr-iconos p-1.5 lg:p-2 rounded-lg transition-all duration-300 shadow-md border border-menu2-centro-borde order-2 lg:order-2"
+            title="Reiniciar Posición"
+          >
+            <RotateCcw className="w-3.5 h-3.5 lg:w-4.5 lg:h-4.5" />
+          </motion.button>
+
+          {/* Botón Maximizar / Pantalla Completa */}
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            onClick={toggleFullscreen}
+            className="flex items-center justify-center cursor-pointer text-menu2-centro-iconos hover:text-white bg-menu2-centro-bg-iconos hover:bg-menu2-centro-hvr-iconos p-1.5 lg:p-2 rounded-lg transition-all duration-300 shadow-md border border-menu2-centro-borde order-3 lg:order-1"
+            title="Pantalla Completa"
+          >
+            <Maximize className="w-3.5 h-3.5 lg:w-4.5 lg:h-4.5" />
+          </motion.button>
         </div>
       </div>
     </div>
@@ -275,8 +275,8 @@ export function BottomSections({
   }
 
   return (
-    <div className="grid grid-cols-12 gap-3 h-full">
-      <div className="col-span-7 bg-white/80 backdrop-blur-md border border-slate-200 rounded-2xl p-3 shadow-lg flex flex-col gap-2 min-h-0">
+    <div className="grid grid-cols-1 md:grid-cols-12 gap-3 h-full">
+      <div className="col-span-1 md:col-span-7 bg-white/80 backdrop-blur-md border border-slate-200 rounded-2xl p-3 shadow-lg flex flex-col gap-2 min-h-0">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-1.5">
             <BookOpen className="w-3 h-3 text-[#1a88c3]" />
@@ -330,7 +330,7 @@ export function BottomSections({
         </div>
       </div>
 
-      <div className="col-span-5 bg-white/80 backdrop-blur-md border border-slate-200 rounded-2xl p-3 shadow-lg flex flex-col gap-2 min-h-0">
+      <div className="col-span-1 md:col-span-5 bg-white/80 backdrop-blur-md border border-slate-200 rounded-2xl p-3 shadow-lg flex flex-col gap-2 min-h-0">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-1.5">
             <BarChart2 className="w-3 h-3 text-[#1a88c3]" />

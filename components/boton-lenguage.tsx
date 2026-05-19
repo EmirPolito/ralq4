@@ -59,7 +59,13 @@ export function LanguageSelector({
       {/* Trigger button */}
       <button
         type="button"
-        onClick={() => setOpen((v) => !v)}
+        onClick={() => {
+          if (isMobile) {
+            handleLanguageCycle();
+          } else {
+            setOpen((v) => !v);
+          }
+        }}
         aria-label="Seleccionar idioma"
         className={cn(
           "flex items-center justify-center cursor-pointer rounded-md transition-opacity focus:outline-none outline-none",

@@ -206,24 +206,26 @@ export function ThemeControls({
         {/* Theme Mode Dropdown / Cycle */}
         {isMobile ? (
           <div className="relative flex flex-col items-center">
-            <Popover>
-              <PopoverTrigger asChild>
-                <button className="absolute -top-6 h-5 w-5 rounded-full bg-muted/25 flex items-center justify-center border border-border/10 shadow-sm transition-transform active:scale-95">
-                  <HelpCircle
-                    className="size-3.5"
-                    style={{ color: currentThemeColor }}
-                  />
-                </button>
-              </PopoverTrigger>
-              <PopoverContent
-                side="top"
-                className="w-35 p-1 rounded-xl bg-popover/95 backdrop-blur-md border-border/50 text-xs shadow-xl z-[200]"
-              >
-                <p className="font-medium text-foreground leading-relaxed text-center">
-                  {t("modes.mobileDesc")}
-                </p>
-              </PopoverContent>
-            </Popover>
+            {!isMenu && (
+              <Popover>
+                <PopoverTrigger asChild>
+                  <button className="absolute -top-6 h-5 w-5 rounded-full bg-muted/25 flex items-center justify-center border border-border/10 shadow-sm transition-transform active:scale-95">
+                    <HelpCircle
+                      className="size-3.5"
+                      style={{ color: currentThemeColor }}
+                    />
+                  </button>
+                </PopoverTrigger>
+                <PopoverContent
+                  side="top"
+                  className="w-35 p-1 rounded-xl bg-popover/95 backdrop-blur-md border-border/50 text-xs shadow-xl z-[200]"
+                >
+                  <p className="font-medium text-foreground leading-relaxed text-center">
+                    {t("modes.mobileDesc")}
+                  </p>
+                </PopoverContent>
+              </Popover>
+            )}
             <button
               type="button"
               onClick={handleThemeCycle}
@@ -370,24 +372,26 @@ export function ThemeControls({
         {/* Color Selector Popover / Cycle */}
         {isMobile ? (
           <div className="relative flex flex-col items-center">
-            <Popover>
-              <PopoverTrigger asChild>
-                <button className="absolute -top-6.5 h-5 w-5 rounded-full bg-muted/25 flex items-center justify-center border border-border/10 shadow-sm transition-transform active:scale-95">
-                  <HelpCircle
-                    className="size-3.5"
-                    style={{ color: currentThemeColor }}
-                  />
-                </button>
-              </PopoverTrigger>
-              <PopoverContent
-                side="top"
-                className="w-35 p-1 rounded-xl bg-popover/95 backdrop-blur-md border-border/50 text-xs shadow-xl z-[200]"
-              >
-                <p className="font-medium text-foreground leading-relaxed text-center">
-                  {t("colors.mobileDesc")}
-                </p>
-              </PopoverContent>
-            </Popover>
+            {!isMenu && (
+              <Popover>
+                <PopoverTrigger asChild>
+                  <button className="absolute -top-6.5 h-5 w-5 rounded-full bg-muted/25 flex items-center justify-center border border-border/10 shadow-sm transition-transform active:scale-95">
+                    <HelpCircle
+                      className="size-3.5"
+                      style={{ color: currentThemeColor }}
+                    />
+                  </button>
+                </PopoverTrigger>
+                <PopoverContent
+                  side="top"
+                  className="w-35 p-1 rounded-xl bg-popover/95 backdrop-blur-md border-border/50 text-xs shadow-xl z-[200]"
+                >
+                  <p className="font-medium text-foreground leading-relaxed text-center">
+                    {t("colors.mobileDesc")}
+                  </p>
+                </PopoverContent>
+              </Popover>
+            )}
             <button
               type="button"
               onClick={handleColorCycle}

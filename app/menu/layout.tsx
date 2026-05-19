@@ -6,7 +6,7 @@ export default function MenuLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="h-screen bg-menu2-bg-general font-sans flex flex-col p-4 gap-5 overflow-hidden">
+    <div className="min-h-screen lg:h-screen bg-menu2-bg-general font-sans flex flex-col p-4 gap-5 overflow-y-auto lg:overflow-hidden">
       {/* 1. HEADER - Persistent across navigation */}
       <MenuHeader />
 

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Search } from "lucide-react";
 import { ItemData } from "../data";
@@ -17,17 +17,39 @@ export function InstrumentSidebar({
   data: ItemData[];
   title?: string;
 }) {
+  const [isMobile, setIsMobile] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1024);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const filteredData = useMemo(() => {
     const query = searchQuery.toLowerCase();
     return data.filter((item) => item.name.toLowerCase().startsWith(query));
   }, [data, searchQuery]);
 
+  const displayedData = useMemo(() => {
+    if (isMobile) {
+      return filteredData.slice(0, 3);
+    }
+    return filteredData;
+  }, [filteredData, isMobile]);
+
   return (
     <div className="flex flex-col h-full min-h-0 w-full">
-      <h2 className="text-menu2-izq-ttl text-[10px] font-medium tracking-[0.1em] uppercase mb-4 px-1.5 pt-2">
-        {title}
+      <h2 className="text-menu2-izq-ttl text-[10px] font-medium tracking-[0.1em] uppercase mb-4 px-1.5 pt-2 flex items-center gap-1.5">
+        <span>{title}</span>
+        {isMobile && (
+          <span className="text-xs font-bold text-menu2-izq-ttl opacity-80 normal-case">
+            ({Math.min(3, filteredData.length)}/{data.length})
+          </span>
+        )}
       </h2>
 
       {/* Barra de busqueda */}
@@ -45,8 +67,8 @@ export function InstrumentSidebar({
       </div>
 
       <div className="flex-2 overflow-y-auto space-y-1 pr-2 custom-scrollbar">
-        {filteredData.length > 0 ? (
-          filteredData.map((item) => {
+        {displayedData.length > 0 ? (
+          displayedData.map((item) => {
             const isActive = activeId === item.id;
             return (
               <button

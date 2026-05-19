@@ -156,10 +156,10 @@ export function InstrumentDetails({ activeItem }: { activeItem: ItemData }) {
                 <p className="text-menu2-derecha-mini-ttl text-xs font-normal px-1 mb-3 leading-relaxed">
                   {activeItem.whatIsItFor.text}
                 </p>
-                <div className="grid grid-cols-4 gap-2 px-1">
+                <div className="grid grid-cols-4 gap-1.5 px-1">
                   {activeItem.whatIsItFor.uses.map((use, idx) => (
-                    <div key={idx} className="flex flex-col items-center justify-start p-2 rounded-xl bg-transparent text-menu2-derecha-mini-ttl shadow-sm text-center gap-1.5 border border-menu2-derecha-borde">
-                      <div className="text-menu2-centro-txt mb-1">
+                    <div key={idx} className="flex flex-col items-center justify-start p-1 sm:p-2 rounded-xl bg-transparent text-menu2-derecha-mini-ttl shadow-sm text-center gap-1 sm:gap-1.5 border border-menu2-derecha-borde">
+                      <div className="text-menu2-centro-txt mb-0.5 sm:mb-1">
                          {getIcon(use.icon)}
                       </div>
                       <span className="text-[8.5px] font-medium leading-tight">
