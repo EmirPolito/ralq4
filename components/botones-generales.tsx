@@ -45,9 +45,13 @@ import {
 export function ThemeControls({
   className,
   isMobile,
+  hideMotion = false,
+  isMenu = false,
 }: {
   className?: string;
   isMobile?: boolean;
+  hideMotion?: boolean;
+  isMenu?: boolean;
 }) {
   const { theme, setTheme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = React.useState(false);
@@ -411,7 +415,7 @@ export function ThemeControls({
                     className="h-9 w-9 cursor-pointer flex items-center justify-center hover:bg-transparent dark:hover:bg-transparent focus:ring-0 focus:outline-none focus-visible:ring-0 focus-visible:border-transparent outline-none"
                   >
                     <Palette
-                      className="h-5 w-5"
+                      className={cn(isMenu ? "h-[22px] w-[22px]" : "h-5 w-5")}
                       style={{ color: currentThemeColor }}
                     />
                     <span className="sr-only">Seleccionar color</span>
@@ -473,85 +477,87 @@ export function ThemeControls({
         )}
 
         {/* Reduced Motion Toggle tipo switch */}
-        <div
-          className={cn(
-            isMobile ? "flex flex-col items-center relative" : "relative",
-          )}
-        >
-          {isMobile && (
-            <Popover>
-              <PopoverTrigger asChild>
-                <button className="absolute -top-8 h-5 w-5 rounded-full bg-muted/25 flex items-center justify-center border border-border/10 shadow-sm transition-transform active:scale-95">
-                  <HelpCircle
-                    className="size-3.5"
-                    style={{ color: currentThemeColor }}
-                  />
-                </button>
-              </PopoverTrigger>
-              <PopoverContent
-                side="top"
-                className="w-35 p-1 rounded-xl bg-popover/95 backdrop-blur-md border-border/50 text-xs shadow-xl z-[200]"
-              >
-                <p className="font-medium text-foreground leading-relaxed text-center">
-                  {t("motion.tooltip")}
-                </p>
-              </PopoverContent>
-            </Popover>
-          )}
-          {isMobile ? (
-            <button
-              className={cn(
-                "relative inline-flex h-6 w-12 items-center rounded-full cursor-pointer transition-colors focus:outline-none outline-none focus-visible:ring-0 focus-visible:outline-none",
-                "bg-muted/75 mt-1",
-              )}
-              onClick={toggleReducedMotion}
-              aria-label="Reducir animaciones"
-            >
-              <span
-                className={`inline-block h-4.5 w-4.5 transform rounded-full transition-transform ${
-                  reducedMotion
-                    ? "translate-x-6 bg-muted-foreground"
-                    : "translate-x-1"
-                }`}
-                style={{
-                  backgroundColor: reducedMotion ? undefined : toggleCircleColor,
-                }}
-              />
-            </button>
-          ) : (
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <button
-                  className={cn(
-                    "relative inline-flex h-6 w-12 items-center rounded-full cursor-pointer transition-colors focus:outline-none outline-none focus-visible:ring-0 focus-visible:outline-none",
-                    "bg-muted hover:bg-muted/80",
-                  )}
-                  onClick={toggleReducedMotion}
-                  aria-label="Reducir animaciones"
+        {!hideMotion && (
+          <div
+            className={cn(
+              isMobile ? "flex flex-col items-center relative" : "relative",
+            )}
+          >
+            {isMobile && (
+              <Popover>
+                <PopoverTrigger asChild>
+                  <button className="absolute -top-8 h-5 w-5 rounded-full bg-muted/25 flex items-center justify-center border border-border/10 shadow-sm transition-transform active:scale-95">
+                    <HelpCircle
+                      className="size-3.5"
+                      style={{ color: currentThemeColor }}
+                    />
+                  </button>
+                </PopoverTrigger>
+                <PopoverContent
+                  side="top"
+                  className="w-35 p-1 rounded-xl bg-popover/95 backdrop-blur-md border-border/50 text-xs shadow-xl z-[200]"
                 >
-                  <span
-                    className={`inline-block h-4.5 w-4.5 transform rounded-full transition-transform ${
-                      reducedMotion
-                        ? "translate-x-6 bg-muted-foreground"
-                        : "translate-x-1"
-                    }`}
-                    style={{
-                      backgroundColor: reducedMotion ? undefined : toggleCircleColor,
-                    }}
-                  />
-                </button>
-              </TooltipTrigger>
-              <TooltipContent
-                side="top"
-                sideOffset={2}
-                avoidCollisions={false}
-                className="z-[200]"
+                  <p className="font-medium text-foreground leading-relaxed text-center">
+                    {t("motion.tooltip")}
+                  </p>
+                </PopoverContent>
+              </Popover>
+            )}
+            {isMobile ? (
+              <button
+                className={cn(
+                  "relative inline-flex h-6 w-12 items-center rounded-full cursor-pointer transition-colors focus:outline-none outline-none focus-visible:ring-0 focus-visible:outline-none",
+                  "bg-muted/75 mt-1",
+                )}
+                onClick={toggleReducedMotion}
+                aria-label="Reducir animaciones"
               >
-                <p>{t("motion.tooltip")}</p>
-              </TooltipContent>
-            </Tooltip>
-          )}
-        </div>
+                <span
+                  className={`inline-block h-4.5 w-4.5 transform rounded-full transition-transform ${
+                    reducedMotion
+                      ? "translate-x-6 bg-muted-foreground"
+                      : "translate-x-1"
+                  }`}
+                  style={{
+                    backgroundColor: reducedMotion ? undefined : toggleCircleColor,
+                  }}
+                />
+              </button>
+            ) : (
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <button
+                    className={cn(
+                      "relative inline-flex h-6 w-12 items-center rounded-full cursor-pointer transition-colors focus:outline-none outline-none focus-visible:ring-0 focus-visible:outline-none",
+                      "bg-muted hover:bg-muted/80",
+                    )}
+                    onClick={toggleReducedMotion}
+                    aria-label="Reducir animaciones"
+                  >
+                    <span
+                      className={`inline-block h-4.5 w-4.5 transform rounded-full transition-transform ${
+                        reducedMotion
+                          ? "translate-x-6 bg-muted-foreground"
+                          : "translate-x-1"
+                      }`}
+                      style={{
+                        backgroundColor: reducedMotion ? undefined : toggleCircleColor,
+                      }}
+                    />
+                  </button>
+                </TooltipTrigger>
+                <TooltipContent
+                  side="top"
+                  sideOffset={2}
+                  avoidCollisions={false}
+                  className="z-[200]"
+                >
+                  <p>{t("motion.tooltip")}</p>
+                </TooltipContent>
+              </Tooltip>
+            )}
+          </div>
+        )}
       </div>
     </TooltipProvider>
   );
