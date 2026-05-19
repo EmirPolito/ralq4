@@ -83,7 +83,7 @@ function Carrusel2() {
   );
 
   return (
-    <div className="w-full py-0.5 lg:py-0">
+    <div className="w-full py-0.5 lg:py-5">
       <div className="container mx-auto px-5 md:px-14">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 min-h-[400px]">
           {/* Texto */}

@@ -317,12 +317,14 @@
 
   "carrusel1": {
     "items": [
-      { "title": "Microscopio" },
-      { "title": "Tubos de ensayo" },
-      { "title": "Matraz" },
-      { "title": "Recipientes" },
-      { "title": "Matraz redondo" },
-      { "title": "Moléculas" }
+      { "title": "Matraz erlenmeyer" },
+      { "title": "Agua" },
+      { "title": "Gradilla" },
+      { "title": "Benceno" },
+      { "title": "Mortero con mano" },
+      { "title": "Cafeina" },
+      { "title": "Autoclave" },
+      { "title": "Propano" }
     ]
   },
 
