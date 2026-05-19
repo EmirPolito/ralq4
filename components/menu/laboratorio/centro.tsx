@@ -10,6 +10,7 @@ import {
   ChevronDown,
   ChevronRight,
   BarChart2,
+  Download,
 } from "lucide-react";
 
 import { useGLTF } from "@react-three/drei";
@@ -51,6 +52,18 @@ export function InstrumentViewer({
     }
   };
 
+  const handleDownload = () => {
+    if (!activeItem.glbPath) return;
+    const link = document.createElement("a");
+    link.href = activeItem.glbPath;
+    const fileName =
+      activeItem.glbPath.split("/").pop() || `${activeItem.name}.glb`;
+    link.download = fileName;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="flex flex-col h-full gap-0 px-0 w-full">
       {/* Visualizador de modelo 3D — Ocupa toda la pantalla del centro */}
@@ -77,7 +90,7 @@ export function InstrumentViewer({
         </AnimatePresence>
 
         {/* Central Model — GLB Viewer or PNG Fallback */}
-        <div className="absolute inset-0 flex items-center justify-center -translate-x-4">
+        <div className="absolute inset-0 flex items-center justify-center">
           <ModelViewer
             glbPath={activeItem.glbPath ?? ""}
             fallbackImage={activeItem.image}
@@ -90,7 +103,7 @@ export function InstrumentViewer({
         </div>
 
         {/* Botones de Control de Cámara y Pantalla Completa — Ubicados en la esquina superior derecha */}
-        <div className="absolute top-4 right-4 z-30 flex flex-col gap-2">
+        <div className="absolute top-4 right-4 z-30 flex flex-col gap-5">
           {/* Botón Maximizar / Pantalla Completa */}
           <motion.button
             whileHover={{ scale: 1.1 }}
@@ -99,7 +112,7 @@ export function InstrumentViewer({
             className="flex items-center justify-center cursor-pointer text-menu2-centro-iconos hover:text-white bg-menu2-centro-bg-iconos hover:bg-menu2-centro-hvr-iconos p-2 rounded-lg transition-all duration-300 shadow-md border border-menu2-centro-borde"
             title="Pantalla Completa"
           >
-            <Maximize className="w-4 h-4" />
+            <Maximize className="w-4.5 h-4.5" />
           </motion.button>
 
           {/* Botón Reiniciar Posición */}
@@ -110,8 +123,24 @@ export function InstrumentViewer({
             className="flex items-center justify-center cursor-pointer text-menu2-centro-iconos hover:text-white bg-menu2-centro-bg-iconos hover:bg-menu2-centro-hvr-iconos p-2 rounded-lg transition-all duration-300 shadow-md border border-menu2-centro-borde"
             title="Reiniciar Posición"
           >
-            <RotateCcw className="w-4 h-4" />
+            <RotateCcw className="w-4.5 h-4.5" />
           </motion.button>
+
+          {/* Botón Descargar Modelo 3D */}
+          {activeItem.glbPath && (
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              onClick={handleDownload}
+              className="flex flex-col items-center justify-center cursor-pointer text-menu2-centro-iconos hover:text-white bg-menu2-centro-bg-iconos hover:bg-menu2-centro-hvr-iconos p-2 rounded-lg transition-all duration-300 shadow-md border border-menu2-centro-borde gap-0.5"
+              title="Descargar Modelo 3D"
+            >
+              <Download className="w-5 h-2.5" />
+              <span className="text-[8px] font-medium tracking-wider leading-none">
+                GLB
+              </span>
+            </motion.button>
+          )}
         </div>
       </div>
     </div>

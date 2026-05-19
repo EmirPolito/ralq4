@@ -53,7 +53,7 @@ RALQ 2 es una plataforma educativa de vanguardia construida con **Next.js**, dis
 
 ## Desarrolladores
 
-**Emir Polito** - Desarrollador Fullstack & QA Tester.
+**Emir Polito** - Frontend & QA Tester.
 
 - GitHub: [@EmirPolito](https://github.com/EmirPolito)
 - LinkedIn: [Emir Polito](https://www.linkedin.com/in/emirpolitog)
