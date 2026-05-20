@@ -198,7 +198,8 @@
   /* ===================================
    Menu 2
 ========================================*/
-  --menu2-bg-general: #ffffff;
+  /* --menu2-bg-general: #fcfcfc; */
+  --menu2-bg-general: #f1f1f1;
 
   --menu2-header-bg: #ffffff;
   --menu2-header-paginas-bg: #eaeaea;
@@ -215,7 +216,7 @@
   --menu2-izq-buscador-bg: #ffffff; /*bg del input*/
   --menu2-izq-buscador-contenido: #a1a1a1; /*lupa y texto del input*/
 
-  --menu2-izq-tarjeta-bg: #f3f3f3; /*bg de la tarjeta recatangular*/
+  --menu2-izq-tarjeta-bg: #f7f7f7; /*bg de la tarjeta recatangular*/
 
   --menu2-izq-bg-icono: #000000; /*bg del icono*/
   --menu2-izq-contenido-icono: #ffffff; /*color del icono dentro*/
