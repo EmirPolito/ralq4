@@ -11,7 +11,6 @@
 [![Clerk](https://img.shields.io/badge/Clerk-Auth-6c47ff?logo=clerk&logoColor=white)](https://clerk.com/)
 [![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?logo=vercel)](https://vercel.com/)
 </div>
- <br />
 
 RALQ 2 es una plataforma educativa enfocada en la enseñanza de la química a través de modelos 3D interactivos de instrumentos y moléculas. Su objetivo es facilitar un aprendizaje más visual y dinámado, especialmente para estudiantes que no tienen acceso a un laboratorio físico.
 <div align="center">
