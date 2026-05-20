@@ -26,7 +26,7 @@ RALQ 2 es una plataforma educativa enfocada en la enseñanza de la química a tr
 
 ---
 
-## Características principales
+## Características
 
 #### Páginas
 
@@ -56,8 +56,8 @@ RALQ 2 es una plataforma educativa enfocada en la enseñanza de la química a tr
 ## Desarrolladores
 
 - **Emir Polito** - Frontend & QA Tester.
-- **Irving Esteban Méndez** - Diseñador UI/UX.
-- **Cristian Daniel Barraza** - Analista de Sistemas.
+- **Irving Mendez** - Diseñador UI/UX.
+- **Cristian Barraza** - Backend 
 <br>
 
 > [!NOTE]
