@@ -26,8 +26,8 @@ export function Hero() {
   return (
     <section>
       <div>
-        <div className="relative z-10 flex min-h-[88vh] lg:min-h-screen flex-col justify-end pt-20 pb-4 lg:pt-0 lg:pb-0 px-5 sm:px-6 md:px-12 lg:px-20">
-          <div className="mx-auto max-w-8xl w-full pb-2.5 lg:pb-53 sm:pb-20">
+        <div className="relative z-10 flex min-h-[85vh] lg:min-h-screen flex-col justify-end pt-20 pb-4 lg:pt-0 lg:pb-0 px-5 sm:px-6 md:px-12 lg:px-20">
+          <div className="mx-auto max-w-8xl w-full pb-2.5 lg:pb-60 sm:pb-20">
             <ScrollAnimation direction="up" delay={0.2}>
               <div
                 className="flex flex-col items-start text-left lg:items-start lg:text-left"
@@ -44,20 +44,6 @@ export function Hero() {
                 <p className="text-hero-desc text-sm  lg:text-lg mt-1.5 sm:mt-2 md:max-w-xl  w-full leading-relaxed">
                   {t("description")}
                 </p>
-
-                {/* Botón demo */}
-                {/* <div className="mt-7.5 sm:mt-7.5">
-                  <Button
-                    asChild
-                    size="lg"
-                    className="h-11 lg:h-12 text-sm lg:text-base rounded-4xl bg-hero-bg-demo text-hero-txt-demo hover:bg-hero-hvr-demo"
-                  >
-                    <Link href="/demo">
-                      <span className="text-nowrap">{t("cta")}</span>
-                      <ChevronRight className="ml-0 sm:ml-0 size-4 lg:size-4.5" />
-                    </Link>
-                  </Button>
-                </div>*/}
               </div>
             </ScrollAnimation>
           </div>

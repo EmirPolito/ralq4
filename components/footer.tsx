@@ -136,7 +136,7 @@ export default function Footer() {
             className="hidden md:block bg-clip-text text-center text-3xl md:text-5xl lg:text-[14rem] font-bold tracking-widest text-transparent bg-gradient-to-b from-footer-ralq to-footer-ralq select-none"
             style={{
               WebkitMaskImage:
-                "linear-gradient(to bottom, black 70%, transparent)",
+                "linear-gradient(to bottom, black 75%, transparent)",
               maskImage: "linear-gradient(to bottom, black 70%, transparent)",
             }}
           >
