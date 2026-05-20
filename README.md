@@ -11,10 +11,9 @@
 [![Clerk](https://img.shields.io/badge/Clerk-Auth-6c47ff?logo=clerk&logoColor=white)](https://clerk.com/)
 [![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?logo=vercel)](https://vercel.com/)
 </div>
-  <br />
+ <br />
 
-RALQ 2 es una plataforma educativa de vanguardia construida con **Next.js**, diseñada para transformar la enseñanza de la química mediante experiencias visuales inmersivas, modelos 3D interactivos y realidad aumentada.
-
+RALQ 2 es una plataforma educativa enfocada en la enseñanza de la química a través de modelos 3D interactivos de instrumentos y moléculas. Su objetivo es facilitar un aprendizaje más visual y dinámado, especialmente para estudiantes que no tienen acceso a un laboratorio físico.
 <div align="center">
   <img height="728" alt="RALQ Hero Section" src="https://github.com/user-attachments/assets/3611f1a9-df49-425c-84fe-79c41c34f6f0"/>
   
@@ -37,7 +36,7 @@ RALQ 2 es una plataforma educativa de vanguardia construida con **Next.js**, dis
 - **Ayuda**: Preguntas frecuentes y guías para el uso de la plataforma.
 - **Políticas de Privacidad**: Documento legal sobre el tratamiento y protección de los datos de los usuarios.
 - **Términos y Condiciones**: Documento legal con las condiciones de uso de la plataforma.
-- **Laboratorio**: Pagina donde se muestran los modelos 3D de los elementos químicos y compuestos, con información detallada.
+- **Laboratorio**: Pagina donde se muestran los modelos 3D de los instrumentos químicos y estructuras moleculares.
 
 #### Accesibilidad y Experiencia de Usuario
 
@@ -56,20 +55,10 @@ RALQ 2 es una plataforma educativa de vanguardia construida con **Next.js**, dis
 
 ## Desarrolladores
 
-**Emir Polito** - Frontend & QA Tester.
-
-- GitHub: [@EmirPolito](https://github.com/EmirPolito)
-- LinkedIn: [Emir Polito](https://www.linkedin.com/in/emirpolitog)
-
-**Irving Esteban Méndez** - Diseñador UI/UX.
-
-- GitHub: [@IrvingEsteban](https://github.com/1RV1N6-M3ND3Z)
-
-**Cristian Daniel Barraza** - Analista de Sistemas.
-
-- GitHub: [@CristianDanielBarraza](https://github.com/CristianDanielBarraza)
-
+- **Emir Polito** - Frontend & QA Tester.
+- **Irving Esteban Méndez** - Diseñador UI/UX.
+- **Cristian Daniel Barraza** - Analista de Sistemas.
 <br>
 
 > [!NOTE]
-> Proyecto en desarrollo.
+> Proyecto en desarrollo
