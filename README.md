@@ -57,7 +57,7 @@ RALQ 2 es una plataforma educativa enfocada en la enseñanza de la química a tr
 
 - **Emir Polito** - Frontend & QA Tester.
 - **Irving Mendez** - Diseñador UI/UX.
-- **Cristian Barraza** - Backend 
+- **Cristian Barraza** - Project Manager
 <br>
 
 > [!NOTE]
