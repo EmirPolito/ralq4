@@ -69,7 +69,7 @@ export function LanguageSelector({
         aria-label="Seleccionar idioma"
         className={cn(
           "flex items-center justify-center cursor-pointer rounded-md transition-opacity focus:outline-none outline-none",
-          isMobile ? "h-9 w-9" : "h-9 w-9 hover:opacity-80",
+          isMobile ? "h-9 w-9" : "h-0 w-0 hover:opacity-80",
         )}
       >
         <span
