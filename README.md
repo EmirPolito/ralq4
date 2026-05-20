@@ -14,12 +14,13 @@
 
 RALQ 2 es una plataforma educativa enfocada en la enseñanza de la química a través de modelos 3D interactivos de instrumentos y moléculas. Su objetivo es facilitar un aprendizaje más visual y dinámado, especialmente para estudiantes que no tienen acceso a un laboratorio físico.
 <div align="center">
-  <img height="728" alt="RALQ Hero Section" src="https://github.com/user-attachments/assets/3611f1a9-df49-425c-84fe-79c41c34f6f0"/>
+ 
+<img height="733" alt="290057d3-6b5f-4143-82aa-ca93f483e529" src="https://github.com/user-attachments/assets/b9968486-882b-4fcf-bb49-6f47c8725206" />
   
   <br/>
   <br/>
 
-  <img height="724" alt="RALQ 3D Models" src="https://github.com/user-attachments/assets/b059f6f5-3b02-45c5-ac82-e8096a215d90"/>
+<img height="726" alt="b1e16b04-713f-4e3f-8466-2a71b80babc6" src="https://github.com/user-attachments/assets/4fb510bb-c7c9-4185-bd05-4f6b04c7d1e4" />
   <br/>
 </div>
 
